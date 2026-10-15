@@ -1,0 +1,38 @@
+{
+  "name": "Dr. Nozima Baxtiyarovna — Stomatolog va Ortoped Andijon (Sevdo Denta)",
+  "short_name": "Dr. Nozima",
+  "description": "Andijon shahridagi zamonaviy stomatolog va ortoped Dr. Nozima Baxtiyarovna. Sevdo Denta klinikasida 7+ yillik tajriba, 100% og'riqsiz tish davolash, tsirkoniy karonka, vinirlar va estetik restavratsiya.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#f4f8fb",
+  "theme_color": "#086287",
+  "orientation": "portrait-primary",
+  "lang": "uz",
+  "dir": "ltr",
+  "categories": ["medical", "health", "lifestyle"],
+  "icons": [
+    {
+      "src": "/favicon-48x48.png",
+      "sizes": "48x48",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}

@@ -1,0 +1,131 @@
+import { useEffect } from "react";
+import { Route, Routes, useLocation, Navigate } from "react-router-dom";
+import Nav from "./components/Nav";
+import Footer from "./components/Footer";
+/* Pages are imported eagerly on purpose. React.lazy was tried here and broke
+   prerendering: renderToString cannot suspend, so every route emitted its
+   Suspense fallback and the static HTML lost its content (10,219 -> 1,341
+   chars on the home page). Splitting these needs streaming SSR
+   (renderToPipeableStream), not a preload before renderToString. */
+import Home from "./pages/Home";
+import About from "./pages/About";
+import Services from "./pages/Services";
+import ServiceDetail from "./pages/ServiceDetail";
+import Contact from "./pages/Contact";
+import Booking from "./pages/Booking";
+import StickersShowcase from "./pages/StickersShowcase";
+import NotFound from "./pages/NotFound";
+import FloatingActionHub from "./components/FloatingActionHub";
+import { useBooking } from "./context/BookingContext";
+import { BookingProvider } from "./context/BookingProvider";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import { useLanguage } from "./context/LanguageContext";
+import { LANGS, DEFAULT_LANG } from "./utils/language";
+
+/* Sync <html lang="..."> with active UI language for SEO and a11y */
+/* Enforce authentic logo favicon in tab dynamically to bypass browser caching */
+const FaviconEnforcer = () => {
+  useEffect(() => {
+    const existing = document.querySelector("link[rel*='icon']");
+    if (existing) {
+      existing.href = `/favicon-32x32.png?v=${Date.now()}`;
+    }
+  }, []);
+  return null;
+};
+
+/* Scroll to the top on route change only. This used to live in <Seo>, where it
+   re-fired on every render and yanked the page up while users typed. */
+const ScrollToTop = () => {
+  const { pathname } = useLocation();
+  useEffect(() => {
+    /* "instant", not "auto": index.css sets html { scroll-behavior: smooth },
+       and "auto" defers to it, which animates the jump across the whole page. */
+    window.scrollTo({ top: 0, behavior: "instant" });
+  }, [pathname]);
+  return null;
+};
+
+const LangSync = () => {
+  const { lang } = useLanguage();
+  useEffect(() => {
+    document.documentElement.lang = lang;
+  }, [lang]);
+  return null;
+};
+
+const AppShell = () => {
+  const { openBooking } = useBooking();
+  const { lang } = useLanguage();
+
+  const skipLabel = {
+    uz: "Asosiy mazmunga o'tish",
+    ru: "Перейти к основному содержимому",
+    en: "Skip to main content",
+  }[lang] || "Asosiy mazmunga o'tish";
+
+  return (
+    <div className="flex flex-col min-h-screen w-full bg-[#f7f9fc] text-slate-900">
+      <a
+        href="#main-content"
+        className="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-50 focus:px-4 focus:py-2.5 focus:bg-[#086287] focus:text-white focus:rounded-xl focus:shadow-2xl focus:outline-none focus:ring-2 focus:ring-[#4d8db9] text-sm font-bold"
+      >
+        {skipLabel}
+      </a>
+      <LangSync />
+      <ScrollToTop />
+      <FaviconEnforcer />
+      <ToastContainer
+        position="top-right"
+        autoClose={4000}
+        hideProgressBar={false}
+        theme="dark"
+        toastStyle={{ background: "#063c54", borderLeft: "4px solid #086287" }}
+      />
+
+      <Nav onOpenBooking={() => openBooking()} />
+
+      <main id="main-content" className="flex-grow w-full max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 pt-20 sm:pt-24">
+        <Routes>
+          {/* Every page exists at three addresses: unprefixed Uzbek, /ru and
+              /en. Defining them once per language keeps the three in step. */}
+          {LANGS.flatMap((code) => {
+            const at = (path) =>
+              code === DEFAULT_LANG ? path : `/${code}${path === "/" ? "" : path}`;
+            return [
+              <Route key={`${code}-home`}       path={at("/")}                    element={<Home onOpenBooking={openBooking} />} />,
+              <Route key={`${code}-about`}      path={at("/about")}               element={<About onOpenBooking={openBooking} />} />,
+              <Route key={`${code}-services`}   path={at("/services")}            element={<Services onOpenBooking={openBooking} />} />,
+              <Route key={`${code}-detail`}     path={at("/services/:serviceId")} element={<ServiceDetail />} />,
+              <Route key={`${code}-gallery`}    path={at("/gallery")}             element={<Navigate to={at("/about")} replace />} />,
+              <Route key={`${code}-booking`}    path={at("/booking")}             element={<Booking />} />,
+              <Route key={`${code}-qabul`}      path={at("/qabul")}               element={<Booking />} />,
+              <Route key={`${code}-contact`}    path={at("/contact")}             element={<Contact />} />,
+            ];
+          })}
+          <Route path="/stickers-preview" element={<StickersShowcase />} />
+          {/* Catch-all. Without this, unknown URLs rendered an empty <main>
+              carrying the homepage's title and canonical - a soft 404. */}
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+      </main>
+
+      <Footer />
+
+      {/* Modern Floating Action Hub */}
+      <FloatingActionHub onOpenBooking={() => openBooking()} />
+
+    </div>
+  );
+};
+
+/* The provider wraps the shell rather than the other way round, because the
+   shell reads the booking modal it would otherwise be providing. */
+const App = () => (
+  <BookingProvider>
+    <AppShell />
+  </BookingProvider>
+);
+
+export default App;

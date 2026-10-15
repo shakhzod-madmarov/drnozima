@@ -1,0 +1,81 @@
+# ─────────────────────────────────────────────────────────────
+# Dr. Nozima Baxtiyarovna — drnozima.uz
+# Apache .htaccess for React SPA with prerendered static HTML
+# ─────────────────────────────────────────────────────────────
+
+# ── Force HTTPS ──────────────────────────────────────────────
+RewriteEngine On
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [R=301,L]
+
+# ── Redirect www to non-www ──────────────────────────────────
+RewriteCond %{HTTP_HOST} ^www\.drnozima\.uz$ [NC]
+RewriteRule ^(.*)$ https://drnozima.uz/$1 [R=301,L]
+
+# ── GZIP Compression ────────────────────────────────────────
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/plain text/css
+  AddOutputFilterByType DEFLATE text/javascript application/javascript application/json
+  AddOutputFilterByType DEFLATE text/xml application/xml application/xhtml+xml
+  AddOutputFilterByType DEFLATE image/svg+xml
+  AddOutputFilterByType DEFLATE application/font-woff2
+</IfModule>
+
+# ── Browser Caching ──────────────────────────────────────────
+<IfModule mod_expires.c>
+  ExpiresActive On
+
+  # Hashed assets (JS/CSS with content hash in filename) — 1 year
+  <FilesMatch "\.(js|css)$">
+    ExpiresDefault "access plus 1 year"
+    Header set Cache-Control "public, max-age=31536000, immutable"
+  </FilesMatch>
+
+  # Images and fonts — 6 months
+  <FilesMatch "\.(webp|png|jpg|jpeg|gif|ico|svg|woff|woff2|ttf|eot)$">
+    ExpiresDefault "access plus 6 months"
+    Header set Cache-Control "public, max-age=15768000"
+  </FilesMatch>
+
+  # HTML — short cache for fresh content
+  <FilesMatch "\.html$">
+    ExpiresDefault "access plus 10 minutes"
+    Header set Cache-Control "public, max-age=600, must-revalidate"
+  </FilesMatch>
+
+  # Manifest, robots, sitemap — 1 day
+  <FilesMatch "\.(webmanifest|txt|xml)$">
+    ExpiresDefault "access plus 1 day"
+    Header set Cache-Control "public, max-age=86400"
+  </FilesMatch>
+</IfModule>
+
+# ── Security Headers ─────────────────────────────────────────
+<IfModule mod_headers.c>
+  Header set X-Content-Type-Options "nosniff"
+  Header set X-Frame-Options "SAMEORIGIN"
+  Header set X-XSS-Protection "1; mode=block"
+  Header set Referrer-Policy "strict-origin-when-cross-origin"
+</IfModule>
+
+# ── Correct MIME Types ───────────────────────────────────────
+<IfModule mod_mime.c>
+  AddType application/javascript .js .mjs
+  AddType text/css .css
+  AddType image/webp .webp
+  AddType image/svg+xml .svg
+  AddType application/manifest+json .webmanifest
+  AddType application/json .json
+  AddType font/woff2 .woff2
+</IfModule>
+
+# ── SPA Fallback (React Router) ──────────────────────────────
+# If the request is not a real file or directory, serve index.html
+# The prerendered HTML files (e.g. /services/index.html) are served
+# directly by Apache because they exist as real files.
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^ /index.html [L]
+
+# ── Custom 404 ───────────────────────────────────────────────
+ErrorDocument 404 /404.html
