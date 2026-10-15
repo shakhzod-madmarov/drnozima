@@ -81,20 +81,23 @@ for (const route of ROUTES) {
       })()
     : null;
 
+  const withTrailingSlash = (p) => (p.endsWith("/") ? p : `${p}/`);
+  const urlFor = (p, l) => `${SITE_ORIGIN}${withTrailingSlash(localizePath(p, l))}`;
+
   const hreflangLinks = [
     ...LANGS.map(
       (l) =>
         `    <xhtml:link rel="alternate" hreflang="${l}" href="${xmlEscape(
-          `${SITE_ORIGIN}${localizePath(route.path, l)}`
+          urlFor(route.path, l)
         )}" />`
     ),
     `    <xhtml:link rel="alternate" hreflang="x-default" href="${xmlEscape(
-      `${SITE_ORIGIN}${localizePath(route.path, "uz")}`
+      urlFor(route.path, "uz")
     )}" />`,
   ].join("\n");
 
   for (const lang of LANGS) {
-    const loc = `${SITE_ORIGIN}${localizePath(route.path, lang)}`;
+    const loc = urlFor(route.path, lang);
     const lines = [
       "  <url>",
       `    <loc>${xmlEscape(loc)}</loc>`,

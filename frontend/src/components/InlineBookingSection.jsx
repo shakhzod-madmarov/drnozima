@@ -75,7 +75,7 @@ const TEXT = {
     dobHint: "Klinikadagi tibbiy kartangizni aniq topishga yordam beradi",
     noteLabel: "Shikoyat yoki tanlangan xizmat",
     namePlaceholder: "Masalan: Sardorbek Karimov",
-    phonePlaceholder: "+998 94 001 01 56",
+    phonePlaceholder: "+998 91 619 95 00",
     notePlaceholder: "Tish og'rig'i, karonka, implant yoki ko'rik bo'yicha izoh...",
     submit: "Tasdiqlash va Qabulga Yozilish",
     submitting: "Yuborilmoqda...",
@@ -117,7 +117,7 @@ const TEXT = {
     dobHint: "Помогает точно идентифицировать вашу медицинскую карту",
     noteLabel: "Жалоба или выбранная услуга",
     namePlaceholder: "Например: Сардорбек Каримов",
-    phonePlaceholder: "+998 94 001 01 56",
+    phonePlaceholder: "+998 91 619 95 00",
     notePlaceholder: "Зубная боль, коронка, имплантация или плановый осмотр...",
     submit: "Подтвердить Запись на Приём",
     submitting: "Отправка...",
@@ -159,7 +159,7 @@ const TEXT = {
     dobHint: "Helps match your clinical patient record accurately",
     noteLabel: "Symptom or Selected Service",
     namePlaceholder: "e.g. Sardorbek Karimov",
-    phonePlaceholder: "+998 94 001 01 56",
+    phonePlaceholder: "+998 91 619 95 00",
     notePlaceholder: "Toothache, zirconia crown, implant consultation...",
     submit: "Confirm Appointment Booking",
     submitting: "Submitting...",
@@ -330,10 +330,10 @@ const InlineBookingSection = ({
         ...prev,
         phone:
           lang === "uz"
-            ? "Telefon formati noto‘g‘ri. Masalan: +998 (94) 001-01-56"
+            ? "Telefon formati noto‘g‘ri. Masalan: +998 (91) 619-95-00"
             : lang === "ru"
-            ? "Неверный формат. Например: +998 (94) 001-01-56"
-            : "Invalid format. Example: +998 (94) 001-01-56",
+            ? "Неверный формат. Например: +998 (91) 619-95-00"
+            : "Invalid format. Example: +998 (91) 619-95-00",
       }));
     }
   };
@@ -347,10 +347,10 @@ const InlineBookingSection = ({
     if (!phone.trim() || !isUzPhoneComplete(phone)) {
       nextErrors.phone =
         lang === "uz"
-          ? "Telefon formati noto‘g‘ri. Masalan: +998 (94) 001-01-56"
+          ? "Telefon formati noto‘g‘ri. Masalan: +998 (91) 619-95-00"
           : lang === "ru"
-          ? "Неверный формат. Например: +998 (94) 001-01-56"
-          : "Invalid format. Example: +998 (94) 001-01-56";
+          ? "Неверный формат. Например: +998 (91) 619-95-00"
+          : "Invalid format. Example: +998 (91) 619-95-00";
     }
     if (Object.keys(nextErrors).length > 0) {
       setErrors(nextErrors);
