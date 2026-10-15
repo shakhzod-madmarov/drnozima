@@ -56,66 +56,49 @@ const scrollToBooking = (serviceId = null, serviceTitle = "") => {
    ═══════════════════════════════════════════════════════════════════ */
 const HeroSection = () => {
   const { lang } = useLanguage();
-  const to = useLocalizedPath();
-  const [activePhoto, setActivePhoto] = useState("studio");
 
   const T = {
     uz: {
-      badge: "Andijonda Ayol Stomatolog · Sevdo Denta",
+      kicker: "Ayol Stomatolog-Terapevt · Ortoped",
       doctorName: "Dr. Nozima Baxtiyarovna",
-      specialtyTitle: "Ayol Stomatolog-Terapevt · Ortoped",
-      headline: "Tabiiy va Sog'lom Tabassum Uchun Ehtiyotkor va Og'riqsiz Stomatologiya",
-      subtitle:
-        "Andijon shahrida ayollar va butun oila uchun ehtiyotkor, sifatli va 100% og'riqsiz tish davolash, zamonaviy plombalash, tsirkoniy karonkalar hamda samimiy individual yondashuv.",
+      tagline:
+        "Andijonda og'riqsiz tish davolash, zamonaviy plombalash va estetik tsirkoniy karonkalar. Bemorlar uchun 100% qulay, xavfsiz va samimiy muhit.",
       ctaBook: "Qabulga Yozilish",
-      ctaServices: "Xizmatlar Bilan Tanishish",
       stat1Num: `${getYearsOfExperience()}+ yil`,
       stat1Label: "Klinik Tajriba",
       stat2Num: "1,000+",
       stat2Label: "Mamnun Bemorlar",
       stat3Num: "100%",
       stat3Label: "Toza va Og'riqsiz",
-      photo1Tab: "Klinik Portret",
-      photo2Tab: "Ish Jarayoni",
-      clinicLocationText: "Andijon sh., A.Fitrat 251B (Eski Shahar, Sevdo Denta)",
+      clinicBadge: "Sevdo Denta Klinikasi",
     },
     ru: {
-      badge: "Врач-Стоматолог Женщина · Андижан",
+      kicker: "Врач-Стоматолог Женщина · Терапевт и Ортопед",
       doctorName: "Д-р Нозима Бахтияровна",
-      specialtyTitle: "Врач-Стоматолог Женщина · Терапевт и Ортопед",
-      headline: "Бережная и Безболезненная Стоматология для Здоровой Улыбки",
-      subtitle:
-        "Качественное, деликатное и 100% безболезненное лечение зубов в Андижане у опытного врача-стоматолога женщины: пломбирование, коронки и заботливое отношение к каждому пациенту.",
+      tagline:
+        "Бережное лечение кариеса без боли, эстетическая реставрация и циркониевые коронки в Андижане. Комфортный индивидуальный приём.",
       ctaBook: "Записаться на Приём",
-      ctaServices: "Все Услуги",
       stat1Num: `${getYearsOfExperience()}+ лет`,
       stat1Label: "Клинического Опыта",
       stat2Num: "1,000+",
       stat2Label: "Пациентов",
       stat3Num: "100%",
       stat3Label: "Без Боли и Чисто",
-      photo1Tab: "Портрет Врача",
-      photo2Tab: "В Кабинете",
-      clinicLocationText: "г. Андижан, ул. А. Фитрата 251Б (Эски Шахар, Sevdo Denta)",
+      clinicBadge: "Клиника Sevdo Denta",
     },
     en: {
-      badge: "Certified Female Dentist · Andijan",
+      kicker: "Female Dentist · Restorative & Prosthodontics",
       doctorName: "Dr. Nozima Baxtiyarovna",
-      specialtyTitle: "Female Dentist · Restorative & Prosthodontics",
-      headline: "Gentle & 100% Painless Dental Care for Your Natural Smile",
-      subtitle:
-        "Gentle, empathetic, and 100% painless dental care in Andijan by an experienced female dentist: precision fillings, zirconia crowns, and dedicated personal care.",
+      tagline:
+        "Gentle painless dental fillings, advanced therapy, and aesthetic zirconia crowns in Andijan. Reassuring and safe patient care.",
       ctaBook: "Book Appointment",
-      ctaServices: "Explore Services",
       stat1Num: `${getYearsOfExperience()}+ Yrs`,
       stat1Label: "Clinical Experience",
       stat2Num: "1,000+",
       stat2Label: "Treated Patients",
       stat3Num: "100%",
       stat3Label: "Clean & Painless",
-      photo1Tab: "Studio Portrait",
-      photo2Tab: "In Clinic",
-      clinicLocationText: "251B A. Fitrat St, Andijan (Old City, Sevdo Denta)",
+      clinicBadge: "Sevdo Denta Clinic",
     },
   };
   const t = T[lang] || T.uz;
@@ -125,188 +108,100 @@ const HeroSection = () => {
       {/* Editorial Accent Strip */}
       <div className="h-1.5 w-full bg-gradient-to-r from-[#086288] via-[#4D8DBA] to-[#086288]" />
 
-      <div className="p-4 sm:p-8 lg:p-12 grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+      <div className="p-5 sm:p-8 lg:p-12 grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
         {/* Left Editorial Copy (7 cols) */}
-        <div className="lg:col-span-7 space-y-5 sm:space-y-6 text-left">
-          {/* Status Badges */}
-          <div className="flex flex-wrap items-center gap-2">
-            <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#086288]/5 border border-[#086288]/15 text-xs font-bold uppercase tracking-wider text-[#086288]">
-              <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
-              {t.badge}
-            </span>
-            <a
-              href={PRIMARY_CLINIC.maps.yandex}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#F4F8FB] hover:bg-[#E6F1F7] border border-[#D1E4F0] text-xs font-medium text-slate-700 transition-colors"
-            >
-              <IconLocationPin className="w-3.5 h-3.5 text-[#4D8DBA] shrink-0" />
-              <span>{t.clinicLocationText}</span>
-            </a>
+        <div className="lg:col-span-7 space-y-5 text-left">
+          {/* Single Clean Kicker Pill */}
+          <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-[#086288]/5 border border-[#086288]/15 text-xs font-bold uppercase tracking-wider text-[#086288]">
+            <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
+            <span>{t.kicker}</span>
           </div>
 
-          {/* Doctor Title & Headline */}
-          <div className="space-y-2">
-            <p className="text-xs sm:text-sm font-bold uppercase tracking-[0.18em] text-[#4D8DBA]">
-              {t.specialtyTitle}
-            </p>
+          {/* Doctor Title & Clear Tagline */}
+          <div className="space-y-3">
             <h1 className="font-serif-classic text-3xl sm:text-4xl md:text-5xl lg:text-[54px] font-bold text-[#086288] leading-[1.12]">
               {t.doctorName}
             </h1>
-            <p className="pt-1 text-base sm:text-xl font-bold text-slate-800 leading-snug max-w-2xl">
-              {t.headline}
+            <p className="text-sm sm:text-base text-slate-600 leading-relaxed max-w-xl">
+              {t.tagline}
             </p>
           </div>
 
-          {/* Subtitle */}
-          <p className="text-xs sm:text-base text-slate-600 leading-relaxed max-w-xl">
-            {t.subtitle}
-          </p>
-
-          {/* Primary Action Buttons */}
-          <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-2.5 sm:gap-3 pt-1">
+          {/* Primary Action Buttons (Only 2 clear actions) */}
+          <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 pt-1">
             <button
               type="button"
               onClick={() => scrollToBooking("tish-davolash")}
-              className="px-6 py-3.5 rounded-xl bg-[#086288] hover:bg-[#4D8DBA] text-white font-semibold text-xs sm:text-sm shadow-sm transition-all duration-200 flex items-center justify-center gap-2 cursor-pointer"
+              className="px-7 py-3.5 rounded-xl bg-[#086288] hover:bg-[#4D8DBA] text-white font-semibold text-sm shadow-sm transition-all duration-200 flex items-center justify-center gap-2 cursor-pointer"
             >
+              <IconClock className="w-4 h-4 text-white" />
               <span>{t.ctaBook}</span>
               <span>↓</span>
             </button>
 
             <a
               href={DOCTOR_INFO.phoneHref}
-              className="px-5 py-3.5 rounded-xl bg-[#F4F8FB] hover:bg-[#E6F1F7] border border-[#D1E4F0] text-[#086288] font-bold text-xs sm:text-sm transition-colors flex items-center justify-center gap-2"
+              className="px-5 py-3.5 rounded-xl bg-[#F4F8FB] hover:bg-[#E6F1F7] border border-[#D1E4F0] text-[#086288] font-bold text-sm transition-colors flex items-center justify-center gap-2"
             >
               <IconPhone className="w-4 h-4 text-[#4D8DBA] shrink-0" />
               <span>{DOCTOR_INFO.phone}</span>
             </a>
-
-            <Link
-              to={to("/services")}
-              className="px-4 py-3.5 rounded-xl text-[#4D8DBA] hover:text-[#086288] hover:bg-[#F4F8FB] font-semibold text-xs sm:text-sm transition-colors inline-flex items-center justify-center text-center"
-            >
-              {t.ctaServices} →
-            </Link>
           </div>
 
           {/* Key Metrics Row */}
-          <div className="pt-5 sm:pt-6 border-t border-[#D1E4F0] grid grid-cols-3 divide-x divide-[#D1E4F0] text-center sm:text-left max-w-xl">
-            <div className="pr-1.5 sm:pr-6 min-w-0">
-              <p className="font-serif-classic text-lg xs:text-xl sm:text-2xl lg:text-3xl font-bold text-[#086288]">
+          <div className="pt-6 border-t border-[#D1E4F0] grid grid-cols-3 divide-x divide-[#D1E4F0] text-left max-w-lg">
+            <div className="pr-4 sm:pr-6">
+              <p className="font-serif-classic text-xl sm:text-2xl font-bold text-[#086288]">
                 {t.stat1Num}
               </p>
-              <p className="text-[9px] xs:text-[10px] sm:text-xs text-slate-600 font-medium mt-0.5 leading-tight break-words">
+              <p className="text-xs text-slate-500 font-medium mt-0.5">
                 {t.stat1Label}
               </p>
             </div>
-            <div className="px-1.5 sm:px-6 min-w-0">
-              <p className="font-serif-classic text-lg xs:text-xl sm:text-2xl lg:text-3xl font-bold text-[#086288]">
+            <div className="px-4 sm:px-6">
+              <p className="font-serif-classic text-xl sm:text-2xl font-bold text-[#086288]">
                 {t.stat2Num}
               </p>
-              <p className="text-[9px] xs:text-[10px] sm:text-xs text-slate-600 font-medium mt-0.5 leading-tight break-words">
+              <p className="text-xs text-slate-500 font-medium mt-0.5">
                 {t.stat2Label}
               </p>
             </div>
-            <div className="pl-1.5 sm:pl-6 min-w-0">
-              <p className="font-serif-classic text-lg xs:text-xl sm:text-2xl lg:text-3xl font-bold text-[#4D8DBA]">
+            <div className="pl-4 sm:pl-6">
+              <p className="font-serif-classic text-xl sm:text-2xl font-bold text-[#4D8DBA]">
                 {t.stat3Num}
               </p>
-              <p className="text-[9px] xs:text-[10px] sm:text-xs text-slate-600 font-medium mt-0.5 leading-tight break-words">
+              <p className="text-xs text-slate-500 font-medium mt-0.5">
                 {t.stat3Label}
               </p>
             </div>
           </div>
         </div>
 
-        {/* Right Portrait Column (5 cols) */}
+        {/* Right Portrait Column (5 cols) — Clean, Simple, Single Photo Card */}
         <div className="lg:col-span-5">
-          <div className="max-w-[400px] mx-auto bg-[#f8fafc] p-2.5 sm:p-4 rounded-2xl sm:rounded-3xl border border-[#D1E4F0]">
-            {/* Image Frame */}
-            <div className="relative rounded-2xl overflow-hidden bg-white border border-[#D1E4F0] aspect-[4/4.4]">
-              <img
-                src={
-                  activePhoto === "studio"
-                    ? assets.dr_nozima_portrait
-                    : assets.dr_nozima_clinic
-                }
-                alt="Dr. Nozima Baxtiyarovna — Stomatolog Andijon"
-                width={780}
-                height={840}
-                fetchPriority="high"
-                decoding="async"
-                className="w-full h-full object-cover object-top transition-opacity duration-300"
-              />
-              <div className="absolute top-2.5 right-2.5 sm:top-3 sm:right-3 z-10">
-                <DentalSticker
-                  variant="tooth-sparkle"
-                  color="primary"
-                  size="sm"
-                  sublabel="ADTI · 7 YIL"
-                  label={
-                    lang === "ru"
-                      ? "100% Без Боли"
-                      : lang === "en"
-                      ? "100% Painless"
-                      : "100% Og'riqsiz"
-                  }
-                />
+          <div className="relative rounded-2xl sm:rounded-3xl overflow-hidden border border-[#D1E4F0] shadow-sm aspect-[4/4.8] max-w-[420px] mx-auto bg-slate-100">
+            <img
+              src={assets.dr_nozima_clinic}
+              alt="Dr. Nozima Baxtiyarovna — Stomatolog Andijon"
+              width={780}
+              height={936}
+              fetchPriority="high"
+              decoding="async"
+              className="w-full h-full object-cover object-top"
+            />
+            {/* Subtle frosted glass badge */}
+            <div className="absolute bottom-3 left-3 right-3 sm:bottom-4 sm:left-4 sm:right-4 bg-white/95 backdrop-blur-md px-4 py-2.5 rounded-xl border border-white/70 shadow-sm flex items-center justify-between">
+              <div>
+                <p className="font-serif-classic text-xs sm:text-sm font-bold text-[#086288] leading-none">
+                  {t.clinicBadge}
+                </p>
+                <p className="text-[11px] text-slate-500 font-medium mt-0.5">
+                  Andijon · A.Fitrat 251B
+                </p>
               </div>
-            </div>
-
-            {/* Sub-bar with Doctor Name & Photo Switcher */}
-            <div className="mt-3 pt-2 flex flex-wrap items-center justify-between gap-2">
-              <div className="flex items-center gap-2 sm:gap-2.5 min-w-0">
-                <img
-                  src="/logo.png"
-                  alt="Logo"
-                  width={34}
-                  height={34}
-                  className="w-7 h-7 sm:w-8 sm:h-8 object-contain shrink-0"
-                />
-                <div className="min-w-0">
-                  <p className="font-serif-classic text-sm sm:text-base font-bold text-[#086288] leading-none truncate">
-                    Nozima Baxtiyarovna
-                  </p>
-                  <p className="text-[10px] sm:text-[11px] font-medium text-[#4D8DBA] mt-0.5 truncate">
-                    {getExperienceBadge(lang)}
-                  </p>
-                </div>
-              </div>
-
-              {/* Photo Switcher */}
-              <div
-                role="tablist"
-                aria-label="Surat tanlash"
-                className="inline-flex bg-white p-0.5 rounded-lg border border-[#D1E4F0]"
-              >
-                <button
-                  type="button"
-                  role="tab"
-                  aria-selected={activePhoto === "studio"}
-                  onClick={() => setActivePhoto("studio")}
-                  className={`px-2.5 py-1 rounded-md text-[10px] font-semibold transition-colors cursor-pointer ${
-                    activePhoto === "studio"
-                      ? "bg-[#086288] text-white"
-                      : "text-slate-600 hover:text-[#086288]"
-                  }`}
-                >
-                  {t.photo1Tab}
-                </button>
-                <button
-                  type="button"
-                  role="tab"
-                  aria-selected={activePhoto === "clinic"}
-                  onClick={() => setActivePhoto("clinic")}
-                  className={`px-2.5 py-1 rounded-md text-[10px] font-semibold transition-colors cursor-pointer ${
-                    activePhoto === "clinic"
-                      ? "bg-[#086288] text-white"
-                      : "text-slate-600 hover:text-[#086288]"
-                  }`}
-                >
-                  {t.photo2Tab}
-                </button>
-              </div>
+              <span className="text-[11px] font-bold text-[#086288] bg-[#086288]/10 px-2.5 py-1 rounded-lg shrink-0">
+                {getExperienceBadge(lang)}
+              </span>
             </div>
           </div>
         </div>
