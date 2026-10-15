@@ -115,6 +115,11 @@ const Seo = ({
       .querySelectorAll('script[data-prerendered="true"]')
       .forEach((node) => node.remove());
 
+    const coreSchema = document.getElementById("core-schema");
+    if (coreSchema) {
+      coreSchema.remove();
+    }
+
     let scriptTag = null;
     if (schemaKey) {
       scriptTag = document.createElement("script");

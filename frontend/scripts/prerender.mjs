@@ -106,9 +106,13 @@ const setNoindex = (html) =>
 const injectSchema = (html, json) => {
   if (!json) return html;
   const safe = json.split("<").join(String.raw`\u003c`);
+  const scriptTag = `  <script type="application/ld+json" data-prerendered="true">${safe}</script>`;
+  if (/<script type="application\/ld\+json" id="core-schema">[\s\S]*?<\/script>/.test(html)) {
+    return html.replace(/<script type="application\/ld\+json" id="core-schema">[\s\S]*?<\/script>/, scriptTag);
+  }
   return html.replace(
     "</head>",
-    `  <script type="application/ld+json" data-prerendered="true">${safe}</script>\n  </head>`
+    `${scriptTag}\n  </head>`
   );
 };
 

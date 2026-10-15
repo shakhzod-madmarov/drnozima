@@ -15,7 +15,8 @@ import ClinicLocationMap from "../components/ClinicLocationMap";
 import FaqAccordion from "../components/FaqAccordion";
 import DentalSticker from "../components/DentalSticker";
 import { FAQ_ITEMS } from "../constants/faq";
-import { buildFaqSchema } from "../utils/structuredData";
+import { SERVICES_CATALOG } from "../constants/servicesCatalog";
+import { buildHomepageSchema } from "../utils/structuredData";
 import {
   IconShieldCheck,
   IconLocationPin,
@@ -673,7 +674,7 @@ const DoctorBioSpotlight = () => {
 const Home = () => {
   const { lang } = useLanguage();
   const seo = PAGE_SEO.home[lang] || PAGE_SEO.home.uz;
-  const faqSchema = buildFaqSchema(FAQ_ITEMS, lang);
+  const homepageSchema = buildHomepageSchema(lang, FAQ_ITEMS, SERVICES_CATALOG);
 
   return (
     <div className="space-y-4">
@@ -681,7 +682,7 @@ const Home = () => {
         title={seo.title}
         description={seo.description}
         keywords={PAGE_KEYWORDS[lang]}
-        schemaJson={faqSchema}
+        schemaJson={homepageSchema}
       />
       <HeroSection />
       <ClinicalPillars />
