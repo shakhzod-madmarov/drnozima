@@ -1,0 +1,135 @@
+{
+  "_react-vendor-Ns-oaxmK.js": {
+    "file": "assets/react-vendor-Ns-oaxmK.js",
+    "name": "react-vendor",
+    "imports": [
+      "_rolldown-runtime-D7zIpOPY.js"
+    ]
+  },
+  "_rolldown-runtime-D7zIpOPY.js": {
+    "file": "assets/rolldown-runtime-D7zIpOPY.js",
+    "name": "rolldown-runtime"
+  },
+  "_router-CdVpsHcY.js": {
+    "file": "assets/router-CdVpsHcY.js",
+    "name": "router",
+    "imports": [
+      "_react-vendor-Ns-oaxmK.js",
+      "_rolldown-runtime-D7zIpOPY.js"
+    ]
+  },
+  "_vendor-utils-CxfItI9C.js": {
+    "file": "assets/vendor-utils-CxfItI9C.js",
+    "name": "vendor-utils",
+    "imports": [
+      "_react-vendor-Ns-oaxmK.js",
+      "_rolldown-runtime-D7zIpOPY.js"
+    ],
+    "css": [
+      "assets/vendor-utils-DHtLVDbd.css"
+    ]
+  },
+  "_vendor-utils-DHtLVDbd.css": {
+    "file": "assets/vendor-utils-DHtLVDbd.css",
+    "src": "_vendor-utils-DHtLVDbd.css"
+  },
+  "index.html": {
+    "file": "assets/index-9M7ukVvn.js",
+    "name": "index",
+    "src": "index.html",
+    "isEntry": true,
+    "imports": [
+      "_router-CdVpsHcY.js",
+      "_vendor-utils-CxfItI9C.js",
+      "_react-vendor-Ns-oaxmK.js",
+      "_rolldown-runtime-D7zIpOPY.js"
+    ],
+    "dynamicImports": [
+      "node_modules/qrcode/lib/browser.js"
+    ],
+    "css": [
+      "assets/index-CDzVCzFA.css"
+    ],
+    "assets": [
+      "assets/dr_nozima_portrait-DLThra1n.webp",
+      "assets/dr_nozima_clinic-DQv0WLm9.webp",
+      "assets/dr_nozima_branded-fxMMwHA5.webp",
+      "assets/logo-BjMc9Qso.png",
+      "assets/logo-symbol-CCxepg2p.png",
+      "assets/service_therapy-DGwJTFWq.webp",
+      "assets/service_crowns-mk_M_tlI.webp",
+      "assets/service_veneers-C6Mkn8We.webp",
+      "assets/service_implant-zYN93N6E.webp",
+      "assets/service_whitening-CC_-72yS.webp",
+      "assets/service_surgery-B0grGwkx.webp",
+      "assets/service_xray-C-_gwO4R.webp",
+      "assets/clinic_treatment_room-B6WUHj7V.webp",
+      "assets/clinic_sterilization-D2M3bC_Z.webp"
+    ]
+  },
+  "node_modules/qrcode/lib/browser.js": {
+    "file": "assets/browser-B19Dqh5D.js",
+    "name": "browser",
+    "src": "node_modules/qrcode/lib/browser.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "_rolldown-runtime-D7zIpOPY.js"
+    ]
+  },
+  "src/assets/clinic_sterilization.webp": {
+    "file": "assets/clinic_sterilization-D2M3bC_Z.webp",
+    "src": "src/assets/clinic_sterilization.webp"
+  },
+  "src/assets/clinic_treatment_room.webp": {
+    "file": "assets/clinic_treatment_room-B6WUHj7V.webp",
+    "src": "src/assets/clinic_treatment_room.webp"
+  },
+  "src/assets/dr_nozima_branded.webp": {
+    "file": "assets/dr_nozima_branded-fxMMwHA5.webp",
+    "src": "src/assets/dr_nozima_branded.webp"
+  },
+  "src/assets/dr_nozima_clinic.webp": {
+    "file": "assets/dr_nozima_clinic-DQv0WLm9.webp",
+    "src": "src/assets/dr_nozima_clinic.webp"
+  },
+  "src/assets/dr_nozima_portrait.webp": {
+    "file": "assets/dr_nozima_portrait-DLThra1n.webp",
+    "src": "src/assets/dr_nozima_portrait.webp"
+  },
+  "src/assets/logo-symbol.png": {
+    "file": "assets/logo-symbol-CCxepg2p.png",
+    "src": "src/assets/logo-symbol.png"
+  },
+  "src/assets/logo.png": {
+    "file": "assets/logo-BjMc9Qso.png",
+    "src": "src/assets/logo.png"
+  },
+  "src/assets/service_crowns.webp": {
+    "file": "assets/service_crowns-mk_M_tlI.webp",
+    "src": "src/assets/service_crowns.webp"
+  },
+  "src/assets/service_implant.webp": {
+    "file": "assets/service_implant-zYN93N6E.webp",
+    "src": "src/assets/service_implant.webp"
+  },
+  "src/assets/service_surgery.webp": {
+    "file": "assets/service_surgery-B0grGwkx.webp",
+    "src": "src/assets/service_surgery.webp"
+  },
+  "src/assets/service_therapy.webp": {
+    "file": "assets/service_therapy-DGwJTFWq.webp",
+    "src": "src/assets/service_therapy.webp"
+  },
+  "src/assets/service_veneers.webp": {
+    "file": "assets/service_veneers-C6Mkn8We.webp",
+    "src": "src/assets/service_veneers.webp"
+  },
+  "src/assets/service_whitening.webp": {
+    "file": "assets/service_whitening-CC_-72yS.webp",
+    "src": "src/assets/service_whitening.webp"
+  },
+  "src/assets/service_xray.webp": {
+    "file": "assets/service_xray-C-_gwO4R.webp",
+    "src": "src/assets/service_xray.webp"
+  }
+}

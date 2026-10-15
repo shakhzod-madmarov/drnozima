@@ -1,0 +1,586 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml"
+  xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+>
+  <!-- Dr. Nozima Baxtiyarovna — Stomatolog va Ortoped Andijon (https://drnozima.uz) -->
+  <url>
+    <loc>https://drnozima.uz/</loc>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="uz" href="https://drnozima.uz/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://drnozima.uz/ru/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://drnozima.uz/en/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://drnozima.uz/" />
+    <image:image>
+      <image:loc>https://drnozima.uz/dr_nozima_og.jpg</image:loc>
+      <image:title>Dr. Nozima Baxtiyarovna — Ayol Stomatolog va Ortoped Andijon (Sevdo Denta)</image:title>
+      <image:caption>Andijon shahridagi Sevdo Denta klinikasi ayol stomatolog-terapevti va ortopedi Dr. Nozima Baxtiyarovna</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://drnozima.uz/ru/</loc>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="uz" href="https://drnozima.uz/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://drnozima.uz/ru/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://drnozima.uz/en/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://drnozima.uz/" />
+    <image:image>
+      <image:loc>https://drnozima.uz/dr_nozima_og.jpg</image:loc>
+      <image:title>Dr. Nozima Baxtiyarovna — Ayol Stomatolog va Ortoped Andijon (Sevdo Denta)</image:title>
+      <image:caption>Andijon shahridagi Sevdo Denta klinikasi ayol stomatolog-terapevti va ortopedi Dr. Nozima Baxtiyarovna</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://drnozima.uz/en/</loc>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="uz" href="https://drnozima.uz/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://drnozima.uz/ru/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://drnozima.uz/en/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://drnozima.uz/" />
+    <image:image>
+      <image:loc>https://drnozima.uz/dr_nozima_og.jpg</image:loc>
+      <image:title>Dr. Nozima Baxtiyarovna — Ayol Stomatolog va Ortoped Andijon (Sevdo Denta)</image:title>
+      <image:caption>Andijon shahridagi Sevdo Denta klinikasi ayol stomatolog-terapevti va ortopedi Dr. Nozima Baxtiyarovna</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://drnozima.uz/services/</loc>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="uz" href="https://drnozima.uz/services/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://drnozima.uz/ru/services/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://drnozima.uz/en/services/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://drnozima.uz/services/" />
+    <image:image>
+      <image:loc>https://drnozima.uz/assets/clinic_treatment_room-B6WUHj7V.webp</image:loc>
+      <image:title>Stomatologik Xizmatlar — Sevdo Denta Andijon</image:title>
+      <image:caption>Og&apos;riqsiz tish davolash, tsirkoniy karonka, E-max vinirlar, kompozit restavratsiya va estetik profilaktika</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://drnozima.uz/ru/services/</loc>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="uz" href="https://drnozima.uz/services/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://drnozima.uz/ru/services/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://drnozima.uz/en/services/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://drnozima.uz/services/" />
+    <image:image>
+      <image:loc>https://drnozima.uz/assets/clinic_treatment_room-B6WUHj7V.webp</image:loc>
+      <image:title>Stomatologik Xizmatlar — Sevdo Denta Andijon</image:title>
+      <image:caption>Og&apos;riqsiz tish davolash, tsirkoniy karonka, E-max vinirlar, kompozit restavratsiya va estetik profilaktika</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://drnozima.uz/en/services/</loc>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="uz" href="https://drnozima.uz/services/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://drnozima.uz/ru/services/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://drnozima.uz/en/services/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://drnozima.uz/services/" />
+    <image:image>
+      <image:loc>https://drnozima.uz/assets/clinic_treatment_room-B6WUHj7V.webp</image:loc>
+      <image:title>Stomatologik Xizmatlar — Sevdo Denta Andijon</image:title>
+      <image:caption>Og&apos;riqsiz tish davolash, tsirkoniy karonka, E-max vinirlar, kompozit restavratsiya va estetik profilaktika</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://drnozima.uz/about/</loc>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="uz" href="https://drnozima.uz/about/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://drnozima.uz/ru/about/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://drnozima.uz/en/about/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://drnozima.uz/about/" />
+    <image:image>
+      <image:loc>https://drnozima.uz/dr_nozima_portrait.webp</image:loc>
+      <image:title>Dr. Nozima Baxtiyarovna — Andijonda Ayol Stomatolog va Ortoped (7 Yillik Tajriba)</image:title>
+      <image:caption>7 yillik klinik tajribaga ega ayol stomatolog va Andijon davlat tibbiyot instituti (ADTI) bitiruvchisi</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://drnozima.uz/ru/about/</loc>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="uz" href="https://drnozima.uz/about/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://drnozima.uz/ru/about/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://drnozima.uz/en/about/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://drnozima.uz/about/" />
+    <image:image>
+      <image:loc>https://drnozima.uz/dr_nozima_portrait.webp</image:loc>
+      <image:title>Dr. Nozima Baxtiyarovna — Andijonda Ayol Stomatolog va Ortoped (7 Yillik Tajriba)</image:title>
+      <image:caption>7 yillik klinik tajribaga ega ayol stomatolog va Andijon davlat tibbiyot instituti (ADTI) bitiruvchisi</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://drnozima.uz/en/about/</loc>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="uz" href="https://drnozima.uz/about/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://drnozima.uz/ru/about/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://drnozima.uz/en/about/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://drnozima.uz/about/" />
+    <image:image>
+      <image:loc>https://drnozima.uz/dr_nozima_portrait.webp</image:loc>
+      <image:title>Dr. Nozima Baxtiyarovna — Andijonda Ayol Stomatolog va Ortoped (7 Yillik Tajriba)</image:title>
+      <image:caption>7 yillik klinik tajribaga ega ayol stomatolog va Andijon davlat tibbiyot instituti (ADTI) bitiruvchisi</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://drnozima.uz/contact/</loc>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="uz" href="https://drnozima.uz/contact/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://drnozima.uz/ru/contact/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://drnozima.uz/en/contact/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://drnozima.uz/contact/" />
+  </url>
+
+  <url>
+    <loc>https://drnozima.uz/ru/contact/</loc>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="uz" href="https://drnozima.uz/contact/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://drnozima.uz/ru/contact/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://drnozima.uz/en/contact/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://drnozima.uz/contact/" />
+  </url>
+
+  <url>
+    <loc>https://drnozima.uz/en/contact/</loc>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="uz" href="https://drnozima.uz/contact/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://drnozima.uz/ru/contact/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://drnozima.uz/en/contact/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://drnozima.uz/contact/" />
+  </url>
+
+  <url>
+    <loc>https://drnozima.uz/booking/</loc>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="uz" href="https://drnozima.uz/booking/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://drnozima.uz/ru/booking/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://drnozima.uz/en/booking/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://drnozima.uz/booking/" />
+  </url>
+
+  <url>
+    <loc>https://drnozima.uz/ru/booking/</loc>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="uz" href="https://drnozima.uz/booking/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://drnozima.uz/ru/booking/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://drnozima.uz/en/booking/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://drnozima.uz/booking/" />
+  </url>
+
+  <url>
+    <loc>https://drnozima.uz/en/booking/</loc>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="uz" href="https://drnozima.uz/booking/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://drnozima.uz/ru/booking/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://drnozima.uz/en/booking/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://drnozima.uz/booking/" />
+  </url>
+
+  <url>
+    <loc>https://drnozima.uz/qabul/</loc>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="uz" href="https://drnozima.uz/qabul/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://drnozima.uz/ru/qabul/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://drnozima.uz/en/qabul/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://drnozima.uz/qabul/" />
+  </url>
+
+  <url>
+    <loc>https://drnozima.uz/ru/qabul/</loc>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="uz" href="https://drnozima.uz/qabul/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://drnozima.uz/ru/qabul/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://drnozima.uz/en/qabul/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://drnozima.uz/qabul/" />
+  </url>
+
+  <url>
+    <loc>https://drnozima.uz/en/qabul/</loc>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="uz" href="https://drnozima.uz/qabul/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://drnozima.uz/ru/qabul/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://drnozima.uz/en/qabul/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://drnozima.uz/qabul/" />
+  </url>
+
+  <url>
+    <loc>https://drnozima.uz/services/tish-davolash/</loc>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="uz" href="https://drnozima.uz/services/tish-davolash/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://drnozima.uz/ru/services/tish-davolash/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://drnozima.uz/en/services/tish-davolash/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://drnozima.uz/services/tish-davolash/" />
+    <image:image>
+      <image:loc>https://drnozima.uz/assets/service_therapy-DGwJTFWq.webp</image:loc>
+      <image:title>Og&apos;riqsiz Tish Davolash va Endodontiya — Andijon</image:title>
+      <image:caption>Karies, pulpit va tish kanallarini 100% og&apos;riqsiz davolash</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://drnozima.uz/ru/services/tish-davolash/</loc>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="uz" href="https://drnozima.uz/services/tish-davolash/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://drnozima.uz/ru/services/tish-davolash/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://drnozima.uz/en/services/tish-davolash/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://drnozima.uz/services/tish-davolash/" />
+    <image:image>
+      <image:loc>https://drnozima.uz/assets/service_therapy-DGwJTFWq.webp</image:loc>
+      <image:title>Og&apos;riqsiz Tish Davolash va Endodontiya — Andijon</image:title>
+      <image:caption>Karies, pulpit va tish kanallarini 100% og&apos;riqsiz davolash</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://drnozima.uz/en/services/tish-davolash/</loc>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="uz" href="https://drnozima.uz/services/tish-davolash/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://drnozima.uz/ru/services/tish-davolash/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://drnozima.uz/en/services/tish-davolash/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://drnozima.uz/services/tish-davolash/" />
+    <image:image>
+      <image:loc>https://drnozima.uz/assets/service_therapy-DGwJTFWq.webp</image:loc>
+      <image:title>Og&apos;riqsiz Tish Davolash va Endodontiya — Andijon</image:title>
+      <image:caption>Karies, pulpit va tish kanallarini 100% og&apos;riqsiz davolash</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://drnozima.uz/services/estetik-stomatologiya/</loc>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="uz" href="https://drnozima.uz/services/estetik-stomatologiya/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://drnozima.uz/ru/services/estetik-stomatologiya/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://drnozima.uz/en/services/estetik-stomatologiya/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://drnozima.uz/services/estetik-stomatologiya/" />
+    <image:image>
+      <image:loc>https://drnozima.uz/assets/service_veneers-C6Mkn8We.webp</image:loc>
+      <image:title>Estetik Stomatologiya va E-max Keramik Vinirlar — Andijon</image:title>
+      <image:caption>Gollivud tabassumi va badiiy restavratsiya</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://drnozima.uz/ru/services/estetik-stomatologiya/</loc>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="uz" href="https://drnozima.uz/services/estetik-stomatologiya/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://drnozima.uz/ru/services/estetik-stomatologiya/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://drnozima.uz/en/services/estetik-stomatologiya/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://drnozima.uz/services/estetik-stomatologiya/" />
+    <image:image>
+      <image:loc>https://drnozima.uz/assets/service_veneers-C6Mkn8We.webp</image:loc>
+      <image:title>Estetik Stomatologiya va E-max Keramik Vinirlar — Andijon</image:title>
+      <image:caption>Gollivud tabassumi va badiiy restavratsiya</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://drnozima.uz/en/services/estetik-stomatologiya/</loc>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="uz" href="https://drnozima.uz/services/estetik-stomatologiya/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://drnozima.uz/ru/services/estetik-stomatologiya/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://drnozima.uz/en/services/estetik-stomatologiya/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://drnozima.uz/services/estetik-stomatologiya/" />
+    <image:image>
+      <image:loc>https://drnozima.uz/assets/service_veneers-C6Mkn8We.webp</image:loc>
+      <image:title>Estetik Stomatologiya va E-max Keramik Vinirlar — Andijon</image:title>
+      <image:caption>Gollivud tabassumi va badiiy restavratsiya</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://drnozima.uz/services/ortopediya/</loc>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="uz" href="https://drnozima.uz/services/ortopediya/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://drnozima.uz/ru/services/ortopediya/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://drnozima.uz/en/services/ortopediya/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://drnozima.uz/services/ortopediya/" />
+    <image:image>
+      <image:loc>https://drnozima.uz/assets/service_crowns-mk_M_tlI.webp</image:loc>
+      <image:title>Ortopedik Stomatologiya va Tsirkoniy Koronkalar — Andijon</image:title>
+      <image:caption>Tsirkoniy (Zirconia) va E-max keramik tish qoplamalari</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://drnozima.uz/ru/services/ortopediya/</loc>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="uz" href="https://drnozima.uz/services/ortopediya/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://drnozima.uz/ru/services/ortopediya/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://drnozima.uz/en/services/ortopediya/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://drnozima.uz/services/ortopediya/" />
+    <image:image>
+      <image:loc>https://drnozima.uz/assets/service_crowns-mk_M_tlI.webp</image:loc>
+      <image:title>Ortopedik Stomatologiya va Tsirkoniy Koronkalar — Andijon</image:title>
+      <image:caption>Tsirkoniy (Zirconia) va E-max keramik tish qoplamalari</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://drnozima.uz/en/services/ortopediya/</loc>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="uz" href="https://drnozima.uz/services/ortopediya/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://drnozima.uz/ru/services/ortopediya/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://drnozima.uz/en/services/ortopediya/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://drnozima.uz/services/ortopediya/" />
+    <image:image>
+      <image:loc>https://drnozima.uz/assets/service_crowns-mk_M_tlI.webp</image:loc>
+      <image:title>Ortopedik Stomatologiya va Tsirkoniy Koronkalar — Andijon</image:title>
+      <image:caption>Tsirkoniy (Zirconia) va E-max keramik tish qoplamalari</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://drnozima.uz/services/implantatsiya/</loc>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="uz" href="https://drnozima.uz/services/implantatsiya/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://drnozima.uz/ru/services/implantatsiya/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://drnozima.uz/en/services/implantatsiya/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://drnozima.uz/services/implantatsiya/" />
+    <image:image>
+      <image:loc>https://drnozima.uz/assets/service_implant-zYN93N6E.webp</image:loc>
+      <image:title>Tish Implantatsiyasi (Osstem, Straumann) — Andijon</image:title>
+      <image:caption>Yo&apos;qotilgan tishlarni qo&apos;shni tishlarni charxlamasdan qayta tiklash</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://drnozima.uz/ru/services/implantatsiya/</loc>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="uz" href="https://drnozima.uz/services/implantatsiya/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://drnozima.uz/ru/services/implantatsiya/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://drnozima.uz/en/services/implantatsiya/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://drnozima.uz/services/implantatsiya/" />
+    <image:image>
+      <image:loc>https://drnozima.uz/assets/service_implant-zYN93N6E.webp</image:loc>
+      <image:title>Tish Implantatsiyasi (Osstem, Straumann) — Andijon</image:title>
+      <image:caption>Yo&apos;qotilgan tishlarni qo&apos;shni tishlarni charxlamasdan qayta tiklash</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://drnozima.uz/en/services/implantatsiya/</loc>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="uz" href="https://drnozima.uz/services/implantatsiya/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://drnozima.uz/ru/services/implantatsiya/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://drnozima.uz/en/services/implantatsiya/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://drnozima.uz/services/implantatsiya/" />
+    <image:image>
+      <image:loc>https://drnozima.uz/assets/service_implant-zYN93N6E.webp</image:loc>
+      <image:title>Tish Implantatsiyasi (Osstem, Straumann) — Andijon</image:title>
+      <image:caption>Yo&apos;qotilgan tishlarni qo&apos;shni tishlarni charxlamasdan qayta tiklash</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://drnozima.uz/services/tish-oqartirish/</loc>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="uz" href="https://drnozima.uz/services/tish-oqartirish/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://drnozima.uz/ru/services/tish-oqartirish/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://drnozima.uz/en/services/tish-oqartirish/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://drnozima.uz/services/tish-oqartirish/" />
+    <image:image>
+      <image:loc>https://drnozima.uz/assets/service_whitening-CC_-72yS.webp</image:loc>
+      <image:title>Lazerli Tish Oqartirish va AirFlow — Andijon</image:title>
+      <image:caption>Tish emaliga zarar yetkazmasdan oqartirish va tozalash</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://drnozima.uz/ru/services/tish-oqartirish/</loc>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="uz" href="https://drnozima.uz/services/tish-oqartirish/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://drnozima.uz/ru/services/tish-oqartirish/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://drnozima.uz/en/services/tish-oqartirish/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://drnozima.uz/services/tish-oqartirish/" />
+    <image:image>
+      <image:loc>https://drnozima.uz/assets/service_whitening-CC_-72yS.webp</image:loc>
+      <image:title>Lazerli Tish Oqartirish va AirFlow — Andijon</image:title>
+      <image:caption>Tish emaliga zarar yetkazmasdan oqartirish va tozalash</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://drnozima.uz/en/services/tish-oqartirish/</loc>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="uz" href="https://drnozima.uz/services/tish-oqartirish/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://drnozima.uz/ru/services/tish-oqartirish/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://drnozima.uz/en/services/tish-oqartirish/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://drnozima.uz/services/tish-oqartirish/" />
+    <image:image>
+      <image:loc>https://drnozima.uz/assets/service_whitening-CC_-72yS.webp</image:loc>
+      <image:title>Lazerli Tish Oqartirish va AirFlow — Andijon</image:title>
+      <image:caption>Tish emaliga zarar yetkazmasdan oqartirish va tozalash</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://drnozima.uz/services/xirurgiya/</loc>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+    <xhtml:link rel="alternate" hreflang="uz" href="https://drnozima.uz/services/xirurgiya/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://drnozima.uz/ru/services/xirurgiya/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://drnozima.uz/en/services/xirurgiya/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://drnozima.uz/services/xirurgiya/" />
+    <image:image>
+      <image:loc>https://drnozima.uz/assets/service_surgery-B0grGwkx.webp</image:loc>
+      <image:title>Og&apos;riqsiz Tish Olish va Jarrohlik Stomatologiyasi — Andijon</image:title>
+      <image:caption>Aql tishlari va murakkab tishlarni atravmatik og&apos;riqsiz olish</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://drnozima.uz/ru/services/xirurgiya/</loc>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+    <xhtml:link rel="alternate" hreflang="uz" href="https://drnozima.uz/services/xirurgiya/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://drnozima.uz/ru/services/xirurgiya/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://drnozima.uz/en/services/xirurgiya/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://drnozima.uz/services/xirurgiya/" />
+    <image:image>
+      <image:loc>https://drnozima.uz/assets/service_surgery-B0grGwkx.webp</image:loc>
+      <image:title>Og&apos;riqsiz Tish Olish va Jarrohlik Stomatologiyasi — Andijon</image:title>
+      <image:caption>Aql tishlari va murakkab tishlarni atravmatik og&apos;riqsiz olish</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://drnozima.uz/en/services/xirurgiya/</loc>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+    <xhtml:link rel="alternate" hreflang="uz" href="https://drnozima.uz/services/xirurgiya/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://drnozima.uz/ru/services/xirurgiya/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://drnozima.uz/en/services/xirurgiya/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://drnozima.uz/services/xirurgiya/" />
+    <image:image>
+      <image:loc>https://drnozima.uz/assets/service_surgery-B0grGwkx.webp</image:loc>
+      <image:title>Og&apos;riqsiz Tish Olish va Jarrohlik Stomatologiyasi — Andijon</image:title>
+      <image:caption>Aql tishlari va murakkab tishlarni atravmatik og&apos;riqsiz olish</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://drnozima.uz/services/rentgen-diagnostika/</loc>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+    <xhtml:link rel="alternate" hreflang="uz" href="https://drnozima.uz/services/rentgen-diagnostika/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://drnozima.uz/ru/services/rentgen-diagnostika/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://drnozima.uz/en/services/rentgen-diagnostika/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://drnozima.uz/services/rentgen-diagnostika/" />
+    <image:image>
+      <image:loc>https://drnozima.uz/assets/service_xray-C-_gwO4R.webp</image:loc>
+      <image:title>Raqamli 3D Rentgen va Viziografiya Diagnostikasi — Andijon</image:title>
+      <image:caption>90% kam nurlanishli zamonaviy raqamli tish rentgeni</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://drnozima.uz/ru/services/rentgen-diagnostika/</loc>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+    <xhtml:link rel="alternate" hreflang="uz" href="https://drnozima.uz/services/rentgen-diagnostika/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://drnozima.uz/ru/services/rentgen-diagnostika/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://drnozima.uz/en/services/rentgen-diagnostika/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://drnozima.uz/services/rentgen-diagnostika/" />
+    <image:image>
+      <image:loc>https://drnozima.uz/assets/service_xray-C-_gwO4R.webp</image:loc>
+      <image:title>Raqamli 3D Rentgen va Viziografiya Diagnostikasi — Andijon</image:title>
+      <image:caption>90% kam nurlanishli zamonaviy raqamli tish rentgeni</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://drnozima.uz/en/services/rentgen-diagnostika/</loc>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+    <xhtml:link rel="alternate" hreflang="uz" href="https://drnozima.uz/services/rentgen-diagnostika/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://drnozima.uz/ru/services/rentgen-diagnostika/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://drnozima.uz/en/services/rentgen-diagnostika/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://drnozima.uz/services/rentgen-diagnostika/" />
+    <image:image>
+      <image:loc>https://drnozima.uz/assets/service_xray-C-_gwO4R.webp</image:loc>
+      <image:title>Raqamli 3D Rentgen va Viziografiya Diagnostikasi — Andijon</image:title>
+      <image:caption>90% kam nurlanishli zamonaviy raqamli tish rentgeni</image:caption>
+    </image:image>
+  </url>
+</urlset>

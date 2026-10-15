@@ -1,0 +1,37 @@
+User-agent: *
+Allow: /
+Disallow: /__not-found__
+Disallow: /stickers-preview
+
+User-agent: Googlebot
+Allow: /
+Disallow: /__not-found__
+Disallow: /stickers-preview
+
+User-agent: Yandex
+Allow: /
+Disallow: /__not-found__
+Disallow: /stickers-preview
+
+# AI Search & Recommendation Crawlers
+User-agent: GPTBot
+Allow: /
+Disallow: /stickers-preview
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+Disallow: /stickers-preview
+
+User-agent: ClaudeBot
+Allow: /
+Disallow: /stickers-preview
+
+User-agent: Google-Extended
+Allow: /
+
+Host: https://drnozima.uz
+Sitemap: https://drnozima.uz/sitemap.xml
+
