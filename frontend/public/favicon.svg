@@ -1,6 +1,62 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none">
-  <path d="M50 18C41 18 34 22 28 30C22 38 21 52 24 64C27 76 34 88 42 88C47 88 48 80 50 74C52 80 53 88 58 88C66 88 73 76 76 64C79 52 78 38 72 30C66 22 59 18 50 18Z" stroke="#086288" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" fill="white"/>
-  <path d="M44 48C49 43 56 42 63 45C68 47 73 52 75 58" stroke="#97D7FF" stroke-width="6" stroke-linecap="round"/>
-  <path d="M58 24C65 24 72 28 75 35" stroke="#FFEFC4" stroke-width="5" stroke-linecap="round"/>
-  <circle cx="76" cy="30" r="3" fill="#FFEFC4" stroke="#086288" stroke-width="1"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="none">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0A6E99" />
+      <stop offset="100%" stop-color="#054865" />
+    </linearGradient>
+    <filter id="toothShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="6" stdDeviation="6" flood-color="#000000" flood-opacity="0.3" />
+    </filter>
+    <filter id="starShadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#000000" flood-opacity="0.35" />
+    </filter>
+  </defs>
+
+  <!-- Squircle App Icon Background -->
+  <rect width="512" height="512" rx="112" fill="url(#bgGrad)" />
+
+  <!-- Subtle Inner Border -->
+  <rect x="6" y="6" width="500" height="500" rx="106" stroke="#97D7FF" stroke-width="4" stroke-opacity="0.35" />
+
+  <!-- Anatomical Dental Tooth (Brilliant Solid White) -->
+  <g filter="url(#toothShadow)">
+    <path
+      d="M256 150 C235 135 212 120 192 120 C165 120 137 135 137 167 C137 205 140 235 150 275 C162 325 175 375 190 400 C199 407 210 405 215 390 C227 355 240 315 256 295 C272 315 285 355 297 390 C302 405 313 407 322 400 C337 375 350 325 362 275 C372 235 375 205 375 167 C375 135 347 120 320 120 C300 120 277 135 256 150 Z"
+      fill="#FFFFFF"
+    />
+    <!-- Smile Accent Line inside tooth -->
+    <path
+      d="M190 215 C220 250 292 250 322 215"
+      stroke="#97D7FF"
+      stroke-width="9"
+      stroke-linecap="round"
+      fill="none"
+    />
+    <!-- Delicate Left Highlight -->
+    <path
+      d="M165 180 C160 210 165 240 172 265"
+      stroke="#E1F5FE"
+      stroke-width="6"
+      stroke-linecap="round"
+      fill="none"
+    />
+  </g>
+
+  <!-- Golden Brilliant Sparkle Star (#FFEFC4) in top right -->
+  <g filter="url(#starShadow)">
+    <!-- Primary 4-point Star -->
+    <path
+      d="M380 67 C384 92 393 101 418 105 C393 109 384 118 380 143 C376 118 367 109 342 105 C367 101 376 92 380 67 Z"
+      fill="#FFEFC4"
+    />
+    <circle cx="380" cy="105" r="9" fill="#FFFFFF" />
+
+    <!-- Secondary Star Twinkle -->
+    <path
+      d="M332 80 C334 90 338 94 348 96 C338 98 334 102 332 112 C330 102 326 98 316 96 C326 94 330 90 332 80 Z"
+      fill="#FFEFC4"
+      opacity="0.9"
+    />
+    <circle cx="332" cy="96" r="3.5" fill="#FFFFFF" />
+  </g>
 </svg>
