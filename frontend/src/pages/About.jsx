@@ -96,7 +96,7 @@ const About = () => {
 
   const values = [
     {
-      icon: <IconShieldCheck className="w-6 h-6 text-[#086287]" />,
+      icon: <IconShieldCheck className="w-6 h-6 text-[#086288]" />,
       title: {
         uz: "100% Sterillik (Anti-SPID / Anti-Gepatit)",
         ru: "100% Стерильность (Анти-СПИД / Гепатит)",
@@ -109,7 +109,7 @@ const About = () => {
       },
     },
     {
-      icon: <IconSparkleStar className="w-6 h-6 text-[#086287]" />,
+      icon: <IconSparkleStar className="w-6 h-6 text-[#086288]" />,
       title: {
         uz: "Ikki Bosqichli Og'riqsiz Anesteziya",
         ru: "Двухэтапная Анестезия Без Боли",
@@ -122,7 +122,7 @@ const About = () => {
       },
     },
     {
-      icon: <IconAward className="w-6 h-6 text-[#086287]" />,
+      icon: <IconAward className="w-6 h-6 text-[#086288]" />,
       title: {
         uz: "Germaniya, Yaponiya va Shveysariya Materiallari",
         ru: "Материалы из Германии, Японии и Швейцарии",
@@ -162,22 +162,22 @@ const About = () => {
       <nav aria-label="Breadcrumb" className="text-xs sm:text-sm font-semibold text-slate-500 flex items-center gap-2">
         <Link
           to={to("/")}
-          className="hover:text-[#086287] transition-colors"
+          className="hover:text-[#086288] transition-colors"
         >
           {lang === "ru" ? "Главная" : lang === "en" ? "Home" : "Bosh sahifa"}
         </Link>
         <span>/</span>
-        <span className="text-[#086287] font-bold" aria-current="page">
+        <span className="text-[#086288] font-bold" aria-current="page">
           {lang === "ru" ? "О докторе" : lang === "en" ? "About Doctor" : "Dr. Nozima haqida"}
         </span>
       </nav>
 
       {/* Hero Bio Card */}
-      <section className="bg-white rounded-2xl sm:rounded-3xl p-4 sm:p-8 lg:p-12 border border-[#cbe1ec] shadow-sm grid grid-cols-1 lg:grid-cols-12 gap-6 sm:gap-8 lg:gap-12 items-center">
+      <section className="bg-white rounded-2xl sm:rounded-3xl p-4 sm:p-8 lg:p-12 border border-[#D1E4F0] shadow-sm grid grid-cols-1 lg:grid-cols-12 gap-6 sm:gap-8 lg:gap-12 items-center">
         {/* Left Dual Portrait Showcase (5 cols) */}
         <div className="lg:col-span-5">
           <div className="relative max-w-sm mx-auto space-y-3">
-            <div className="rounded-2xl overflow-hidden border border-[#cbe1ec] bg-[#f4f8fb]">
+            <div className="rounded-2xl overflow-hidden border border-[#D1E4F0] bg-[#f4f8fb]">
               <img
                 src={assets.dr_nozima_portrait}
                 alt="Dr. Nozima Baxtiyarovna — Stomatolog va Ortoped Andijon"
@@ -190,7 +190,7 @@ const About = () => {
             </div>
 
             {/* In Clinic Card */}
-            <div className="grid grid-cols-12 gap-3 items-center bg-[#f4f8fb] p-2.5 sm:p-3 rounded-2xl border border-[#cbe1ec]">
+            <div className="grid grid-cols-12 gap-3 items-center bg-[#f4f8fb] p-2.5 sm:p-3 rounded-2xl border border-[#D1E4F0]">
               <img
                 src={assets.dr_nozima_clinic}
                 alt="Dr. Nozima Baxtiyarovna qabulda"
@@ -198,13 +198,13 @@ const About = () => {
                 height={160}
                 loading="lazy"
                 decoding="async"
-                className="col-span-4 w-full h-20 sm:h-24 rounded-xl object-cover object-top border border-[#cbe1ec]"
+                className="col-span-4 w-full h-20 sm:h-24 rounded-xl object-cover object-top border border-[#D1E4F0]"
               />
               <div className="col-span-8 space-y-1">
-                <span className="text-[10px] font-bold uppercase tracking-wider text-[#4d8db9] block">
+                <span className="text-[10px] font-bold uppercase tracking-wider text-[#4D8DBA] block">
                   Andijon · Eski Shahar
                 </span>
-                <p className="text-xs font-bold text-[#086287] leading-snug">
+                <p className="text-xs font-bold text-[#086288] leading-snug">
                   {lang === "uz"
                     ? "Old City (Eski Shahar), 1-qavat"
                     : lang === "ru"
@@ -216,9 +216,9 @@ const About = () => {
                     href={DOCTOR_INFO.telegramUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center gap-1 text-[11px] font-semibold text-[#4d8db9] hover:text-[#086287]"
+                    className="inline-flex items-center gap-1 text-[11px] font-semibold text-[#4D8DBA] hover:text-[#086288]"
                   >
-                    <IconTelegram className="w-3.5 h-3.5 text-[#4d8db9]" />
+                    <IconTelegram className="w-3.5 h-3.5 text-[#4D8DBA]" />
                     <span>{DOCTOR_INFO.telegramHandle}</span>
                   </a>
                   <span className="text-slate-300">·</span>
@@ -226,9 +226,9 @@ const About = () => {
                     href={DOCTOR_INFO.instagramUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center gap-1 text-[11px] font-semibold text-[#086287] hover:text-[#4d8db9]"
+                    className="inline-flex items-center gap-1 text-[11px] font-semibold text-[#086288] hover:text-[#4D8DBA]"
                   >
-                    <IconInstagram className="w-3.5 h-3.5 text-[#086287]" />
+                    <IconInstagram className="w-3.5 h-3.5 text-[#086288]" />
                     <span>{DOCTOR_INFO.instagramHandle}</span>
                   </a>
                 </div>
@@ -239,7 +239,7 @@ const About = () => {
 
         {/* Right Biography Copy (7 cols) */}
         <div className="lg:col-span-7 space-y-4 sm:space-y-5">
-          <p className="text-xs font-bold uppercase tracking-[0.18em] text-[#4d8db9]">
+          <p className="text-xs font-bold uppercase tracking-[0.18em] text-[#4D8DBA]">
             {lang === "uz"
               ? `Stomatolog-Terapevt · Ortoped · ${years} Yillik Tajriba`
               : lang === "ru"
@@ -247,11 +247,11 @@ const About = () => {
               : `Restorative Dentist & Prosthodontist · ${years} Years Experience`}
           </p>
 
-          <h1 className="font-serif-classic text-3xl sm:text-4xl md:text-5xl font-bold text-[#086287] leading-tight">
+          <h1 className="font-serif-classic text-3xl sm:text-4xl md:text-5xl font-bold text-[#086288] leading-tight">
             Dr. Nozima Baxtiyarovna
           </h1>
 
-          <p className="text-sm sm:text-base md:text-lg font-semibold text-[#4d8db9]">
+          <p className="text-sm sm:text-base md:text-lg font-semibold text-[#4D8DBA]">
             {lang === "uz"
               ? "Andijon davlat tibbiyot instituti bitiruvchisi · Vrach-stomatolog, terapevt va ortoped"
               : lang === "ru"
@@ -269,26 +269,26 @@ const About = () => {
 
           {/* Key Metrics Grid */}
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 sm:gap-3 pt-2">
-            <div className="p-2.5 sm:p-4 rounded-xl sm:rounded-2xl bg-[#f4f8fb] border border-[#cbe1ec] text-center">
-              <p className="font-serif-classic text-xl sm:text-2xl lg:text-3xl font-bold text-[#086287]">{years}</p>
+            <div className="p-2.5 sm:p-4 rounded-xl sm:rounded-2xl bg-[#f4f8fb] border border-[#D1E4F0] text-center">
+              <p className="font-serif-classic text-xl sm:text-2xl lg:text-3xl font-bold text-[#086288]">{years}</p>
               <p className="text-[10px] sm:text-xs text-slate-600 font-medium mt-0.5 leading-tight">
                 {lang === "uz" ? "Yil Tajriba" : lang === "ru" ? "Лет Опыта" : "Years Exp."}
               </p>
             </div>
-            <div className="p-2.5 sm:p-4 rounded-xl sm:rounded-2xl bg-[#f4f8fb] border border-[#cbe1ec] text-center">
-              <p className="font-serif-classic text-xl sm:text-2xl lg:text-3xl font-bold text-[#086287]">ADTI</p>
+            <div className="p-2.5 sm:p-4 rounded-xl sm:rounded-2xl bg-[#f4f8fb] border border-[#D1E4F0] text-center">
+              <p className="font-serif-classic text-xl sm:text-2xl lg:text-3xl font-bold text-[#086288]">ADTI</p>
               <p className="text-[10px] sm:text-xs text-slate-600 font-medium mt-0.5 leading-tight">
                 {lang === "uz" ? "Diplomi" : lang === "ru" ? "Диплом АГМИ" : "Medical Degree"}
               </p>
             </div>
-            <div className="p-2.5 sm:p-4 rounded-xl sm:rounded-2xl bg-[#f4f8fb] border border-[#cbe1ec] text-center">
-              <p className="font-serif-classic text-xl sm:text-2xl lg:text-3xl font-bold text-[#086287]">100%</p>
+            <div className="p-2.5 sm:p-4 rounded-xl sm:rounded-2xl bg-[#f4f8fb] border border-[#D1E4F0] text-center">
+              <p className="font-serif-classic text-xl sm:text-2xl lg:text-3xl font-bold text-[#086288]">100%</p>
               <p className="text-[10px] sm:text-xs text-slate-600 font-medium mt-0.5 leading-tight">
                 {lang === "uz" ? "Og'riqsiz" : lang === "ru" ? "Без Боли" : "Painless"}
               </p>
             </div>
-            <div className="p-2.5 sm:p-4 rounded-xl sm:rounded-2xl bg-[#f4f8fb] border border-[#cbe1ec] text-center">
-              <p className="font-serif-classic text-xl sm:text-2xl lg:text-3xl font-bold text-[#4d8db9]">100%</p>
+            <div className="p-2.5 sm:p-4 rounded-xl sm:rounded-2xl bg-[#f4f8fb] border border-[#D1E4F0] text-center">
+              <p className="font-serif-classic text-xl sm:text-2xl lg:text-3xl font-bold text-[#4D8DBA]">100%</p>
               <p className="text-[10px] sm:text-xs text-slate-600 font-medium mt-0.5 leading-tight">
                 {lang === "uz" ? "Steril Asboblar" : lang === "ru" ? "Стерильно" : "Sterile Standard"}
               </p>
@@ -298,7 +298,7 @@ const About = () => {
           <div className="pt-3 flex flex-col sm:flex-row flex-wrap gap-2.5 sm:gap-3">
             <Link
               to={to("/booking")}
-              className="w-full sm:w-auto px-6 py-3.5 rounded-xl bg-[#086287] hover:bg-[#064863] text-white font-semibold text-xs sm:text-sm transition-colors text-center inline-block cursor-pointer"
+              className="w-full sm:w-auto px-6 py-3.5 rounded-xl bg-[#086288] hover:bg-[#064b69] text-white font-semibold text-xs sm:text-sm transition-colors text-center inline-block cursor-pointer"
             >
               {lang === "uz"
                 ? "Dr. Nozima Qabuliga Yozilish →"
@@ -308,9 +308,9 @@ const About = () => {
             </Link>
             <a
               href={DOCTOR_INFO.phoneHref}
-              className="w-full sm:w-auto justify-center px-6 py-3.5 rounded-xl bg-[#f4f8fb] hover:bg-[#e6f1f7] border border-[#cbe1ec] text-[#086287] font-bold text-xs sm:text-sm transition-colors flex items-center gap-2"
+              className="w-full sm:w-auto justify-center px-6 py-3.5 rounded-xl bg-[#f4f8fb] hover:bg-[#e6f1f7] border border-[#D1E4F0] text-[#086288] font-bold text-xs sm:text-sm transition-colors flex items-center gap-2"
             >
-              <IconPhone className="w-4 h-4 text-[#4d8db9]" />
+              <IconPhone className="w-4 h-4 text-[#4D8DBA]" />
               <span>{DOCTOR_INFO.phone}</span>
             </a>
           </div>
@@ -320,10 +320,10 @@ const About = () => {
       {/* 3 Core Clinical Guarantees */}
       <section>
         <div className="text-center max-w-2xl mx-auto mb-8">
-          <p className="text-xs font-bold uppercase tracking-[0.18em] text-[#4d8db9]">
+          <p className="text-xs font-bold uppercase tracking-[0.18em] text-[#4D8DBA]">
             {lang === "uz" ? "Kafolat va Xavfsizlik" : lang === "ru" ? "Гарантия и Безопасность" : "Safety & Warranty"}
           </p>
-          <h2 className="mt-1.5 font-serif-classic text-2xl sm:text-3xl md:text-4xl font-bold text-[#086287]">
+          <h2 className="mt-1.5 font-serif-classic text-2xl sm:text-3xl md:text-4xl font-bold text-[#086288]">
             {lang === "uz"
               ? "Klinikamizning 3 Asosiy Qoidasi"
               : lang === "ru"
@@ -336,12 +336,12 @@ const About = () => {
           {values.map((v, i) => (
             <div
               key={i}
-              className="bg-white rounded-2xl sm:rounded-3xl p-5 sm:p-7 border border-[#cbe1ec] shadow-sm space-y-3"
+              className="bg-white rounded-2xl sm:rounded-3xl p-5 sm:p-7 border border-[#D1E4F0] shadow-sm space-y-3"
             >
-              <div className="w-12 h-12 rounded-2xl bg-[#f4f8fb] border border-[#cbe1ec] flex items-center justify-center">
+              <div className="w-12 h-12 rounded-2xl bg-[#f4f8fb] border border-[#D1E4F0] flex items-center justify-center">
                 {v.icon}
               </div>
-              <h3 className="text-base sm:text-lg font-bold text-[#086287]">
+              <h3 className="text-base sm:text-lg font-bold text-[#086288]">
                 {v.title[lang]}
               </h3>
               <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
@@ -353,8 +353,8 @@ const About = () => {
       </section>
 
       {/* Career & Education Timeline */}
-      <section className="bg-white rounded-2xl sm:rounded-3xl p-4 sm:p-8 lg:p-10 border border-[#cbe1ec] shadow-sm">
-        <h2 className="font-serif-classic text-2xl sm:text-3xl font-bold text-[#086287] mb-5 sm:mb-6">
+      <section className="bg-white rounded-2xl sm:rounded-3xl p-4 sm:p-8 lg:p-10 border border-[#D1E4F0] shadow-sm">
+        <h2 className="font-serif-classic text-2xl sm:text-3xl font-bold text-[#086288] mb-5 sm:mb-6">
           {lang === "uz"
             ? "Kasbiy Faoliyat va Malaka Bosqichlari"
             : lang === "ru"
@@ -366,13 +366,13 @@ const About = () => {
           {timeline.map((item, idx) => (
             <div
               key={idx}
-              className="flex flex-col sm:flex-row sm:items-start gap-3 sm:gap-4 p-4 sm:p-5 rounded-xl sm:rounded-2xl bg-[#f4f8fb] border border-[#cbe1ec]"
+              className="flex flex-col sm:flex-row sm:items-start gap-3 sm:gap-4 p-4 sm:p-5 rounded-xl sm:rounded-2xl bg-[#f4f8fb] border border-[#D1E4F0]"
             >
-              <span className="inline-block px-3 py-1 rounded-lg bg-[#086287] text-white text-xs font-semibold shrink-0 self-start">
+              <span className="inline-block px-3 py-1 rounded-lg bg-[#086288] text-white text-xs font-semibold shrink-0 self-start">
                 {typeof item.year === "object" ? item.year[lang] : item.year}
               </span>
               <div>
-                <h3 className="text-sm sm:text-base md:text-lg font-bold text-[#086287]">
+                <h3 className="text-sm sm:text-base md:text-lg font-bold text-[#086288]">
                   {item.title[lang]}
                 </h3>
                 <p className="mt-1 text-xs sm:text-sm text-slate-600 leading-relaxed">

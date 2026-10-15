@@ -167,7 +167,7 @@ const SmileAssessmentWizard = () => {
         
         {/* Header */}
         <div className="text-center max-w-2xl mx-auto mb-6 sm:mb-8">
-          <span className="inline-flex items-center gap-1.5 text-xs font-black uppercase tracking-widest text-[#086287] px-3.5 py-1.5 rounded-full bg-blue-50 border border-blue-200/70 mb-2.5">
+          <span className="inline-flex items-center gap-1.5 text-xs font-black uppercase tracking-widest text-[#086288] px-3.5 py-1.5 rounded-full bg-blue-50 border border-blue-200/70 mb-2.5">
             <IconSparkleStar className="w-3.5 h-3.5 text-[#0284c7]" />
             <span>
               {lang === "uz"
@@ -188,7 +188,7 @@ const SmileAssessmentWizard = () => {
             {lang === "uz"
               ? "Holatingizni tanlang va Dr. Nozima Baxtiyarovnaning klinik tavsiyasi hamda davolash vaqti bilan tanishing."
               : lang === "ru"
-              ? "Выберите вашу ситуацию и получите персональную клиническую рекомендацию от Д-ра Нозимы Мурзажанова."
+              ? "Выберите вашу ситуацию и получите персональную клиническую рекомендацию от Д-ра Нозимы Бахтияровны."
               : "Select your symptom below to see Dr. Nozima Baxtiyarovna's clinical protocol and expected visit duration."}
           </p>
         </div>
@@ -214,7 +214,7 @@ const SmileAssessmentWizard = () => {
                   onClick={() => setSelectedConcern(item.id)}
                   className={`p-3 sm:p-4 rounded-xl sm:rounded-2xl border text-left transition-all duration-200 flex items-center gap-2.5 sm:gap-3.5 cursor-pointer ${
                     isSelected
-                      ? "bg-gradient-to-r from-[#086287] to-[#0284c7] text-white border-transparent shadow-lg shadow-blue-950/20"
+                      ? "bg-gradient-to-r from-[#086288] to-[#0284c7] text-white border-transparent shadow-lg shadow-blue-950/20"
                       : "bg-slate-50/80 hover:bg-blue-50/40 text-slate-800 border-slate-200/90 hover:border-blue-300"
                   }`}
                 >
@@ -222,7 +222,7 @@ const SmileAssessmentWizard = () => {
                     className={`w-8 h-8 sm:w-10 sm:h-10 rounded-lg sm:rounded-xl flex items-center justify-center shrink-0 ${
                       isSelected
                         ? "bg-white/20 text-white"
-                        : "bg-white text-[#086287] border border-slate-200/80 shadow-2xs"
+                        : "bg-white text-[#086288] border border-slate-200/80 shadow-2xs"
                     }`}
                   >
                     {item.icon}
@@ -256,7 +256,7 @@ const SmileAssessmentWizard = () => {
           >
             <div>
               <div className="flex flex-wrap items-center justify-between gap-2 pb-4 border-b border-slate-200/80">
-                <span className="text-[11px] font-black uppercase tracking-widest text-[#086287] bg-blue-100/80 px-3 py-1 rounded-full">
+                <span className="text-[11px] font-black uppercase tracking-widest text-[#086288] bg-blue-100/80 px-3 py-1 rounded-full">
                   {lang === "uz"
                     ? "DR. NOZIMA TAVSIYASI"
                     : lang === "ru"
@@ -326,7 +326,7 @@ const SmileAssessmentWizard = () => {
                   value={patientName}
                   onChange={(e) => setPatientName(e.target.value)}
                   placeholder={lang === "uz" ? "Ismingiz" : lang === "ru" ? "Ваше имя" : "Your name"}
-                  className="px-3.5 py-2.5 rounded-xl bg-white border border-slate-200 text-xs font-semibold text-slate-900 focus:outline-none focus:border-[#086287]"
+                  className="px-3.5 py-2.5 rounded-xl bg-white border border-slate-200 text-xs font-semibold text-slate-900 focus:outline-none focus:border-[#086288]"
                 />
                 <label htmlFor="wizard-phone" className="sr-only">
                   {lang === "uz" ? "Telefon raqamingiz" : lang === "ru" ? "Номер телефона" : "Phone number"}
@@ -340,11 +340,11 @@ const SmileAssessmentWizard = () => {
                   value={patientPhone}
                   onChange={(e) => setPatientPhone(e.target.value)}
                   placeholder="+998 (94) ..."
-                  className="px-3.5 py-2.5 rounded-xl bg-white border border-slate-200 text-xs font-semibold text-slate-900 focus:outline-none focus:border-[#086287]"
+                  className="px-3.5 py-2.5 rounded-xl bg-white border border-slate-200 text-xs font-semibold text-slate-900 focus:outline-none focus:border-[#086288]"
                 />
                 <button
                   type="submit"
-                  className="py-2.5 px-4 rounded-xl bg-[#086287] hover:bg-[#064863] text-white font-bold text-xs shadow-md transition-all cursor-pointer"
+                  className="py-2.5 px-4 rounded-xl bg-[#086288] hover:bg-[#064b69] text-white font-bold text-xs shadow-md transition-all cursor-pointer"
                 >
                   {lang === "uz" ? "Vaqt tanlash →" : lang === "ru" ? "Выбрать время →" : "Pick Time →"}
                 </button>

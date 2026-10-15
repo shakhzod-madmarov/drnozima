@@ -195,7 +195,7 @@ const PatientCareGuides = () => {
         
         {/* Header */}
         <div className="text-center max-w-2xl mx-auto mb-6 sm:mb-8">
-          <span className="inline-flex items-center gap-1.5 text-xs font-black uppercase tracking-widest text-[#086287] px-3.5 py-1.5 rounded-full bg-blue-50 border border-blue-200/70 mb-2.5">
+          <span className="inline-flex items-center gap-1.5 text-xs font-black uppercase tracking-widest text-[#086288] px-3.5 py-1.5 rounded-full bg-blue-50 border border-blue-200/70 mb-2.5">
             <IconShieldCheck className="w-3.5 h-3.5 text-[#0284c7]" />
             <span>
               {lang === "uz"
@@ -216,7 +216,7 @@ const PatientCareGuides = () => {
             {lang === "uz"
               ? "Dr. Nozima Baxtiyarovna tomonidan tayyorlangan muolajadan keyingi tez bitish va uzoq yillik natija qoidalari."
               : lang === "ru"
-              ? "Клинические рекомендации Д-ра Нозимы Мурзажанова для быстрого заживления и сохранения результата на долгие годы."
+              ? "Клинические рекомендации Д-ра Нозимы Бахтияровны для быстрого заживления и сохранения результата на долгие годы."
               : "Clinical instructions prepared by Dr. Nozima Baxtiyarovna for rapid recovery and lasting dental results."}
           </p>
         </div>
@@ -240,8 +240,8 @@ const PatientCareGuides = () => {
                 onClick={() => setActiveId(g.id)}
                 className={`px-3 py-2 sm:px-4 sm:py-2.5 rounded-xl sm:rounded-2xl text-xs sm:text-sm font-bold inline-flex items-center gap-1.5 sm:gap-2 transition-all cursor-pointer border ${
                   isSelected
-                    ? "bg-[#086287] text-white border-[#086287] shadow-md shadow-blue-950/20"
-                    : "bg-slate-50 text-slate-700 border-slate-200 hover:border-blue-300 hover:text-[#086287]"
+                    ? "bg-[#086288] text-white border-[#086288] shadow-md shadow-blue-950/20"
+                    : "bg-slate-50 text-slate-700 border-slate-200 hover:border-blue-300 hover:text-[#086288]"
                 }`}
               >
                 {g.icon}
@@ -262,7 +262,7 @@ const PatientCareGuides = () => {
             <h3 className="text-base sm:text-xl md:text-2xl font-black text-slate-900">
               {current.title[lang]}
             </h3>
-            <span className="inline-flex items-center gap-1.5 text-[11px] sm:text-xs font-bold text-[#086287] bg-blue-50 px-2.5 sm:px-3 py-1 rounded-full border border-blue-200">
+            <span className="inline-flex items-center gap-1.5 text-[11px] sm:text-xs font-bold text-[#086288] bg-blue-50 px-2.5 sm:px-3 py-1 rounded-full border border-blue-200">
               <IconClock className="w-3.5 h-3.5 text-[#0284c7]" />
               <span>Dr. Nozima Baxtiyarovna · Sevdo Denta</span>
             </span>

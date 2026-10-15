@@ -41,7 +41,7 @@ const FaqAccordion = () => {
                 key={idx}
                 className={`rounded-xl border transition-colors duration-150 ${
                   isOpen
-                    ? "bg-[#f2f6fa] border-[#285983]"
+                    ? "bg-[#F4F8FB] border-[#285983]"
                     : "bg-white border-[#d5e0ec] hover:bg-[#f7f9fc]"
                 }`}
               >
@@ -61,7 +61,7 @@ const FaqAccordion = () => {
                     className={`w-6 h-6 sm:w-7 sm:h-7 rounded-lg flex items-center justify-center text-sm font-bold shrink-0 transition-transform duration-200 ${
                       isOpen
                         ? "bg-[#132e53] text-white rotate-45"
-                        : "bg-[#f2f6fa] text-[#132e53] border border-[#d5e0ec]"
+                        : "bg-[#F4F8FB] text-[#132e53] border border-[#d5e0ec]"
                     }`}
                   >
                     +

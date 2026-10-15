@@ -63,7 +63,7 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="bg-[#042433] text-slate-300 pt-14 pb-10 border-t border-[#086287]/40 mt-16">
+    <footer className="bg-[#042433] text-slate-300 pt-14 pb-10 border-t border-[#086288]/40 mt-16">
       <div className="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8">
         {/* Top Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-8 lg:gap-10 pb-12 border-b border-white/10">
@@ -72,7 +72,7 @@ const Footer = () => {
             <Link
               to={to("/")}
               aria-label="Dr. Nozima Baxtiyarovna - Bosh sahifa"
-              className="inline-block cursor-pointer focus:outline-none focus:ring-2 focus:ring-[#97d6ff] rounded-lg"
+              className="inline-block cursor-pointer focus:outline-none focus:ring-2 focus:ring-[#97D7FF] rounded-lg"
             >
               <Logo className="h-10" inverted={true} />
             </Link>
@@ -87,13 +87,13 @@ const Footer = () => {
 
             <div className="flex flex-wrap gap-2 pt-1">
               <span className="inline-flex items-center gap-1.5 text-[11px] font-semibold px-3 py-1 rounded-md bg-white/10 text-white border border-white/15">
-                <IconShieldCheck className="w-3.5 h-3.5 text-[#97d6ff]" />
+                <IconShieldCheck className="w-3.5 h-3.5 text-[#97D7FF]" />
                 <span>
                   {lang === "uz" ? "100% Steril va Og'riqsiz" : lang === "ru" ? "100% Стерильно и Без Боли" : "100% Sterile & Painless"}
                 </span>
               </span>
-              <span className="inline-flex items-center gap-1.5 text-[11px] font-semibold px-3 py-1 rounded-md bg-[#086287]/40 text-white border border-[#086287]/60">
-                <IconAward className="w-3.5 h-3.5 text-[#97d6ff]" />
+              <span className="inline-flex items-center gap-1.5 text-[11px] font-semibold px-3 py-1 rounded-md bg-[#086288]/40 text-white border border-[#086288]/60">
+                <IconAward className="w-3.5 h-3.5 text-[#97D7FF]" />
                 <span>{getExperienceBadge(lang)}</span>
               </span>
             </div>
@@ -101,7 +101,7 @@ const Footer = () => {
 
           {/* Column 2: Quick Navigation (2 cols) */}
           <div className="lg:col-span-2 space-y-3">
-            <p className="text-xs font-bold uppercase tracking-[0.16em] text-[#97d6ff]">
+            <p className="text-xs font-bold uppercase tracking-[0.16em] text-[#97D7FF]">
               {lang === "uz" ? "Sahifalar" : lang === "ru" ? "Навигация" : "Navigation"}
             </p>
             <ul className="space-y-2.5 text-xs sm:text-sm">
@@ -120,7 +120,7 @@ const Footer = () => {
 
           {/* Column 3: Main Dental Services (3 cols) */}
           <div className="lg:col-span-3 space-y-3">
-            <p className="text-xs font-bold uppercase tracking-[0.16em] text-[#97d6ff]">
+            <p className="text-xs font-bold uppercase tracking-[0.16em] text-[#97D7FF]">
               {lang === "uz" ? "Asosiy Xizmatlar" : lang === "ru" ? "Основные Услуги" : "Core Specialties"}
             </p>
             <ul className="space-y-2.5 text-xs sm:text-sm">
@@ -139,24 +139,24 @@ const Footer = () => {
 
           {/* Column 4: Contact & Clinic Info (3 cols) */}
           <div className="lg:col-span-3 space-y-3">
-            <p className="text-xs font-bold uppercase tracking-[0.16em] text-[#97d6ff]">
+            <p className="text-xs font-bold uppercase tracking-[0.16em] text-[#97D7FF]">
               {lang === "uz" ? "Manzil va Aloqa" : lang === "ru" ? "Адрес и Контакты" : "Clinic & Contact"}
             </p>
 
             <div className="space-y-2.5 text-xs sm:text-sm text-slate-300/90">
               <p className="flex items-start gap-2.5">
-                <IconLocationPin className="w-4 h-4 text-[#97d6ff] shrink-0 mt-0.5" />
+                <IconLocationPin className="w-4 h-4 text-[#97D7FF] shrink-0 mt-0.5" />
                 <span>{PRIMARY_CLINIC.address[lang]}</span>
               </p>
               <p className="flex items-start gap-2.5">
-                <IconClock className="w-4 h-4 text-[#97d6ff] shrink-0 mt-0.5" />
+                <IconClock className="w-4 h-4 text-[#97D7FF] shrink-0 mt-0.5" />
                 <span>{hoursDisplay}</span>
               </p>
               <p className="flex items-center gap-2.5">
-                <IconPhone className="w-4 h-4 text-[#97d6ff] shrink-0" />
+                <IconPhone className="w-4 h-4 text-[#97D7FF] shrink-0" />
                 <a
                   href={DOCTOR_INFO.phoneHref}
-                  className="text-white font-bold hover:text-[#97d6ff] transition-colors"
+                  className="text-white font-bold hover:text-[#97D7FF] transition-colors"
                 >
                   {DOCTOR_INFO.phone}
                 </a>
@@ -168,7 +168,7 @@ const Footer = () => {
                 href={DOCTOR_INFO.telegramUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-white/10 hover:bg-[#086287] text-xs font-semibold text-white border border-white/15 transition-colors"
+                className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-white/10 hover:bg-[#086288] text-xs font-semibold text-white border border-white/15 transition-colors"
               >
                 <IconTelegram className="w-3.5 h-3.5 text-white" />
                 <span>Telegram</span>
@@ -177,7 +177,7 @@ const Footer = () => {
                 href={DOCTOR_INFO.instagramUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-white/10 hover:bg-[#086287] text-xs font-semibold text-white border border-white/15 transition-colors"
+                className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-white/10 hover:bg-[#086288] text-xs font-semibold text-white border border-white/15 transition-colors"
               >
                 <IconInstagram className="w-3.5 h-3.5 text-white" />
                 <span>Instagram</span>
@@ -186,7 +186,7 @@ const Footer = () => {
                 href={PRIMARY_CLINIC.maps.yandex}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-white/10 hover:bg-[#086287] text-xs font-semibold text-white border border-white/15 transition-colors"
+                className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-white/10 hover:bg-[#086288] text-xs font-semibold text-white border border-white/15 transition-colors"
               >
                 <IconYandex className="w-3.5 h-3.5" />
                 <span>Yandex Map</span>
@@ -195,7 +195,7 @@ const Footer = () => {
                 href={PRIMARY_CLINIC.maps.google}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-white/10 hover:bg-[#086287] text-xs font-semibold text-white border border-white/15 transition-colors"
+                className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-white/10 hover:bg-[#086288] text-xs font-semibold text-white border border-white/15 transition-colors"
               >
                 <IconGoogle className="w-3.5 h-3.5" />
                 <span>Google Map</span>

@@ -69,7 +69,7 @@ const AppShell = () => {
     <div className="flex flex-col min-h-screen w-full bg-[#f7f9fc] text-slate-900">
       <a
         href="#main-content"
-        className="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-50 focus:px-4 focus:py-2.5 focus:bg-[#086287] focus:text-white focus:rounded-xl focus:shadow-2xl focus:outline-none focus:ring-2 focus:ring-[#4d8db9] text-sm font-bold"
+        className="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-50 focus:px-4 focus:py-2.5 focus:bg-[#086288] focus:text-white focus:rounded-xl focus:shadow-2xl focus:outline-none focus:ring-2 focus:ring-[#4D8DBA] text-sm font-bold"
       >
         {skipLabel}
       </a>
@@ -81,7 +81,7 @@ const AppShell = () => {
         autoClose={4000}
         hideProgressBar={false}
         theme="dark"
-        toastStyle={{ background: "#063c54", borderLeft: "4px solid #086287" }}
+        toastStyle={{ background: "#063c54", borderLeft: "4px solid #086288" }}
       />
 
       <Nav onOpenBooking={() => openBooking()} />

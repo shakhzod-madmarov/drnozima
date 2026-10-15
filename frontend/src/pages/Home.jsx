@@ -13,6 +13,7 @@ import Seo from "../components/Seo";
 import InlineBookingSection from "../components/InlineBookingSection";
 import ClinicLocationMap from "../components/ClinicLocationMap";
 import FaqAccordion from "../components/FaqAccordion";
+import DentalSticker from "../components/DentalSticker";
 import { FAQ_ITEMS } from "../constants/faq";
 import { buildFaqSchema } from "../utils/structuredData";
 import {
@@ -62,7 +63,7 @@ const HeroSection = () => {
     uz: {
       badge: "Vrach-Stomatolog · Andijon",
       doctorName: "Dr. Nozima Baxtiyarovna",
-      specialtyTitle: "Stomatolog-Terapevt · Ortoped · Implantolog",
+      specialtyTitle: "Stomatolog-Terapevt · Ortoped",
       headline: "Tabiiy va Sog'lom Tabassum Uchun Ehtiyotkor va Og'riqsiz Stomatologiya",
       subtitle:
         "Andijon shahrida sifatli va og'riqsiz tish davolash, tishlarni plombalash, karonka qo'yish hamda har bir bemorga samimiy e'tibor va maslahat.",
@@ -81,7 +82,7 @@ const HeroSection = () => {
     ru: {
       badge: "Врач-Стоматолог · Андижан",
       doctorName: "Д-р Нозима Бахтияровна",
-      specialtyTitle: "Стоматолог-Терапевт · Ортопед · Имплантолог",
+      specialtyTitle: "Стоматолог-Терапевт · Ортопед",
       headline: "Бережная и Безболезненная Стоматология для Здоровой Улыбки",
       subtitle:
         "Качественное и комфортное лечение зубов в Андижане, надёжное пломбирование, протезирование и внимательное отношение к каждому пациенту.",
@@ -100,7 +101,7 @@ const HeroSection = () => {
     en: {
       badge: "Dental Surgeon · Andijan",
       doctorName: "Dr. Nozima Baxtiyarovna",
-      specialtyTitle: "Restorative Dentist · Prosthodontist · Implantologist",
+      specialtyTitle: "Restorative Dentist · Prosthodontist",
       headline: "Gentle & 100% Painless Dental Care for Your Natural Smile",
       subtitle:
         "Dedicated, attentive dental care in Andijan: cavity treatments, restorative crowns, and gentle dental checkups.",
@@ -120,16 +121,16 @@ const HeroSection = () => {
   const t = T[lang] || T.uz;
 
   return (
-    <section className="relative overflow-hidden rounded-3xl bg-white border border-[#cbe1ec] shadow-sm mt-3">
+    <section className="relative overflow-hidden rounded-3xl bg-white border border-[#D1E4F0] shadow-sm mt-3">
       {/* Editorial Accent Strip */}
-      <div className="h-1.5 w-full bg-gradient-to-r from-[#086287] via-[#4d8db9] to-[#086287]" />
+      <div className="h-1.5 w-full bg-gradient-to-r from-[#086288] via-[#4D8DBA] to-[#086288]" />
 
       <div className="p-4 sm:p-8 lg:p-12 grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
         {/* Left Editorial Copy (7 cols) */}
         <div className="lg:col-span-7 space-y-5 sm:space-y-6 text-left">
           {/* Status Badges */}
           <div className="flex flex-wrap items-center gap-2">
-            <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#086287]/5 border border-[#086287]/15 text-xs font-bold uppercase tracking-wider text-[#086287]">
+            <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#086288]/5 border border-[#086288]/15 text-xs font-bold uppercase tracking-wider text-[#086288]">
               <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
               {t.badge}
             </span>
@@ -137,19 +138,19 @@ const HeroSection = () => {
               href={PRIMARY_CLINIC.maps.yandex}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#f2f6fa] hover:bg-[#e4edf5] border border-[#cbe1ec] text-xs font-medium text-slate-700 transition-colors"
+              className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#F4F8FB] hover:bg-[#E6F1F7] border border-[#D1E4F0] text-xs font-medium text-slate-700 transition-colors"
             >
-              <IconLocationPin className="w-3.5 h-3.5 text-[#4d8db9] shrink-0" />
+              <IconLocationPin className="w-3.5 h-3.5 text-[#4D8DBA] shrink-0" />
               <span>{t.clinicLocationText}</span>
             </a>
           </div>
 
           {/* Doctor Title & Headline */}
           <div className="space-y-2">
-            <p className="text-xs sm:text-sm font-bold uppercase tracking-[0.18em] text-[#4d8db9]">
+            <p className="text-xs sm:text-sm font-bold uppercase tracking-[0.18em] text-[#4D8DBA]">
               {t.specialtyTitle}
             </p>
-            <h1 className="font-serif-classic text-3xl sm:text-4xl md:text-5xl lg:text-[54px] font-bold text-[#086287] leading-[1.12]">
+            <h1 className="font-serif-classic text-3xl sm:text-4xl md:text-5xl lg:text-[54px] font-bold text-[#086288] leading-[1.12]">
               {t.doctorName}
             </h1>
             <p className="pt-1 text-base sm:text-xl font-bold text-slate-800 leading-snug max-w-2xl">
@@ -167,7 +168,7 @@ const HeroSection = () => {
             <button
               type="button"
               onClick={() => scrollToBooking("tish-davolash")}
-              className="px-6 py-3.5 rounded-xl bg-[#086287] hover:bg-[#4d8db9] text-white font-semibold text-xs sm:text-sm shadow-sm transition-all duration-200 flex items-center justify-center gap-2 cursor-pointer"
+              className="px-6 py-3.5 rounded-xl bg-[#086288] hover:bg-[#4D8DBA] text-white font-semibold text-xs sm:text-sm shadow-sm transition-all duration-200 flex items-center justify-center gap-2 cursor-pointer"
             >
               <span>{t.ctaBook}</span>
               <span>↓</span>
@@ -175,24 +176,24 @@ const HeroSection = () => {
 
             <a
               href={DOCTOR_INFO.phoneHref}
-              className="px-5 py-3.5 rounded-xl bg-[#f2f6fa] hover:bg-[#e4edf5] border border-[#cbe1ec] text-[#086287] font-bold text-xs sm:text-sm transition-colors flex items-center justify-center gap-2"
+              className="px-5 py-3.5 rounded-xl bg-[#F4F8FB] hover:bg-[#E6F1F7] border border-[#D1E4F0] text-[#086288] font-bold text-xs sm:text-sm transition-colors flex items-center justify-center gap-2"
             >
-              <IconPhone className="w-4 h-4 text-[#4d8db9] shrink-0" />
+              <IconPhone className="w-4 h-4 text-[#4D8DBA] shrink-0" />
               <span>{DOCTOR_INFO.phone}</span>
             </a>
 
             <Link
               to={to("/services")}
-              className="px-4 py-3.5 rounded-xl text-[#4d8db9] hover:text-[#086287] hover:bg-[#f2f6fa] font-semibold text-xs sm:text-sm transition-colors inline-flex items-center justify-center text-center"
+              className="px-4 py-3.5 rounded-xl text-[#4D8DBA] hover:text-[#086288] hover:bg-[#F4F8FB] font-semibold text-xs sm:text-sm transition-colors inline-flex items-center justify-center text-center"
             >
               {t.ctaServices} →
             </Link>
           </div>
 
           {/* Key Metrics Row */}
-          <div className="pt-5 sm:pt-6 border-t border-[#e2eaf2] grid grid-cols-3 divide-x divide-[#e2eaf2] text-center sm:text-left max-w-xl">
+          <div className="pt-5 sm:pt-6 border-t border-[#D1E4F0] grid grid-cols-3 divide-x divide-[#D1E4F0] text-center sm:text-left max-w-xl">
             <div className="pr-2 sm:pr-6">
-              <p className="font-serif-classic text-xl sm:text-2xl lg:text-3xl font-bold text-[#086287]">
+              <p className="font-serif-classic text-xl sm:text-2xl lg:text-3xl font-bold text-[#086288]">
                 {t.stat1Num}
               </p>
               <p className="text-[10px] sm:text-xs text-slate-600 font-medium mt-0.5 leading-tight">
@@ -200,7 +201,7 @@ const HeroSection = () => {
               </p>
             </div>
             <div className="px-2 sm:px-6">
-              <p className="font-serif-classic text-xl sm:text-2xl lg:text-3xl font-bold text-[#086287]">
+              <p className="font-serif-classic text-xl sm:text-2xl lg:text-3xl font-bold text-[#086288]">
                 {t.stat2Num}
               </p>
               <p className="text-[10px] sm:text-xs text-slate-600 font-medium mt-0.5 leading-tight">
@@ -208,7 +209,7 @@ const HeroSection = () => {
               </p>
             </div>
             <div className="pl-2 sm:pl-6">
-              <p className="font-serif-classic text-xl sm:text-2xl lg:text-3xl font-bold text-[#4d8db9]">
+              <p className="font-serif-classic text-xl sm:text-2xl lg:text-3xl font-bold text-[#4D8DBA]">
                 {t.stat3Num}
               </p>
               <p className="text-[10px] sm:text-xs text-slate-600 font-medium mt-0.5 leading-tight">
@@ -220,9 +221,9 @@ const HeroSection = () => {
 
         {/* Right Portrait Column (5 cols) */}
         <div className="lg:col-span-5">
-          <div className="max-w-[400px] mx-auto bg-[#f8fafc] p-2.5 sm:p-4 rounded-2xl sm:rounded-3xl border border-[#cbe1ec]">
+          <div className="max-w-[400px] mx-auto bg-[#f8fafc] p-2.5 sm:p-4 rounded-2xl sm:rounded-3xl border border-[#D1E4F0]">
             {/* Image Frame */}
-            <div className="relative rounded-2xl overflow-hidden bg-white border border-[#cbe1ec] aspect-[4/4.4]">
+            <div className="relative rounded-2xl overflow-hidden bg-white border border-[#D1E4F0] aspect-[4/4.4]">
               <img
                 src={
                   activePhoto === "studio"
@@ -236,6 +237,21 @@ const HeroSection = () => {
                 decoding="async"
                 className="w-full h-full object-cover object-top transition-opacity duration-300"
               />
+              <div className="absolute top-2.5 right-2.5 sm:top-3 sm:right-3 z-10">
+                <DentalSticker
+                  variant="tooth-sparkle"
+                  color="primary"
+                  size="sm"
+                  sublabel="ADTI · 7 YIL"
+                  label={
+                    lang === "ru"
+                      ? "100% Без Боли"
+                      : lang === "en"
+                      ? "100% Painless"
+                      : "100% Og'riqsiz"
+                  }
+                />
+              </div>
             </div>
 
             {/* Sub-bar with Doctor Name & Photo Switcher */}
@@ -249,10 +265,10 @@ const HeroSection = () => {
                   className="w-8 h-8 object-contain shrink-0"
                 />
                 <div>
-                  <p className="font-serif-classic text-base font-bold text-[#086287] leading-none">
+                  <p className="font-serif-classic text-base font-bold text-[#086288] leading-none">
                     Nozima Baxtiyarovna
                   </p>
-                  <p className="text-[11px] font-medium text-[#4d8db9] mt-0.5">
+                  <p className="text-[11px] font-medium text-[#4D8DBA] mt-0.5">
                     {getExperienceBadge(lang)}
                   </p>
                 </div>
@@ -262,7 +278,7 @@ const HeroSection = () => {
               <div
                 role="tablist"
                 aria-label="Surat tanlash"
-                className="inline-flex bg-white p-0.5 rounded-lg border border-[#cbe1ec]"
+                className="inline-flex bg-white p-0.5 rounded-lg border border-[#D1E4F0]"
               >
                 <button
                   type="button"
@@ -271,8 +287,8 @@ const HeroSection = () => {
                   onClick={() => setActivePhoto("studio")}
                   className={`px-2.5 py-1 rounded-md text-[10px] font-semibold transition-colors cursor-pointer ${
                     activePhoto === "studio"
-                      ? "bg-[#086287] text-white"
-                      : "text-slate-600 hover:text-[#086287]"
+                      ? "bg-[#086288] text-white"
+                      : "text-slate-600 hover:text-[#086288]"
                   }`}
                 >
                   {t.photo1Tab}
@@ -284,8 +300,8 @@ const HeroSection = () => {
                   onClick={() => setActivePhoto("clinic")}
                   className={`px-2.5 py-1 rounded-md text-[10px] font-semibold transition-colors cursor-pointer ${
                     activePhoto === "clinic"
-                      ? "bg-[#086287] text-white"
-                      : "text-slate-600 hover:text-[#086287]"
+                      ? "bg-[#086288] text-white"
+                      : "text-slate-600 hover:text-[#086288]"
                   }`}
                 >
                   {t.photo2Tab}
@@ -307,7 +323,7 @@ const ClinicalPillars = () => {
 
   const pillars = [
     {
-      icon: <IconToothCrown className="w-6 h-6 text-[#086287]" />,
+      icon: <IconToothCrown className="w-6 h-6 text-[#086288]" />,
       badge: { uz: "EHTIYOTKOR YONDASHUV", ru: "БЕРЕЖНЫЙ ПОДХОД", en: "CARE & QUALITY" },
       title: {
         uz: "Tishlarni Maksimal Asrab Qolish",
@@ -321,7 +337,7 @@ const ClinicalPillars = () => {
       },
     },
     {
-      icon: <IconShieldCheck className="w-6 h-6 text-[#086287]" />,
+      icon: <IconShieldCheck className="w-6 h-6 text-[#086288]" />,
       badge: { uz: "TOZALIK VA GIGIYENA", ru: "ЧИСТОТА И ГИГИЕНА", en: "CLEAN & SAFE" },
       title: {
         uz: "Toza va Xavfsiz Muolaja",
@@ -335,7 +351,7 @@ const ClinicalPillars = () => {
       },
     },
     {
-      icon: <IconSparkleStar className="w-6 h-6 text-[#086287]" />,
+      icon: <IconSparkleStar className="w-6 h-6 text-[#086288]" />,
       badge: { uz: "OG'RIQSIZ VA MULOYIM", ru: "БЕЗ БОЛИ И СТРАХА", en: "GENTLE & PAINLESS" },
       title: {
         uz: "Og'riqsiz va Xotirjam Qabul",
@@ -353,14 +369,14 @@ const ClinicalPillars = () => {
   return (
     <section className="py-8 sm:py-12">
       <div className="text-center max-w-2xl mx-auto mb-8">
-        <p className="text-xs font-bold uppercase tracking-[0.18em] text-[#4d8db9]">
+        <p className="text-xs font-bold uppercase tracking-[0.18em] text-[#4D8DBA]">
           {lang === "uz"
             ? "Klinik Standartlarimiz"
             : lang === "ru"
             ? "Клинические Стандарты"
             : "Clinical Standards"}
         </p>
-        <h2 className="mt-2 font-serif-classic text-3xl sm:text-4xl font-bold text-[#086287]">
+        <h2 className="mt-2 font-serif-classic text-3xl sm:text-4xl font-bold text-[#086288]">
           {lang === "uz"
             ? "Yuqori Sifat, Halollik va Og'riqsiz Davolash"
             : lang === "ru"
@@ -373,19 +389,19 @@ const ClinicalPillars = () => {
         {pillars.map((p, idx) => (
           <div
             key={idx}
-            className="bg-white rounded-3xl p-6 sm:p-7 border border-[#cbe1ec] shadow-sm flex flex-col justify-between hover:border-[#4d8db9] transition-colors"
+            className="bg-white rounded-3xl p-6 sm:p-7 border border-[#D1E4F0] shadow-sm flex flex-col justify-between hover:border-[#4D8DBA] transition-colors"
           >
             <div>
               <div className="flex items-center justify-between mb-5">
-                <div className="w-12 h-12 rounded-2xl bg-[#f2f6fa] border border-[#cbe1ec] flex items-center justify-center">
+                <div className="w-12 h-12 rounded-2xl bg-[#F4F8FB] border border-[#D1E4F0] flex items-center justify-center">
                   {p.icon}
                 </div>
-                <span className="text-[10px] font-bold uppercase tracking-wider px-3 py-1 rounded-full bg-[#f2f6fa] text-[#4d8db9] border border-[#cbe1ec]">
+                <span className="text-[10px] font-bold uppercase tracking-wider px-3 py-1 rounded-full bg-[#F4F8FB] text-[#4D8DBA] border border-[#D1E4F0]">
                   {p.badge[lang]}
                 </span>
               </div>
 
-              <h3 className="text-lg font-bold text-[#086287] mb-2">
+              <h3 className="text-lg font-bold text-[#086288] mb-2">
                 {p.title[lang]}
               </h3>
               <p className="text-sm text-slate-600 leading-relaxed">
@@ -393,9 +409,9 @@ const ClinicalPillars = () => {
               </p>
             </div>
 
-            <div className="mt-6 pt-4 border-t border-slate-100 flex items-center justify-between text-xs font-semibold text-[#4d8db9]">
+            <div className="mt-6 pt-4 border-t border-slate-100 flex items-center justify-between text-xs font-semibold text-[#4D8DBA]">
               <span>Dr. Nozima Baxtiyarovna</span>
-              <IconCheckCircle className="w-4 h-4 text-[#4d8db9]" />
+              <IconCheckCircle className="w-4 h-4 text-[#4D8DBA]" />
             </div>
           </div>
         ))}
@@ -414,7 +430,7 @@ const ServicesOverview = () => {
   const services = [
     {
       id: "tish-davolash",
-      icon: <IconTherapeuticTooth className="w-5 h-5 text-[#086287]" />,
+      icon: <IconTherapeuticTooth className="w-5 h-5 text-[#086288]" />,
       image: assets.service_therapy,
       tag: { uz: "Terapiya", ru: "Терапия", en: "Restorative" },
       title: {
@@ -431,7 +447,7 @@ const ServicesOverview = () => {
     },
     {
       id: "implantatsiya",
-      icon: <IconDentalImplant className="w-5 h-5 text-[#086287]" />,
+      icon: <IconDentalImplant className="w-5 h-5 text-[#086288]" />,
       image: assets.service_implant,
       tag: { uz: "Implantologiya", ru: "Имплантация", en: "Implants" },
       title: {
@@ -448,7 +464,7 @@ const ServicesOverview = () => {
     },
     {
       id: "ortopediya",
-      icon: <IconToothCrown className="w-5 h-5 text-[#086287]" />,
+      icon: <IconToothCrown className="w-5 h-5 text-[#086288]" />,
       image: assets.service_crowns,
       tag: { uz: "Ortopediya", ru: "Ортопедия", en: "Prosthodontics" },
       title: {
@@ -465,7 +481,7 @@ const ServicesOverview = () => {
     },
     {
       id: "estetik-stomatologiya",
-      icon: <IconVeneerTooth className="w-5 h-5 text-[#086287]" />,
+      icon: <IconVeneerTooth className="w-5 h-5 text-[#086288]" />,
       image: assets.service_veneers,
       tag: { uz: "Estetika", ru: "Виниры", en: "Veneers" },
       title: {
@@ -482,7 +498,7 @@ const ServicesOverview = () => {
     },
     {
       id: "tish-oqartirish",
-      icon: <IconLaserWhitening className="w-5 h-5 text-[#086287]" />,
+      icon: <IconLaserWhitening className="w-5 h-5 text-[#086288]" />,
       image: assets.service_whitening,
       tag: { uz: "Oqartirish", ru: "Отбеливание", en: "Whitening" },
       title: {
@@ -499,7 +515,7 @@ const ServicesOverview = () => {
     },
     {
       id: "rentgen-diagnostika",
-      icon: <IconDigitalXray className="w-5 h-5 text-[#086287]" />,
+      icon: <IconDigitalXray className="w-5 h-5 text-[#086288]" />,
       image: assets.service_xray,
       tag: { uz: "Diagnostika & Xirurgiya", ru: "3D Диагностика", en: "Diagnostics" },
       title: {
@@ -517,17 +533,17 @@ const ServicesOverview = () => {
   ];
 
   return (
-    <section className="py-6 sm:py-12 bg-white rounded-2xl sm:rounded-3xl p-4 sm:p-8 lg:p-10 border border-[#cbe1ec] shadow-sm">
+    <section className="py-6 sm:py-12 bg-white rounded-2xl sm:rounded-3xl p-4 sm:p-8 lg:p-10 border border-[#D1E4F0] shadow-sm">
       <div className="flex flex-col md:flex-row md:items-end justify-between mb-6 sm:mb-8 gap-4 pb-5 sm:pb-6 border-b border-slate-100">
         <div>
-          <p className="text-xs font-bold uppercase tracking-[0.18em] text-[#4d8db9]">
+          <p className="text-xs font-bold uppercase tracking-[0.18em] text-[#4D8DBA]">
             {lang === "uz"
               ? "Stomatologik Xizmatlar"
               : lang === "ru"
               ? "Стоматологические Услуги"
               : "Dental Services"}
           </p>
-          <h2 className="mt-1.5 font-serif-classic text-2xl sm:text-3xl lg:text-4xl font-bold text-[#086287]">
+          <h2 className="mt-1.5 font-serif-classic text-2xl sm:text-3xl lg:text-4xl font-bold text-[#086288]">
             {lang === "uz"
               ? "Asosiy Davolash Yo'nalishlari"
               : lang === "ru"
@@ -538,7 +554,7 @@ const ServicesOverview = () => {
 
         <Link
           to={to("/services")}
-          className="self-start md:self-auto px-4 sm:px-5 py-2.5 rounded-xl bg-[#f2f6fa] hover:bg-[#086287] text-[#086287] hover:text-white border border-[#cbe1ec] text-xs sm:text-sm font-semibold transition-colors inline-block text-center"
+          className="self-start md:self-auto px-4 sm:px-5 py-2.5 rounded-xl bg-[#F4F8FB] hover:bg-[#086288] text-[#086288] hover:text-white border border-[#D1E4F0] text-xs sm:text-sm font-semibold transition-colors inline-block text-center"
         >
           {lang === "uz"
             ? "Barcha xizmatlar va narxlar →"
@@ -552,11 +568,11 @@ const ServicesOverview = () => {
         {services.map((s) => (
           <div
             key={s.id}
-            className="group rounded-2xl bg-[#f8fafc] hover:bg-white border border-[#cbe1ec] hover:border-[#4d8db9] transition-all duration-200 flex flex-col justify-between overflow-hidden shadow-xs hover:shadow-md"
+            className="group rounded-2xl bg-[#f8fafc] hover:bg-white border border-[#D1E4F0] hover:border-[#4D8DBA] transition-all duration-200 flex flex-col justify-between overflow-hidden shadow-xs hover:shadow-md"
           >
             <Link
               to={to(`/services/${s.id}`)}
-              className="block focus:outline-none focus:ring-2 focus:ring-inset focus:ring-[#4d8db9]"
+              className="block focus:outline-none focus:ring-2 focus:ring-inset focus:ring-[#4D8DBA]"
               aria-label={`${s.title[lang]} - ${lang === "uz" ? "Batafsil ma'lumot" : lang === "ru" ? "Подробнее" : "Details"}`}
             >
               <div className="relative h-40 sm:h-44 w-full overflow-hidden bg-slate-900">
@@ -570,13 +586,13 @@ const ServicesOverview = () => {
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#0c1f38]/60 via-transparent to-transparent" />
-                <span className="absolute top-3 left-3 text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-full bg-white/95 text-[#086287]">
+                <span className="absolute top-3 left-3 text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-full bg-white/95 text-[#086288]">
                   {s.tag[lang]}
                 </span>
               </div>
 
               <div className="p-4 sm:p-5">
-                <h3 className="text-base sm:text-lg font-bold text-[#086287] group-hover:text-[#4d8db9] transition-colors">
+                <h3 className="text-base sm:text-lg font-bold text-[#086288] group-hover:text-[#4D8DBA] transition-colors">
                   {s.title[lang]}
                 </h3>
                 <p className="mt-2 text-xs sm:text-sm text-slate-600 leading-relaxed">
@@ -585,22 +601,22 @@ const ServicesOverview = () => {
               </div>
             </Link>
 
-            <div className="px-4 sm:px-5 pb-3.5 sm:pb-4 pt-3 border-t border-[#e2eaf2] flex items-center justify-between text-xs">
+            <div className="px-4 sm:px-5 pb-3.5 sm:pb-4 pt-3 border-t border-[#D1E4F0] flex items-center justify-between text-xs">
               <span className="text-slate-500 font-medium flex items-center gap-1.5">
-                <IconClock className="w-3.5 h-3.5 text-[#4d8db9]" />
+                <IconClock className="w-3.5 h-3.5 text-[#4D8DBA]" />
                 <span>{s.duration[lang]}</span>
               </span>
               <div className="flex items-center gap-2">
                 <button
                   type="button"
                   onClick={() => scrollToBooking(s.id, s.title[lang])}
-                  className="px-3.5 py-1.5 rounded-lg bg-[#086287] hover:bg-[#4d8db9] text-white font-semibold text-[11px] transition-colors cursor-pointer"
+                  className="px-3.5 py-1.5 rounded-lg bg-[#086288] hover:bg-[#4D8DBA] text-white font-semibold text-[11px] transition-colors cursor-pointer"
                 >
                   {lang === "uz" ? "Yozilish" : lang === "ru" ? "Записаться" : "Book"}
                 </button>
                 <Link
                   to={to(`/services/${s.id}`)}
-                  className="font-semibold text-[#4d8db9] hover:text-[#086287] transition-colors"
+                  className="font-semibold text-[#4D8DBA] hover:text-[#086288] transition-colors"
                 >
                   {lang === "uz" ? "Batafsil →" : lang === "ru" ? "Подробнее →" : "Details →"}
                 </Link>
@@ -622,58 +638,67 @@ const DoctorBioSpotlight = () => {
 
   const credentialsMap = {
     uz: [
-      `Vrach-stomatolog, ortoped va implantolog (${getYearsOfExperience()}+ yillik uzluksiz klinik amaliyot)`,
-      "Germaniya, Avstraliya va Yaponiya materiallari bilan yuqori aniqlikdagi restavratsiya va tsirkoniy protezlash",
-      "Janubiy Koreya (Osstem AIC) va Yevropa implantologiya dasturlari sertifikatlangan mutaxassisi",
-      "Har bir bemor uchun individual steril kraft-paketlar va 100% og'riqsiz yondashuv",
+      `Vrach-stomatolog, terapevt va ortoped (${getYearsOfExperience()}+ yillik uzluksiz klinik amaliyot, ADTI bitiruvchisi)`,
+      "Germaniya (3M Filtek), Yaponiya (Estelite) va Shveysariya (Ivoclar) original materiallari bilan mikron aniqlikda restavratsiya",
+      "Monolit tsirkoniy karonkalar (CAD/CAM) va E-max press-keramikasi bo'yicha maxsus sertifikatlangan mutaxassis",
+      "Har bir bemor uchun individual avtoklavlangan steril kraft-paketlar va 100% og'riqsiz yondashuv",
     ],
     ru: [
-      `Врач-стоматолог, ортопед и хирург-имплантолог (${getYearsOfExperience()}+ лет непрерывной клинической практики)`,
-      "Специалист по протезированию циркониевыми коронками, винирами E-max и художественной реставрации зубов",
-      "Сертифицированный участник международных курсов по имплантологии (Osstem, Straumann)",
-      "Индивидуальные крафт-пакеты и 100% безболезненный протокол для каждого пациента",
+      `Врач-стоматолог, терапевт и ортопед (${getYearsOfExperience()}+ лет клинической практики, выпускница АГМИ)`,
+      "Художественная реставрация оригинальными материалами из Германии (3M Filtek) и Японии (Estelite)",
+      "Сертифицированный специалист по безметалловым циркониевым коронкам CAD/CAM и ультратонким винирам E-max",
+      "Индивидуальные крафт-пакеты, европейский автоклав класса B и 100% безболезненный протокол лечения",
     ],
     en: [
-      `Restorative Dentist, Prosthodontist & Implantologist (${getYearsOfExperience()}+ years of continuous clinical practice)`,
-      "Specialist in German & Australian zirconia crowns, E-max porcelain veneers, and composite artistry",
-      "Certified in international implantology protocols across South Korea (Osstem) and Switzerland (Straumann)",
-      "Strict hospital-grade sterilization and two-stage painless anesthesia for every patient",
+      `Restorative Dentist & Prosthodontist (${getYearsOfExperience()}+ years continuous clinical practice, ASMI graduate)`,
+      "Micro-invasive composite artistry using authentic German (3M Filtek) & Japanese (Estelite) nano-hybrids",
+      "Certified specialist in digital CAD/CAM monolithic zirconia crowns and E-max porcelain veneers",
+      "Hospital-grade Class-B sterilization pouches and two-stage painless anesthesia for every patient",
     ],
   };
   const credentials = credentialsMap[lang] || credentialsMap.uz;
 
   return (
     <section className="py-6 sm:py-12">
-      <div className="bg-white rounded-2xl sm:rounded-3xl p-4 sm:p-8 lg:p-12 border border-[#cbe1ec] shadow-sm grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-12 items-center">
+      <div className="bg-white rounded-2xl sm:rounded-3xl p-4 sm:p-8 lg:p-12 border border-[#D1E4F0] shadow-sm grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-12 items-center">
         {/* Portrait Column (5 cols) */}
         <div className="lg:col-span-5">
           <div className="max-w-sm mx-auto">
-            <div className="rounded-2xl overflow-hidden border border-[#cbe1ec] bg-[#f8fafc]">
+            <div className="relative rounded-2xl overflow-hidden border border-[#D1E4F0] bg-[#f8fafc] shadow-sm">
               <img
-                src={assets.dr_nozima_branded}
+                src={assets.dr_nozima_clinic}
                 alt="Dr. Nozima Baxtiyarovna — Stomatolog Andijon"
                 width={800}
                 height={800}
                 loading="lazy"
                 decoding="async"
-                className="w-full h-[360px] sm:h-[410px] object-cover object-top"
+                className="w-full h-[360px] sm:h-[420px] object-cover object-top"
               />
+              <div className="absolute top-3 right-3 z-10">
+                <DentalSticker
+                  variant="doctor-badge"
+                  color="gold"
+                  size="sm"
+                  sublabel="SEVDO DENTA"
+                  label={getExperienceBadge(lang)}
+                />
+              </div>
             </div>
 
-            <div className="mt-3 p-4 rounded-2xl bg-[#086287] text-white flex items-center justify-between">
+            <div className="mt-3 p-4 rounded-2xl bg-[#086288] text-white flex items-center justify-between shadow-xs">
               <div>
-                <p className="text-[11px] uppercase tracking-wider text-[#9cb8d4] font-semibold">
+                <p className="text-[11px] uppercase tracking-wider text-[#97D7FF] font-bold">
                   {lang === "uz"
-                    ? "Stomatolog · Ortoped"
+                    ? "Stomatolog-Terapevt · Ortoped"
                     : lang === "ru"
-                    ? "Стоматолог · Ортопед"
-                    : "Dentist · Prosthodontist"}
+                    ? "Стоматолог-Терапевт · Ортопед"
+                    : "Dentist · Restorative & Prosthodontist"}
                 </p>
-                <p className="font-serif-classic text-lg font-bold">
+                <p className="font-serif-classic text-xl font-bold mt-0.5">
                   Dr. Nozima Baxtiyarovna
                 </p>
               </div>
-              <span className="px-3 py-1 rounded-full bg-[#4d8db9] text-xs font-semibold">
+              <span className="px-3.5 py-1.5 rounded-full bg-[#FFEFC4] text-[#086288] text-xs font-bold shadow-xs">
                 {getExperienceBadge(lang)}
               </span>
             </div>
@@ -682,7 +707,7 @@ const DoctorBioSpotlight = () => {
 
         {/* Copy Column (7 cols) */}
         <div className="lg:col-span-7 space-y-5">
-          <p className="text-xs font-bold uppercase tracking-[0.18em] text-[#4d8db9]">
+          <p className="text-xs font-bold uppercase tracking-[0.18em] text-[#4D8DBA]">
             {lang === "uz"
               ? "Shifokor Haqida"
               : lang === "ru"
@@ -690,7 +715,7 @@ const DoctorBioSpotlight = () => {
               : "Meet Your Dentist"}
           </p>
 
-          <h2 className="font-serif-classic text-3xl sm:text-4xl font-bold text-[#086287] leading-tight">
+          <h2 className="font-serif-classic text-3xl sm:text-4xl font-bold text-[#086288] leading-tight">
             {lang === "uz"
               ? "Nozima Baxtiyarovna — Har Bir Tishni Asrash va Mukammal Tabassum Ustasi"
               : lang === "ru"
@@ -698,7 +723,7 @@ const DoctorBioSpotlight = () => {
               : "Nozima Baxtiyarovna — Dedicated to Saving & Restoring Every Smile"}
           </h2>
 
-          <blockquote className="pl-4 border-l-2 border-[#4d8db9] text-sm sm:text-base text-slate-600 leading-relaxed italic">
+          <blockquote className="pl-4 border-l-2 border-[#4D8DBA] text-sm sm:text-base text-slate-600 leading-relaxed italic">
             {lang === "uz"
               ? "«Mening asosiy maqsadim — bemor stomatolog kreslosiga o'tirgan ilk daqiqadanoq qo'rquv va og'riqni unutishi, har bir muolaja esa uzoq yillar davomida ishonchli xizmat qilishidir.»"
               : lang === "ru"
@@ -712,7 +737,7 @@ const DoctorBioSpotlight = () => {
                 key={idx}
                 className="flex items-start gap-3 text-xs sm:text-sm text-slate-700 font-medium"
               >
-                <IconCheckCircle className="w-4 h-4 text-[#4d8db9] shrink-0 mt-0.5" />
+                <IconCheckCircle className="w-4 h-4 text-[#4D8DBA] shrink-0 mt-0.5" />
                 <span>{item}</span>
               </li>
             ))}
@@ -721,7 +746,7 @@ const DoctorBioSpotlight = () => {
           <div className="pt-3 flex flex-wrap gap-3">
             <Link
               to={to("/about")}
-              className="px-6 py-3 rounded-xl bg-[#086287] hover:bg-[#4d8db9] text-white font-semibold text-xs sm:text-sm transition-colors text-center inline-block"
+              className="px-6 py-3 rounded-xl bg-[#086288] hover:bg-[#4D8DBA] text-white font-semibold text-xs sm:text-sm transition-colors text-center inline-block"
             >
               {lang === "uz"
                 ? "Shifokor haqida batafsil →"
@@ -732,7 +757,7 @@ const DoctorBioSpotlight = () => {
             <button
               type="button"
               onClick={() => scrollToBooking("tish-davolash")}
-              className="px-6 py-3 rounded-xl bg-[#f2f6fa] hover:bg-[#e4edf5] text-[#086287] border border-[#cbe1ec] font-semibold text-xs sm:text-sm transition-colors cursor-pointer"
+              className="px-6 py-3 rounded-xl bg-[#F4F8FB] hover:bg-[#E6F1F7] text-[#086288] border border-[#D1E4F0] font-semibold text-xs sm:text-sm transition-colors cursor-pointer"
             >
               {lang === "uz"
                 ? "Konsultatsiyaga yozilish ↓"

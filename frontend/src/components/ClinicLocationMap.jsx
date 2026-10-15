@@ -21,14 +21,14 @@ const ClinicLocationMap = ({ compact = false }) => {
     <section className={compact ? "py-4" : "py-10 sm:py-14"}>
       {!compact && (
         <div className="text-center max-w-2xl mx-auto mb-8">
-          <p className="text-xs font-bold uppercase tracking-[0.18em] text-[#086287]">
+          <p className="text-xs font-bold uppercase tracking-[0.18em] text-[#086288]">
             {lang === "uz"
               ? "Klinikamiz Manzili"
               : lang === "ru"
               ? "Адрес Клиники"
               : "Clinic Location"}
           </p>
-          <h2 className="mt-1.5 font-serif-classic text-2xl sm:text-3xl md:text-4xl font-bold text-[#086287]">
+          <h2 className="mt-1.5 font-serif-classic text-2xl sm:text-3xl md:text-4xl font-bold text-[#086288]">
             {lang === "uz"
               ? "Andijon sh., «Sevdo Denta» Klinikasi"
               : lang === "ru"
@@ -45,12 +45,12 @@ const ClinicLocationMap = ({ compact = false }) => {
         </div>
       )}
 
-      <div className="grid grid-cols-1 lg:grid-cols-12 gap-5 sm:gap-6 items-stretch bg-white rounded-2xl sm:rounded-3xl p-3.5 sm:p-6 border border-[#cbe1ec] shadow-sm">
+      <div className="grid grid-cols-1 lg:grid-cols-12 gap-5 sm:gap-6 items-stretch bg-white rounded-2xl sm:rounded-3xl p-3.5 sm:p-6 border border-[#D1E4F0] shadow-sm">
         {/* Left Info Column */}
         <div className="lg:col-span-5 flex flex-col justify-between p-4 sm:p-7 rounded-xl sm:rounded-2xl bg-[#063c54] text-white">
           <div className="space-y-4 sm:space-y-5">
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-[#086287] text-xs font-semibold text-white">
-              <IconLocationPin className="w-3.5 h-3.5 text-[#97d6ff] shrink-0" />
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-[#086288] text-xs font-semibold text-white">
+              <IconLocationPin className="w-3.5 h-3.5 text-[#97D7FF] shrink-0" />
               <span>{c.badge[lang]}</span>
             </div>
 
@@ -65,7 +65,7 @@ const ClinicLocationMap = ({ compact = false }) => {
 
             <div className="space-y-3 pt-3 border-t border-white/15 text-sm">
               <div className="flex items-start gap-3">
-                <IconClock className="w-4 h-4 text-[#97d6ff] shrink-0 mt-0.5" />
+                <IconClock className="w-4 h-4 text-[#97D7FF] shrink-0 mt-0.5" />
                 <div>
                   <p className="font-semibold text-white">{c.hours[lang]}</p>
                   <p className="text-xs text-slate-300 mt-0.5">{c.sundayNote[lang]}</p>
@@ -73,10 +73,10 @@ const ClinicLocationMap = ({ compact = false }) => {
               </div>
 
               <div className="flex items-center gap-3">
-                <IconPhone className="w-4 h-4 text-[#97d6ff] shrink-0" />
+                <IconPhone className="w-4 h-4 text-[#97D7FF] shrink-0" />
                 <a
                   href={`tel:${c.phoneRaw}`}
-                  className="font-bold text-base text-white hover:text-[#97d6ff] transition-colors"
+                  className="font-bold text-base text-white hover:text-[#97D7FF] transition-colors"
                 >
                   {c.phone}
                 </a>
@@ -86,7 +86,7 @@ const ClinicLocationMap = ({ compact = false }) => {
 
           {/* Navigation Buttons */}
           <div className="pt-6 mt-6 border-t border-white/15 space-y-2.5">
-            <p className="text-[11px] font-semibold uppercase tracking-wider text-[#97d6ff]">
+            <p className="text-[11px] font-semibold uppercase tracking-wider text-[#97D7FF]">
               {lang === "uz"
                 ? "Navigator orqali yo'nalish:"
                 : lang === "ru"
@@ -98,7 +98,7 @@ const ClinicLocationMap = ({ compact = false }) => {
                 href={c.maps.yandex}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center justify-center gap-2 px-4 py-2.5 rounded-lg bg-white text-[#086287] hover:bg-[#f4f8fb] font-bold text-xs transition-colors"
+                className="flex items-center justify-center gap-2 px-4 py-2.5 rounded-lg bg-white text-[#086288] hover:bg-[#f4f8fb] font-bold text-xs transition-colors"
               >
                 <IconYandex className="w-4 h-4" />
                 <span>
@@ -113,7 +113,7 @@ const ClinicLocationMap = ({ compact = false }) => {
                 href={c.maps.google}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center justify-center gap-2 px-4 py-2.5 rounded-lg bg-[#086287] hover:bg-[#064863] text-white font-bold text-xs transition-colors"
+                className="flex items-center justify-center gap-2 px-4 py-2.5 rounded-lg bg-[#086288] hover:bg-[#064b69] text-white font-bold text-xs transition-colors"
               >
                 <IconGoogle className="w-4 h-4" />
                 <span>
@@ -133,7 +133,7 @@ const ClinicLocationMap = ({ compact = false }) => {
                 rel="noopener noreferrer"
                 className="flex items-center justify-center gap-1.5 px-3 py-2 rounded-lg bg-white/10 hover:bg-white/20 text-white font-semibold text-xs border border-white/15 transition-colors"
               >
-                <IconTelegram className="w-3.5 h-3.5 text-[#97d6ff]" />
+                <IconTelegram className="w-3.5 h-3.5 text-[#97D7FF]" />
                 <span>Telegram</span>
               </a>
               <a
@@ -142,7 +142,7 @@ const ClinicLocationMap = ({ compact = false }) => {
                 rel="noopener noreferrer"
                 className="flex items-center justify-center gap-1.5 px-3 py-2 rounded-lg bg-white/10 hover:bg-white/20 text-white font-semibold text-xs border border-white/15 transition-colors"
               >
-                <IconInstagram className="w-3.5 h-3.5 text-[#97d6ff]" />
+                <IconInstagram className="w-3.5 h-3.5 text-[#97D7FF]" />
                 <span>Instagram</span>
               </a>
             </div>
@@ -150,7 +150,7 @@ const ClinicLocationMap = ({ compact = false }) => {
         </div>
 
         {/* Right Map Embed Column */}
-        <div className="lg:col-span-7 rounded-xl overflow-hidden border border-[#cbe1ec] min-h-[340px] sm:min-h-[420px] relative bg-slate-100">
+        <div className="lg:col-span-7 rounded-xl overflow-hidden border border-[#D1E4F0] min-h-[340px] sm:min-h-[420px] relative bg-slate-100">
           <iframe
             title="Dr. Nozima Baxtiyarovna — Sevdo Denta Klinikasi Andijon Xarita"
             src={yandexEmbedUrl}

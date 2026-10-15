@@ -1,214 +1,262 @@
 import React from "react";
 
 /**
- * DentalSticker — Custom Die-Cut 3D Vinyl Dental Sticker Badge
- * Features thick white sticker border, glossy drop-shadow, subtle tilt, and vector dental artwork.
- * 100% tailored to Dr. Nozima Baxtiyarovna & Sevdo Denta brand aesthetic (#086287 / #4d8db9).
+ * DentalSticker — Professional Medical Dental Quality Badge & Seal
+ * Minimalist, elegant, and perfectly matched to Dr. Nozima Baxtiyarovna's official brand:
+ * Primary: #086288 | Cerulean: #4D8DBA | Sky: #97D7FF | Warm Champagne Gold: #FFEFC4
  */
 const DentalSticker = ({
   variant = "tooth-sparkle",
   label,
   sublabel,
-  color = "navy",
-  rotate = "-rotate-2",
+  color = "primary",
+  rotate = "",
   size = "md",
   className = "",
 }) => {
+  // Cohesive brand palettes built strictly with user-specified brand tokens
   const colorThemes = {
-    navy: {
-      bg: "from-[#086287] via-[#1c4475] to-[#4d8db9]",
-      ring: "ring-[#9cb8d4]/70",
+    primary: {
+      bg: "bg-gradient-to-br from-[#086288] via-[#0b5473] to-[#064b69]",
+      border: "border-[#97D7FF]/30",
+      ring: "ring-1 ring-[#086288]/20",
       badgeText: "text-white",
-      subText: "text-[#9cb8d4]",
+      subText: "text-[#97D7FF]",
+      iconBg: "bg-white/10",
+      shadow: "shadow-sm hover:shadow-md",
+    },
+    navy: {
+      bg: "bg-gradient-to-br from-[#086288] via-[#0b5473] to-[#064b69]",
+      border: "border-[#97D7FF]/30",
+      ring: "ring-1 ring-[#086288]/20",
+      badgeText: "text-white",
+      subText: "text-[#97D7FF]",
+      iconBg: "bg-white/10",
+      shadow: "shadow-sm hover:shadow-md",
+    },
+    cerulean: {
+      bg: "bg-gradient-to-br from-[#4D8DBA] to-[#086288]",
+      border: "border-[#97D7FF]/40",
+      ring: "ring-1 ring-[#4D8DBA]/30",
+      badgeText: "text-white",
+      subText: "text-[#FFEFC4]",
+      iconBg: "bg-white/15",
+      shadow: "shadow-sm hover:shadow-md",
     },
     slate: {
-      bg: "from-[#4d8db9] via-[#3572a5] to-[#086287]",
-      ring: "ring-sky-200/80",
+      bg: "bg-gradient-to-br from-[#4D8DBA] to-[#086288]",
+      border: "border-[#97D7FF]/40",
+      ring: "ring-1 ring-[#4D8DBA]/30",
       badgeText: "text-white",
-      subText: "text-sky-100",
+      subText: "text-[#FFEFC4]",
+      iconBg: "bg-white/15",
+      shadow: "shadow-sm hover:shadow-md",
     },
     sky: {
-      bg: "from-[#0284c7] via-[#0ea5e9] to-[#0369a1]",
-      ring: "ring-sky-200/80",
-      badgeText: "text-white",
-      subText: "text-sky-100",
+      bg: "bg-gradient-to-br from-[#EBF6FC] via-[#d7eeff] to-[#c2e4fc]",
+      border: "border-[#97D7FF]",
+      ring: "ring-1 ring-[#97D7FF]/40",
+      badgeText: "text-[#086288]",
+      subText: "text-[#4D8DBA]",
+      iconBg: "bg-white/80",
+      shadow: "shadow-xs hover:shadow-sm",
     },
     gold: {
-      bg: "from-amber-400 via-amber-500 to-yellow-600",
-      ring: "ring-amber-200/80",
-      badgeText: "text-slate-950",
-      subText: "text-amber-950/80",
+      bg: "bg-gradient-to-br from-[#FFEFC4] via-[#FFF6DE] to-[#fae6b2]",
+      border: "border-[#E6CA85]",
+      ring: "ring-1 ring-[#FFEFC4]/60",
+      badgeText: "text-[#086288]",
+      subText: "text-[#8a681c]",
+      iconBg: "bg-white/85",
+      shadow: "shadow-xs hover:shadow-sm",
     },
     emerald: {
-      bg: "from-emerald-500 via-teal-600 to-emerald-700",
-      ring: "ring-emerald-200/80",
+      // Harmonized with primary palette rather than garish bright green
+      bg: "bg-gradient-to-br from-[#0c5c7d] via-[#10708f] to-[#086288]",
+      border: "border-[#97D7FF]/40",
+      ring: "ring-1 ring-[#086288]/30",
       badgeText: "text-white",
-      subText: "text-emerald-100",
+      subText: "text-[#97D7FF]",
+      iconBg: "bg-white/15",
+      shadow: "shadow-sm hover:shadow-md",
     },
     indigo: {
-      bg: "from-indigo-700 via-blue-800 to-[#086287]",
-      ring: "ring-indigo-200/80",
+      // Harmonized with primary palette
+      bg: "bg-gradient-to-br from-[#086288] via-[#1a4e75] to-[#4D8DBA]",
+      border: "border-[#97D7FF]/30",
+      ring: "ring-1 ring-[#086288]/20",
       badgeText: "text-white",
-      subText: "text-indigo-100",
+      subText: "text-[#FFEFC4]",
+      iconBg: "bg-white/15",
+      shadow: "shadow-sm hover:shadow-md",
+    },
+    porcelain: {
+      bg: "bg-white",
+      border: "border-[#D1E4F0]",
+      ring: "ring-1 ring-[#086288]/10",
+      badgeText: "text-[#086288]",
+      subText: "text-[#4D8DBA]",
+      iconBg: "bg-[#F4F8FB]",
+      shadow: "shadow-xs hover:shadow-sm",
     },
   };
 
-  const theme = colorThemes[color] || colorThemes.navy;
+  const theme = colorThemes[color] || colorThemes.primary;
 
   const sizeClasses = {
-    sm: "px-3 py-1.5 rounded-2xl gap-2",
-    md: "px-4 py-2.5 rounded-3xl gap-3",
-    lg: "px-5 py-3.5 rounded-[28px] gap-3.5",
+    sm: "px-3 py-1.5 rounded-xl gap-2",
+    md: "px-4 py-2.5 rounded-2xl gap-3",
+    lg: "px-5 py-3 rounded-2xl gap-3.5",
   };
 
   const iconSizes = {
     sm: "w-7 h-7",
-    md: "w-10 h-10",
-    lg: "w-12 h-12",
+    md: "w-9 h-9",
+    lg: "w-11 h-11",
   };
 
   const renderArtwork = () => {
     switch (variant) {
       case "tooth-crown":
+        // Minimalist aesthetic crown & tooth line-art
         return (
-          <svg viewBox="0 0 64 64" className="w-full h-full drop-shadow-xs" fill="none">
+          <svg viewBox="0 0 48 48" className="w-full h-full" fill="none">
             <path
-              d="M14 22L22 10L32 18L42 10L50 22H14Z"
-              fill="#FBBF24"
-              stroke="#FFFFFF"
-              strokeWidth="3"
+              d="M12 18L18 8L24 14L30 8L36 18H12Z"
+              fill="#FFEFC4"
+              stroke="#086288"
+              strokeWidth="1.8"
               strokeLinejoin="round"
             />
             <path
-              d="M18 26C18 21 22 19 27 19C30 19 31 20.5 32 20.5C33 20.5 34 19 37 19C42 19 46 21 46 26C46 34 43 43 39 51C37.5 54 35 54 34 50L32 43L30 50C29 54 26.5 54 25 51C21 43 18 34 18 26Z"
-              fill="#FFFFFF"
-              stroke="#086287"
-              strokeWidth="2.5"
+              d="M14 20C14 16 18 15 21 15C23 15 23.5 16 24 16C24.5 16 25 15 27 15C30 15 34 16 34 20C34 28 31 35 28 40C26.5 42 24.5 42 24 38L24 34L24 38C23.5 42 21.5 42 20 40C17 35 14 28 14 20Z"
+              fill="white"
+              stroke="#086288"
+              strokeWidth="1.8"
             />
-            <path
-              d="M26 32C28 35 36 35 38 32"
-              stroke="#086287"
-              strokeWidth="2.5"
-              strokeLinecap="round"
-            />
-            <circle cx="25" cy="28" r="1.8" fill="#086287" />
-            <circle cx="39" cy="28" r="1.8" fill="#086287" />
+            <circle cx="24" cy="24" r="2.5" fill="#4D8DBA" />
           </svg>
         );
 
       case "implant-shield":
+        // Minimalist precision dental implant fixture
         return (
-          <svg viewBox="0 0 64 64" className="w-full h-full drop-shadow-xs" fill="none">
+          <svg viewBox="0 0 48 48" className="w-full h-full" fill="none">
             <path
-              d="M32 6L12 14V30C12 44 20.5 54.5 32 58C43.5 54.5 52 44 52 30V14L32 6Z"
-              fill="#FFFFFF"
-              stroke="#047857"
-              strokeWidth="2.5"
+              d="M24 6L11 12V22C11 31.5 16.5 39 24 42C31.5 39 37 31.5 37 22V12L24 6Z"
+              fill="#F4F8FB"
+              stroke="#086288"
+              strokeWidth="1.8"
             />
-            <path
-              d="M23 18H41L39 27H25L23 18Z"
-              fill="#10B981"
-              stroke="#047857"
-              strokeWidth="2"
-            />
-            <rect x="26" y="30" width="12" height="4" rx="2" fill="#047857" />
-            <rect x="27" y="37" width="10" height="4" rx="2" fill="#047857" />
-            <rect x="28.5" y="44" width="7" height="4" rx="2" fill="#047857" />
+            {/* Implant fixture lines */}
+            <path d="M19 16H29" stroke="#086288" strokeWidth="2" strokeLinecap="round" />
+            <path d="M20 20H28" stroke="#4D8DBA" strokeWidth="2" strokeLinecap="round" />
+            <path d="M21 24H27" stroke="#4D8DBA" strokeWidth="2" strokeLinecap="round" />
+            <path d="M22 28H26" stroke="#4D8DBA" strokeWidth="2" strokeLinecap="round" />
+            <path d="M23 32H25" stroke="#086288" strokeWidth="2" strokeLinecap="round" />
+            <circle cx="24" cy="11" r="2" fill="#FFEFC4" stroke="#086288" strokeWidth="1.2" />
           </svg>
         );
 
       case "painless-heart":
+        // Gentle touch & painless anesthesia droplet/shield
         return (
-          <svg viewBox="0 0 64 64" className="w-full h-full drop-shadow-xs" fill="none">
+          <svg viewBox="0 0 48 48" className="w-full h-full" fill="none">
             <path
-              d="M32 54C32 54 10 40 10 23C10 15 16.5 10 23.5 10C28 10 30.5 12.5 32 15C33.5 12.5 36 10 40.5 10C47.5 10 54 15 54 23C54 40 32 54 32 54Z"
-              fill="#FFFFFF"
-              stroke="#0284c7"
-              strokeWidth="2.5"
+              d="M24 7C24 7 13 18 13 26C13 32 17.9 37 24 37C30.1 37 35 32 35 26C35 18 24 7 24 7Z"
+              fill="white"
+              stroke="#086288"
+              strokeWidth="1.8"
             />
-            <path
-              d="M28 24H36V30H42V38H36V44H28V38H22V30H28V24Z"
-              fill="#0284c7"
-            />
+            {/* Medical comfort cross */}
+            <path d="M24 19V29M19 24H29" stroke="#4D8DBA" strokeWidth="2.5" strokeLinecap="round" />
+            <circle cx="30" cy="16" r="2" fill="#FFEFC4" />
           </svg>
         );
 
       case "laser-diamond":
+        // Diamond radiance & cold-LED brightening
         return (
-          <svg viewBox="0 0 64 64" className="w-full h-full drop-shadow-xs" fill="none">
+          <svg viewBox="0 0 48 48" className="w-full h-full" fill="none">
             <polygon
-              points="32,6 54,24 32,56 10,24"
-              fill="#FFFFFF"
-              stroke="#0284c7"
-              strokeWidth="2.5"
+              points="24,8 38,20 24,40 10,20"
+              fill="white"
+              stroke="#086288"
+              strokeWidth="1.8"
               strokeLinejoin="round"
             />
-            <polygon points="32,12 46,24 32,48 18,24" fill="#E0F2FE" />
+            <polygon points="24,14 32,20 24,34 16,20" fill="#EBF6FC" />
             <path
-              d="M48 10L50 15L55 17L50 19L48 24L46 19L41 17L46 15L48 10Z"
-              fill="#FBBF24"
+              d="M36 8L37.5 11.5L41 13L37.5 14.5L36 18L34.5 14.5L31 13L34.5 11.5L36 8Z"
+              fill="#FFEFC4"
+              stroke="#086288"
+              strokeWidth="1"
             />
           </svg>
         );
 
       case "doctor-badge":
+        // Minimalist doctor seal
         return (
-          <svg viewBox="0 0 64 64" className="w-full h-full drop-shadow-xs" fill="none">
-            <circle cx="32" cy="32" r="24" fill="#FFFFFF" stroke="#086287" strokeWidth="2.5" />
-            <circle cx="32" cy="32" r="20" fill="#086287" />
+          <svg viewBox="0 0 48 48" className="w-full h-full" fill="none">
+            <circle cx="24" cy="24" r="19" fill="#086288" stroke="#FFEFC4" strokeWidth="1.8" />
+            <circle cx="24" cy="24" r="15" stroke="white" strokeWidth="1" strokeDasharray="2 2" />
+            {/* Gold medical star */}
             <path
-              d="M32 18L35.5 25.5L44 26.8L37.8 33L39.2 41.5L32 37.3L24.8 41.5L26.2 33L20 26.8L28.5 25.5L32 18Z"
-              fill="#FBBF24"
-              stroke="#FFFFFF"
-              strokeWidth="1.5"
+              d="M24 14L26.5 19.5L32.5 20.3L28 24.5L29.2 30.5L24 27.5L18.8 30.5L20 24.5L15.5 20.3L21.5 19.5L24 14Z"
+              fill="#FFEFC4"
             />
-            <circle cx="32" cy="31" r="3" fill="#FFFFFF" />
           </svg>
         );
 
       case "sterile-shield":
+        // Hospital Class-B sterilization guarantee
         return (
-          <svg viewBox="0 0 64 64" className="w-full h-full drop-shadow-xs" fill="none">
+          <svg viewBox="0 0 48 48" className="w-full h-full" fill="none">
             <path
-              d="M32 6L14 14V30C14 43 21.5 53 32 58C42.5 53 50 43 50 30V14L32 6Z"
-              fill="#FFFFFF"
-              stroke="#086287"
-              strokeWidth="2.5"
+              d="M24 6L11 12V22C11 31.5 16.5 39 24 42C31.5 39 37 31.5 37 22V12L24 6Z"
+              fill="white"
+              stroke="#086288"
+              strokeWidth="1.8"
             />
             <path
-              d="M24 32L30 38L42 26"
-              stroke="#10B981"
-              strokeWidth="4"
+              d="M18 24L22 28L30 18"
+              stroke="#086288"
+              strokeWidth="2.5"
               strokeLinecap="round"
               strokeLinejoin="round"
             />
-            <circle cx="32" cy="18" r="3" fill="#38BDF8" />
+            <circle cx="24" cy="13" r="1.5" fill="#FFEFC4" />
           </svg>
         );
 
       case "tooth-sparkle":
       default:
+        // Stylized single-curve tooth matching Dr. Nozima's official logo
         return (
-          <svg viewBox="0 0 64 64" className="w-full h-full drop-shadow-xs" fill="none">
+          <svg viewBox="0 0 48 48" className="w-full h-full" fill="none">
+            {/* Outer tooth curve */}
             <path
-              d="M16 22C16 14 21 10 27 10C30 10 31.5 11.5 32 11.5C32.5 11.5 34 10 37 10C43 10 48 14 48 22C48 32 44 43 39.5 52C38 55 35 55 34 50.5L32 42L30 50.5C29 55 26 55 24.5 52C20 43 16 32 16 22Z"
-              fill="#FFFFFF"
-              stroke="#086287"
-              strokeWidth="2.5"
+              d="M15 17C13 22 14 30 19 37C20.5 39 22 39 23 35L24 29L25 35C26 39 27.5 39 29 37C34 30 35 22 33 17C31 12 27 12 24 14C21 12 17 12 15 17Z"
+              fill="white"
+              stroke="#086288"
+              strokeWidth="1.8"
+              strokeLinecap="round"
+              strokeLinejoin="round"
             />
+            {/* Flowing brand wave in cerulean #4D8DBA */}
             <path
-              d="M25 27C27.5 30.5 36.5 30.5 39 27"
-              stroke="#086287"
-              strokeWidth="2.5"
+              d="M17 22C21 21 24 27 31 23"
+              stroke="#4D8DBA"
+              strokeWidth="2"
               strokeLinecap="round"
             />
-            <circle cx="24" cy="22" r="2" fill="#086287" />
-            <circle cx="40" cy="22" r="2" fill="#086287" />
+            {/* Gold crest sparkle #FFEFC4 */}
             <path
-              d="M50 8L52 14L58 16L52 18L50 24L48 18L42 16L48 14L50 8Z"
-              fill="#FBBF24"
-              stroke="#FFFFFF"
-              strokeWidth="1.5"
+              d="M34 10L35 12.5L37.5 13.5L35 14.5L34 17L33 14.5L30.5 13.5L33 12.5L34 10Z"
+              fill="#FFEFC4"
+              stroke="#086288"
+              strokeWidth="0.8"
             />
           </svg>
         );
@@ -217,20 +265,20 @@ const DentalSticker = ({
 
   return (
     <div
-      className={`inline-flex items-center bg-gradient-to-br ${theme.bg} ${sizeClasses[size]} ${rotate} border-[4px] border-white ring-2 ${theme.ring} shadow-[0_10px_25px_-5px_rgba(19,46,83,0.35),0_4px_10px_-2px_rgba(0,0,0,0.12)] hover:rotate-0 hover:scale-105 transition-all duration-300 select-none ${className}`}
+      className={`inline-flex items-center ${theme.bg} ${sizeClasses[size]} border ${theme.border} ${theme.ring} ${theme.shadow} hover:-translate-y-0.5 transition-all duration-200 select-none ${className}`}
     >
-      <div className={`${iconSizes[size]} shrink-0 bg-white/20 rounded-2xl p-1 backdrop-blur-xs`}>
+      <div className={`${iconSizes[size]} shrink-0 ${theme.iconBg} rounded-xl p-1 flex items-center justify-center`}>
         {renderArtwork()}
       </div>
       {(label || sublabel) && (
-        <div className="leading-tight text-left pr-1">
+        <div className="leading-tight text-left pr-0.5">
           {sublabel && (
-            <span className={`block text-[9px] font-black uppercase tracking-widest ${theme.subText}`}>
+            <span className={`block text-[9px] font-bold uppercase tracking-wider ${theme.subText}`}>
               {sublabel}
             </span>
           )}
           {label && (
-            <span className={`block text-xs sm:text-sm font-black tracking-tight ${theme.badgeText}`}>
+            <span className={`block text-xs sm:text-sm font-bold tracking-tight ${theme.badgeText}`}>
               {label}
             </span>
           )}

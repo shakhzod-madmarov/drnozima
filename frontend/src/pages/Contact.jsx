@@ -64,26 +64,26 @@ const Contact = () => {
       <nav aria-label="Breadcrumb" className="text-xs sm:text-sm font-semibold text-slate-500 flex items-center gap-2">
         <Link
           to={to("/")}
-          className="hover:text-[#086287] transition-colors"
+          className="hover:text-[#086288] transition-colors"
         >
           {lang === "ru" ? "Главная" : lang === "en" ? "Home" : "Bosh sahifa"}
         </Link>
         <span>/</span>
-        <span className="text-[#086287] font-bold" aria-current="page">
+        <span className="text-[#086288] font-bold" aria-current="page">
           {lang === "ru" ? "Контакты" : lang === "en" ? "Contact" : "Aloqa va Manzil"}
         </span>
       </nav>
 
       {/* Header */}
       <div className="text-center max-w-3xl mx-auto space-y-2">
-        <p className="text-xs font-bold uppercase tracking-[0.18em] text-[#4d8db9]">
+        <p className="text-xs font-bold uppercase tracking-[0.18em] text-[#4D8DBA]">
           {lang === "uz"
             ? "Andijon · Eski Shahar (Old City) · Sevdo Denta"
             : lang === "ru"
             ? "Андижан · Эски Шахар (Old City) · Sevdo Denta"
             : "Andijan · Old City (Eski Shahar) · Sevdo Denta"}
         </p>
-        <h1 className="font-serif-classic text-3xl sm:text-4xl md:text-5xl font-bold text-[#086287]">
+        <h1 className="font-serif-classic text-3xl sm:text-4xl md:text-5xl font-bold text-[#086288]">
           {lang === "uz"
             ? "Aloqa va Klinika Manzili"
             : lang === "ru"
@@ -104,19 +104,19 @@ const Contact = () => {
         {/* Left Contact Channels (6 cols) */}
         <div className="lg:col-span-6 space-y-3.5 sm:space-y-4">
           {/* Phone Card */}
-          <div className="bg-white rounded-2xl p-4 sm:p-6 border border-[#cbe1ec] shadow-luxury flex flex-col sm:flex-row sm:items-center justify-between gap-3 sm:gap-4">
+          <div className="bg-white rounded-2xl p-4 sm:p-6 border border-[#D1E4F0] shadow-luxury flex flex-col sm:flex-row sm:items-center justify-between gap-3 sm:gap-4">
             <div className="space-y-1">
-              <span className="text-[11px] font-bold uppercase tracking-wider text-[#4d8db9]">
+              <span className="text-[11px] font-bold uppercase tracking-wider text-[#4D8DBA]">
                 {lang === "uz" ? "To'g'ridan-to'g'ri Qo'ng'iroq" : lang === "ru" ? "Прямой Телефон" : "Direct Phone"}
               </span>
-              <p className="font-serif-classic text-xl sm:text-2xl md:text-3xl font-bold text-[#086287]">
+              <p className="font-serif-classic text-xl sm:text-2xl md:text-3xl font-bold text-[#086288]">
                 {c.phone}
               </p>
               <p className="text-xs text-slate-500">{c.hours[lang]}</p>
             </div>
             <a
               href={`tel:${c.phoneRaw}`}
-              className="px-5 py-3 rounded-xl bg-[#086287] hover:bg-[#4d8db9] text-white font-semibold text-xs sm:text-sm flex items-center justify-center gap-2 shrink-0 transition-colors w-full sm:w-auto"
+              className="px-5 py-3 rounded-xl bg-[#086288] hover:bg-[#4D8DBA] text-white font-semibold text-xs sm:text-sm flex items-center justify-center gap-2 shrink-0 transition-colors w-full sm:w-auto"
             >
               <IconPhone className="w-4 h-4 text-white" />
               <span>
@@ -126,16 +126,16 @@ const Contact = () => {
           </div>
 
           {/* Telegram Card */}
-          <div className="bg-white rounded-2xl p-4 sm:p-6 border border-[#cbe1ec] shadow-luxury flex flex-col sm:flex-row sm:items-center justify-between gap-3 sm:gap-4">
+          <div className="bg-white rounded-2xl p-4 sm:p-6 border border-[#D1E4F0] shadow-luxury flex flex-col sm:flex-row sm:items-center justify-between gap-3 sm:gap-4">
             <div className="space-y-1">
-              <span className="text-[11px] font-bold uppercase tracking-wider text-[#4d8db9]">
+              <span className="text-[11px] font-bold uppercase tracking-wider text-[#4D8DBA]">
                 {lang === "uz"
                   ? "Telegram Kanal va Konsultatsiya"
                   : lang === "ru"
                   ? "Telegram-канал и консультация"
                   : "Telegram Channel & Inquiries"}
               </span>
-              <p className="text-base sm:text-lg md:text-xl font-bold text-[#086287]">
+              <p className="text-base sm:text-lg md:text-xl font-bold text-[#086288]">
                 {c.telegramHandle}
               </p>
               <p className="text-xs text-slate-500">
@@ -150,7 +150,7 @@ const Contact = () => {
               href={c.telegram}
               target="_blank"
               rel="noopener noreferrer"
-              className="px-5 py-3 rounded-xl bg-[#4d8db9] hover:bg-[#086287] text-white font-semibold text-xs sm:text-sm flex items-center justify-center gap-2 shrink-0 transition-colors w-full sm:w-auto"
+              className="px-5 py-3 rounded-xl bg-[#4D8DBA] hover:bg-[#086288] text-white font-semibold text-xs sm:text-sm flex items-center justify-center gap-2 shrink-0 transition-colors w-full sm:w-auto"
             >
               <IconTelegram className="w-4 h-4 text-white" />
               <span>Telegram</span>
@@ -158,16 +158,16 @@ const Contact = () => {
           </div>
 
           {/* Instagram Card */}
-          <div className="bg-white rounded-2xl p-4 sm:p-6 border border-[#cbe1ec] shadow-luxury flex flex-col sm:flex-row sm:items-center justify-between gap-3 sm:gap-4">
+          <div className="bg-white rounded-2xl p-4 sm:p-6 border border-[#D1E4F0] shadow-luxury flex flex-col sm:flex-row sm:items-center justify-between gap-3 sm:gap-4">
             <div className="space-y-1">
-              <span className="text-[11px] font-bold uppercase tracking-wider text-[#4d8db9]">
+              <span className="text-[11px] font-bold uppercase tracking-wider text-[#4D8DBA]">
                 {lang === "uz"
                   ? "Instagram Portfolio"
                   : lang === "ru"
                   ? "Портфолио в Instagram"
                   : "Instagram Portfolio"}
               </span>
-              <p className="text-base sm:text-lg md:text-xl font-bold text-[#086287]">
+              <p className="text-base sm:text-lg md:text-xl font-bold text-[#086288]">
                 {c.instagramHandle}
               </p>
               <p className="text-xs text-slate-500">
@@ -182,7 +182,7 @@ const Contact = () => {
               href={c.instagram}
               target="_blank"
               rel="noopener noreferrer"
-              className="px-5 py-3 rounded-xl bg-[#086287] hover:bg-[#4d8db9] text-white font-semibold text-xs sm:text-sm flex items-center justify-center gap-2 shrink-0 transition-colors w-full sm:w-auto"
+              className="px-5 py-3 rounded-xl bg-[#086288] hover:bg-[#4D8DBA] text-white font-semibold text-xs sm:text-sm flex items-center justify-center gap-2 shrink-0 transition-colors w-full sm:w-auto"
             >
               <IconInstagram className="w-4 h-4 text-white" />
               <span>Instagram</span>
@@ -190,11 +190,11 @@ const Contact = () => {
           </div>
 
           {/* Address & Navigator Card */}
-          <div className="bg-white rounded-2xl p-4 sm:p-6 border border-[#cbe1ec] shadow-luxury space-y-3.5 sm:space-y-4">
+          <div className="bg-white rounded-2xl p-4 sm:p-6 border border-[#D1E4F0] shadow-luxury space-y-3.5 sm:space-y-4">
             <div className="flex items-start gap-3">
-              <IconLocationPin className="w-5 h-5 text-[#086287] shrink-0 mt-0.5" />
+              <IconLocationPin className="w-5 h-5 text-[#086288] shrink-0 mt-0.5" />
               <div>
-                <h2 className="text-base font-bold text-[#086287]">
+                <h2 className="text-base font-bold text-[#086288]">
                   {c.name[lang]}
                 </h2>
                 <p className="text-xs sm:text-sm text-slate-600 mt-0.5">{c.address[lang]}</p>
@@ -202,7 +202,7 @@ const Contact = () => {
             </div>
 
             <div className="flex flex-wrap items-center gap-2 sm:gap-3 text-xs text-slate-600 pt-2 border-t border-slate-100">
-              <IconClock className="w-4 h-4 text-[#4d8db9] shrink-0" />
+              <IconClock className="w-4 h-4 text-[#4D8DBA] shrink-0" />
               <span className="font-semibold">{c.hours[lang]}</span>
               <span>·</span>
               <span>{c.sundayNote[lang]}</span>
@@ -213,7 +213,7 @@ const Contact = () => {
                 href={c.maps.yandex}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="py-2.5 px-4 rounded-xl bg-[#086287] hover:bg-[#4d8db9] text-white text-xs font-semibold flex items-center justify-center gap-2 transition-colors"
+                className="py-2.5 px-4 rounded-xl bg-[#086288] hover:bg-[#4D8DBA] text-white text-xs font-semibold flex items-center justify-center gap-2 transition-colors"
               >
                 <IconYandex className="w-4 h-4" />
                 <span>Yandex Maps</span>
@@ -222,7 +222,7 @@ const Contact = () => {
                 href={c.maps.google}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="py-2.5 px-4 rounded-xl bg-[#f2f6fa] hover:bg-[#e4edf5] text-[#086287] border border-[#cbe1ec] text-xs font-semibold flex items-center justify-center gap-2 transition-colors"
+                className="py-2.5 px-4 rounded-xl bg-[#F4F8FB] hover:bg-[#E6F1F7] text-[#086288] border border-[#D1E4F0] text-xs font-semibold flex items-center justify-center gap-2 transition-colors"
               >
                 <IconGoogle className="w-4 h-4" />
                 <span>Google Maps</span>
@@ -232,15 +232,15 @@ const Contact = () => {
         </div>
 
         {/* Right Quick Message Form (6 cols) */}
-        <div className="lg:col-span-6 bg-white rounded-2xl p-4 sm:p-8 border border-[#cbe1ec] shadow-luxury">
-          <span className="text-xs font-bold uppercase tracking-[0.16em] text-[#4d8db9]">
+        <div className="lg:col-span-6 bg-white rounded-2xl p-4 sm:p-8 border border-[#D1E4F0] shadow-luxury">
+          <span className="text-xs font-bold uppercase tracking-[0.16em] text-[#4D8DBA]">
             {lang === "uz"
               ? "Tezkor So'rov"
               : lang === "ru"
               ? "Быстрое Обращение"
               : "Quick Inquiry"}
           </span>
-          <h2 className="font-serif-classic text-xl sm:text-2xl md:text-3xl font-bold text-[#086287] mt-1">
+          <h2 className="font-serif-classic text-xl sm:text-2xl md:text-3xl font-bold text-[#086288] mt-1">
             {lang === "uz"
               ? "Dr. Nozimaga Savol Yoki Qabul So'rovi Yuborish"
               : lang === "ru"
@@ -259,7 +259,7 @@ const Contact = () => {
             <div>
               <label
                 htmlFor="contact-name"
-                className="block text-xs font-bold text-[#086287] mb-1.5"
+                className="block text-xs font-bold text-[#086288] mb-1.5"
               >
                 {lang === "uz" ? "Ismingiz *" : lang === "ru" ? "Ваше имя *" : "Your Name *"}
               </label>
@@ -278,14 +278,14 @@ const Contact = () => {
                     ? "Введите ваше имя"
                     : "Enter your name"
                 }
-                className="w-full px-4 py-3 rounded-xl bg-[#f7f9fc] border border-[#cbe1ec] text-sm focus:outline-none focus:border-[#086287] focus:bg-white"
+                className="w-full px-4 py-3 rounded-xl bg-[#f7f9fc] border border-[#D1E4F0] text-sm focus:outline-none focus:border-[#086288] focus:bg-white"
               />
             </div>
 
             <div>
               <label
                 htmlFor="contact-phone"
-                className="block text-xs font-bold text-[#086287] mb-1.5"
+                className="block text-xs font-bold text-[#086288] mb-1.5"
               >
                 {lang === "uz"
                   ? "Telefon raqamingiz *"
@@ -301,14 +301,14 @@ const Contact = () => {
                 required
                 value={phone}
                 onChange={(e) => setPhone(e.target.value)}
-                className="w-full px-4 py-3 rounded-xl bg-[#f7f9fc] border border-[#cbe1ec] text-sm focus:outline-none focus:border-[#086287] focus:bg-white"
+                className="w-full px-4 py-3 rounded-xl bg-[#f7f9fc] border border-[#D1E4F0] text-sm focus:outline-none focus:border-[#086288] focus:bg-white"
               />
             </div>
 
             <div>
               <label
                 htmlFor="contact-message"
-                className="block text-xs font-bold text-[#086287] mb-1.5"
+                className="block text-xs font-bold text-[#086288] mb-1.5"
               >
                 {lang === "uz"
                   ? "Savolingiz yoki murojaat mazmuni"
@@ -329,13 +329,13 @@ const Contact = () => {
                     ? "Например: хочу записаться на осмотр и узнать о циркониевых коронках..."
                     : "e.g., I would like to schedule a checkup and ask about zirconia crowns..."
                 }
-                className="w-full px-4 py-3 rounded-xl bg-[#f7f9fc] border border-[#cbe1ec] text-sm focus:outline-none focus:border-[#086287] focus:bg-white"
+                className="w-full px-4 py-3 rounded-xl bg-[#f7f9fc] border border-[#D1E4F0] text-sm focus:outline-none focus:border-[#086288] focus:bg-white"
               />
             </div>
 
             <button
               type="submit"
-              className="w-full py-3.5 rounded-xl bg-[#086287] hover:bg-[#4d8db9] text-white font-semibold text-sm transition-colors cursor-pointer flex items-center justify-center gap-2"
+              className="w-full py-3.5 rounded-xl bg-[#086288] hover:bg-[#4D8DBA] text-white font-semibold text-sm transition-colors cursor-pointer flex items-center justify-center gap-2"
             >
               <span>
                 {lang === "uz"

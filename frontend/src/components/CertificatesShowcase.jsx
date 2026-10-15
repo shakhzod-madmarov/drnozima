@@ -83,13 +83,13 @@ const CertificatesShowcase = () => {
   const modalRef = useModalA11y(Boolean(activeCert), closeCert);
 
   return (
-    <section className="py-10 sm:py-16 bg-[#f4f8fb] border-t border-[#cbe1ec]">
+    <section className="py-10 sm:py-16 bg-[#f4f8fb] border-t border-[#D1E4F0]">
       <div className="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8">
         
         {/* Header */}
         <div className="text-center max-w-2xl mx-auto mb-8 sm:mb-10">
-          <span className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-xs font-black uppercase tracking-widest bg-[#e6f1f7] text-[#086287] border border-[#086287]/20">
-            <IconAward className="w-4 h-4 text-[#086287]" />
+          <span className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-xs font-black uppercase tracking-widest bg-[#e6f1f7] text-[#086288] border border-[#086288]/20">
+            <IconAward className="w-4 h-4 text-[#086288]" />
             <span>
               {lang === "uz"
                 ? "DIPLOM VA KLINIK SERTIFIKATLAR"
@@ -128,11 +128,11 @@ const CertificatesShowcase = () => {
                   setActiveCert(cert);
                 }
               }}
-              className="group bg-white rounded-2xl p-5 sm:p-6 border border-[#cbe1ec] hover:border-[#086287] shadow-xs hover:shadow-lg transition-all duration-200 cursor-pointer flex flex-col justify-between text-left"
+              className="group bg-white rounded-2xl p-5 sm:p-6 border border-[#D1E4F0] hover:border-[#086288] shadow-xs hover:shadow-lg transition-all duration-200 cursor-pointer flex flex-col justify-between text-left"
             >
               <div>
                 <div className="flex items-center justify-between gap-2 mb-3">
-                  <span className="text-[10px] font-black uppercase tracking-wider px-2.5 py-1 rounded-md bg-[#e6f1f7] text-[#086287] border border-[#086287]/20">
+                  <span className="text-[10px] font-black uppercase tracking-wider px-2.5 py-1 rounded-md bg-[#e6f1f7] text-[#086288] border border-[#086288]/20">
                     {cert.badge[lang]}
                   </span>
                   <span className="text-xs font-bold text-slate-400">
@@ -140,7 +140,7 @@ const CertificatesShowcase = () => {
                   </span>
                 </div>
 
-                <h3 className="text-sm sm:text-base font-bold text-slate-900 group-hover:text-[#086287] transition-colors leading-snug">
+                <h3 className="text-sm sm:text-base font-bold text-slate-900 group-hover:text-[#086288] transition-colors leading-snug">
                   {cert.title[lang]}
                 </h3>
 
@@ -157,7 +157,7 @@ const CertificatesShowcase = () => {
                 <span className="text-[11px] font-mono text-slate-400">
                   {cert.serial}
                 </span>
-                <span className="font-bold text-[#086287] group-hover:translate-x-0.5 transition-transform">
+                <span className="font-bold text-[#086288] group-hover:translate-x-0.5 transition-transform">
                   {lang === "uz" ? "Ko'rish →" : lang === "ru" ? "Открыть →" : "View →"}
                 </span>
               </div>
@@ -173,7 +173,7 @@ const CertificatesShowcase = () => {
               role="dialog"
               aria-modal="true"
               aria-label={activeCert.title[lang]}
-              className="bg-white rounded-3xl max-w-lg w-full p-6 sm:p-8 shadow-2xl border border-[#cbe1ec] relative animate-in fade-in zoom-in-95 duration-200"
+              className="bg-white rounded-3xl max-w-lg w-full p-6 sm:p-8 shadow-2xl border border-[#D1E4F0] relative animate-in fade-in zoom-in-95 duration-200"
             >
               <button
                 onClick={closeCert}
@@ -184,7 +184,7 @@ const CertificatesShowcase = () => {
               </button>
 
               <div className="flex items-center gap-2 mb-3">
-                <span className="text-[10px] font-black uppercase tracking-wider px-2.5 py-1 rounded-md bg-[#e6f1f7] text-[#086287] border border-[#086287]/20">
+                <span className="text-[10px] font-black uppercase tracking-wider px-2.5 py-1 rounded-md bg-[#e6f1f7] text-[#086288] border border-[#086288]/20">
                   {activeCert.badge[lang]}
                 </span>
                 <span className="text-xs font-bold text-slate-400">
@@ -196,11 +196,11 @@ const CertificatesShowcase = () => {
                 {activeCert.title[lang]}
               </h3>
 
-              <p className="mt-1 text-xs font-semibold text-[#086287]">
+              <p className="mt-1 text-xs font-semibold text-[#086288]">
                 {activeCert.org}
               </p>
 
-              <div className="mt-4 p-4 rounded-xl bg-[#f4f8fb] border border-[#cbe1ec] text-xs sm:text-sm text-slate-700 leading-relaxed">
+              <div className="mt-4 p-4 rounded-xl bg-[#f4f8fb] border border-[#D1E4F0] text-xs sm:text-sm text-slate-700 leading-relaxed">
                 {activeCert.desc[lang]}
               </div>
 
@@ -220,7 +220,7 @@ const CertificatesShowcase = () => {
 
               <button
                 onClick={closeCert}
-                className="mt-6 w-full py-2.5 rounded-xl bg-[#086287] hover:bg-[#064863] text-white font-bold text-xs transition-colors cursor-pointer"
+                className="mt-6 w-full py-2.5 rounded-xl bg-[#086288] hover:bg-[#064b69] text-white font-bold text-xs transition-colors cursor-pointer"
               >
                 {lang === "uz" ? "Yopish" : lang === "ru" ? "Закрыть" : "Close"}
               </button>

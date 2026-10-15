@@ -104,19 +104,19 @@ const Booking = () => {
       <nav aria-label="Breadcrumb" className="text-xs sm:text-sm font-semibold text-slate-500 flex items-center gap-2">
         <Link
           to={to("/")}
-          className="hover:text-[#086287] transition-colors"
+          className="hover:text-[#086288] transition-colors"
         >
           {lang === "ru" ? "Главная" : lang === "en" ? "Home" : "Bosh sahifa"}
         </Link>
         <span>/</span>
-        <span className="text-[#086287] font-bold" aria-current="page">
+        <span className="text-[#086288] font-bold" aria-current="page">
           {lang === "ru" ? "Онлайн запись" : lang === "en" ? "Book Visit" : "Qabulga yozilish"}
         </span>
       </nav>
 
       {/* 1. Classic Doctor Profile Card */}
-      <article className="bg-white rounded-2xl sm:rounded-3xl border border-[#cbe1ec] shadow-sm overflow-hidden">
-        <div className="h-1.5 w-full bg-gradient-to-r from-[#086287] to-[#4d8db9]" />
+      <article className="bg-white rounded-2xl sm:rounded-3xl border border-[#D1E4F0] shadow-sm overflow-hidden">
+        <div className="h-1.5 w-full bg-gradient-to-r from-[#086288] to-[#4D8DBA]" />
         <div className="grid grid-cols-1 lg:grid-cols-12 items-stretch">
           <figure className="lg:col-span-5 bg-[#f4f8fb] flex items-center justify-center p-4 sm:p-6 m-0">
             <img
@@ -124,7 +124,7 @@ const Booking = () => {
               alt={t.name}
               width={420}
               height={520}
-              className="w-full max-w-[280px] sm:max-w-[340px] h-auto max-h-[380px] sm:max-h-[420px] rounded-xl sm:rounded-2xl object-cover object-top border border-[#cbe1ec]"
+              className="w-full max-w-[280px] sm:max-w-[340px] h-auto max-h-[380px] sm:max-h-[420px] rounded-xl sm:rounded-2xl object-cover object-top border border-[#D1E4F0]"
               loading="eager"
               decoding="async"
             />
@@ -132,10 +132,10 @@ const Booking = () => {
 
           <section className="lg:col-span-7 p-4 sm:p-8 flex flex-col justify-center gap-4 sm:gap-5 text-left">
             <header>
-              <p className="text-xs font-bold uppercase tracking-[0.18em] text-[#4d8db9]">
+              <p className="text-xs font-bold uppercase tracking-[0.18em] text-[#4D8DBA]">
                 {t.badge}
               </p>
-              <h1 className="font-serif-classic text-2xl sm:text-3xl md:text-4xl font-bold text-[#086287] mt-1">
+              <h1 className="font-serif-classic text-2xl sm:text-3xl md:text-4xl font-bold text-[#086288] mt-1">
                 {t.name}
               </h1>
               <p className="text-xs sm:text-sm font-semibold text-slate-600 mt-1">
@@ -144,25 +144,25 @@ const Booking = () => {
             </header>
 
             <dl className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs sm:text-sm">
-              <div className="p-3 rounded-xl bg-[#f4f8fb] border border-[#cbe1ec]">
-                <dt className="text-[11px] font-bold uppercase tracking-wider text-[#4d8db9]">
+              <div className="p-3 rounded-xl bg-[#f4f8fb] border border-[#D1E4F0]">
+                <dt className="text-[11px] font-bold uppercase tracking-wider text-[#4D8DBA]">
                   {t.clinicLabel}
                 </dt>
-                <dd className="font-bold text-[#086287] mt-0.5">{t.clinicVal}</dd>
+                <dd className="font-bold text-[#086288] mt-0.5">{t.clinicVal}</dd>
               </div>
 
-              <div className="p-3 rounded-xl bg-[#f4f8fb] border border-[#cbe1ec]">
-                <dt className="text-[11px] font-bold uppercase tracking-wider text-[#4d8db9]">
+              <div className="p-3 rounded-xl bg-[#f4f8fb] border border-[#D1E4F0]">
+                <dt className="text-[11px] font-bold uppercase tracking-wider text-[#4D8DBA]">
                   {t.expLabel}
                 </dt>
-                <dd className="font-bold text-[#086287] mt-0.5">
+                <dd className="font-bold text-[#086288] mt-0.5">
                   {t.expVal(years)}
                 </dd>
               </div>
             </dl>
 
             <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-              <strong className="text-[#086287]">{t.aboutLabel}: </strong>
+              <strong className="text-[#086288]">{t.aboutLabel}: </strong>
               {t.aboutVal}
             </p>
 
@@ -175,7 +175,7 @@ const Booking = () => {
               </div>
               <a
                 href={DOCTOR_INFO.phoneHref}
-                className="text-xs font-bold text-[#086287] hover:underline"
+                className="text-xs font-bold text-[#086288] hover:underline"
               >
                 {DOCTOR_INFO.phone}
               </a>

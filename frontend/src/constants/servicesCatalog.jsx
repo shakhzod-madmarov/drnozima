@@ -50,7 +50,7 @@ export const SERVICES_CATALOG = [
   },
   {
     id: "ortopediya",
-    icon: <IconToothCrown className="w-7 h-7 text-[#086287]" />,
+    icon: <IconToothCrown className="w-7 h-7 text-[#086288]" />,
     image: assets.service_crowns,
     category: { uz: "Ortopedik Stomatologiya", ru: "Ортопедия и Протезирование", en: "Prosthodontics" },
     title: {
@@ -240,7 +240,7 @@ export const SERVICES_CATALOG = [
   },
   {
     id: "rentgen-diagnostika",
-    icon: <IconDigitalXray className="w-7 h-7 text-[#086287]" />,
+    icon: <IconDigitalXray className="w-7 h-7 text-[#086288]" />,
     image: assets.service_xray,
     category: { uz: "Raqamli Diagnostika", ru: "Цифровая Диагностика", en: "Digital Diagnostics" },
     title: {

@@ -388,7 +388,7 @@ const InlineBookingSection = ({
               margin: 2,
               width: 180,
               color: {
-                dark: "#086287",
+                dark: "#086288",
                 light: "#ffffff",
               },
             }),
@@ -403,7 +403,7 @@ const InlineBookingSection = ({
         particleCount: 75,
         spread: 65,
         origin: { y: 0.6 },
-        colors: ["#086287", "#4d8db9", "#97d6ff"],
+        colors: ["#086288", "#4D8DBA", "#97D7FF"],
       });
     } catch (err) {
       if (err?.status === 409) {
@@ -435,16 +435,16 @@ const InlineBookingSection = ({
     <section
       id={sectionId}
       aria-labelledby={`${sectionId}-title`}
-      className="scroll-mt-24 bg-white rounded-2xl sm:rounded-3xl border border-[#cbe1ec] shadow-sm p-4 sm:p-8 lg:p-10"
+      className="scroll-mt-24 bg-white rounded-2xl sm:rounded-3xl border border-[#D1E4F0] shadow-sm p-4 sm:p-8 lg:p-10"
     >
       {/* ── Classic Professional Header ──────────────────────────────── */}
-      <div className="border-b border-[#e2eaf2] pb-4 sm:pb-5 mb-5 sm:mb-6 text-left sm:text-center">
-        <p className="text-xs font-bold uppercase tracking-[0.18em] text-[#4d8db9] mb-1.5">
+      <div className="border-b border-[#D1E4F0] pb-4 sm:pb-5 mb-5 sm:mb-6 text-left sm:text-center">
+        <p className="text-xs font-bold uppercase tracking-[0.18em] text-[#4D8DBA] mb-1.5">
           {t.kicker}
         </p>
         <h2
           id={`${sectionId}-title`}
-          className="font-serif-classic text-2xl sm:text-3xl md:text-4xl font-bold text-[#086287]"
+          className="font-serif-classic text-2xl sm:text-3xl md:text-4xl font-bold text-[#086288]"
         >
           {t.heading}
         </h2>
@@ -454,20 +454,20 @@ const InlineBookingSection = ({
 
         {/* Live Clinic Metadata Line */}
         <div className="mt-3.5 flex flex-wrap items-center sm:justify-center gap-x-4 gap-y-1.5 text-xs text-slate-600">
-          <span className="inline-flex items-center gap-1.5 font-semibold text-[#086287]">
-            <span className="w-2 h-2 rounded-full bg-[#4d8db9]" />
+          <span className="inline-flex items-center gap-1.5 font-semibold text-[#086288]">
+            <span className="w-2 h-2 rounded-full bg-[#4D8DBA]" />
             <span>{clinicName}</span>
           </span>
           <span className="text-slate-300 hidden sm:inline">·</span>
           <span className="inline-flex items-center gap-1.5 text-slate-700">
-            <IconClock className="w-3.5 h-3.5 text-[#4d8db9] shrink-0" />
+            <IconClock className="w-3.5 h-3.5 text-[#4D8DBA] shrink-0" />
             <span>
               {dynamicWorkingHours} ({t.lunchLabel})
             </span>
           </span>
           <span className="text-slate-300 hidden sm:inline">·</span>
           <span className="inline-flex items-center gap-1 text-slate-600">
-            <IconMapPin className="w-3.5 h-3.5 text-[#4d8db9] shrink-0" />
+            <IconMapPin className="w-3.5 h-3.5 text-[#4D8DBA] shrink-0" />
             <span>{clinicAddress}</span>
           </span>
         </div>
@@ -476,14 +476,14 @@ const InlineBookingSection = ({
       {isSuccess ? (
         /* ══════════ STEP 5: CONFIRMATION + 1-CLICK TELEGRAM REMINDER ══════════ */
         <div className="max-w-lg mx-auto py-4 text-center space-y-4 sm:space-y-5">
-          <div className="w-14 h-14 sm:w-16 sm:h-16 rounded-full bg-[#f2f6fa] border border-[#cbe1ec] flex items-center justify-center mx-auto">
-            <IconCheckCircle className="w-7 h-7 sm:w-8 sm:h-8 text-[#086287]" />
+          <div className="w-14 h-14 sm:w-16 sm:h-16 rounded-full bg-[#F4F8FB] border border-[#D1E4F0] flex items-center justify-center mx-auto">
+            <IconCheckCircle className="w-7 h-7 sm:w-8 sm:h-8 text-[#086288]" />
           </div>
           <div>
-            <p className="text-xs font-bold uppercase tracking-widest text-[#4d8db9] mb-1">
+            <p className="text-xs font-bold uppercase tracking-widest text-[#4D8DBA] mb-1">
               {t.successBadge}
             </p>
-            <h3 className="font-serif-classic text-xl sm:text-2xl md:text-3xl font-bold text-[#086287]">
+            <h3 className="font-serif-classic text-xl sm:text-2xl md:text-3xl font-bold text-[#086288]">
               {t.successTitle}
             </h3>
             <p className="text-xs sm:text-sm text-slate-600 mt-1.5 leading-relaxed">
@@ -491,37 +491,37 @@ const InlineBookingSection = ({
             </p>
           </div>
 
-          <dl className="bg-[#f7f9fc] border border-[#cbe1ec] rounded-xl p-3.5 sm:p-4 text-left text-xs space-y-2.5 text-slate-700">
-            <div className="flex justify-between border-b border-[#e2eaf2] pb-2">
+          <dl className="bg-[#f7f9fc] border border-[#D1E4F0] rounded-xl p-3.5 sm:p-4 text-left text-xs space-y-2.5 text-slate-700">
+            <div className="flex justify-between border-b border-[#D1E4F0] pb-2">
               <dt className="text-slate-500">{t.summaryPatient}:</dt>
-              <dd className="font-bold text-[#086287]">{name}</dd>
+              <dd className="font-bold text-[#086288]">{name}</dd>
             </div>
-            <div className="flex justify-between border-b border-[#e2eaf2] pb-2">
+            <div className="flex justify-between border-b border-[#D1E4F0] pb-2">
               <dt className="text-slate-500">{t.summaryPhone}:</dt>
-              <dd className="font-bold text-[#086287]">{phone}</dd>
+              <dd className="font-bold text-[#086288]">{phone}</dd>
             </div>
-            <div className="flex justify-between border-b border-[#e2eaf2] pb-2">
+            <div className="flex justify-between border-b border-[#D1E4F0] pb-2">
               <dt className="text-slate-500">{t.summaryService}:</dt>
               <dd className="font-semibold text-slate-900">{serviceLabel}</dd>
             </div>
             <div className="flex justify-between pt-0.5">
               <dt className="text-slate-500">{t.summaryWhen}:</dt>
-              <dd className="font-bold text-[#4d8db9]">
+              <dd className="font-bold text-[#4D8DBA]">
                 {formatDmy(selectedDate)} · {selectedTime}
               </dd>
             </div>
           </dl>
 
           {botLink && (
-            <div className="rounded-xl border border-[#cbe1ec] bg-[#f2f6fa] p-4 sm:p-5 space-y-3 text-left">
-              <p className="text-xs sm:text-sm font-bold text-[#086287]">{t.botTitle}</p>
+            <div className="rounded-xl border border-[#D1E4F0] bg-[#F4F8FB] p-4 sm:p-5 space-y-3 text-left">
+              <p className="text-xs sm:text-sm font-bold text-[#086288]">{t.botTitle}</p>
               {botQr && (
                 <img
                   src={botQr}
                   alt={t.botTitle}
                   width={160}
                   height={160}
-                  className="mx-auto rounded-xl bg-white p-2 border border-[#cbe1ec] block"
+                  className="mx-auto rounded-xl bg-white p-2 border border-[#D1E4F0] block"
                 />
               )}
               <p className="text-xs text-slate-600 leading-relaxed">{t.botDesc}</p>
@@ -529,7 +529,7 @@ const InlineBookingSection = ({
                 href={botLink}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-full min-h-[46px] bg-[#086287] hover:bg-[#4d8db9] text-white font-semibold text-xs sm:text-sm rounded-xl transition-colors flex items-center justify-center gap-2"
+                className="w-full min-h-[46px] bg-[#086288] hover:bg-[#4D8DBA] text-white font-semibold text-xs sm:text-sm rounded-xl transition-colors flex items-center justify-center gap-2"
               >
                 <IconTelegram className="w-4 h-4 text-white" />
                 <span>{t.botBtn}</span>
@@ -540,7 +540,7 @@ const InlineBookingSection = ({
           <button
             type="button"
             onClick={resetForm}
-            className="px-6 py-2.5 rounded-xl bg-[#f2f6fa] hover:bg-[#e4edf5] text-[#086287] border border-[#cbe1ec] font-semibold text-xs transition-colors cursor-pointer"
+            className="px-6 py-2.5 rounded-xl bg-[#F4F8FB] hover:bg-[#E6F1F7] text-[#086288] border border-[#D1E4F0] font-semibold text-xs transition-colors cursor-pointer"
           >
             {t.newBooking}
           </button>
@@ -550,7 +550,7 @@ const InlineBookingSection = ({
         <form onSubmit={handleSubmit} className="space-y-5 sm:space-y-6" noValidate>
           {/* Step 1: Date Picker */}
           <div>
-            <p className="text-xs font-bold text-[#086287] mb-2 sm:mb-2.5 text-left sm:text-center">
+            <p className="text-xs font-bold text-[#086288] mb-2 sm:mb-2.5 text-left sm:text-center">
               {t.dayGroupLabel}
             </p>
             <div
@@ -573,8 +573,8 @@ const InlineBookingSection = ({
                     aria-pressed={isActive}
                     className={`shrink-0 snap-start px-3 py-2 sm:px-4 sm:py-2.5 rounded-xl text-xs sm:text-sm font-semibold border transition-colors cursor-pointer ${
                       isActive
-                        ? "bg-[#086287] text-white border-[#086287]"
-                        : "bg-[#f7f9fc] text-slate-700 border-[#cbe1ec] hover:bg-[#eef3f8] hover:border-[#4d8db9]"
+                        ? "bg-[#086288] text-white border-[#086288]"
+                        : "bg-[#f7f9fc] text-slate-700 border-[#D1E4F0] hover:bg-[#eef3f8] hover:border-[#4D8DBA]"
                     }`}
                   >
                     {formatDayPill(day.date, lang)}
@@ -586,7 +586,7 @@ const InlineBookingSection = ({
 
           {/* Step 2: Free Time Slots */}
           <div>
-            <p className="text-xs font-bold text-[#086287] mb-2 sm:mb-2.5 text-left sm:text-center">
+            <p className="text-xs font-bold text-[#086288] mb-2 sm:mb-2.5 text-left sm:text-center">
               {t.timeGroupLabel}
             </p>
             {activeDay && activeDay.times.length > 0 && (
@@ -605,8 +605,8 @@ const InlineBookingSection = ({
                       aria-pressed={isSelected}
                       className={`py-2.5 sm:py-3 rounded-xl border text-xs sm:text-sm font-semibold transition-colors cursor-pointer ${
                         isSelected
-                          ? "bg-[#4d8db9] text-white border-[#4d8db9]"
-                          : "bg-white text-[#086287] border-[#cbe1ec] hover:bg-[#f2f6fa] hover:border-[#4d8db9]"
+                          ? "bg-[#4D8DBA] text-white border-[#4D8DBA]"
+                          : "bg-white text-[#086288] border-[#D1E4F0] hover:bg-[#F4F8FB] hover:border-[#4D8DBA]"
                       }`}
                     >
                       {time}
@@ -618,8 +618,8 @@ const InlineBookingSection = ({
           </div>
 
           {/* Service Selection Pills */}
-          <div className="pt-3 border-t border-[#e2eaf2]">
-            <p className="text-xs font-bold text-[#086287] mb-2.5">
+          <div className="pt-3 border-t border-[#D1E4F0]">
+            <p className="text-xs font-bold text-[#086288] mb-2.5">
               {t.serviceLabel}
             </p>
             <div
@@ -637,13 +637,13 @@ const InlineBookingSection = ({
                     aria-pressed={isSelected}
                     className={`px-3.5 py-2.5 rounded-xl border text-xs font-semibold text-left transition-colors cursor-pointer flex items-center justify-between ${
                       isSelected
-                        ? "bg-[#086287] text-white border-[#086287]"
-                        : "bg-[#f7f9fc] text-slate-700 border-[#cbe1ec] hover:bg-[#eef3f8]"
+                        ? "bg-[#086288] text-white border-[#086288]"
+                        : "bg-[#f7f9fc] text-slate-700 border-[#D1E4F0] hover:bg-[#eef3f8]"
                     }`}
                   >
                     <span>{item[lang] || item.uz}</span>
                     {isSelected && (
-                      <span className="w-2 h-2 rounded-full bg-[#97d6ff] shrink-0" />
+                      <span className="w-2 h-2 rounded-full bg-[#97D7FF] shrink-0" />
                     )}
                   </button>
                 );
@@ -652,11 +652,11 @@ const InlineBookingSection = ({
           </div>
 
           {/* Step 3: Patient Information Form */}
-          <div className="pt-3 border-t border-[#e2eaf2] grid grid-cols-1 sm:grid-cols-2 gap-4 text-left items-start">
+          <div className="pt-3 border-t border-[#D1E4F0] grid grid-cols-1 sm:grid-cols-2 gap-4 text-left items-start">
             <div>
               <label
                 htmlFor={`${sectionId}-name`}
-                className="block text-xs font-bold text-[#086287] mb-1.5"
+                className="block text-xs font-bold text-[#086288] mb-1.5"
               >
                 {t.nameLabel}
               </label>
@@ -677,7 +677,7 @@ const InlineBookingSection = ({
                 className={`w-full h-[48px] px-4 rounded-xl border text-sm text-slate-800 placeholder:text-slate-400 bg-[#f7f9fc] focus:bg-white outline-none transition ${
                   errors.name
                     ? "border-red-500 ring-2 ring-red-500/10"
-                    : "border-[#cbe1ec] focus:border-[#086287]"
+                    : "border-[#D1E4F0] focus:border-[#086288]"
                 }`}
               />
               {errors.name && (
@@ -688,7 +688,7 @@ const InlineBookingSection = ({
             <div>
               <label
                 htmlFor={`${sectionId}-phone`}
-                className="block text-xs font-bold text-[#086287] mb-1.5"
+                className="block text-xs font-bold text-[#086288] mb-1.5"
               >
                 {t.phoneLabel}
               </label>
@@ -708,7 +708,7 @@ const InlineBookingSection = ({
                 className={`w-full h-[48px] px-4 rounded-xl border text-sm font-medium tracking-wide text-slate-800 placeholder:text-slate-400 bg-[#f7f9fc] focus:bg-white outline-none transition ${
                   errors.phone
                     ? "border-red-500 ring-2 ring-red-500/10"
-                    : "border-[#cbe1ec] focus:border-[#086287]"
+                    : "border-[#D1E4F0] focus:border-[#086288]"
                 }`}
               />
               {errors.phone && (
@@ -720,7 +720,7 @@ const InlineBookingSection = ({
               <div>
                 <label
                   htmlFor={`${sectionId}-dob`}
-                  className="block text-xs font-bold text-[#086287] mb-1.5"
+                  className="block text-xs font-bold text-[#086288] mb-1.5"
                 >
                   {t.dobLabel}{" "}
                   <span className="font-normal text-slate-400">({t.optional})</span>
@@ -733,7 +733,7 @@ const InlineBookingSection = ({
                   max={todayYmd()}
                   value={dob}
                   onChange={(e) => setDob(e.target.value)}
-                  className="w-full h-[48px] px-4 rounded-xl border border-[#cbe1ec] focus:border-[#086287] outline-none text-sm text-slate-800 bg-[#f7f9fc] focus:bg-white transition"
+                  className="w-full h-[48px] px-4 rounded-xl border border-[#D1E4F0] focus:border-[#086288] outline-none text-sm text-slate-800 bg-[#f7f9fc] focus:bg-white transition"
                 />
                 <p className="mt-1 text-[11px] text-slate-500">{t.dobHint}</p>
               </div>
@@ -742,7 +742,7 @@ const InlineBookingSection = ({
             <div className={compact ? "sm:col-span-2" : ""}>
               <label
                 htmlFor={`${sectionId}-note`}
-                className="block text-xs font-bold text-[#086287] mb-1.5"
+                className="block text-xs font-bold text-[#086288] mb-1.5"
               >
                 {t.noteLabel}{" "}
                 <span className="font-normal text-slate-400">({t.optional})</span>
@@ -755,28 +755,28 @@ const InlineBookingSection = ({
                 placeholder={t.notePlaceholder}
                 value={note}
                 onChange={(e) => setNote(e.target.value)}
-                className="w-full h-[48px] px-4 rounded-xl border border-[#cbe1ec] focus:border-[#086287] outline-none text-sm text-slate-800 placeholder:text-slate-400 bg-[#f7f9fc] focus:bg-white transition"
+                className="w-full h-[48px] px-4 rounded-xl border border-[#D1E4F0] focus:border-[#086288] outline-none text-sm text-slate-800 placeholder:text-slate-400 bg-[#f7f9fc] focus:bg-white transition"
               />
             </div>
           </div>
 
           {/* Step 4: Selected Slot Summary & E2EE Submit CTA */}
-          <div className="pt-4 border-t border-[#e2eaf2] flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+          <div className="pt-4 border-t border-[#D1E4F0] flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
             <div className="text-left space-y-1">
               <p className="text-xs text-slate-600">
                 {t.selectedSlotLabel}{" "}
-                <strong className="text-[#086287] font-bold text-sm">
+                <strong className="text-[#086288] font-bold text-sm">
                   {formatDmy(selectedDate)} / {selectedTime}
                 </strong>{" "}
                 <span className="text-slate-300">·</span>{" "}
-                <span className="text-[#4d8db9] font-semibold">{serviceLabel}</span>
+                <span className="text-[#4D8DBA] font-semibold">{serviceLabel}</span>
               </p>
               <div className="flex flex-wrap items-center gap-3 text-xs text-slate-500">
                 <a
                   href={`tel:${DOCTOR_INFO.phoneRaw}`}
-                  className="inline-flex items-center gap-1.5 hover:text-[#086287] transition-colors font-medium"
+                  className="inline-flex items-center gap-1.5 hover:text-[#086288] transition-colors font-medium"
                 >
-                  <IconPhone className="w-3.5 h-3.5 text-[#4d8db9]" />
+                  <IconPhone className="w-3.5 h-3.5 text-[#4D8DBA]" />
                   <span>
                     {t.orCall} {DOCTOR_INFO.phone}
                   </span>
@@ -787,7 +787,7 @@ const InlineBookingSection = ({
             <button
               type="submit"
               disabled={isSubmitting}
-              className="w-full sm:w-auto min-h-[48px] px-8 py-3 rounded-xl bg-[#086287] hover:bg-[#4d8db9] disabled:opacity-60 disabled:cursor-not-allowed text-white font-semibold text-sm transition-colors flex items-center justify-center gap-2 cursor-pointer"
+              className="w-full sm:w-auto min-h-[48px] px-8 py-3 rounded-xl bg-[#086288] hover:bg-[#4D8DBA] disabled:opacity-60 disabled:cursor-not-allowed text-white font-semibold text-sm transition-colors flex items-center justify-center gap-2 cursor-pointer"
             >
               {isSubmitting ? (
                 <>

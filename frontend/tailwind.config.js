@@ -4,13 +4,15 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: "#086287",
-        "primary-hover": "#064863",
-        accent: "#4d8db9",
-        "accent-light": "#97d6ff",
-        gold: "#feefc4",
-        surface: "#f4f8fb",
-        "surface-soft": "#e6f1f7",
+        primary: "#086288",
+        "primary-hover": "#064b69",
+        accent: "#4D8DBA",
+        "accent-light": "#97D7FF",
+        gold: "#FFEFC4",
+        "gold-deep": "#E6CA85",
+        surface: "#F4F8FB",
+        "surface-soft": "#E6F1F7",
+        "border-soft": "#D1E4F0",
       },
       fontFamily: {
         serif: ["'Cormorant Garamond'", "Georgia", "serif"],
@@ -20,8 +22,9 @@ export default {
         auto: "repeat(auto-fill, minmax(220px, 1fr))",
       },
       boxShadow: {
-        luxury: "0 12px 32px -10px rgba(8, 98, 135, 0.10)",
-        "luxury-lg": "0 20px 44px -12px rgba(8, 98, 135, 0.18)",
+        luxury: "0 12px 32px -10px rgba(8, 98, 136, 0.10)",
+        "luxury-lg": "0 20px 44px -12px rgba(8, 98, 136, 0.18)",
+        "gold-glow": "0 0 25px rgba(255, 239, 196, 0.45)",
       },
     },
   },

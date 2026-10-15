@@ -132,26 +132,26 @@ const ServiceDetail = () => {
         <nav aria-label="Breadcrumb" className="text-xs sm:text-sm font-semibold text-slate-500 flex items-center gap-2 flex-wrap">
           <Link
             to={to("/")}
-            className="hover:text-[#086287] transition-colors"
+            className="hover:text-[#086288] transition-colors"
           >
             {lang === "ru" ? "Главная" : lang === "en" ? "Home" : "Bosh sahifa"}
           </Link>
           <span>/</span>
           <Link
             to={to("/services")}
-            className="hover:text-[#086287] transition-colors"
+            className="hover:text-[#086288] transition-colors"
           >
             {lang === "ru" ? "Услуги" : lang === "en" ? "Services" : "Xizmatlar"}
           </Link>
           <span>/</span>
-          <span className="text-[#086287] font-bold" aria-current="page">
+          <span className="text-[#086288] font-bold" aria-current="page">
             {service.title[lang]}
           </span>
         </nav>
 
         <Link
           to={to("/services")}
-          className="inline-flex items-center gap-1.5 text-xs sm:text-sm font-semibold text-slate-600 hover:text-[#086287] transition-colors"
+          className="inline-flex items-center gap-1.5 text-xs sm:text-sm font-semibold text-slate-600 hover:text-[#086288] transition-colors"
         >
           <span>←</span>
           <span>
@@ -165,7 +165,7 @@ const ServiceDetail = () => {
       </div>
 
       {/* Hero Card */}
-      <div className="bg-[#086287] text-white rounded-2xl sm:rounded-3xl p-4 sm:p-8 lg:p-12 shadow-sm border border-[#4d8db9]/30 grid grid-cols-1 lg:grid-cols-12 gap-6 sm:gap-8 items-center">
+      <div className="bg-[#086288] text-white rounded-2xl sm:rounded-3xl p-4 sm:p-8 lg:p-12 shadow-sm border border-[#4D8DBA]/30 grid grid-cols-1 lg:grid-cols-12 gap-6 sm:gap-8 items-center">
         <div className="lg:col-span-7 space-y-4">
           <span className="inline-block px-3.5 py-1 rounded-full bg-white/10 text-[#9cb8d4] text-xs font-bold uppercase tracking-wider">
             {service.category[lang]}
@@ -186,7 +186,7 @@ const ServiceDetail = () => {
               <IconShieldCheck className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-emerald-300" />
               <span>{service.warranty[lang]}</span>
             </span>
-            <span className="inline-flex items-center gap-1.5 sm:gap-2 px-3 py-1.5 sm:px-4 sm:py-2 rounded-full bg-[#4d8db9]/50 border border-white/15 text-white text-[11px] sm:text-xs font-semibold">
+            <span className="inline-flex items-center gap-1.5 sm:gap-2 px-3 py-1.5 sm:px-4 sm:py-2 rounded-full bg-[#4D8DBA]/50 border border-white/15 text-white text-[11px] sm:text-xs font-semibold">
               <IconAward className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-[#9cb8d4]" />
               <span>Dr. Nozima Baxtiyarovna · {getExperienceBadge(lang)}</span>
             </span>
@@ -195,7 +195,7 @@ const ServiceDetail = () => {
           <div className="pt-3 flex flex-col sm:flex-row flex-wrap gap-2.5 sm:gap-3">
             <Link
               to={`${to("/booking")}?service=${service.id}`}
-              className="w-full sm:w-auto px-5 py-3 sm:px-6 sm:py-3.5 rounded-xl bg-white text-[#086287] hover:bg-[#f2f6fa] font-bold text-xs sm:text-sm shadow-sm transition-colors text-center inline-block"
+              className="w-full sm:w-auto px-5 py-3 sm:px-6 sm:py-3.5 rounded-xl bg-white text-[#086288] hover:bg-[#F4F8FB] font-bold text-xs sm:text-sm shadow-sm transition-colors text-center inline-block"
             >
               {lang === "uz"
                 ? "Ushbu Muolajaga Yozilish →"
@@ -214,7 +214,7 @@ const ServiceDetail = () => {
               href={DOCTOR_INFO.telegramUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="w-full sm:w-auto justify-center px-4 py-3 sm:px-5 sm:py-3.5 rounded-xl bg-[#4d8db9] hover:bg-[#326c9c] text-white font-semibold text-xs sm:text-sm flex items-center gap-2 transition-colors"
+              className="w-full sm:w-auto justify-center px-4 py-3 sm:px-5 sm:py-3.5 rounded-xl bg-[#4D8DBA] hover:bg-[#326c9c] text-white font-semibold text-xs sm:text-sm flex items-center gap-2 transition-colors"
             >
               <IconTelegram className="w-4 h-4 text-white" />
               <span>Telegram</span>
@@ -240,8 +240,8 @@ const ServiceDetail = () => {
 
       {/* Advantages & Procedure Steps */}
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 sm:gap-8">
-        <div className="lg:col-span-6 bg-white rounded-2xl sm:rounded-3xl p-4 sm:p-6 lg:p-8 border border-[#cbe1ec] shadow-sm space-y-4 sm:space-y-5">
-          <h2 className="font-serif-classic text-xl sm:text-2xl font-bold text-[#086287]">
+        <div className="lg:col-span-6 bg-white rounded-2xl sm:rounded-3xl p-4 sm:p-6 lg:p-8 border border-[#D1E4F0] shadow-sm space-y-4 sm:space-y-5">
+          <h2 className="font-serif-classic text-xl sm:text-2xl font-bold text-[#086288]">
             {lang === "uz"
               ? "Asosiy Ustunliklar va Texnologiya"
               : lang === "ru"
@@ -253,9 +253,9 @@ const ServiceDetail = () => {
             {service.highlights[lang].map((point, idx) => (
               <li
                 key={idx}
-                className="flex items-start gap-2.5 sm:gap-3 p-3 sm:p-3.5 rounded-xl sm:rounded-2xl bg-[#f8fafc] border border-[#cbe1ec] text-xs sm:text-sm text-slate-800 font-medium"
+                className="flex items-start gap-2.5 sm:gap-3 p-3 sm:p-3.5 rounded-xl sm:rounded-2xl bg-[#f8fafc] border border-[#D1E4F0] text-xs sm:text-sm text-slate-800 font-medium"
               >
-                <IconCheckCircle className="w-4 h-4 sm:w-5 sm:h-5 text-[#4d8db9] shrink-0 mt-0.5" />
+                <IconCheckCircle className="w-4 h-4 sm:w-5 sm:h-5 text-[#4D8DBA] shrink-0 mt-0.5" />
                 <span>{point}</span>
               </li>
             ))}
@@ -263,8 +263,8 @@ const ServiceDetail = () => {
         </div>
 
         {/* Step-by-Step Procedure */}
-        <div className="lg:col-span-6 bg-white rounded-2xl sm:rounded-3xl p-4 sm:p-6 lg:p-8 border border-[#cbe1ec] shadow-sm space-y-4 sm:space-y-5">
-          <h2 className="font-serif-classic text-xl sm:text-2xl font-bold text-[#086287]">
+        <div className="lg:col-span-6 bg-white rounded-2xl sm:rounded-3xl p-4 sm:p-6 lg:p-8 border border-[#D1E4F0] shadow-sm space-y-4 sm:space-y-5">
+          <h2 className="font-serif-classic text-xl sm:text-2xl font-bold text-[#086288]">
             {lang === "uz"
               ? "Muolaja Qanday Bosqichlarda O'tadi?"
               : lang === "ru"
@@ -276,13 +276,13 @@ const ServiceDetail = () => {
             {steps.map((st) => (
               <div
                 key={st.num}
-                className="flex items-start gap-3 sm:gap-4 p-3.5 sm:p-4 rounded-xl sm:rounded-2xl bg-[#f8fafc] border border-[#cbe1ec]"
+                className="flex items-start gap-3 sm:gap-4 p-3.5 sm:p-4 rounded-xl sm:rounded-2xl bg-[#f8fafc] border border-[#D1E4F0]"
               >
-                <span className="w-8 h-8 sm:w-9 sm:h-9 rounded-xl bg-[#086287] text-white font-bold text-xs flex items-center justify-center shrink-0">
+                <span className="w-8 h-8 sm:w-9 sm:h-9 rounded-xl bg-[#086288] text-white font-bold text-xs flex items-center justify-center shrink-0">
                   {st.num}
                 </span>
                 <div>
-                  <h3 className="text-sm sm:text-base font-bold text-[#086287]">
+                  <h3 className="text-sm sm:text-base font-bold text-[#086288]">
                     {st.title}
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 mt-0.5 sm:mt-1 leading-relaxed">
@@ -297,7 +297,7 @@ const ServiceDetail = () => {
 
       {/* Other Services Navigation */}
       <div className="pt-4">
-        <h2 className="font-serif-classic text-xl font-bold text-[#086287] mb-4">
+        <h2 className="font-serif-classic text-xl font-bold text-[#086288] mb-4">
           {lang === "uz"
             ? "Boshqa Stomatologik Xizmatlar:"
             : lang === "ru"
@@ -309,7 +309,7 @@ const ServiceDetail = () => {
             <Link
               key={other.id}
               to={to(`/services/${other.id}`)}
-              className="px-4 py-2.5 rounded-xl bg-white hover:bg-[#f2f6fa] text-[#086287] border border-[#cbe1ec] text-xs font-semibold transition-colors inline-block"
+              className="px-4 py-2.5 rounded-xl bg-white hover:bg-[#F4F8FB] text-[#086288] border border-[#D1E4F0] text-xs font-semibold transition-colors inline-block"
             >
               {other.title[lang]} →
             </Link>
