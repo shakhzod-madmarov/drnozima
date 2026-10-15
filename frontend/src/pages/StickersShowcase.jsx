@@ -229,10 +229,10 @@ const StickersShowcase = () => {
           </h3>
           <p className="text-xs sm:text-sm text-slate-200">
             {lang === "uz"
-              ? "Andijon shahri, Eski Shahar (Old City), 1-qavat — «Sevdo Denta» stomatologiya klinikasi"
+              ? "Andijon shahri, A.Fitrat ko'chasi 251B-uy (Eski Shahar) — «Sevdo Denta» stomatologiya klinikasi"
               : lang === "ru"
-              ? "г. Андижан, Эски Шахар (Old City), 1-й этаж — клиника «Sevdo Denta»"
-              : "Old City (Eski Shahar), 1st Floor, Andijan — «Sevdo Denta» Dental Clinic"}
+              ? "г. Андижан, ул. А. Фитрата, 251Б (Эски Шахар) — клиника «Sevdo Denta»"
+              : "251B A. Fitrat St (Old City), Andijan — «Sevdo Denta» Dental Clinic"}
           </p>
         </div>
 

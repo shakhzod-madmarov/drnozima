@@ -152,18 +152,55 @@ export const buildAboutPageSchema = (lang = "uz", breadcrumbs = []) => {
     "@id": `${pageUrl}#webpage`,
     "url": pageUrl,
     "name": {
-      uz: "Dr. Nozima Baxtiyarovna Haqida — Stomatolog va Ortoped Andijon",
-      ru: "О Докторе Нозиме Бахтияровне — Стоматолог-ортопед в Андижане",
-      en: "About Dr. Nozima Baxtiyarovna — Dentist & Prosthodontist in Andijan",
+      uz: "Dr. Nozima Baxtiyarovna Haqida — Ayol Stomatolog va Ortoped Andijon",
+      ru: "О Докторе Нозиме Бахтияровне — Врач-Стоматолог Женщина в Андижане",
+      en: "About Dr. Nozima Baxtiyarovna — Female Dentist & Prosthodontist in Andijan",
     }[lang],
     "mainEntity": {
       "@id": `${SITE_ORIGIN}/#doctor`,
     },
   };
 
+  const doctorEntity = {
+    "@type": ["Person", "Physician"],
+    "@id": `${SITE_ORIGIN}/#doctor`,
+    "name": "Dr. Nozima Baxtiyarovna",
+    "gender": "https://schema.org/Female",
+    "jobTitle": {
+      uz: "Vrach-stomatolog, ayol stomatolog-terapevt va ortoped",
+      ru: "Врач-стоматолог, терапевт и ортопед (женщина-стоматолог)",
+      en: "Dentist, Restorative Therapist & Prosthodontist (Female Dentist)",
+    }[lang],
+    "telephone": "+998916199500",
+    "alumniOf": {
+      "@type": "EducationalOrganization",
+      "name": "Andijon davlat tibbiyot instituti (ADTI)",
+    },
+    "worksFor": {
+      "@type": ["Dentist", "MedicalClinic"],
+      "@id": `${SITE_ORIGIN}/#dentist`,
+      "name": "Sevdo Denta",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "A.Fitrat 251B",
+        "addressLocality": "Andijon",
+        "addressRegion": "Andijon viloyati",
+        "postalCode": "170100",
+        "addressCountry": "UZ",
+      },
+    },
+    "sameAs": [
+      "https://t.me/Miss_Dentist_95",
+      "https://www.instagram.com/sevdo_denta/",
+      "https://maps.app.goo.gl/Ez79FP1W4oTHGGLn9",
+      "https://yandex.uz/maps/-/CXBjjZ5d",
+    ],
+  };
+
   const graph = [];
   if (breadcrumbObj) graph.push(breadcrumbObj);
   graph.push(aboutPage);
+  graph.push(doctorEntity);
 
   return {
     "@context": "https://schema.org",
@@ -172,7 +209,7 @@ export const buildAboutPageSchema = (lang = "uz", breadcrumbs = []) => {
 };
 
 /**
- * Generate Schema.org Contact Page Schema (ContactPage + Breadcrumbs)
+ * Generate Schema.org Contact Page Schema (ContactPage + Dentist + Breadcrumbs)
  */
 export const buildContactPageSchema = (lang = "uz", breadcrumbs = []) => {
   const pageUrl = urlFor("/contact", lang);
@@ -183,18 +220,57 @@ export const buildContactPageSchema = (lang = "uz", breadcrumbs = []) => {
     "@id": `${pageUrl}#webpage`,
     "url": pageUrl,
     "name": {
-      uz: "Aloqa va Manzil — Dr. Nozima Baxtiyarovna (Sevdo Denta)",
-      ru: "Контакты и Адрес — Д-р Нозима Бахтияровна (Sevdo Denta)",
-      en: "Contact & Location — Dr. Nozima Baxtiyarovna (Sevdo Denta)",
+      uz: "Aloqa va Manzil: A.Fitrat 251B — Dr. Nozima Baxtiyarovna (Sevdo Denta)",
+      ru: "Контакты и Адрес: ул. А. Фитрата 251Б — Д-р Нозима Бахтияровна (Sevdo Denta)",
+      en: "Contact & Location: 251B A. Fitrat St — Dr. Nozima Baxtiyarovna (Sevdo Denta)",
     }[lang],
     "mainEntity": {
       "@id": `${SITE_ORIGIN}/#dentist`,
     },
   };
 
+  const clinicEntity = {
+    "@type": ["Dentist", "MedicalClinic", "LocalBusiness"],
+    "@id": `${SITE_ORIGIN}/#dentist`,
+    "name": "Dr. Nozima Baxtiyarovna — Sevdo Denta",
+    "telephone": "+998916199500",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "A.Fitrat 251B",
+      "addressLocality": "Andijon",
+      "addressRegion": "Andijon viloyati",
+      "postalCode": "170100",
+      "addressCountry": "UZ",
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 40.776788,
+      "longitude": 72.352159,
+    },
+    "hasMap": [
+      "https://maps.app.goo.gl/Ez79FP1W4oTHGGLn9",
+      "https://yandex.uz/maps/-/CXBjjZ5d",
+    ],
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+        "opens": "08:00",
+        "closes": "18:00",
+      },
+    ],
+    "sameAs": [
+      "https://t.me/Miss_Dentist_95",
+      "https://www.instagram.com/sevdo_denta/",
+      "https://maps.app.goo.gl/Ez79FP1W4oTHGGLn9",
+      "https://yandex.uz/maps/-/CXBjjZ5d",
+    ],
+  };
+
   const graph = [];
   if (breadcrumbObj) graph.push(breadcrumbObj);
   graph.push(contactPage);
+  graph.push(clinicEntity);
 
   return {
     "@context": "https://schema.org",

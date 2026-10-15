@@ -202,14 +202,14 @@ const About = () => {
               />
               <div className="col-span-8 space-y-1">
                 <span className="text-[10px] font-bold uppercase tracking-wider text-[#4D8DBA] block">
-                  Andijon · Eski Shahar
+                  Andijon · A.Fitrat 251B
                 </span>
                 <p className="text-xs font-bold text-[#086288] leading-snug">
                   {lang === "uz"
-                    ? "Old City (Eski Shahar), 1-qavat"
+                    ? "A.Fitrat 251B (Eski Shahar), 1-qavat"
                     : lang === "ru"
-                    ? "Эски Шахар (Old City), 1-й этаж"
-                    : "Old City (Eski Shahar), 1st Floor"}
+                    ? "ул. А. Фитрата 251Б (Эски Шахар), 1-й этаж"
+                    : "251B A. Fitrat St (Old City), 1st Floor"}
                 </p>
                 <div className="flex flex-wrap items-center gap-1.5 sm:gap-2 pt-0.5">
                   <a
@@ -241,10 +241,10 @@ const About = () => {
         <div className="lg:col-span-7 space-y-4 sm:space-y-5">
           <p className="text-xs font-bold uppercase tracking-[0.18em] text-[#4D8DBA]">
             {lang === "uz"
-              ? `Stomatolog-Terapevt · Ortoped · ${years} Yillik Tajriba`
+              ? `Andijondagi Malakali Ayol Stomatolog · ${years} Yillik Tajriba`
               : lang === "ru"
-              ? `Стоматолог-Терапевт · Ортопед · ${years} Лет Опыта`
-              : `Restorative Dentist & Prosthodontist · ${years} Years Experience`}
+              ? `Врач-Стоматолог Женщина в Андижане · ${years} Лет Опыта`
+              : `Certified Female Dentist in Andijan · ${years} Years Experience`}
           </p>
 
           <h1 className="font-serif-classic text-3xl sm:text-4xl md:text-5xl font-bold text-[#086288] leading-tight">
@@ -253,18 +253,18 @@ const About = () => {
 
           <p className="text-sm sm:text-base md:text-lg font-semibold text-[#4D8DBA]">
             {lang === "uz"
-              ? "Andijon davlat tibbiyot instituti bitiruvchisi · Vrach-stomatolog, terapevt va ortoped"
+              ? "Andijon davlat tibbiyot instituti bitiruvchisi · Vrach-stomatolog ayol, terapevt va ortoped"
               : lang === "ru"
-              ? "Выпускница АГМИ · Врач-стоматолог, терапевт и ортопед (г. Андижан)"
-              : "Graduate of Andijan State Medical Institute · Dentist & Prosthodontist, Andijan"}
+              ? "Выпускница АГМИ · Врач-стоматолог женщина, терапевт и ортопед (г. Андижан)"
+              : "Graduate of Andijan State Medical Institute · Female Dentist & Prosthodontist, Andijan"}
           </p>
 
           <p className="text-xs sm:text-sm md:text-base text-slate-600 leading-relaxed">
             {lang === "uz"
-              ? `Dr. Nozima Baxtiyarovna 7 yillik amaliy klinik faoliyati davomida Andijon shahridagi «Sevdo Denta» klinikasida yuzlab oilalar va bemorlarga 100% og'riqsiz terapevtik davolash, zamonaviy plomba, tsirkoniy karonkalar hamda E-max vinirlar bilan xizmat ko'rsatib kelmoqda. Uning asosiy maqsadi har bir bemorga individual mehr va e'tibor qaratish, tishlarni tabiiy go'zalligi va mustahkamligini saqlagan holda davolashdir.`
+              ? `Dr. Nozima Baxtiyarovna 7 yillik amaliy klinik faoliyati davomida Andijon shahri A.Fitrat 251B manzilidagi «Sevdo Denta» klinikasida yuzlab oilalar, ayollar va bolalarga 100% og'riqsiz terapevtik davolash, zamonaviy plomba, tsirkoniy karonkalar hamda E-max vinirlar bilan xizmat ko'rsatib kelmoqda. Uning asosiy maqsadi har bir bemorga samimiy mehr va nozik e'tibor qaratish, tishlarni tabiiy go'zalligi va mustahkamligini saqlagan holda davolashdir.`
               : lang === "ru"
-              ? `Д-р Нозима Бахтияровна имеет 7-летний клинический опыт и ведёт приём в клинике «Sevdo Denta» в Андижане. Специализируется на безболезненном терапевтическом лечении зубов, высокоэстетичных пломбах, протезировании циркониевыми коронками и винирами E-max с чутким отношением к каждому пациенту.`
-              : `Dr. Nozima Baxtiyarovna brings 7 years of clinical excellence at «Sevdo Denta» Dental Clinic in Andijan. Specializing in restorative dental therapy, painless root canal treatments, and lifelike zirconia crowns, she is dedicated to gentle, compassionate patient care.`}
+              ? `Д-р Нозима Бахтияровна имеет 7-летний клинический опыт и ведёт приём в клинике «Sevdo Denta» в Андижане (ул. А. Фитрата, 251Б). Специализируется на безболезненном терапевтическом лечении зубов, высокоэстетичных пломбах, протезировании циркониевыми коронками и винирами E-max. Женщины и семьи Андижана ценят её за деликатное, бережное отношение и высочайший профессионализм.`
+              : `Dr. Nozima Baxtiyarovna brings 7 years of clinical excellence at «Sevdo Denta» Dental Clinic in Andijan (251B A. Fitrat Street). Specializing in restorative dental therapy, painless root canal treatments, and lifelike zirconia crowns, she is widely recognized as a gentle, dedicated female dentist providing compassionate care for women and families.`}
           </p>
 
           {/* Key Metrics Grid */}

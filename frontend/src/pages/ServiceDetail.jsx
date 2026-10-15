@@ -93,9 +93,9 @@ const ServiceDetail = () => {
   }[lang];
 
   const seoSuffix = {
-    uz: "Dr. Nozima Baxtiyarovna | Stomatolog Andijon",
-    ru: "Д-р Нозима Бахтияровна | Стоматолог Андижан",
-    en: "Dr. Nozima Baxtiyarovna | Dentist Andijan",
+    uz: "Ayol Stomatolog Dr. Nozima | Sevdo Denta Andijon",
+    ru: "Врач-Стоматолог Женщина Д-р Нозима | Sevdo Denta Андижан",
+    en: "Female Dentist Dr. Nozima | Sevdo Denta Andijan",
   }[lang];
   const serviceImageUrl = service.image?.startsWith("http")
     ? service.image

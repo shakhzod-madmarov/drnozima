@@ -324,10 +324,10 @@ const QuickBookingModal = ({
               </h3>
               <p className="text-[11px] sm:text-xs text-sky-100/90 leading-tight mt-0.5">
                 {lang === "uz"
-                  ? "Andijon sh., Eski Shahar (Old City), 1-qavat · Sevdo Denta"
+                  ? "Andijon sh., A.Fitrat 251B (Eski Shahar) · Sevdo Denta"
                   : lang === "ru"
-                  ? "г. Андижан, Эски Шахар (Old City), 1-й этаж · Sevdo Denta"
-                  : "Old City (Eski Shahar), 1st Floor, Andijan · Sevdo Denta"}
+                  ? "г. Андижан, ул. А. Фитрата 251Б (Эски Шахар) · Sevdo Denta"
+                  : "251B A. Fitrat St, Andijan (Old City) · Sevdo Denta"}
               </p>
             </div>
           </div>

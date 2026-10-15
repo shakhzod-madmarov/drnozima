@@ -233,10 +233,10 @@ const Nav = ({ topOffset = 0 }) => {
                 </a>
                 <p className="text-xs text-slate-600 mt-0.5">
                   {lang === "uz"
-                    ? "Eski Shahar (Old City), 1-qavat, «Sevdo Denta»"
+                    ? "A.Fitrat 251B (Eski Shahar), «Sevdo Denta»"
                     : lang === "ru"
-                    ? "Эски Шахар (Old City), 1-й этаж, «Sevdo Denta»"
-                    : "Old City (Eski Shahar), 1st Floor, «Sevdo Denta»"}
+                    ? "ул. А. Фитрата 251Б (Эски Шахар), «Sevdo Denta»"
+                    : "251B A. Fitrat St (Old City), «Sevdo Denta»"}
                 </p>
               </div>
 

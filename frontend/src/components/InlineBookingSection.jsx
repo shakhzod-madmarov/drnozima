@@ -308,7 +308,7 @@ const InlineBookingSection = ({
   const clinicAddress =
     liveMeta?.clinic?.address ||
     liveMeta?.dentist?.address ||
-    "Andijon sh., Eski Shahar (Old City), 1-qavat";
+    "Andijon sh., A.Fitrat 251B (Eski Shahar, Sevdo Denta)";
 
   const dynamicWorkingHours = useMemo(() => {
     const start = liveMeta?.dentist?.workingHours?.start || "08:00";

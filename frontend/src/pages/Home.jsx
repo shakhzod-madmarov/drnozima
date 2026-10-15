@@ -61,12 +61,12 @@ const HeroSection = () => {
 
   const T = {
     uz: {
-      badge: "Vrach-Stomatolog · Andijon",
+      badge: "Andijonda Ayol Stomatolog · Sevdo Denta",
       doctorName: "Dr. Nozima Baxtiyarovna",
-      specialtyTitle: "Stomatolog-Terapevt · Ortoped",
+      specialtyTitle: "Ayol Stomatolog-Terapevt · Ortoped",
       headline: "Tabiiy va Sog'lom Tabassum Uchun Ehtiyotkor va Og'riqsiz Stomatologiya",
       subtitle:
-        "Andijon shahrida sifatli va og'riqsiz tish davolash, tishlarni plombalash, karonka qo'yish hamda har bir bemorga samimiy e'tibor va maslahat.",
+        "Andijon shahrida ayollar va butun oila uchun ehtiyotkor, sifatli va 100% og'riqsiz tish davolash, zamonaviy plombalash, tsirkoniy karonkalar hamda samimiy individual yondashuv.",
       ctaBook: "Qabulga Yozilish",
       ctaServices: "Xizmatlar Bilan Tanishish",
       stat1Num: `${getYearsOfExperience()}+ yil`,
@@ -77,15 +77,15 @@ const HeroSection = () => {
       stat3Label: "Toza va Og'riqsiz",
       photo1Tab: "Klinik Portret",
       photo2Tab: "Ish Jarayoni",
-      clinicLocationText: "Andijon sh., Eski Shahar (Old City), 1-qavat",
+      clinicLocationText: "Andijon sh., A.Fitrat 251B (Eski Shahar, Sevdo Denta)",
     },
     ru: {
-      badge: "Врач-Стоматолог · Андижан",
+      badge: "Врач-Стоматолог Женщина · Андижан",
       doctorName: "Д-р Нозима Бахтияровна",
-      specialtyTitle: "Стоматолог-Терапевт · Ортопед",
+      specialtyTitle: "Врач-Стоматолог Женщина · Терапевт и Ортопед",
       headline: "Бережная и Безболезненная Стоматология для Здоровой Улыбки",
       subtitle:
-        "Качественное и комфортное лечение зубов в Андижане, надёжное пломбирование, протезирование и внимательное отношение к каждому пациенту.",
+        "Качественное, деликатное и 100% безболезненное лечение зубов в Андижане у опытного врача-стоматолога женщины: пломбирование, коронки и заботливое отношение к каждому пациенту.",
       ctaBook: "Записаться на Приём",
       ctaServices: "Все Услуги",
       stat1Num: `${getYearsOfExperience()}+ лет`,
@@ -96,15 +96,15 @@ const HeroSection = () => {
       stat3Label: "Без Боли и Чисто",
       photo1Tab: "Портрет Врача",
       photo2Tab: "В Кабинете",
-      clinicLocationText: "г. Андижан, Эски Шахар (Old City), 1-й этаж",
+      clinicLocationText: "г. Андижан, ул. А. Фитрата 251Б (Эски Шахар, Sevdo Denta)",
     },
     en: {
-      badge: "Dental Surgeon · Andijan",
+      badge: "Certified Female Dentist · Andijan",
       doctorName: "Dr. Nozima Baxtiyarovna",
-      specialtyTitle: "Restorative Dentist · Prosthodontist",
+      specialtyTitle: "Female Dentist · Restorative & Prosthodontics",
       headline: "Gentle & 100% Painless Dental Care for Your Natural Smile",
       subtitle:
-        "Dedicated, attentive dental care in Andijan: cavity treatments, restorative crowns, and gentle dental checkups.",
+        "Gentle, empathetic, and 100% painless dental care in Andijan by an experienced female dentist: precision fillings, zirconia crowns, and dedicated personal care.",
       ctaBook: "Book Appointment",
       ctaServices: "Explore Services",
       stat1Num: `${getYearsOfExperience()}+ Yrs`,
@@ -115,7 +115,7 @@ const HeroSection = () => {
       stat3Label: "Clean & Painless",
       photo1Tab: "Studio Portrait",
       photo2Tab: "In Clinic",
-      clinicLocationText: "Andijan, Old City (Eski Shahar), 1st Floor",
+      clinicLocationText: "251B A. Fitrat St, Andijan (Old City, Sevdo Denta)",
     },
   };
   const t = T[lang] || T.uz;

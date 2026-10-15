@@ -79,10 +79,10 @@ const Footer = () => {
 
             <p className="text-xs sm:text-sm text-slate-300/85 leading-relaxed">
               {lang === "uz"
-                ? `Andijon shahri Eski Shahar (Old City) hududidagi «Sevdo Denta» klinikasida 100% og'riqsiz davolash, zamonaviy terapiya va ortopediya. Dr. Nozima Baxtiyarovna — ${getExperienceText("uz").toLowerCase()} va Andijon davlat tibbiyot instituti bitiruvchisi.`
+                ? `Andijon shahri A.Fitrat 251B «Sevdo Denta» klinikasida tajribali ayol stomatolog Dr. Nozima Baxtiyarovna tomonidan 100% og'riqsiz davolash, zamonaviy terapiya va ortopediya. ${getExperienceText("uz")} va Andijon davlat tibbiyot instituti bitiruvchisi.`
                 : lang === "ru"
-                ? `Современная стоматология, терапия и ортопедия без боли в клинике «Sevdo Denta» (Андижан, Эски Шахар). Д-р Нозима Бахтияровна — ${getExperienceText("ru").toLowerCase()}, выпускница Андижанского государственного медицинского института.`
-                : `Modern painless restorative dentistry and prosthodontics at «Sevdo Denta» Clinic in Andijan Old City. Dr. Nozima Baxtiyarovna — ${getExperienceText("en")} and graduate of Andijan State Medical Institute.`}
+                ? `Современная стоматология без боли в клинике «Sevdo Denta» (Андижан, ул. А. Фитрата, 251Б). Приём ведёт врач-стоматолог женщина Д-р Нозима Бахтияровна — ${getExperienceText("ru").toLowerCase()}, выпускница Андижанского государственного медицинского института.`
+                : `Modern painless restorative dentistry and prosthodontics at «Sevdo Denta» Clinic in Andijan (251B A. Fitrat St). Certified female dentist Dr. Nozima Baxtiyarovna — ${getExperienceText("en")} and graduate of Andijan State Medical Institute.`}
             </p>
 
             <div className="flex flex-wrap gap-2 pt-1">

@@ -71,10 +71,10 @@ const Services = () => {
         </h1>
         <p className="text-sm sm:text-base text-slate-600">
           {lang === "uz"
-            ? "Dr. Nozima Baxtiyarovna tomonidan Germaniya, Yaponiya va Janubiy Koreya texnologiyalari asosida 100% og'riqsiz va kafolatli muolajalar."
+            ? "Andijonda tajribali ayol stomatolog Dr. Nozima Baxtiyarovna tomonidan Germaniya, Yaponiya va Janubiy Koreya texnologiyalari asosida 100% og'riqsiz va kafolatli muolajalar."
             : lang === "ru"
-            ? "Все виды современного безболезненного лечения, протезирования и эстетической стоматологии у Д-ра Нозимы Бахтияровны."
-            : "All procedures performed by Dr. Nozima Baxtiyarovna using certified German, Japanese, and South Korean dental materials."}
+            ? "Все виды современного безболезненного лечения, протезирования и эстетической стоматологии у квалифицированного врача-стоматолога женщины Д-ра Нозимы Бахтияровны в Андижане."
+            : "Comprehensive dental treatments in Andijan performed by certified female dentist Dr. Nozima Baxtiyarovna using German, Japanese, and South Korean clinical protocols."}
         </p>
       </div>
 

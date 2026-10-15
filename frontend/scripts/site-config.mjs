@@ -25,9 +25,9 @@ export const ROUTES = [
     priority: "1.0",
     image: {
       src: "public/dr_nozima_og.jpg",
-      title: "Dr. Nozima Baxtiyarovna — Stomatolog va Ortoped Andijon (Sevdo Denta)",
+      title: "Dr. Nozima Baxtiyarovna — Ayol Stomatolog va Ortoped Andijon (Sevdo Denta)",
       caption:
-        "Andijon shahridagi Sevdo Denta klinikasi stomatolog-terapevti va ortopedi Dr. Nozima Baxtiyarovna",
+        "Andijon shahridagi Sevdo Denta klinikasi ayol stomatolog-terapevti va ortopedi Dr. Nozima Baxtiyarovna",
     },
   },
   {
@@ -47,8 +47,8 @@ export const ROUTES = [
     priority: "0.9",
     image: {
       src: "public/dr_nozima_portrait.webp",
-      title: "Dr. Nozima Baxtiyarovna — 7 Yillik Tajribaga Ega Stomatolog va Ortoped",
-      caption: "7 yillik klinik tajriba va Andijon davlat tibbiyot instituti (ADTI) bitiruvchisi",
+      title: "Dr. Nozima Baxtiyarovna — Andijonda Ayol Stomatolog va Ortoped (7 Yillik Tajriba)",
+      caption: "7 yillik klinik tajribaga ega ayol stomatolog va Andijon davlat tibbiyot instituti (ADTI) bitiruvchisi",
     },
   },
   {

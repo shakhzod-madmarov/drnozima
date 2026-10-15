@@ -1,18 +1,30 @@
 /**
- * Single source of truth for Dr. Nozima Baxtiyarovna's career facts and clinic hours.
+ * Single source of truth for Dr. Nozima Baxtiyarovna's career facts, credentials, and clinic hours.
  *
- * Experience years: 7 years of clinical practice.
- * University: Andijon davlat tibbiyot instituti (ADTI).
- * Specialities: Terapiya va ortopediya.
+ * Doctor: Dr. Nozima Baxtiyarovna (Female Dentist / Ayol Stomatolog)
+ * Experience: 7 years of active clinical practice (since 2019).
+ * University: Andijon davlat tibbiyot instituti (ADTI / АГМИ).
+ * Specialities: Terapiya va ortopediya (100% og'riqsiz tish davolash, tsirkoniy karonka, vinirlar).
  */
 export const DOCTOR_INFO = {
   name: "Dr. Nozima Baxtiyarovna",
   fullName: "Nozima Baxtiyarovna",
+  gender: "Female",
+  genderLabel: {
+    uz: "Ayol stomatolog",
+    ru: "Женщина-стоматолог",
+    en: "Female Dentist",
+  },
   careerStartYear: 2019,
   yearsOfExperience: 7,
   university: "Andijon davlat tibbiyot instituti (ADTI)",
   specialities: "Terapiya va Ortopediya",
   specialitiesList: ["Terapiya", "Ortopediya", "Estetik Stomatologiya", "Endodontiya"],
+  specialtiesTitle: {
+    uz: "Ayol Stomatolog-Terapevt va Ortoped",
+    ru: "Врач-Стоматолог Женщина (Терапевт и Ортопед)",
+    en: "Female Dentist, Restorative Specialist & Prosthodontist",
+  },
   phone: "+998 (91) 619-95-00",
   phoneHref: "tel:+998916199500",
   phoneRaw: "+998916199500",
@@ -69,9 +81,9 @@ export const getExperienceBadge = (lang = "uz") => {
 
 export const getHeroTag = (lang = "uz") => {
   const years = getYearsOfExperience();
-  if (lang === "ru") return `Стоматолог-терапевт и ортопед в Андижане · ${years} лет опыта`;
-  if (lang === "en") return `Dentist & Prosthodontist in Andijan · ${years} Years Experience`;
-  return `Andijondagi Zamonaviy Stomatolog-Terapevt va Ortoped · ${years} Yillik Tajriba`;
+  if (lang === "ru") return `Врач-стоматолог женщина в Андижане · ${years} лет опыта`;
+  if (lang === "en") return `Certified Female Dentist in Andijan · ${years} Years Experience`;
+  return `Andijondagi Tajribali Ayol Stomatolog-Terapevt va Ortoped · ${years} Yillik Tajriba`;
 };
 
 export const getServicesTag = (lang = "uz") => {

@@ -8,13 +8,13 @@ import { buildPageWithBreadcrumbs } from "../utils/structuredData";
 
 const T = {
   uz: {
-    seoTitle: "Onlayn Qabulga Yozilish | Dr. Nozima Baxtiyarovna — Sevdo Denta Andijon",
+    seoTitle: "Qabulga Yozilish | Ayol Stomatolog Dr. Nozima — Sevdo Denta Andijon",
     seoDesc:
-      "Dr. Nozima Baxtiyarovna qabuliga onlayn yozilish. Andijon shahri, Eski Shahar, «Sevdo Denta» klinikasi. Bo'sh kun va soatni tanlang.",
+      "Dr. Nozima Baxtiyarovna qabuliga onlayn yozilish. Andijon shahri, A.Fitrat 251B, «Sevdo Denta» klinikasi. Bo'sh kun va soatni tanlang.",
     name: "Dr. Nozima Baxtiyarovna",
-    specialty: "Vrach-Stomatolog, Terapevt va Ortoped",
+    specialty: "Vrach-Stomatolog Ayol, Terapevt va Ortoped",
     clinicLabel: "Klinika",
-    clinicVal: "«Sevdo Denta» · Andijon, Eski Shahar (1-qavat)",
+    clinicVal: "«Sevdo Denta» · Andijon, A.Fitrat 251B (Eski Shahar, 1-qavat)",
     expLabel: "Tajriba",
     expVal: (y) => `${y} yillik amaliyot · ADTI bitiruvchisi`,
     aboutLabel: "Shifokor haqida",
@@ -27,13 +27,13 @@ const T = {
     badge: "Dr. Nozima Baxtiyarovna · MedInson Qabul",
   },
   ru: {
-    seoTitle: "Онлайн Запись | Д-р Нозима Бахтияровна — Клиника Sevdo Denta Андижан",
+    seoTitle: "Онлайн-Запись | Врач-Стоматолог Женщина Д-р Нозима — Sevdo Denta Андижан",
     seoDesc:
-      "Онлайн запись к Д-ру Нозиме Бахтияровне. г. Андижан, Эски Шахар, клиника «Sevdo Denta». Выберите удобный день и свободное время.",
+      "Онлайн-запись к врачу-стоматологу женщине Д-ру Нозиме Бахтияровне. г. Андижан, ул. А. Фитрата 251Б, клиника «Sevdo Denta». Выберите свободное время.",
     name: "Д-р Нозима Бахтияровна",
-    specialty: "Врач-Стоматолог, Терапевт и Ортопед",
+    specialty: "Врач-Стоматолог Женщина, Терапевт и Ортопед",
     clinicLabel: "Клиника",
-    clinicVal: "«Sevdo Denta» · г. Андижан, Эски Шахар (1-й этаж)",
+    clinicVal: "«Sevdo Denta» · г. Андижан, ул. А. Фитрата 251Б (Эски Шахар, 1-й этаж)",
     expLabel: "Опыт",
     expVal: (y) => `${y} лет практики · Выпускница АГМИ`,
     aboutLabel: "О враче",
@@ -46,13 +46,13 @@ const T = {
     badge: "Д-р Нозима Бахтияровна · Приём MedInson",
   },
   en: {
-    seoTitle: "Book Online Appointment | Dr. Nozima Baxtiyarovna — Sevdo Denta Andijan",
+    seoTitle: "Book Appointment | Female Dentist Dr. Nozima — Sevdo Denta Andijan",
     seoDesc:
-      "Online appointment booking with Dr. Nozima Baxtiyarovna in Andijan at «Sevdo Denta» Clinic. Select an available date and time.",
+      "Online appointment booking with female dentist Dr. Nozima Baxtiyarovna in Andijan at «Sevdo Denta» Clinic, 251B A. Fitrat St. Select an available date and time.",
     name: "Dr. Nozima Baxtiyarovna",
-    specialty: "Restorative Dentist & Prosthodontist",
+    specialty: "Female Dentist, Restorative Specialist & Prosthodontist",
     clinicLabel: "Clinic",
-    clinicVal: "«Sevdo Denta» · Andijan, Old City (1st Floor)",
+    clinicVal: "«Sevdo Denta» · 251B A. Fitrat St, Andijan (Old City, 1st Floor)",
     expLabel: "Experience",
     expVal: (y) => `${y} years clinical practice · ADTI Graduate`,
     aboutLabel: "About the Doctor",

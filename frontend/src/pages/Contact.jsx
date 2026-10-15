@@ -78,10 +78,10 @@ const Contact = () => {
       <div className="text-center max-w-3xl mx-auto space-y-2">
         <p className="text-xs font-bold uppercase tracking-[0.18em] text-[#4D8DBA]">
           {lang === "uz"
-            ? "Andijon · Eski Shahar (Old City) · Sevdo Denta"
+            ? "Andijon · A.Fitrat 251B (Eski Shahar) · Sevdo Denta"
             : lang === "ru"
-            ? "Андижан · Эски Шахар (Old City) · Sevdo Denta"
-            : "Andijan · Old City (Eski Shahar) · Sevdo Denta"}
+            ? "Андижан · ул. А. Фитрата, 251Б (Эски Шахар) · Sevdo Denta"
+            : "Andijan · 251B A. Fitrat St (Old City) · Sevdo Denta"}
         </p>
         <h1 className="font-serif-classic text-3xl sm:text-4xl md:text-5xl font-bold text-[#086288]">
           {lang === "uz"
