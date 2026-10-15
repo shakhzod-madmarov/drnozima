@@ -167,7 +167,7 @@ const ServiceDetail = () => {
       {/* Hero Card */}
       <div className="bg-[#086288] text-white rounded-2xl sm:rounded-3xl p-4 sm:p-8 lg:p-12 shadow-sm border border-[#4D8DBA]/30 grid grid-cols-1 lg:grid-cols-12 gap-6 sm:gap-8 items-center">
         <div className="lg:col-span-7 space-y-4">
-          <span className="inline-block px-3.5 py-1 rounded-full bg-white/10 text-[#9cb8d4] text-xs font-bold uppercase tracking-wider">
+          <span className="inline-block px-3.5 py-1 rounded-full bg-white/10 text-[#97D7FF] text-xs font-bold uppercase tracking-wider">
             {service.category[lang]}
           </span>
           <h1 className="font-serif-classic text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight leading-tight">
@@ -179,7 +179,7 @@ const ServiceDetail = () => {
 
           <div className="flex flex-wrap items-center gap-2 sm:gap-3 pt-2">
             <span className="inline-flex items-center gap-1.5 sm:gap-2 px-3 py-1.5 sm:px-4 sm:py-2 rounded-full bg-white/10 border border-white/15 text-[11px] sm:text-xs font-semibold">
-              <IconClock className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-[#9cb8d4]" />
+              <IconClock className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-[#97D7FF]" />
               <span>{service.duration[lang]}</span>
             </span>
             <span className="inline-flex items-center gap-1.5 sm:gap-2 px-3 py-1.5 sm:px-4 sm:py-2 rounded-full bg-emerald-500/20 border border-emerald-400/30 text-emerald-200 text-[11px] sm:text-xs font-semibold">
@@ -187,7 +187,7 @@ const ServiceDetail = () => {
               <span>{service.warranty[lang]}</span>
             </span>
             <span className="inline-flex items-center gap-1.5 sm:gap-2 px-3 py-1.5 sm:px-4 sm:py-2 rounded-full bg-[#4D8DBA]/50 border border-white/15 text-white text-[11px] sm:text-xs font-semibold">
-              <IconAward className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-[#9cb8d4]" />
+              <IconAward className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-[#97D7FF]" />
               <span>Dr. Nozima Baxtiyarovna · {getExperienceBadge(lang)}</span>
             </span>
           </div>
@@ -207,7 +207,7 @@ const ServiceDetail = () => {
               href={DOCTOR_INFO.phoneHref}
               className="w-full sm:w-auto justify-center px-4 py-3 sm:px-5 sm:py-3.5 rounded-xl bg-white/10 hover:bg-white/20 border border-white/20 text-white font-semibold text-xs sm:text-sm flex items-center gap-2 transition-colors"
             >
-              <IconPhone className="w-4 h-4 text-[#9cb8d4]" />
+              <IconPhone className="w-4 h-4 text-[#97D7FF]" />
               <span>{DOCTOR_INFO.phone}</span>
             </a>
             <a

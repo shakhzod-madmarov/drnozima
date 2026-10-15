@@ -1,4 +1,17 @@
 User-agent: *
 Allow: /
+Disallow: /__not-found__
+Disallow: /stickers-preview
 
+User-agent: Googlebot
+Allow: /
+Disallow: /__not-found__
+Disallow: /stickers-preview
+
+User-agent: Yandex
+Allow: /
+Disallow: /__not-found__
+Disallow: /stickers-preview
+
+Host: https://drnozima.uz
 Sitemap: https://drnozima.uz/sitemap.xml

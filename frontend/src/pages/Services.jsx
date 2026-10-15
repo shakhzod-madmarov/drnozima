@@ -103,7 +103,7 @@ const Services = () => {
                     {service.category[lang]}
                   </span>
                   <span className="inline-flex items-center gap-1.5 text-[11px] sm:text-xs font-semibold text-white bg-slate-950/75 backdrop-blur-xs px-2.5 sm:px-3 py-1 rounded-full border border-white/20">
-                    <IconClock className="w-3.5 h-3.5 text-[#9cb8d4]" />
+                    <IconClock className="w-3.5 h-3.5 text-[#97D7FF]" />
                     <span>{service.duration[lang]}</span>
                   </span>
                 </div>
@@ -203,7 +203,7 @@ const Services = () => {
             href={DOCTOR_INFO.phoneHref}
             className="w-full sm:w-auto px-5 py-3.5 rounded-xl bg-white/10 hover:bg-white/20 border border-white/20 text-white font-semibold text-xs sm:text-sm flex items-center justify-center gap-2 transition-colors"
           >
-            <IconPhone className="w-4 h-4 text-[#9cb8d4]" />
+            <IconPhone className="w-4 h-4 text-[#97D7FF]" />
             <span>{DOCTOR_INFO.phone}</span>
           </a>
         </div>
