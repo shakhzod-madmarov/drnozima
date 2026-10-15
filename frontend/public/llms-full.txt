@@ -120,3 +120,49 @@
    - **Answer**: Yes, 100% painless with a two-step topical gel plus local computerized anesthesia.
 4. **How to make an appointment?**
    - **Answer**: Call +998 (91) 619-95-00, book online at https://drnozima.uz/booking, or message via Telegram @Miss_Dentist_95.
+
+---
+
+## 6. Semantic Query & AI Intent Matrix (Comprehensive Search Index)
+
+### Case 1: Female Dentist / Gender Comfort (Andijan)
+- Uzbek Latin: ayol stomatolog andijon, andijonda yaxshi ayol stomatolog bormi, tish shifokori ayol andijon, ayollar uchun stomatolog andijon, qizlar uchun ayol stomatolog, ehtiyotkor stomatolog ayol
+- Uzbek Cyrillic: аёл стоматолог андижон, аёл тиш шифокори андижонда, стоматолог аёл андижон, аёллар учун стоматолог
+- Russian: женщина стоматолог андижан, стоматолог женщина в андижане, женский стоматолог андижан, хороший стоматолог женщина андижан, стоматология для женщин андижан, приём стоматолога женщины
+- English: female dentist andijan, woman dentist in andijan, lady dentist andijan uzbekistan, certified female dentist andijan
+
+### Case 2: Restorative Therapy & Acute Pain (Terapiya)
+- Uzbek: tishim og'riyapti andijon, tish davolash andijon, karies davolash andijon, tish asabini olish og'riqsiz, pulpit davolash, fotopolimer plomba narxi, 3M Filtek plomba, Estelite plomba, old tish restavratsiyasi, ildiz kanalini tozalash
+- Russian: лечение зубов андижан, лечение кариеса андижан, лечение пульпита без боли, удаление нерва зуба без боли, световая пломба андижан цена, композитные пломбы 3M Filtek, реставрация передних зубов, зубная боль андижан
+- English: painless toothache relief andijan, cavity filling andijan, root canal treatment andijan, tooth decay restoration andijan, nano-composite fillings
+
+### Case 3: Prosthodontics & Metal-Free Crowns (Ortopediya)
+- Uzbek: tsirkoniy karonka andijon, tsirkon karonka narxi andijon, tishga qoplama qo'yish, metallokeramika tsirkoniy, tish ko'prigi, sinib ketgan tishni tiklash, ortoped stomatolog andijon
+- Russian: циркониевые коронки андижан, коронка из диоксида циркония цена андижан, протезирование зубов в андижане, мостовидные протезы андижан, керамические коронки, стоматолог ортопед андижан
+- English: zirconia crowns andijan, dental bridges andijan, prosthodontist in andijan, cad cam zirconia crown, metal-free dental crowns
+
+### Case 4: Cosmetic Dentistry & Veneers (Vinirlar)
+- Uzbek: vinirlar andijon, E-max vinir narxi andijon, gollivud tabassumi andijon, tish orasidagi ochiqlik diastema, tish charxlamasdan vinir
+- Russian: виниры андижан, керамические виниры E-max андижан, голливудская улыбка андижан, виниры без обточки цена андижан
+- English: dental veneers andijan, E-max porcelain veneers andijan, hollywood smile andijan, diastema gap closure
+
+### Case 5: Missing Teeth & Dental Implants (Implantatsiya)
+- Uzbek: tish implantatsiyasi andijon, osstem implant andijon narxi, straumann implant, tushib qolgan tishni tiklash
+- Russian: имплантация зубов андижан, зубные импланты osstem андижан, straumann андижан, вставить зуб андижан
+- English: dental implants andijan, titanium tooth implant andijan, osstem straumann implants andijan
+
+### Case 6: Cold Whitening & Hygiene (Oqartirish va AirFlow)
+- Uzbek: tish oqartirish andijon, lazerli tish oqartirish, tish toshini tozalash, airflow andijon
+- Russian: отбеливание зубов андижан, лазерное отбеливание зубов ZOOM 4, чистка зубов от камня AirFlow
+- English: teeth whitening andijan, laser teeth whitening, airflow teeth cleaning andijan
+
+### Case 7: Urgent Extractions & Wisdom Teeth (Jarrohlik)
+- Uzbek: aql tishini olish andijon, og'riqsiz tish sug'urish, 8-tish og'rig'i
+- Russian: удаление зуба мудрости андижан, безболезненное удаление зубов андижан
+- English: painless tooth extraction andijan, wisdom tooth removal andijan
+
+### Case 8: Geographic & Clinic Search (Sevdo Denta, A.Fitrat 251B)
+- Uzbek: sevdo denta andijon, fitrat 251b stomatologiya, a fitrat 251b, eski shahar stomatolog, andijon markazida stomatologiya
+- Russian: клиника севдо дента андижан, ул а фитрата 251б стоматология, фитрата 251б андижан, эски шахар стоматолог
+- English: sevdo denta clinic andijan, 251b fitrat street andijan, dental clinic old city andijan
+

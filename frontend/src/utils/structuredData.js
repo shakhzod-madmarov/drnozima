@@ -83,16 +83,28 @@ export const buildMedicalProcedureSchema = (service, lang = "uz", breadcrumbs = 
     },
   };
 
-  if (breadcrumbObj) {
-    return {
-      "@context": "https://schema.org",
-      "@graph": [breadcrumbObj, procedure],
-    };
+  const graph = [];
+  if (breadcrumbObj) graph.push(breadcrumbObj);
+  graph.push(procedure);
+
+  if (service.serviceFaq && service.serviceFaq.length > 0) {
+    graph.push({
+      "@type": "FAQPage",
+      "@id": `${serviceUrl}#faq`,
+      "mainEntity": service.serviceFaq.map((item) => ({
+        "@type": "Question",
+        "name": item.q[lang] || item.q.uz,
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": item.a[lang] || item.a.uz,
+        },
+      })),
+    });
   }
 
   return {
     "@context": "https://schema.org",
-    ...procedure,
+    "@graph": graph,
   };
 };
 
