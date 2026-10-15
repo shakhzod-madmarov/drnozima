@@ -116,6 +116,7 @@ const QuickBookingModal = ({
   initialService = null,
   initialName = "",
   initialPhone = "",
+  initialDob = "",
   initialNote = "",
 }) => {
   const { lang } = useLanguage();
@@ -126,6 +127,7 @@ const QuickBookingModal = ({
   );
   const [name, setName] = useState(initialName || "");
   const [phone, setPhone] = useState(initialPhone || "");
+  const [dob, setDob] = useState(initialDob || "");
   const [note, setNote] = useState(initialNote || "");
   const [submitted, setSubmitted] = useState(false);
   const [submitting, setSubmitting] = useState(false);
@@ -144,6 +146,7 @@ const QuickBookingModal = ({
     setSelectedService(initialService || "tish-davolash");
     setName(initialName || "");
     setPhone(initialPhone || "");
+    setDob(initialDob || "");
     setNote(initialNote || "");
     setSubmitted(false);
     setErrorMsg(null);
@@ -230,15 +233,26 @@ const QuickBookingModal = ({
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    if (!name || !phone || submitting) return;
+    if (!name.trim() || !phone.trim() || submitting) return;
+    if (!dob || !dob.trim()) {
+      setErrorMsg(
+        lang === "uz"
+          ? "Iltimos, tug'ilgan sanangizni kiriting (tibbiy karta ochish uchun muhim)."
+          : lang === "ru"
+          ? "Пожалуйста, укажите дату рождения (обязательно для оформления медкарты)."
+          : "Please enter your date of birth (required for medical records)."
+      );
+      return;
+    }
 
     setSubmitting(true);
     setErrorMsg(null);
 
     try {
       const result = await submitMedinsonBooking({
-        name,
-        phone,
+        name: name.trim(),
+        phone: phone.trim(),
+        dob: dob.trim(),
         serviceTitle: currentService.title[lang],
         serviceId: currentService.id,
         preferredDate: activeDayObj.date || selectedDate,
@@ -379,6 +393,12 @@ const QuickBookingModal = ({
                     {lang === "uz" ? "Telefon:" : lang === "ru" ? "Телефон:" : "Phone:"}
                   </span>
                   <span className="font-bold text-slate-900">{phone}</span>
+                </div>
+                <div className="flex justify-between">
+                  <span className="text-slate-500 font-semibold">
+                    {lang === "uz" ? "Tug'ilgan sana:" : lang === "ru" ? "Дата рождения:" : "Date of Birth:"}
+                  </span>
+                  <span className="font-bold text-[#086288]">{dob}</span>
                 </div>
                 {bookingResponse?.bookingId && (
                   <div className="flex justify-between pt-1 border-t border-slate-200/70">
@@ -577,6 +597,43 @@ const QuickBookingModal = ({
                     className="w-full px-3.5 py-2.5 rounded-xl bg-slate-50 border border-slate-200 text-slate-900 text-xs sm:text-sm font-semibold focus:outline-none focus:border-[#086288] focus:bg-white transition-all"
                   />
                 </div>
+              </div>
+
+              {/* Date of Birth (Important / Required for Medical Chart) */}
+              <div>
+                <div className="flex items-center justify-between mb-1">
+                  <label htmlFor="qbm-dob" className="block text-[11px] font-black uppercase tracking-wider text-slate-500">
+                    {lang === "uz"
+                      ? "Tug'ilgan Sana *"
+                      : lang === "ru"
+                      ? "Дата Рождения *"
+                      : "Date of Birth *"}
+                  </label>
+                  <span className="text-[9.5px] font-extrabold uppercase px-1.5 py-0.5 rounded bg-amber-50 text-amber-800 border border-amber-200">
+                    {lang === "uz" ? "Muhim" : lang === "ru" ? "Важно" : "Important"}
+                  </span>
+                </div>
+                <input
+                  id="qbm-dob"
+                  name="bday"
+                  type="date"
+                  required
+                  autoComplete="bday"
+                  max={new Date().toISOString().split("T")[0]}
+                  value={dob}
+                  onChange={(e) => {
+                    setDob(e.target.value);
+                    if (errorMsg) setErrorMsg(null);
+                  }}
+                  className="w-full px-3.5 py-2.5 rounded-xl bg-slate-50 border border-slate-200 text-slate-900 text-xs sm:text-sm font-semibold focus:outline-none focus:border-[#086288] focus:bg-white transition-all"
+                />
+                <p className="mt-1 text-[10.5px] text-slate-500">
+                  {lang === "uz"
+                    ? "Tibbiy kartani aniq rasmiylashtirish uchun tug'ilgan sana majburiydir."
+                    : lang === "ru"
+                    ? "Обязательно для точной идентификации и оформления медицинской карты."
+                    : "Required to accurately identify and create your clinical record."}
+                </p>
               </div>
 
               {errorMsg && (

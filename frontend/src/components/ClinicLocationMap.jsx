@@ -15,7 +15,14 @@ const ClinicLocationMap = ({ compact = false }) => {
   const c = PRIMARY_CLINIC;
 
   const yandexEmbedUrl =
-    "https://yandex.uz/map-widget/v1/?ll=72.352159%2C40.776788&mode=search&oid=157971592658&ol=biz&z=15";
+    c?.maps?.yandexEmbed ||
+    "https://yandex.uz/map-widget/v1/?ll=72.352159%2C40.776788&mode=search&oid=157971592658&ol=biz&z=14.92";
+  const yandexOrgUrl =
+    c?.maps?.yandexOrg ||
+    "https://yandex.uz/maps/org/sevdo_denta/157971592658/?utm_medium=mapframe&utm_source=maps";
+  const yandexCategoryUrl =
+    c?.maps?.yandexCategory ||
+    "https://yandex.uz/maps/10329/andijan/category/dental_clinic/184106132/?utm_medium=mapframe&utm_source=maps";
 
   return (
     <section className={compact ? "py-4" : "py-10 sm:py-14"}>
@@ -149,18 +156,37 @@ const ClinicLocationMap = ({ compact = false }) => {
           </div>
         </div>
 
-        {/* Right Map Embed Column */}
-        <div className="lg:col-span-7 rounded-xl overflow-hidden border border-[#D1E4F0] min-h-[340px] sm:min-h-[420px] relative bg-slate-100">
-          <iframe
-            title="Dr. Nozima Baxtiyarovna — Sevdo Denta Klinikasi Andijon Xarita"
-            src={yandexEmbedUrl}
-            width="100%"
-            height="100%"
-            className="w-full h-full min-h-[340px] sm:min-h-[420px] border-0"
-            allowFullScreen
-            loading="lazy"
-            referrerPolicy="no-referrer-when-downgrade"
-          />
+        {/* Right Map Embed Column — Provided Yandex Maps Widget */}
+        <div className="lg:col-span-7 rounded-xl overflow-hidden border border-[#D1E4F0] min-h-[360px] sm:min-h-[440px] relative bg-slate-100">
+          <div style={{ position: "relative", overflow: "hidden", width: "100%", height: "100%", minHeight: "360px" }}>
+            <a
+              href={yandexOrgUrl}
+              style={{ color: "#eee", fontSize: "12px", position: "absolute", top: "0px", zIndex: 1 }}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Sevdo denta
+            </a>
+            <a
+              href={yandexCategoryUrl}
+              style={{ color: "#eee", fontSize: "12px", position: "absolute", top: "14px", zIndex: 1 }}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Стоматологическая клиника в Андижане
+            </a>
+            <iframe
+              title="Sevdo denta — Стоматологическая клиника в Андижане (Yandex Maps)"
+              src={yandexEmbedUrl}
+              width="100%"
+              height="100%"
+              frameBorder="1"
+              allowFullScreen={true}
+              style={{ position: "relative", width: "100%", height: "100%", minHeight: "360px", border: 0 }}
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+            />
+          </div>
         </div>
       </div>
     </section>

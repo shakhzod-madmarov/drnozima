@@ -71,9 +71,11 @@ const TEXT = {
     nameLabel: "Ism-sharif *",
     phoneLabel: "Telefon raqami *",
     dobLabel: "Tug'ilgan sana",
-    optional: "ixtiyoriy",
-    dobHint: "Klinikadagi tibbiy kartangizni aniq topishga yordam beradi",
-    noteLabel: "Shikoyat yoki tanlangan xizmat",
+    dobBadge: "Muhim",
+    dobHint: "Klinikada bemorning elektron tibbiy kartasini ochish va aniq xizmat ko'rsatish uchun tug'ilgan sana majburiy.",
+    needDob: "Iltimos, tug'ilgan sanangizni kiriting (tibbiy karta ochish uchun muhim)",
+    invalidDob: "Iltimos, to'g'ri tug'ilgan sanani kiriting",
+    noteLabel: "Shikoyat yoki tanlangan xizmat (ixtiyoriy)",
     namePlaceholder: "Masalan: Sardorbek Karimov",
     phonePlaceholder: "+998 91 619 95 00",
     notePlaceholder: "Tish og'rig'i, karonka, implant yoki ko'rik bo'yicha izoh...",
@@ -113,9 +115,11 @@ const TEXT = {
     nameLabel: "Ф.И.О. пациента *",
     phoneLabel: "Номер телефона *",
     dobLabel: "Дата рождения",
-    optional: "необязательно",
-    dobHint: "Помогает точно идентифицировать вашу медицинскую карту",
-    noteLabel: "Жалоба или выбранная услуга",
+    dobBadge: "Важно",
+    dobHint: "Дата рождения обязательна для точной идентификации и оформления медицинской карты пациента.",
+    needDob: "Пожалуйста, укажите дату рождения (обязательно для медкарты)",
+    invalidDob: "Пожалуйста, введите корректную дату рождения",
+    noteLabel: "Жалоба или выбранная услуга (необязательно)",
     namePlaceholder: "Например: Сардорбек Каримов",
     phonePlaceholder: "+998 91 619 95 00",
     notePlaceholder: "Зубная боль, коронка, имплантация или плановый осмотр...",
@@ -155,9 +159,11 @@ const TEXT = {
     nameLabel: "Full Name *",
     phoneLabel: "Phone Number *",
     dobLabel: "Date of Birth",
-    optional: "optional",
-    dobHint: "Helps match your clinical patient record accurately",
-    noteLabel: "Symptom or Selected Service",
+    dobBadge: "Important",
+    dobHint: "Date of birth is required to accurately locate and set up your clinical dental chart.",
+    needDob: "Please select your date of birth (required for medical records)",
+    invalidDob: "Please enter a valid date of birth",
+    noteLabel: "Symptom or Selected Service (optional)",
     namePlaceholder: "e.g. Sardorbek Karimov",
     phonePlaceholder: "+998 91 619 95 00",
     notePlaceholder: "Toothache, zirconia crown, implant consultation...",
@@ -352,9 +358,18 @@ const InlineBookingSection = ({
           ? "Неверный формат. Например: +998 (91) 619-95-00"
           : "Invalid format. Example: +998 (91) 619-95-00";
     }
+    if (!dob || !dob.trim()) {
+      nextErrors.dob = t.needDob;
+    } else {
+      const parsed = new Date(dob);
+      const now = new Date();
+      if (isNaN(parsed.getTime()) || parsed > now || parsed.getFullYear() < 1900) {
+        nextErrors.dob = t.invalidDob;
+      }
+    }
     if (Object.keys(nextErrors).length > 0) {
       setErrors(nextErrors);
-      toast.error(nextErrors.name || nextErrors.phone);
+      toast.error(nextErrors.name || nextErrors.phone || nextErrors.dob);
       return;
     }
     if (!selectedDate || !selectedTime) {
@@ -499,6 +514,10 @@ const InlineBookingSection = ({
             <div className="flex justify-between border-b border-[#D1E4F0] pb-2">
               <dt className="text-slate-500">{t.summaryPhone}:</dt>
               <dd className="font-bold text-[#086288]">{phone}</dd>
+            </div>
+            <div className="flex justify-between border-b border-[#D1E4F0] pb-2">
+              <dt className="text-slate-500">{t.dobLabel}:</dt>
+              <dd className="font-semibold text-slate-800">{dob}</dd>
             </div>
             <div className="flex justify-between border-b border-[#D1E4F0] pb-2">
               <dt className="text-slate-500">{t.summaryService}:</dt>
@@ -716,36 +735,55 @@ const InlineBookingSection = ({
               )}
             </div>
 
-            {!compact && (
-              <div>
+            <div>
+              <div className="flex items-center justify-between mb-1.5">
                 <label
                   htmlFor={`${sectionId}-dob`}
-                  className="block text-xs font-bold text-[#086288] mb-1.5"
+                  className="block text-xs font-bold text-[#086288]"
                 >
-                  {t.dobLabel}{" "}
-                  <span className="font-normal text-slate-400">({t.optional})</span>
+                  {t.dobLabel} <span className="text-red-500 font-bold">*</span>
                 </label>
-                <input
-                  id={`${sectionId}-dob`}
-                  name="bday"
-                  type="date"
-                  autoComplete="bday"
-                  max={todayYmd()}
-                  value={dob}
-                  onChange={(e) => setDob(e.target.value)}
-                  className="w-full h-[48px] px-4 rounded-xl border border-[#D1E4F0] focus:border-[#086288] outline-none text-sm text-slate-800 bg-[#f7f9fc] focus:bg-white transition"
-                />
-                <p className="mt-1 text-[11px] text-slate-500">{t.dobHint}</p>
+                <span className="text-[10px] font-extrabold uppercase tracking-wider px-2 py-0.5 rounded-md bg-amber-50 text-amber-900 border border-amber-200">
+                  {t.dobBadge}
+                </span>
               </div>
-            )}
+              <input
+                id={`${sectionId}-dob`}
+                name="bday"
+                type="date"
+                required
+                autoComplete="bday"
+                max={todayYmd()}
+                value={dob}
+                onChange={(e) => {
+                  setDob(e.target.value);
+                  if (errors.dob) {
+                    setErrors((prev) => {
+                      const copy = { ...prev };
+                      delete copy.dob;
+                      return copy;
+                    });
+                  }
+                }}
+                className={`w-full h-[48px] px-4 rounded-xl border outline-none text-sm font-medium text-slate-800 bg-[#f7f9fc] focus:bg-white transition ${
+                  errors.dob
+                    ? "border-red-500 ring-2 ring-red-500/10"
+                    : "border-[#D1E4F0] focus:border-[#086288]"
+                }`}
+              />
+              {errors.dob ? (
+                <p className="mt-1 text-xs text-red-600 font-semibold">{errors.dob}</p>
+              ) : (
+                <p className="mt-1 text-[11px] text-slate-500">{t.dobHint}</p>
+              )}
+            </div>
 
             <div className={compact ? "sm:col-span-2" : ""}>
               <label
                 htmlFor={`${sectionId}-note`}
                 className="block text-xs font-bold text-[#086288] mb-1.5"
               >
-                {t.noteLabel}{" "}
-                <span className="font-normal text-slate-400">({t.optional})</span>
+                {t.noteLabel}
               </label>
               <input
                 id={`${sectionId}-note`}

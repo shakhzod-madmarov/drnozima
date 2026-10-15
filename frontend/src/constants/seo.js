@@ -6,7 +6,7 @@ const years = getYearsOfExperience();
 
 /**
  * Per-page, per-language SEO copy optimized for Google, Yandex, and AI Search Engines.
- * Highlights: Female Dentist in Andijan, exact physical address (A.Fitrat 251B, 170100),
+ * Highlights: Female Dentist in Andijan, exact physical address (A.Fitrat 251B),
  * Sevdo Denta clinic, and 7 years of clinical experience.
  */
 export const PAGE_SEO = {
@@ -59,17 +59,17 @@ export const PAGE_SEO = {
     uz: {
       title: "Aloqa va Manzil: A.Fitrat 251B — Sevdo Denta Klinikasi Andijon | Dr. Nozima",
       description:
-        "Andijon shahri, A.Fitrat ko'chasi 251B-uy, 170100 (Eski Shahar, 1-qavat, «Sevdo Denta» klinikasi). Qabulga yozilish: +998 (91) 619-95-00, Telegram: @Miss_Dentist_95, Google va Yandex Xarita.",
+        "Andijon shahri, A.Fitrat ko'chasi 251B-uy (Eski Shahar, 1-qavat, «Sevdo Denta» klinikasi). Qabulga yozilish: +998 (91) 619-95-00, Telegram: @Miss_Dentist_95, Google va Yandex Xarita.",
     },
     ru: {
       title: "Контакты и Адрес: ул. А. Фитрата 251Б — Клиника Sevdo Denta Андижан | Д-р Нозима",
       description:
-        "г. Андижан, ул. А. Фитрата, 251Б, 170100 (район Эски Шахар, 1-й этаж, клиника «Sevdo Denta»). Запись к врачу-стоматологу женщине: +998 (91) 619-95-00, Telegram: @Miss_Dentist_95.",
+        "г. Андижан, ул. А. Фитрата, 251Б (район Эски Шахар, 1-й этаж, клиника «Sevdo Denta»). Запись к врачу-стоматологу женщине: +998 (91) 619-95-00, Telegram: @Miss_Dentist_95.",
     },
     en: {
       title: "Contact & Location: 251B A. Fitrat St — Sevdo Denta Clinic Andijan | Dr. Nozima",
       description:
-        "Visit Dr. Nozima Baxtiyarovna at «Sevdo Denta» Clinic, 251B A. Fitrat Street, 170100, Andijan. Book by phone +998 (91) 619-95-00 or Telegram @Miss_Dentist_95. Google & Yandex Maps.",
+        "Visit Dr. Nozima Baxtiyarovna at «Sevdo Denta» Clinic, 251B A. Fitrat Street, Andijan. Book by phone +998 (91) 619-95-00 or Telegram @Miss_Dentist_95. Google & Yandex Maps.",
     },
   },
   booking: {

@@ -23,9 +23,9 @@ export const FAQ_ITEMS = [
       en: "What is the exact physical address of Sevdo Denta Clinic in Andijan?",
     },
     a: {
-      uz: "Klinikamiz aniq manzili: Andijon shahri, A.Fitrat ko'chasi 251B-uy, 170100 (Eski Shahar hududi, 1-qavat, «Sevdo Denta» klinikasi). Mo'ljal: Eski Shahar markazi. Saytimizdagi Yandex Xarita (https://yandex.uz/maps/-/CXBjjZ5d) yoki Google Xarita (https://maps.app.goo.gl/Ez79FP1W4oTHGGLn9) tugmasi orqali to'g'ridan-to'g'ri navigator yo'nalishini yoqishingiz mumkin.",
-      ru: "Точный адрес клиники: г. Андижан, ул. А. Фитрата, 251Б, 170100 (район Эски Шахар, 1-й этаж, клиника «Sevdo Denta»). Вы можете легко проложить прямой маршрут в Яндекс Картах (https://yandex.uz/maps/-/CXBjjZ5d) или Google Maps (https://maps.app.goo.gl/Ez79FP1W4oTHGGLn9).",
-      en: "The exact address is 251B A. Fitrat Street, 170100, Andijan, Andijan region, Uzbekistan (Old City / Eski Shahar district, 1st Floor, «Sevdo Denta» Clinic). Turn-by-turn navigation is available directly via Google Maps (https://maps.app.goo.gl/Ez79FP1W4oTHGGLn9) and Yandex Maps (https://yandex.uz/maps/-/CXBjjZ5d).",
+      uz: "Klinikamiz aniq manzili: Andijon shahri, A.Fitrat ko'chasi 251B-uy (Eski Shahar hududi, 1-qavat, «Sevdo Denta» klinikasi). Mo'ljal: Eski Shahar markazi. Saytimizdagi Yandex Xarita (https://yandex.uz/maps/-/CXBjjZ5d) yoki Google Xarita (https://maps.app.goo.gl/Ez79FP1W4oTHGGLn9) tugmasi orqali to'g'ridan-to'g'ri navigator yo'nalishini yoqishingiz mumkin.",
+      ru: "Точный адрес клиники: г. Андижан, ул. А. Фитрата, 251Б (район Эски Шахар, 1-й этаж, клиника «Sevdo Denta»). Вы можете легко проложить прямой маршрут в Яндекс Картах (https://yandex.uz/maps/-/CXBjjZ5d) или Google Maps (https://maps.app.goo.gl/Ez79FP1W4oTHGGLn9).",
+      en: "The exact address is 251B A. Fitrat Street, Andijan, Andijan region, Uzbekistan (Old City / Eski Shahar district, 1st Floor, «Sevdo Denta» Clinic). Turn-by-turn navigation is available directly via Google Maps (https://maps.app.goo.gl/Ez79FP1W4oTHGGLn9) and Yandex Maps (https://yandex.uz/maps/-/CXBjjZ5d).",
     },
   },
   {

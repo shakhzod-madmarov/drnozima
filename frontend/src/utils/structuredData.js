@@ -185,7 +185,6 @@ export const buildAboutPageSchema = (lang = "uz", breadcrumbs = []) => {
         "streetAddress": "A.Fitrat 251B",
         "addressLocality": "Andijon",
         "addressRegion": "Andijon viloyati",
-        "postalCode": "170100",
         "addressCountry": "UZ",
       },
     },
@@ -239,7 +238,6 @@ export const buildContactPageSchema = (lang = "uz", breadcrumbs = []) => {
       "streetAddress": "A.Fitrat 251B",
       "addressLocality": "Andijon",
       "addressRegion": "Andijon viloyati",
-      "postalCode": "170100",
       "addressCountry": "UZ",
     },
     "geo": {
