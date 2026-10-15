@@ -260,7 +260,7 @@ const SmileAssessmentWizard = () => {
                   {lang === "uz"
                     ? "DR. NOZIMA TAVSIYASI"
                     : lang === "ru"
-                    ? "РЕКОМЕНДАЦИЯ Д-РА ОЛИМЖОНА"
+                    ? "РЕКОМЕНДАЦИЯ Д-РА НОЗИМЫ"
                     : "DR. NOZIMA'S RECOMMENDATION"}
                 </span>
                 <span className="inline-flex items-center gap-1.5 text-xs font-bold text-emerald-700 bg-emerald-50 px-3 py-1 rounded-full border border-emerald-200">

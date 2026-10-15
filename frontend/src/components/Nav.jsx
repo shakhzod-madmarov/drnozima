@@ -101,7 +101,7 @@ const Nav = ({ topOffset = 0 }) => {
                   onClick={() => changeLanguage(l)}
                   aria-pressed={lang === l}
                   aria-label={l === "uz" ? "O'zbek tili" : l === "ru" ? "Русский язык" : "English"}
-                  className={`px-1.5 sm:px-2.5 py-1 rounded-md text-[10px] sm:text-[11px] font-bold uppercase transition-colors cursor-pointer ${
+                  className={`min-h-[34px] min-w-[28px] sm:min-h-0 sm:min-w-0 flex items-center justify-center px-1.5 sm:px-2.5 py-1 rounded-md text-[10px] sm:text-[11px] font-bold uppercase transition-colors cursor-pointer touch-manipulation ${
                     lang === l
                       ? "bg-[#086288] text-white"
                       : "text-slate-600 hover:text-[#086288]"
@@ -153,7 +153,7 @@ const Nav = ({ topOffset = 0 }) => {
               aria-label={a11y.openMenu}
               aria-expanded={showMenu}
               aria-controls="mobile-nav-drawer"
-              className="lg:hidden w-9 h-9 sm:w-11 sm:h-11 rounded-lg sm:rounded-xl bg-[#f4f8fb] hover:bg-[#e6f1f7] flex flex-col items-center justify-center gap-1 sm:gap-1.5 transition-colors border border-[#D1E4F0] cursor-pointer touch-manipulation"
+              className="lg:hidden w-10 h-10 sm:w-11 sm:h-11 min-h-[40px] min-w-[40px] rounded-lg sm:rounded-xl bg-[#f4f8fb] hover:bg-[#e6f1f7] flex flex-col items-center justify-center gap-1 sm:gap-1.5 transition-colors border border-[#D1E4F0] cursor-pointer touch-manipulation"
             >
               <span className="w-4 sm:w-5 h-0.5 bg-[#086288] rounded-full" />
               <span className="w-3.5 sm:w-4 h-0.5 bg-[#4D8DBA] rounded-full" />
@@ -178,15 +178,15 @@ const Nav = ({ topOffset = 0 }) => {
             aria-modal="true"
             aria-label={a11y.mobileNavigation}
             tabIndex={-1}
-            className="fixed inset-y-0 right-0 w-full max-w-[280px] sm:max-w-xs bg-white shadow-2xl flex flex-col justify-between p-5 sm:p-6 z-10 overflow-y-auto pb-[max(1.5rem,env(safe-area-inset-bottom))]"
+            className="fixed inset-y-0 right-0 w-[85vw] max-w-[300px] sm:max-w-xs bg-white shadow-2xl flex flex-col justify-between p-4 sm:p-6 z-10 overflow-y-auto pt-[max(1.25rem,env(safe-area-inset-top))] pb-[max(1.5rem,env(safe-area-inset-bottom))]"
           >
             <div>
-              <div className="flex items-center justify-between pb-5 border-b border-slate-200">
+              <div className="flex items-center justify-between pb-4 sm:pb-5 border-b border-slate-200">
                 <Logo className="h-8" />
                 <button
                   onClick={closeDrawer}
                   aria-label={a11y.closeMenu}
-                  className="w-11 h-11 rounded-xl bg-[#f4f8fb] hover:bg-[#e6f1f7] text-[#086288] flex items-center justify-center font-bold text-base cursor-pointer touch-manipulation"
+                  className="w-10 h-10 sm:w-11 sm:h-11 rounded-xl bg-[#f4f8fb] hover:bg-[#e6f1f7] text-[#086288] flex items-center justify-center font-bold text-base cursor-pointer touch-manipulation"
                 >
                   ✕
                 </button>

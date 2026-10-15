@@ -269,27 +269,27 @@ const About = () => {
 
           {/* Key Metrics Grid */}
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 sm:gap-3 pt-2">
-            <div className="p-2.5 sm:p-4 rounded-xl sm:rounded-2xl bg-[#f4f8fb] border border-[#D1E4F0] text-center">
+            <div className="p-2.5 sm:p-4 rounded-xl sm:rounded-2xl bg-[#f4f8fb] border border-[#D1E4F0] text-center min-w-0">
               <p className="font-serif-classic text-xl sm:text-2xl lg:text-3xl font-bold text-[#086288]">{years}</p>
-              <p className="text-[10px] sm:text-xs text-slate-600 font-medium mt-0.5 leading-tight">
+              <p className="text-[9.5px] sm:text-xs text-slate-600 font-medium mt-0.5 leading-tight break-words">
                 {lang === "uz" ? "Yil Tajriba" : lang === "ru" ? "Лет Опыта" : "Years Exp."}
               </p>
             </div>
-            <div className="p-2.5 sm:p-4 rounded-xl sm:rounded-2xl bg-[#f4f8fb] border border-[#D1E4F0] text-center">
+            <div className="p-2.5 sm:p-4 rounded-xl sm:rounded-2xl bg-[#f4f8fb] border border-[#D1E4F0] text-center min-w-0">
               <p className="font-serif-classic text-xl sm:text-2xl lg:text-3xl font-bold text-[#086288]">ADTI</p>
-              <p className="text-[10px] sm:text-xs text-slate-600 font-medium mt-0.5 leading-tight">
+              <p className="text-[9.5px] sm:text-xs text-slate-600 font-medium mt-0.5 leading-tight break-words">
                 {lang === "uz" ? "Diplomi" : lang === "ru" ? "Диплом АГМИ" : "Medical Degree"}
               </p>
             </div>
-            <div className="p-2.5 sm:p-4 rounded-xl sm:rounded-2xl bg-[#f4f8fb] border border-[#D1E4F0] text-center">
+            <div className="p-2.5 sm:p-4 rounded-xl sm:rounded-2xl bg-[#f4f8fb] border border-[#D1E4F0] text-center min-w-0">
               <p className="font-serif-classic text-xl sm:text-2xl lg:text-3xl font-bold text-[#086288]">100%</p>
-              <p className="text-[10px] sm:text-xs text-slate-600 font-medium mt-0.5 leading-tight">
+              <p className="text-[9.5px] sm:text-xs text-slate-600 font-medium mt-0.5 leading-tight break-words">
                 {lang === "uz" ? "Og'riqsiz" : lang === "ru" ? "Без Боли" : "Painless"}
               </p>
             </div>
-            <div className="p-2.5 sm:p-4 rounded-xl sm:rounded-2xl bg-[#f4f8fb] border border-[#D1E4F0] text-center">
+            <div className="p-2.5 sm:p-4 rounded-xl sm:rounded-2xl bg-[#f4f8fb] border border-[#D1E4F0] text-center min-w-0">
               <p className="font-serif-classic text-xl sm:text-2xl lg:text-3xl font-bold text-[#4D8DBA]">100%</p>
-              <p className="text-[10px] sm:text-xs text-slate-600 font-medium mt-0.5 leading-tight">
+              <p className="text-[9.5px] sm:text-xs text-slate-600 font-medium mt-0.5 leading-tight break-words">
                 {lang === "uz" ? "Steril Asboblar" : lang === "ru" ? "Стерильно" : "Sterile Standard"}
               </p>
             </div>

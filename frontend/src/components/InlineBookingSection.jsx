@@ -554,7 +554,7 @@ const InlineBookingSection = ({
               {t.dayGroupLabel}
             </p>
             <div
-              className="flex gap-1.5 sm:gap-2 overflow-x-auto pb-2 justify-start sm:justify-center snap-x snap-mandatory"
+              className="flex gap-1.5 sm:gap-2 overflow-x-auto pb-2 justify-start sm:justify-center snap-x snap-mandatory scroll-touch"
               role="group"
               aria-label={t.dayGroupLabel}
             >
@@ -571,7 +571,7 @@ const InlineBookingSection = ({
                       );
                     }}
                     aria-pressed={isActive}
-                    className={`shrink-0 snap-start px-3 py-2 sm:px-4 sm:py-2.5 rounded-xl text-xs sm:text-sm font-semibold border transition-colors cursor-pointer ${
+                    className={`shrink-0 snap-start px-3 py-2 sm:px-4 sm:py-2.5 rounded-xl text-xs sm:text-sm font-semibold border transition-colors cursor-pointer touch-manipulation ${
                       isActive
                         ? "bg-[#086288] text-white border-[#086288]"
                         : "bg-[#f7f9fc] text-slate-700 border-[#D1E4F0] hover:bg-[#eef3f8] hover:border-[#4D8DBA]"
@@ -603,7 +603,7 @@ const InlineBookingSection = ({
                       type="button"
                       onClick={() => setSelectedTime(time)}
                       aria-pressed={isSelected}
-                      className={`py-2.5 sm:py-3 rounded-xl border text-xs sm:text-sm font-semibold transition-colors cursor-pointer ${
+                      className={`py-2.5 sm:py-3 min-h-[42px] rounded-xl border text-xs sm:text-sm font-semibold transition-colors cursor-pointer touch-manipulation ${
                         isSelected
                           ? "bg-[#4D8DBA] text-white border-[#4D8DBA]"
                           : "bg-white text-[#086288] border-[#D1E4F0] hover:bg-[#F4F8FB] hover:border-[#4D8DBA]"

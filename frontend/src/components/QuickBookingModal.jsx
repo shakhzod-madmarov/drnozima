@@ -495,7 +495,7 @@ const QuickBookingModal = ({
                 </div>
 
                 {/* Days row */}
-                <div className="flex gap-1 sm:gap-1.5 overflow-x-auto pb-1">
+                <div className="flex gap-1 sm:gap-1.5 overflow-x-auto pb-1 scroll-touch">
                   {availableDays.slice(0, 7).map((d) => {
                     const isSelectedDay = d.date === activeDayObj.date;
                     return (
@@ -503,7 +503,7 @@ const QuickBookingModal = ({
                         key={d.date}
                         type="button"
                         onClick={() => setSelectedDate(d.date)}
-                        className={`px-2.5 sm:px-3 py-1.5 rounded-xl text-[10px] sm:text-[11px] font-bold whitespace-nowrap transition-all cursor-pointer border ${
+                        className={`px-2.5 sm:px-3 py-2 sm:py-1.5 min-h-[36px] rounded-xl text-[10px] sm:text-[11px] font-bold whitespace-nowrap transition-all cursor-pointer touch-manipulation border shrink-0 ${
                           isSelectedDay
                             ? "bg-[#086288] text-white border-[#086288] shadow-2xs"
                             : "bg-white text-slate-700 border-slate-200 hover:border-blue-300"
@@ -524,7 +524,7 @@ const QuickBookingModal = ({
                         key={slot}
                         type="button"
                         onClick={() => setSelectedTime(slot)}
-                        className={`py-1.5 px-1 sm:px-2 rounded-lg text-[11px] sm:text-xs font-extrabold transition-all cursor-pointer border ${
+                        className={`py-2 px-1 sm:px-2 min-h-[38px] rounded-lg text-[11px] sm:text-xs font-extrabold transition-all cursor-pointer touch-manipulation border ${
                           isSelectedSlot
                             ? "bg-emerald-600 text-white border-emerald-600 shadow-2xs"
                             : "bg-white text-slate-700 border-slate-200 hover:border-emerald-400"

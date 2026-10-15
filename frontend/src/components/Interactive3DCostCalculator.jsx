@@ -368,22 +368,22 @@ const Interactive3DCostCalculator = () => {
             <div>
               
               {/* Header with Authentic Dental Icon Badge */}
-              <div className="flex items-center justify-between gap-2 border-b border-slate-100 pb-3.5 sm:pb-4 mb-4">
-                <div className="flex items-center gap-2.5 sm:gap-3">
+              <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2.5 sm:gap-2 border-b border-slate-100 pb-3.5 sm:pb-4 mb-4">
+                <div className="flex items-center gap-2.5 sm:gap-3 min-w-0">
                   <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-xl bg-blue-50 border border-blue-200/70 text-[#086288] flex items-center justify-center shadow-2xs shrink-0">
                     {current.icon}
                   </div>
-                  <div>
-                    <span className="text-[9.5px] sm:text-[10px] font-black uppercase tracking-widest text-[#0284c7] block leading-none mb-1">
+                  <div className="min-w-0">
+                    <span className="text-[9px] sm:text-[10px] font-black uppercase tracking-widest text-[#0284c7] block leading-none mb-1 truncate">
                       {current.badgeTitle[lang]}
                     </span>
-                    <h3 className="text-lg sm:text-xl md:text-2xl font-black text-slate-900 tracking-tight leading-tight">
+                    <h3 className="text-base sm:text-xl md:text-2xl font-black text-slate-900 tracking-tight leading-tight">
                       {current.title[lang]}
                     </h3>
                   </div>
                 </div>
 
-                <span className="text-[11px] sm:text-xs font-bold text-emerald-700 bg-emerald-50 px-2.5 sm:px-3 py-1 rounded-full border border-emerald-200/70 shrink-0 inline-flex items-center gap-1.5">
+                <span className="text-[10.5px] sm:text-xs font-bold text-emerald-700 bg-emerald-50 px-2.5 sm:px-3 py-1 rounded-full border border-emerald-200/70 shrink-0 inline-flex items-center gap-1.5 self-start sm:self-auto">
                   <IconShieldCheck className="w-3.5 h-3.5 text-emerald-600" />
                   <span>
                     {lang === "uz" ? "100% Og'riqsiz" : lang === "ru" ? "100% Без боли" : "100% Painless"}
@@ -461,27 +461,27 @@ const Interactive3DCostCalculator = () => {
 
             {/* 3 Metric Tiles at Bottom */}
             <div className="pt-4 border-t border-slate-100 grid grid-cols-3 gap-1.5 sm:gap-3 text-left">
-              <div className="bg-slate-50/80 p-2 sm:p-3 rounded-xl sm:rounded-2xl border border-slate-200/70 text-center sm:text-left">
-                <span className="text-[9px] sm:text-[10px] font-bold text-slate-400 uppercase tracking-wider block">
+              <div className="bg-slate-50/80 p-2 sm:p-3 rounded-xl sm:rounded-2xl border border-slate-200/70 text-center sm:text-left min-w-0">
+                <span className="text-[8.5px] xs:text-[9px] sm:text-[10px] font-bold text-slate-400 uppercase tracking-wider block truncate">
                   {lang === "uz" ? "Vaqt" : lang === "ru" ? "Время" : "Duration"}
                 </span>
-                <span className="text-[11px] sm:text-xs md:text-sm font-black text-slate-900 mt-0.5 block leading-tight">
+                <span className="text-[10px] xs:text-[11px] sm:text-xs md:text-sm font-black text-slate-900 mt-0.5 block leading-tight break-words">
                   {current.duration[lang]}
                 </span>
               </div>
-              <div className="bg-slate-50/80 p-2 sm:p-3 rounded-xl sm:rounded-2xl border border-slate-200/70 text-center sm:text-left">
-                <span className="text-[9px] sm:text-[10px] font-bold text-slate-400 uppercase tracking-wider block">
+              <div className="bg-slate-50/80 p-2 sm:p-3 rounded-xl sm:rounded-2xl border border-slate-200/70 text-center sm:text-left min-w-0">
+                <span className="text-[8.5px] xs:text-[9px] sm:text-[10px] font-bold text-slate-400 uppercase tracking-wider block truncate">
                   {lang === "uz" ? "Tashrif" : lang === "ru" ? "Визиты" : "Visits"}
                 </span>
-                <span className="text-[11px] sm:text-xs md:text-sm font-black text-slate-900 mt-0.5 block leading-tight">
+                <span className="text-[10px] xs:text-[11px] sm:text-xs md:text-sm font-black text-slate-900 mt-0.5 block leading-tight break-words">
                   {current.visits[lang]}
                 </span>
               </div>
-              <div className="bg-slate-50/80 p-2 sm:p-3 rounded-xl sm:rounded-2xl border border-slate-200/70 text-center sm:text-left">
-                <span className="text-[9px] sm:text-[10px] font-bold text-slate-400 uppercase tracking-wider block">
+              <div className="bg-slate-50/80 p-2 sm:p-3 rounded-xl sm:rounded-2xl border border-slate-200/70 text-center sm:text-left min-w-0">
+                <span className="text-[8.5px] xs:text-[9px] sm:text-[10px] font-bold text-slate-400 uppercase tracking-wider block truncate">
                   {lang === "uz" ? "Kafolat" : lang === "ru" ? "Гарантия" : "Outcome"}
                 </span>
-                <span className="text-[11px] sm:text-xs md:text-sm font-black text-slate-900 mt-0.5 block leading-tight">
+                <span className="text-[10px] xs:text-[11px] sm:text-xs md:text-sm font-black text-slate-900 mt-0.5 block leading-tight break-words">
                   {current.result[lang]}
                 </span>
               </div>

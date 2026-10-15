@@ -271,14 +271,14 @@ const DentalSticker = ({
         {renderArtwork()}
       </div>
       {(label || sublabel) && (
-        <div className="leading-tight text-left pr-0.5">
+        <div className="leading-tight text-left pr-0.5 min-w-0">
           {sublabel && (
-            <span className={`block text-[9px] font-bold uppercase tracking-wider ${theme.subText}`}>
+            <span className={`block text-[9px] font-bold uppercase tracking-wider ${theme.subText} truncate`}>
               {sublabel}
             </span>
           )}
           {label && (
-            <span className={`block text-xs sm:text-sm font-bold tracking-tight ${theme.badgeText}`}>
+            <span className={`block text-xs sm:text-sm font-bold tracking-tight ${theme.badgeText} truncate`}>
               {label}
             </span>
           )}

@@ -63,7 +63,7 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="bg-[#042433] text-slate-300 pt-14 pb-10 border-t border-[#086288]/40 mt-16">
+    <footer className="bg-[#042433] text-slate-300 pt-10 sm:pt-14 pb-[max(2rem,env(safe-area-inset-bottom,0px))] border-t border-[#086288]/40 mt-12 sm:mt-16">
       <div className="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8">
         {/* Top Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-8 lg:gap-10 pb-12 border-b border-white/10">

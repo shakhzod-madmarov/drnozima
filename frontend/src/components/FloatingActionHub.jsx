@@ -27,20 +27,20 @@ const FloatingActionHub = () => {
       {expanded && (
         <div
           id="floating-action-menu"
-          className="flex flex-col items-end gap-2 mb-1 transition-all duration-200"
+          className="flex flex-col items-end gap-2 mb-1 transition-all duration-200 max-w-[calc(100vw-1.5rem)]"
         >
           <a
             href={PRIMARY_CLINIC.telegram}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-2.5 bg-[#086288] hover:bg-[#064b69] text-white px-4 py-2.5 rounded-xl shadow-md text-xs font-semibold transition-colors"
+            className="flex items-center gap-2.5 bg-[#086288] hover:bg-[#064b69] text-white px-3.5 py-2.5 rounded-xl shadow-md text-xs font-semibold transition-colors max-w-full"
           >
-            <IconTelegram className="w-4 h-4 text-white" />
-            <span>
+            <IconTelegram className="w-4 h-4 text-white shrink-0" />
+            <span className="truncate">
               {lang === "uz"
                 ? "Telegram (@Miss_Dentist_95)"
                 : lang === "ru"
-                ? "Написать в Telegram (@Miss_Dentist_95)"
+                ? "Telegram (@Miss_Dentist_95)"
                 : "Telegram (@Miss_Dentist_95)"}
             </span>
           </a>
@@ -49,20 +49,20 @@ const FloatingActionHub = () => {
             href={PRIMARY_CLINIC.instagram}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-2.5 bg-[#4D8DBA] hover:bg-[#086288] text-white px-4 py-2.5 rounded-xl shadow-md text-xs font-semibold transition-colors"
+            className="flex items-center gap-2.5 bg-[#4D8DBA] hover:bg-[#086288] text-white px-3.5 py-2.5 rounded-xl shadow-md text-xs font-semibold transition-colors max-w-full"
           >
-            <IconInstagram className="w-4 h-4 text-white" />
-            <span>Instagram (@sevdo_denta)</span>
+            <IconInstagram className="w-4 h-4 text-white shrink-0" />
+            <span className="truncate">Instagram (@sevdo_denta)</span>
           </a>
 
           <a
             href={PRIMARY_CLINIC.maps.yandex}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-2.5 bg-white hover:bg-[#f4f8fb] text-[#086288] border border-[#D1E4F0] px-4 py-2.5 rounded-xl shadow-md text-xs font-semibold transition-colors"
+            className="flex items-center gap-2.5 bg-white hover:bg-[#f4f8fb] text-[#086288] border border-[#D1E4F0] px-3.5 py-2.5 rounded-xl shadow-md text-xs font-semibold transition-colors max-w-full"
           >
-            <IconYandex className="w-4 h-4" />
-            <span>
+            <IconYandex className="w-4 h-4 shrink-0" />
+            <span className="truncate">
               {lang === "uz"
                 ? "Yandex Xarita (Sevdo Denta)"
                 : lang === "ru"
@@ -73,10 +73,10 @@ const FloatingActionHub = () => {
 
           <a
             href={`tel:${PRIMARY_CLINIC.phoneRaw}`}
-            className="flex items-center gap-2.5 bg-[#086288] hover:bg-[#064b69] text-white px-4 py-2.5 rounded-xl shadow-md text-xs font-semibold transition-colors"
+            className="flex items-center gap-2.5 bg-[#086288] hover:bg-[#064b69] text-white px-3.5 py-2.5 rounded-xl shadow-md text-xs font-semibold transition-colors max-w-full"
           >
-            <IconPhone className="w-4 h-4 text-white" />
-            <span>{PRIMARY_CLINIC.phone}</span>
+            <IconPhone className="w-4 h-4 text-white shrink-0" />
+            <span className="truncate">{PRIMARY_CLINIC.phone}</span>
           </a>
         </div>
       )}

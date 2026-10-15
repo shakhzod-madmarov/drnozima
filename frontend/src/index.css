@@ -80,6 +80,26 @@ button, a, input, select, textarea {
   border: 1px solid rgba(8, 98, 136, 0.2);
 }
 
+/* Responsive & Safe-Area Utility Classes */
+.pb-safe {
+  padding-bottom: max(1rem, env(safe-area-inset-bottom, 0px));
+}
+
+.pt-safe {
+  padding-top: max(1rem, env(safe-area-inset-top, 0px));
+}
+
+/* Prevent horizontal overflow on flex / grid items */
+.min-w-0 {
+  min-width: 0;
+}
+
+/* Ensure long text wraps gracefully on narrow screens */
+.break-words-any {
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
 @media print {
   nav, footer, .no-print {
     display: none !important;

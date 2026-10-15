@@ -167,13 +167,13 @@ const CertificatesShowcase = () => {
 
         {/* Modal for viewing certificate details */}
         {activeCert && (
-          <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-900/60 backdrop-blur-xs">
+          <div className="fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-4 bg-slate-900/60 backdrop-blur-xs overflow-y-auto">
             <div
               ref={modalRef}
               role="dialog"
               aria-modal="true"
               aria-label={activeCert.title[lang]}
-              className="bg-white rounded-3xl max-w-lg w-full p-6 sm:p-8 shadow-2xl border border-[#D1E4F0] relative animate-in fade-in zoom-in-95 duration-200"
+              className="bg-white rounded-2xl sm:rounded-3xl max-w-lg w-full p-5 sm:p-8 shadow-2xl border border-[#D1E4F0] relative animate-in fade-in zoom-in-95 duration-200 max-h-[90dvh] overflow-y-auto my-auto"
             >
               <button
                 onClick={closeCert}

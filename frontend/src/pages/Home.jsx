@@ -192,27 +192,27 @@ const HeroSection = () => {
 
           {/* Key Metrics Row */}
           <div className="pt-5 sm:pt-6 border-t border-[#D1E4F0] grid grid-cols-3 divide-x divide-[#D1E4F0] text-center sm:text-left max-w-xl">
-            <div className="pr-2 sm:pr-6">
-              <p className="font-serif-classic text-xl sm:text-2xl lg:text-3xl font-bold text-[#086288]">
+            <div className="pr-1.5 sm:pr-6 min-w-0">
+              <p className="font-serif-classic text-lg xs:text-xl sm:text-2xl lg:text-3xl font-bold text-[#086288]">
                 {t.stat1Num}
               </p>
-              <p className="text-[10px] sm:text-xs text-slate-600 font-medium mt-0.5 leading-tight">
+              <p className="text-[9px] xs:text-[10px] sm:text-xs text-slate-600 font-medium mt-0.5 leading-tight break-words">
                 {t.stat1Label}
               </p>
             </div>
-            <div className="px-2 sm:px-6">
-              <p className="font-serif-classic text-xl sm:text-2xl lg:text-3xl font-bold text-[#086288]">
+            <div className="px-1.5 sm:px-6 min-w-0">
+              <p className="font-serif-classic text-lg xs:text-xl sm:text-2xl lg:text-3xl font-bold text-[#086288]">
                 {t.stat2Num}
               </p>
-              <p className="text-[10px] sm:text-xs text-slate-600 font-medium mt-0.5 leading-tight">
+              <p className="text-[9px] xs:text-[10px] sm:text-xs text-slate-600 font-medium mt-0.5 leading-tight break-words">
                 {t.stat2Label}
               </p>
             </div>
-            <div className="pl-2 sm:pl-6">
-              <p className="font-serif-classic text-xl sm:text-2xl lg:text-3xl font-bold text-[#4D8DBA]">
+            <div className="pl-1.5 sm:pl-6 min-w-0">
+              <p className="font-serif-classic text-lg xs:text-xl sm:text-2xl lg:text-3xl font-bold text-[#4D8DBA]">
                 {t.stat3Num}
               </p>
-              <p className="text-[10px] sm:text-xs text-slate-600 font-medium mt-0.5 leading-tight">
+              <p className="text-[9px] xs:text-[10px] sm:text-xs text-slate-600 font-medium mt-0.5 leading-tight break-words">
                 {t.stat3Label}
               </p>
             </div>
@@ -255,20 +255,20 @@ const HeroSection = () => {
             </div>
 
             {/* Sub-bar with Doctor Name & Photo Switcher */}
-            <div className="mt-3 pt-2 flex items-center justify-between gap-2">
-              <div className="flex items-center gap-2.5">
+            <div className="mt-3 pt-2 flex flex-wrap items-center justify-between gap-2">
+              <div className="flex items-center gap-2 sm:gap-2.5 min-w-0">
                 <img
                   src="/logo.png"
                   alt="Logo"
                   width={34}
                   height={34}
-                  className="w-8 h-8 object-contain shrink-0"
+                  className="w-7 h-7 sm:w-8 sm:h-8 object-contain shrink-0"
                 />
-                <div>
-                  <p className="font-serif-classic text-base font-bold text-[#086288] leading-none">
+                <div className="min-w-0">
+                  <p className="font-serif-classic text-sm sm:text-base font-bold text-[#086288] leading-none truncate">
                     Nozima Baxtiyarovna
                   </p>
-                  <p className="text-[11px] font-medium text-[#4D8DBA] mt-0.5">
+                  <p className="text-[10px] sm:text-[11px] font-medium text-[#4D8DBA] mt-0.5 truncate">
                     {getExperienceBadge(lang)}
                   </p>
                 </div>
@@ -685,20 +685,20 @@ const DoctorBioSpotlight = () => {
               </div>
             </div>
 
-            <div className="mt-3 p-4 rounded-2xl bg-[#086288] text-white flex items-center justify-between shadow-xs">
-              <div>
-                <p className="text-[11px] uppercase tracking-wider text-[#97D7FF] font-bold">
+            <div className="mt-3 p-3.5 sm:p-4 rounded-2xl bg-[#086288] text-white flex flex-wrap items-center justify-between gap-2.5 shadow-xs">
+              <div className="min-w-0">
+                <p className="text-[10.5px] sm:text-[11px] uppercase tracking-wider text-[#97D7FF] font-bold truncate">
                   {lang === "uz"
                     ? "Stomatolog-Terapevt · Ortoped"
                     : lang === "ru"
                     ? "Стоматолог-Терапевт · Ортопед"
                     : "Dentist · Restorative & Prosthodontist"}
                 </p>
-                <p className="font-serif-classic text-xl font-bold mt-0.5">
+                <p className="font-serif-classic text-lg sm:text-xl font-bold mt-0.5 truncate">
                   Dr. Nozima Baxtiyarovna
                 </p>
               </div>
-              <span className="px-3.5 py-1.5 rounded-full bg-[#FFEFC4] text-[#086288] text-xs font-bold shadow-xs">
+              <span className="px-3 sm:px-3.5 py-1.5 rounded-full bg-[#FFEFC4] text-[#086288] text-[11px] sm:text-xs font-bold shadow-xs shrink-0">
                 {getExperienceBadge(lang)}
               </span>
             </div>
