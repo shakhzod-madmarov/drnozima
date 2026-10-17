@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dr. Nozima Baxtiyarovna — Resepshin Dual Review QR Stendi (Google Maps & Yandex Maps)</title>
+  <meta name="description" content="«Sevdo Denta» klinikasi resepshini uchun akril stend: Google Maps va Yandex Maps orqali bemorlar sharh qoldirishi uchun 0.1 soniyada skanerlanuvchi Dual QR Stend.">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #086288;
+      --primary-dark: #042433;
+      --secondary: #4D8DBA;
+      --accent-gold: #FFEFC4;
+      --accent-star: #F59E0B;
+      --cta-red: #E11D48;
+      --cta-red-light: #FFF1F2;
+      --google-blue: #0284C7;
+      --google-border: #BAE6FD;
+      --google-bg: #F0F9FF;
+      --yandex-red: #DC2626;
+      --yandex-border: #FECDD3;
+      --yandex-bg: #FFF5F5;
+      --border-soft: #D1E4F0;
+      --text-main: #0B1E2B;
+      --text-muted: #4B6375;
+      
+      /* Default A4 Landscape Dimensions */
+      --stand-w: 297mm;
+      --stand-h: 210mm;
+      --scale-factor: 1;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    body {
+      font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: #E2E8F0;
+      color: var(--text-main);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      padding: 24px 16px;
+    }
+
+    /* Screen-Only Control Toolbar */
+    .reception-toolbar {
+      width: 100%;
+      max-width: var(--stand-w);
+      background: #042433;
+      color: #ffffff;
+      padding: 12px 20px;
+      border-radius: 14px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      box-shadow: 0 10px 25px -5px rgba(4, 36, 51, 0.4);
+      margin-bottom: 20px;
+      z-index: 100;
+    }
+
+    .toolbar-left {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .toolbar-title {
+      font-size: 14px;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      color: var(--accent-gold);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .toolbar-badge {
+      font-size: 11px;
+      background: rgba(255, 255, 255, 0.15);
+      padding: 2px 8px;
+      border-radius: 20px;
+      color: #97D7FF;
+      font-weight: 600;
+    }
+
+    .toolbar-actions {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .btn-tool {
+      background: rgba(255, 255, 255, 0.12);
+      color: #ffffff;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      padding: 7px 14px;
+      border-radius: 8px;
+      font-size: 12px;
+      font-weight: 600;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      text-decoration: none;
+      transition: all 0.2s ease;
+    }
+
+    .btn-tool:hover {
+      background: rgba(255, 255, 255, 0.25);
+      border-color: #ffffff;
+    }
+
+    .btn-tool.active {
+      background: var(--primary);
+      border-color: var(--secondary);
+      color: #ffffff;
+      box-shadow: 0 0 10px rgba(77, 141, 186, 0.5);
+    }
+
+    .btn-print {
+      background: linear-gradient(135deg, #0284C7, #086288);
+      border: 1px solid #97D7FF;
+      color: #ffffff;
+      padding: 8px 18px;
+      font-size: 13px;
+      font-weight: 700;
+    }
+
+    .btn-print:hover {
+      background: linear-gradient(135deg, #0369A1, #064E6E);
+      box-shadow: 0 0 15px rgba(151, 215, 255, 0.6);
+      transform: translateY(-1px);
+    }
+
+    /* Outer Stand Wrapper (Acrylic Frame Look) */
+    .stand-viewport {
+      perspective: 1200px;
+      display: flex;
+      justify-content: center;
+      width: 100%;
+    }
+
+    .stand-canvas {
+      width: var(--stand-w);
+      height: var(--stand-h);
+      max-width: 100%;
+      background: #FFFFFF;
+      position: relative;
+      border-radius: 8px;
+      box-shadow: 0 25px 50px -12px rgba(8, 98, 136, 0.25), 0 0 0 1px rgba(8, 98, 136, 0.1);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 10mm 12mm 8mm 12mm;
+      box-sizing: border-box;
+      overflow: hidden;
+      background-image: 
+        radial-gradient(circle at 100% 0%, rgba(151, 215, 255, 0.12) 0%, transparent 40%),
+        radial-gradient(circle at 0% 100%, rgba(255, 239, 196, 0.18) 0%, transparent 45%);
+    }
+
+    /* A5 Variant Scaling */
+    body.format-a5 {
+      --stand-w: 210mm;
+      --stand-h: 148mm;
+    }
+
+    body.format-a5 .stand-canvas {
+      padding: 6mm 8mm 5mm 8mm;
+    }
+    body.format-a5 .doc-name {
+      font-size: 20px;
+    }
+    body.format-a5 .header-logo {
+      width: 44px;
+      height: 44px;
+    }
+    body.format-a5 .qr-box {
+      width: 140px;
+      height: 140px;
+    }
+    body.format-a5 .card-head {
+      margin-bottom: 4px;
+    }
+    body.format-a5 .cta-title {
+      font-size: 15px;
+    }
+    body.format-a5 .cta-sub-uz {
+      font-size: 12px;
+    }
+    body.format-a5 .cta-sub-ru {
+      font-size: 10px;
+    }
+    body.format-a5 .footer-meta {
+      font-size: 9px;
+    }
+
+    /* 1. Brand Line (90% width centered) */
+    .brand-top-ribbon {
+      width: 90%;
+      height: 4px;
+      margin: 0 auto 6mm auto;
+      border-radius: 4px;
+      background: linear-gradient(90deg, #086288 0%, #4D8DBA 50%, #086288 100%);
+      box-shadow: 0 1px 3px rgba(8, 98, 136, 0.2);
+    }
+
+    /* 2. Header Section */
+    .header-section {
+      text-align: center;
+      margin-bottom: 3.5mm;
+    }
+
+    .header-badge-row {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      margin-bottom: 2mm;
+    }
+
+    .header-logo {
+      width: 52px;
+      height: 52px;
+      background: linear-gradient(135deg, #086288 0%, #042433 100%);
+      border: 2px solid var(--accent-gold);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 12px rgba(8, 98, 136, 0.25);
+    }
+
+    .header-logo svg {
+      width: 30px;
+      height: 30px;
+      fill: none;
+      stroke: var(--accent-gold);
+    }
+
+    .doc-name {
+      font-family: 'Cinzel', Georgia, serif;
+      font-size: 26px;
+      font-weight: 800;
+      color: var(--primary);
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      line-height: 1.1;
+      text-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+    }
+
+    .subtitle-1 {
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 1.2px;
+      text-transform: uppercase;
+      color: #0F172A;
+      margin-top: 1.5mm;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+    }
+
+    .subtitle-2 {
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.8px;
+      text-transform: uppercase;
+      color: var(--secondary);
+      margin-top: 0.8mm;
+    }
+
+    /* 3. Call to Action Banner */
+    .cta-container {
+      text-align: center;
+      margin-bottom: 4mm;
+      background: rgba(244, 248, 251, 0.95);
+      border: 1px solid var(--border-soft);
+      border-radius: 12px;
+      padding: 2.5mm 6mm;
+      box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8);
+    }
+
+    .cta-title {
+      font-size: 18px;
+      font-weight: 800;
+      color: var(--cta-red);
+      letter-spacing: 0.3px;
+      text-transform: uppercase;
+      margin-bottom: 1mm;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+    }
+
+    .cta-sub-uz {
+      font-size: 13.5px;
+      font-weight: 700;
+      color: var(--text-main);
+      line-height: 1.25;
+    }
+
+    .cta-sub-ru {
+      font-size: 11.5px;
+      font-weight: 500;
+      color: var(--text-muted);
+      margin-top: 0.5mm;
+      line-height: 1.2;
+    }
+
+    /* 4. Dual QR Cards Grid */
+    .dual-cards-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8mm;
+      margin-bottom: 3.5mm;
+      flex: 1;
+    }
+
+    .qr-card {
+      border-radius: 14px;
+      padding: 4mm 5mm;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      position: relative;
+      background: #FFFFFF;
+      transition: transform 0.2s ease;
+      box-shadow: 0 4px 15px rgba(11, 30, 43, 0.05);
+    }
+
+    /* Google Card Styling */
+    .qr-card.google-card {
+      border: 1.5px solid var(--google-border);
+      background: linear-gradient(180deg, #FFFFFF 0%, var(--google-bg) 100%);
+    }
+
+    /* Yandex Card Styling */
+    .qr-card.yandex-card {
+      border: 1.5px solid var(--yandex-border);
+      background: linear-gradient(180deg, #FFFFFF 0%, var(--yandex-bg) 100%);
+    }
+
+    .card-head {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1.5mm;
+      width: 100%;
+    }
+
+    .platform-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 3px 12px;
+      border-radius: 20px;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.2px;
+    }
+
+    .google-pill {
+      background: #E0F2FE;
+      color: #0369A1;
+      border: 1px solid #BAE6FD;
+    }
+
+    .yandex-pill {
+      background: #FFE4E6;
+      color: #BE123C;
+      border: 1px solid #FECDD3;
+    }
+
+    .stars-row {
+      display: flex;
+      align-items: center;
+      gap: 3px;
+      color: var(--accent-star);
+      font-size: 14px;
+      line-height: 1;
+    }
+
+    .rating-number {
+      font-size: 11px;
+      font-weight: 800;
+      color: #0F172A;
+      margin-left: 4px;
+    }
+
+    /* QR Code Display Box with Central Halo */
+    .qr-box-wrapper {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 2mm 0;
+    }
+
+    .qr-box {
+      width: 168px;
+      height: 168px;
+      background: #FFFFFF;
+      padding: 8px;
+      border-radius: 12px;
+      border: 1px solid rgba(8, 98, 136, 0.15);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+    }
+
+    .qr-box svg {
+      width: 100%;
+      height: 100%;
+      display: block;
+    }
+
+    /* Center Badge with White Protective Halo */
+    .qr-center-halo {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 42px;
+      height: 42px;
+      background: #FFFFFF;
+      border-radius: 50%;
+      box-shadow: 0 0 0 4px #FFFFFF, 0 2px 8px rgba(0, 0, 0, 0.15);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 10;
+    }
+
+    .qr-center-halo svg {
+      width: 24px;
+      height: 24px;
+    }
+
+    .card-foot {
+      text-align: center;
+      width: 100%;
+    }
+
+    .action-instruction-uz {
+      font-size: 11px;
+      font-weight: 800;
+      color: var(--primary);
+      text-transform: uppercase;
+      letter-spacing: 0.4px;
+    }
+
+    .action-instruction-ru {
+      font-size: 9.5px;
+      font-weight: 600;
+      color: var(--text-muted);
+      margin-top: 0.5mm;
+    }
+
+    /* 5. Footer & Legal Bar */
+    .stand-footer {
+      border-top: 1px solid var(--border-soft);
+      padding-top: 2.5mm;
+      display: flex;
+      flex-direction: column;
+      gap: 1.5mm;
+    }
+
+    .footer-meta-grid {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
+      font-size: 11px;
+      font-weight: 600;
+      color: #334155;
+    }
+
+    .footer-item {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    .footer-item strong {
+      color: var(--primary);
+    }
+
+    .footer-slogan {
+      text-align: center;
+      font-size: 10.5px;
+      font-weight: 600;
+      color: var(--primary);
+      font-style: italic;
+      letter-spacing: 0.3px;
+    }
+
+    /* Print Media Query */
+    @media print {
+      @page {
+        size: landscape;
+        margin: 0;
+      }
+
+      html, body {
+        width: 100% !important;
+        height: 100% !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        background: #FFFFFF !important;
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+      }
+
+      .no-print,
+      .reception-toolbar {
+        display: none !important;
+      }
+
+      .stand-viewport {
+        width: 100vw !important;
+        height: 100vh !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        margin: 0 !important;
+        padding: 0 !important;
+      }
+
+      .stand-canvas {
+        width: 100vw !important;
+        height: 100vh !important;
+        max-width: none !important;
+        border-radius: 0 !important;
+        box-shadow: none !important;
+        border: none !important;
+        page-break-inside: avoid !important;
+        page-break-after: avoid !important;
+        padding: 8mm 10mm 6mm 10mm !important;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Screen Reception Controls (Hidden on Print) -->
+  <div class="reception-toolbar no-print">
+    <div class="toolbar-left">
+      <div class="toolbar-title">
+        <span>🦷</span>
+        <span>DR. NOZIMA — DUAL REVIEW QR STAND</span>
+      </div>
+      <span class="toolbar-badge">A4 / A5 Gorizontal Stend</span>
+    </div>
+
+    <div class="toolbar-actions">
+      <!-- Format Switchers -->
+      <button type="button" class="btn-tool active" id="btn-a4" onclick="setFormat('a4')">
+        <span>📄 A4 Format (297×210 mm)</span>
+      </button>
+      <button type="button" class="btn-tool" id="btn-a5" onclick="setFormat('a5')">
+        <span>📑 A5 Format (210×148 mm)</span>
+      </button>
+
+      <!-- Test Links -->
+      <a href="https://maps.app.goo.gl/Ez79FP1W4oTHGGLn9" target="_blank" rel="noopener noreferrer" class="btn-tool">
+        <span>🌐 Google Havolani Tekshirish</span>
+      </a>
+      <a href="https://yandex.uz/maps/org/157971592658/reviews/" target="_blank" rel="noopener noreferrer" class="btn-tool">
+        <span>🗺️ Yandex Havolani Tekshirish</span>
+      </a>
+
+      <!-- Back to site -->
+      <a href="/" class="btn-tool">
+        <span>← drnozima.uz</span>
+      </a>
+
+      <!-- Print Button -->
+      <button type="button" class="btn-tool btn-print" onclick="window.print()">
+        <span>🖨️ Chop Etish / Распечатать</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- Physical Stand Display Canvas -->
+  <div class="stand-viewport">
+    <div class="stand-canvas" id="acrylic-stand">
+
+      <!-- 1. Top Brand Line (90% width) -->
+      <div class="brand-top-ribbon"></div>
+
+      <!-- 2. Header: Logo, Name, Subtitles -->
+      <header class="header-section">
+        <div class="header-badge-row">
+          <div class="header-logo" title="Dr. Nozima Baxtiyarovna">
+            <!-- Medical / Dental Aesthetic Caduceus SVG -->
+            <svg viewBox="0 0 24 24">
+              <path d="M12 2C8.5 2 6 4.5 6 8.5c0 3.5 1.5 7.5 3.5 11 1 1.8 1.8 1.5 2.5 1.5s1.5.3 2.5-1.5c2-3.5 3.5-7.5 3.5-11C18 4.5 15.5 2 12 2z" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M12 6v10M9 9l6 4M15 9l-6 4" stroke-width="1.6" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <div>
+            <h1 class="doc-name">DR. NOZIMA BAXTIYAROVNA</h1>
+            <p class="subtitle-1">
+              <span>Vrach-Stomatolog</span>
+              <span>·</span>
+              <span>Terapevt va Ortoped</span>
+              <span>·</span>
+              <span>7 Yillik Tajriba</span>
+            </p>
+            <p class="subtitle-2">
+              «Sevdo Denta» Stomatologiya Klinikasi · Andijon Shahri (A.Fitrat 251B)
+            </p>
+          </div>
+        </div>
+      </header>
+
+      <!-- 3. Call to Action Banner -->
+      <div class="cta-container">
+        <div class="cta-title">
+          <span>✨</span>
+          <span>Xizmatimiz yoqdimi? · Понравился наш приём?</span>
+          <span>✨</span>
+        </div>
+        <p class="cta-sub-uz">
+          Sizga qulay bo'lgan xaritani tanlang va o'z bahoingizni qoldiring
+        </p>
+        <p class="cta-sub-ru">
+          Оцените наш сервис и оставьте отзыв в Google Maps или Яндекс Карты
+        </p>
+      </div>
+
+      <!-- 4. Dual QR Cards Grid (Google Maps + Yandex Maps) -->
+      <main class="dual-cards-grid">
+
+        <!-- Google Maps Card -->
+        <div class="qr-card google-card">
+          <div class="card-head">
+            <span class="platform-pill google-pill">
+              <!-- Google G Icon -->
+              <svg width="15" height="15" viewBox="0 0 24 24">
+                <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
+                <path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/>
+                <path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.06H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.94l2.85-2.22.81-.63z"/>
+                <path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.06l3.66 2.84c.87-2.6 3.3-4.52 6.16-4.52z"/>
+              </svg>
+              <span>Google Xaritalar / Google Карты</span>
+            </span>
+
+            <div class="stars-row">
+              <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+              <span class="rating-number">4.9 / 5.0</span>
+            </div>
+          </div>
+
+          <!-- Google Vector QR Code with Center Google 'G' Halo -->
+          <div class="qr-box-wrapper">
+            <div class="qr-box">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 39 39" shape-rendering="crispEdges">
+                <path fill="#ffffff" d="M0 0h39v39H0z"/>
+                <path stroke="#086288" d="M1 1.5h7m1 0h1m2 0h1m3 0h1m2 0h3m5 0h2m2 0h7M1 2.5h1m5 0h1m1 0h1m2 0h5m1 0h1m2 0h2m2 0h4m2 0h1m5 0h1M1 3.5h1m1 0h3m1 0h1m7 0h1m3 0h3m1 0h1m1 0h1m2 0h1m2 0h1m1 0h3m1 0h1M1 4.5h1m1 0h3m1 0h1m1 0h1m1 0h1m3 0h1m5 0h1m3 0h4m2 0h1m1 0h3m1 0h1M1 5.5h1m1 0h3m1 0h1m1 0h1m1 0h1m1 0h3m2 0h6m1 0h1m2 0h1m2 0h1m1 0h3m1 0h1M1 6.5h1m5 0h1m1 0h1m1 0h2m1 0h1m1 0h1m1 0h2m2 0h2m2 0h4m1 0h1m5 0h1M1 7.5h7m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h7M11 8.5h1m5 0h5m2 0h1m2 0h1M4 9.5h1m2 0h1m3 0h1m1 0h3m2 0h1m1 0h1m1 0h1m1 0h2m2 0h1m3 0h3m1 0h2M3 10.5h2m3 0h2m3 0h1m3 0h1m2 0h2m2 0h2m4 0h1m4 0h3M1 11.5h1m1 0h1m1 0h1m1 0h1m1 0h2m2 0h3m1 0h2m4 0h3m5 0h1m2 0h4M1 12.5h2m1 0h1m3 0h1m1 0h2m6 0h1m1 0h2m4 0h1m2 0h1m3 0h1m2 0h2M1 13.5h2m3 0h4m1 0h2m2 0h1m3 0h2m1 0h1m1 0h3m1 0h5m1 0h4M4 14.5h1m1 0h1m7 0h2m1 0h1m2 0h1m5 0h1m1 0h1m2 0h2m1 0h1m2 0h1M1 15.5h2m4 0h4m1 0h1m4 0h1m2 0h2m1 0h5m2 0h3m2 0h1m1 0h1M1 16.5h1m1 0h1m1 0h2m6 0h1m3 0h3m2 0h1m1 0h5m1 0h1m5 0h1M3 17.5h1m1 0h5m2 0h2m1 0h2m1 0h1m3 0h2m4 0h1m1 0h2m2 0h2m1 0h1M2 18.5h1m1 0h2m4 0h1m1 0h1m1 0h3m1 0h3m1 0h1m3 0h2m1 0h3m1 0h2m2 0h1M2 19.5h1m1 0h1m1 0h2m1 0h1m3 0h4m1 0h1m1 0h2m2 0h2m1 0h1m1 0h1m2 0h3m1 0h2M1 20.5h5m2 0h2m1 0h1m1 0h1m1 0h1m2 0h1m1 0h1m3 0h2m4 0h2m2 0h2M1 21.5h1m4 0h4m2 0h2m1 0h2m2 0h1m1 0h1m1 0h2m1 0h1m1 0h6m2 0h1M1 22.5h2m3 0h1m2 0h2m1 0h1m4 0h1m1 0h1m2 0h2m3 0h1m3 0h1m3 0h3M2 23.5h1m2 0h5m4 0h1m3 0h1m4 0h1m6 0h4m2 0h2M3 24.5h2m4 0h3m2 0h4m3 0h4m2 0h1m2 0h2m1 0h2M3 25.5h3m1 0h1m1 0h1m1 0h6m3 0h3m1 0h2m2 0h4m1 0h1m2 0h2M4 26.5h1m1 0h1m2 0h2m1 0h1m1 0h1m2 0h1m2 0h1m3 0h3m3 0h1m1 0h1m2 0h3M1 27.5h1m1 0h2m2 0h2m2 0h2m1 0h1m3 0h3m1 0h2m1 0h1m1 0h1m1 0h3m3 0h1m1 0h1M2 28.5h2m1 0h1m6 0h5m1 0h3m2 0h1m1 0h5m1 0h3m2 0h2M1 29.5h2m1 0h1m2 0h4m2 0h1m2 0h1m2 0h1m4 0h1m3 0h6m2 0h1M9 30.5h1m1 0h2m1 0h2m1 0h1m1 0h1m1 0h1m1 0h2m2 0h1m1 0h1m3 0h1m2 0h2M1 31.5h7m4 0h2m3 0h2m1 0h2m4 0h1m1 0h2m1 0h1m1 0h1m1 0h3M1 32.5h1m5 0h1m2 0h3m1 0h1m3 0h1m1 0h1m4 0h1m1 0h3m3 0h1m1 0h1M1 33.5h1m1 0h3m1 0h1m2 0h2m1 0h4m5 0h3m1 0h1m2 0h6m1 0h2M1 34.5h1m1 0h3m1 0h1m1 0h1m6 0h5m1 0h1m1 0h1m1 0h1m2 0h2m1 0h1m2 0h3M1 35.5h1m1 0h3m1 0h1m2 0h2m4 0h1m3 0h1m5 0h3m1 0h1m2 0h1m1 0h1m1 0h1M1 36.5h1m5 0h1m2 0h1m2 0h1m1 0h4m2 0h1m1 0h1m2 0h1m1 0h2M1 37.5h7m3 0h1m1 0h2m2 0h4m8 0h1m1 0h2m3 0h2"/>
+              </svg>
+              <!-- Center Protective White Halo with Google 'G' -->
+              <div class="qr-center-halo">
+                <svg viewBox="0 0 24 24">
+                  <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
+                  <path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/>
+                  <path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.06H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.94l2.85-2.22.81-.63z"/>
+                  <path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.06l3.66 2.84c.87-2.6 3.3-4.52 6.16-4.52z"/>
+                </svg>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-foot">
+            <p class="action-instruction-uz">Kamerani yo'naltiring va sharh qoldiring</p>
+            <p class="action-instruction-ru">Наведите камеру и оцените в Google</p>
+          </div>
+        </div>
+
+        <!-- Yandex Maps Card -->
+        <div class="qr-card yandex-card">
+          <div class="card-head">
+            <span class="platform-pill yandex-pill">
+              <!-- Yandex Я Icon -->
+              <svg width="15" height="15" viewBox="0 0 24 24">
+                <circle cx="12" cy="12" r="11" fill="#DC2626"/>
+                <text x="12" y="16.5" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-weight="900" font-size="14" fill="#ffffff" text-anchor="middle">Я</text>
+              </svg>
+              <span>Yandex Xaritalar / Яндекс Карты</span>
+            </span>
+
+            <div class="stars-row">
+              <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+              <span class="rating-number">5.0 / 5.0</span>
+            </div>
+          </div>
+
+          <!-- Yandex Vector QR Code with Center Yandex 'Я' Halo -->
+          <div class="qr-box-wrapper">
+            <div class="qr-box">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 39 39" shape-rendering="crispEdges">
+                <path fill="#ffffff" d="M0 0h39v39H0z"/>
+                <path stroke="#086288" d="M1 1.5h7m2 0h1m2 0h2m1 0h1m1 0h1m1 0h3m2 0h3m3 0h7M1 2.5h1m5 0h1m1 0h4m2 0h1m3 0h1m1 0h1m1 0h1m5 0h1m1 0h1m5 0h1M1 3.5h1m1 0h3m1 0h1m1 0h1m1 0h4m1 0h1m2 0h2m2 0h3m1 0h1m3 0h1m1 0h3m1 0h1M1 4.5h1m1 0h3m1 0h1m1 0h1m2 0h1m2 0h1m3 0h1m1 0h2m2 0h1m2 0h1m2 0h1m1 0h3m1 0h1M1 5.5h1m1 0h3m1 0h1m1 0h2m1 0h1m1 0h7m1 0h1m6 0h1m1 0h1m1 0h3m1 0h1M1 6.5h1m5 0h1m1 0h1m3 0h1m1 0h2m2 0h2m3 0h2m3 0h1m1 0h1m5 0h1M1 7.5h7m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h7M10 8.5h1m1 0h4m2 0h1m2 0h1m1 0h3m1 0h3M3 9.5h1m2 0h4m2 0h3m1 0h1m1 0h4m4 0h1m3 0h1m1 0h5M1 10.5h1m1 0h2m1 0h1m1 0h5m1 0h2m2 0h3m1 0h2m2 0h2m1 0h2m2 0h1m1 0h1m1 0h1M3 11.5h3m1 0h1m4 0h4m2 0h2m2 0h1m2 0h1m2 0h6m1 0h3M2 12.5h1m1 0h1m1 0h1m8 0h1m1 0h2m2 0h2m1 0h1m2 0h2m3 0h2m2 0h2M1 13.5h2m2 0h6m1 0h1m3 0h3m1 0h1m1 0h2m7 0h2m1 0h4M1 14.5h1m3 0h1m2 0h1m1 0h1m1 0h1m3 0h1m2 0h1m1 0h2m1 0h5m1 0h3m2 0h1m1 0h1M2 15.5h1m3 0h4m1 0h2m1 0h2m2 0h2m1 0h1m3 0h2m1 0h2m2 0h1m1 0h2m1 0h1M4 16.5h2m2 0h2m1 0h4m2 0h2m3 0h1m1 0h2m1 0h1m3 0h1m2 0h1m2 0h1M2 17.5h1m3 0h4m1 0h1m1 0h1m3 0h1m1 0h1m4 0h1m3 0h2m1 0h2M1 18.5h2m3 0h1m2 0h1m2 0h2m2 0h1m2 0h1m4 0h1m1 0h1m1 0h1m1 0h2m2 0h1m2 0h1M3 19.5h1m1 0h5m1 0h4m2 0h4m1 0h1m1 0h1m1 0h1m1 0h2m1 0h5m1 0h1M1 20.5h2m1 0h3m1 0h1m1 0h1m2 0h3m6 0h2m1 0h4m1 0h2m1 0h2m1 0h2M1 21.5h3m3 0h1m1 0h1m1 0h1m1 0h2m2 0h1m3 0h4m4 0h3m2 0h1m1 0h1M1 22.5h3m1 0h2m1 0h2m2 0h1m1 0h2m3 0h1m2 0h1m2 0h4m2 0h2m1 0h2M3 23.5h1m2 0h2m4 0h1m2 0h3m1 0h3m1 0h2m1 0h1m1 0h3m1 0h2m3 0h1M3 24.5h2m3 0h1m2 0h1m2 0h3m1 0h2m1 0h2m1 0h5m1 0h1m1 0h1m1 0h1m2 0h1M1 25.5h7m1 0h1m1 0h1m2 0h6m1 0h1m1 0h1m1 0h2m4 0h1m1 0h2m1 0h1M6 26.5h1m3 0h2m4 0h1m1 0h2m1 0h1m3 0h3m2 0h1m1 0h2m2 0h2M1 27.5h2m1 0h1m2 0h2m3 0h2m6 0h2m1 0h1m2 0h2m2 0h2m2 0h1m2 0h1M4 28.5h2m2 0h1m1 0h2m1 0h1m1 0h1m1 0h4m2 0h2m2 0h1m1 0h3m1 0h2M1 29.5h5m1 0h2m3 0h2m4 0h3m4 0h1m3 0h9M9 30.5h7m1 0h1m1 0h2m2 0h1m4 0h2m3 0h2m2 0h1M1 31.5h7m1 0h1m4 0h2m1 0h1m2 0h1m1 0h1m1 0h1m1 0h4m1 0h1m1 0h3m1 0h1M1 32.5h1m5 0h1m1 0h1m2 0h1m3 0h1m1 0h2m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m3 0h2m1 0h1M1 33.5h1m1 0h3m1 0h1m2 0h1m2 0h1m1 0h1m1 0h1m3 0h2m1 0h2m2 0h6m2 0h2M1 34.5h1m1 0h3m1 0h1m4 0h3m1 0h1m1 0h1m1 0h2m3 0h1m1 0h3m2 0h3m1 0h1M1 35.5h1m1 0h3m1 0h1m1 0h5m2 0h2m1 0h1m1 0h1m3 0h1m1 0h1m5 0h1m1 0h3M1 36.5h1m5 0h1m2 0h1m2 0h4m4 0h1m3 0h2m1 0h3m1 0h3M1 37.5h7m3 0h1m1 0h2m6 0h1m1 0h1m1 0h1m3 0h1m1 0h1m5 0h1"/>
+              </svg>
+              <!-- Center Protective White Halo with Yandex 'Я' -->
+              <div class="qr-center-halo">
+                <svg viewBox="0 0 24 24">
+                  <circle cx="12" cy="12" r="10.5" fill="#DC2626"/>
+                  <text x="12" y="16.5" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-weight="900" font-size="14" fill="#ffffff" text-anchor="middle">Я</text>
+                </svg>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-foot">
+            <p class="action-instruction-uz">Kamerani yo'naltiring va sharh qoldiring</p>
+            <p class="action-instruction-ru">Наведите камеру и оцените в Яндекс</p>
+          </div>
+        </div>
+
+      </main>
+
+      <!-- 5. Footer: Contact Details & Official Slogan -->
+      <footer class="stand-footer">
+        <div class="footer-meta-grid">
+          <div class="footer-item">
+            <span>📞</span>
+            <span>Tel: <strong>+998 (91) 619-95-00</strong></span>
+          </div>
+          <div class="footer-item">
+            <span>✉️</span>
+            <span>Email: <strong>drnozima.medinson@gmail.com</strong></span>
+          </div>
+          <div class="footer-item">
+            <span>💬</span>
+            <span>Telegram: <strong>@Miss_Dentist_95</strong></span>
+          </div>
+          <div class="footer-item">
+            <span>🌐</span>
+            <span>Sayt: <strong>drnozima.uz</strong></span>
+          </div>
+          <div class="footer-item">
+            <span>📍</span>
+            <span>Andijon sh., A.Fitrat 251B (Eski Shahar, 1-qavat)</span>
+          </div>
+        </div>
+        <p class="footer-slogan">
+          «Har bir tabassum ortida sog'lomlik va go'zallik yotadi» · «Искусство здоровой и безупречной улыбки»
+        </p>
+      </footer>
+
+    </div>
+  </div>
+
+  <script>
+    function setFormat(fmt) {
+      const btnA4 = document.getElementById('btn-a4');
+      const btnA5 = document.getElementById('btn-a5');
+
+      if (fmt === 'a5') {
+        document.body.classList.add('format-a5');
+        btnA5.classList.add('active');
+        btnA4.classList.remove('active');
+      } else {
+        document.body.classList.remove('format-a5');
+        btnA4.classList.add('active');
+        btnA5.classList.remove('active');
+      }
+    }
+  </script>
+</body>
+</html>

@@ -15,6 +15,7 @@ import {
   IconLocationPin,
   IconYandex,
   IconGoogle,
+  IconMail,
 } from "../components/MedicalIcons";
 
 const Contact = () => {
@@ -186,6 +187,36 @@ const Contact = () => {
             >
               <IconInstagram className="w-4 h-4 text-white" />
               <span>Instagram</span>
+            </a>
+          </div>
+
+          {/* Email Card */}
+          <div className="bg-white rounded-2xl p-4 sm:p-6 border border-[#D1E4F0] shadow-luxury flex flex-col sm:flex-row sm:items-center justify-between gap-3 sm:gap-4">
+            <div className="space-y-1">
+              <span className="text-[11px] font-bold uppercase tracking-wider text-[#4D8DBA]">
+                {lang === "uz"
+                  ? "Rasmiy Elektron Pochta"
+                  : lang === "ru"
+                  ? "Официальная Электронная Почта"
+                  : "Official Email"}
+              </span>
+              <p className="text-sm sm:text-base md:text-lg font-bold text-[#086288] break-all">
+                {c.email}
+              </p>
+              <p className="text-xs text-slate-500">
+                {lang === "uz"
+                  ? "Rasmiy murojaatlar va tibbiy hujjatlar almashinuvi"
+                  : lang === "ru"
+                  ? "Официальные запросы и обмен медицинскими документами"
+                  : "Official inquiries and clinical documentation"}
+              </p>
+            </div>
+            <a
+              href={`mailto:${c.email}`}
+              className="px-5 py-3 rounded-xl bg-[#086288] hover:bg-[#4D8DBA] text-white font-semibold text-xs sm:text-sm flex items-center justify-center gap-2 shrink-0 transition-colors w-full sm:w-auto"
+            >
+              <IconMail className="w-4 h-4 text-white" />
+              <span>Email</span>
             </a>
           </div>
 

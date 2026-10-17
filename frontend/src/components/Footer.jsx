@@ -15,6 +15,7 @@ import {
   IconInstagram,
   IconGoogle,
   IconYandex,
+  IconMail,
 } from "./MedicalIcons";
 
 const Footer = () => {
@@ -161,6 +162,15 @@ const Footer = () => {
                   {DOCTOR_INFO.phone}
                 </a>
               </p>
+              <p className="flex items-center gap-2.5">
+                <IconMail className="w-4 h-4 text-[#97D7FF] shrink-0" />
+                <a
+                  href={`mailto:${DOCTOR_INFO.email}`}
+                  className="text-slate-300 hover:text-white transition-colors text-xs break-all"
+                >
+                  {DOCTOR_INFO.email}
+                </a>
+              </p>
             </div>
 
             <div className="pt-2 flex flex-wrap gap-2">
@@ -214,13 +224,24 @@ const Footer = () => {
               ? "Все права защищены."
               : "All rights reserved."}
           </p>
-          <p className="text-center sm:text-right text-slate-400">
-            {lang === "uz"
-              ? "Andijon shahri · «Sevdo Denta» Stomatologiya Klinikasi"
-              : lang === "ru"
-              ? "г. Андижан · Стоматологическая клиника «Sevdo Denta»"
-              : "Andijan · «Sevdo Denta» Dental Clinic"}
-          </p>
+          <div className="flex flex-wrap items-center justify-center sm:justify-end gap-3 text-slate-400">
+            <a
+              href="/qr-stand.html"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-[#97D7FF] hover:underline flex items-center gap-1 font-medium"
+            >
+              <span>⭐ Resepshin QR Stendi</span>
+            </a>
+            <span>·</span>
+            <span>
+              {lang === "uz"
+                ? "Andijon shahri · «Sevdo Denta» Stomatologiya Klinikasi"
+                : lang === "ru"
+                ? "г. Андижан · Стоматологическая клиника «Sevdo Denta»"
+                : "Andijan · «Sevdo Denta» Dental Clinic"}
+            </span>
+          </div>
         </div>
       </div>
     </footer>

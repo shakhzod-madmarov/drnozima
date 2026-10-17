@@ -38,6 +38,7 @@ export const CLINICS = [
     },
     phone: "+998 (91) 619-95-00",
     phoneRaw: "+998916199500",
+    email: "drnozima.medinson@gmail.com",
     telegram: "https://t.me/Miss_Dentist_95",
     telegramHandle: "@Miss_Dentist_95",
     instagram: "https://www.instagram.com/sevdo_denta/",

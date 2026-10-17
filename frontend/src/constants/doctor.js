@@ -28,7 +28,7 @@ export const DOCTOR_INFO = {
   phone: "+998 (91) 619-95-00",
   phoneHref: "tel:+998916199500",
   phoneRaw: "+998916199500",
-  email: "dr@nozima.com",
+  email: "drnozima.medinson@gmail.com",
   telegramUrl: "https://t.me/Miss_Dentist_95",
   telegramHandle: "@Miss_Dentist_95",
   instagramUrl: "https://www.instagram.com/sevdo_denta/",

@@ -184,6 +184,7 @@ export const buildAboutPageSchema = (lang = "uz", breadcrumbs = []) => {
       en: "Dentist, Restorative Therapist & Prosthodontist (Female Dentist)",
     }[lang],
     "telephone": "+998916199500",
+    "email": "drnozima.medinson@gmail.com",
     "alumniOf": {
       "@type": "EducationalOrganization",
       "name": "Andijon davlat tibbiyot instituti (ADTI)",
@@ -205,6 +206,7 @@ export const buildAboutPageSchema = (lang = "uz", breadcrumbs = []) => {
       "https://www.instagram.com/sevdo_denta/",
       "https://maps.app.goo.gl/Ez79FP1W4oTHGGLn9",
       "https://yandex.uz/maps/-/CXBjjZ5d",
+      "https://yandex.uz/maps/org/157971592658/reviews/",
     ],
   };
 
@@ -245,6 +247,7 @@ export const buildContactPageSchema = (lang = "uz", breadcrumbs = []) => {
     "@id": `${SITE_ORIGIN}/#dentist`,
     "name": "Dr. Nozima Baxtiyarovna — Sevdo Denta",
     "telephone": "+998916199500",
+    "email": "drnozima.medinson@gmail.com",
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "A.Fitrat 251B",
@@ -274,6 +277,7 @@ export const buildContactPageSchema = (lang = "uz", breadcrumbs = []) => {
       "https://www.instagram.com/sevdo_denta/",
       "https://maps.app.goo.gl/Ez79FP1W4oTHGGLn9",
       "https://yandex.uz/maps/-/CXBjjZ5d",
+      "https://yandex.uz/maps/org/157971592658/reviews/",
     ],
   };
 
@@ -422,6 +426,7 @@ export const buildHomepageSchema = (lang = "uz", faqItems = [], services = []) =
       `${SITE_ORIGIN}/dr_nozima_clinic.webp`,
     ],
     "telephone": "+998916199500",
+    "email": "drnozima.medinson@gmail.com",
     "priceRange": "$$",
     "currenciesAccepted": "UZS",
     "paymentAccepted": "Cash, Uzcard, Humo, Visa, Mastercard, Payme, Click",
@@ -461,6 +466,7 @@ export const buildHomepageSchema = (lang = "uz", faqItems = [], services = []) =
     "contactPoint": {
       "@type": "ContactPoint",
       "telephone": "+998916199500",
+      "email": "drnozima.medinson@gmail.com",
       "contactType": "reservations",
       "areaServed": "UZ",
       "availableLanguage": ["uz", "ru", "en"],
@@ -478,6 +484,7 @@ export const buildHomepageSchema = (lang = "uz", faqItems = [], services = []) =
       "https://www.instagram.com/sevdo_denta/",
       "https://maps.app.goo.gl/Ez79FP1W4oTHGGLn9",
       "https://yandex.uz/maps/-/CXBjjZ5d",
+      "https://yandex.uz/maps/org/157971592658/reviews/",
     ],
   };
 
@@ -498,11 +505,13 @@ export const buildHomepageSchema = (lang = "uz", faqItems = [], services = []) =
     },
     "knowsLanguage": ["uz", "ru", "en"],
     "telephone": "+998916199500",
+    "email": "drnozima.medinson@gmail.com",
     "sameAs": [
       "https://t.me/Miss_Dentist_95",
       "https://www.instagram.com/sevdo_denta/",
       "https://maps.app.goo.gl/Ez79FP1W4oTHGGLn9",
       "https://yandex.uz/maps/-/CXBjjZ5d",
+      "https://yandex.uz/maps/org/157971592658/reviews/",
     ],
   };
 
