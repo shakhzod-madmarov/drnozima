@@ -173,10 +173,40 @@ export const buildAboutPageSchema = (lang = "uz", breadcrumbs = []) => {
     },
   };
 
+  const doctorCredentials = [
+    {
+      "@type": "EducationalOccupationalCredential",
+      "name": "Composite Veneers — Frontal Tishlar Estetik Restavratsiyasi",
+      "credentialCategory": "Certificate",
+      "recognizedBy": {
+        "@type": "Organization",
+        "name": "Leksion-amaliy malaka kursi (Lektor: Ilxom Abbosov)",
+      },
+      "dateCreated": "2022-11-27",
+    },
+    {
+      "@type": "EducationalOccupationalCredential",
+      "name": "Tishni To'liq Koronka Uchun Charxlash (Crown Preparation)",
+      "credentialCategory": "Certificate",
+      "recognizedBy": {
+        "@type": "EducationalOrganization",
+        "name": "MARVA UNIVERSAL ACADEMY & Toshkent Davlat Stomatologiya Instituti",
+      },
+      "dateCreated": "2022-12-24",
+    },
+  ];
+
   const doctorEntity = {
     "@type": ["Person", "Physician"],
     "@id": `${SITE_ORIGIN}/#doctor`,
     "name": "Dr. Nozima Baxtiyarovna",
+    "alternateName": [
+      "Kozimova Nozimabonu Baxtiyarovna",
+      "Kozimova Nozimabonu",
+      "Kozimova Nozima",
+      "Козимова Нозима",
+      "Козимова Нозимабону",
+    ],
     "gender": "https://schema.org/Female",
     "jobTitle": {
       uz: "Vrach-stomatolog, ayol stomatolog-terapevt va ortoped",
@@ -189,6 +219,28 @@ export const buildAboutPageSchema = (lang = "uz", breadcrumbs = []) => {
       "@type": "EducationalOrganization",
       "name": "Andijon davlat tibbiyot instituti (ADTI)",
     },
+    "hasCredential": [
+      {
+        "@type": "EducationalOccupationalCredential",
+        "name": "Composite Veneers — Frontal Tishlar Estetik Restavratsiyasi",
+        "credentialCategory": "Certificate",
+        "recognizedBy": {
+          "@type": "Organization",
+          "name": "Leksion-amaliy malaka kursi (Lektor: Ilxom Abbosov)",
+        },
+        "dateCreated": "2022-11-27",
+      },
+      {
+        "@type": "EducationalOccupationalCredential",
+        "name": "Tishni To'liq Koronka Uchun Charxlash (Crown Preparation)",
+        "credentialCategory": "Certificate",
+        "recognizedBy": {
+          "@type": "EducationalOrganization",
+          "name": "MARVA UNIVERSAL ACADEMY & Toshkent Davlat Stomatologiya Instituti",
+        },
+        "dateCreated": "2022-12-24",
+      },
+    ],
     "worksFor": {
       "@type": ["Dentist", "MedicalClinic"],
       "@id": `${SITE_ORIGIN}/#dentist`,
@@ -421,9 +473,12 @@ export const buildHomepageSchema = (lang = "uz", faqItems = [], services = []) =
       "height": 512,
     },
     "image": [
+      `${SITE_ORIGIN}/dr_nozima_workplace.webp`,
       `${SITE_ORIGIN}/dr_nozima_branded.webp`,
       `${SITE_ORIGIN}/dr_nozima_portrait.webp`,
       `${SITE_ORIGIN}/dr_nozima_clinic.webp`,
+      `${SITE_ORIGIN}/certificate_composite_veneers.webp`,
+      `${SITE_ORIGIN}/certificate_crown_preparation.webp`,
     ],
     "telephone": "+998916199500",
     "email": "drnozima.medinson@gmail.com",
@@ -492,6 +547,13 @@ export const buildHomepageSchema = (lang = "uz", faqItems = [], services = []) =
     "@type": ["Person", "Physician"],
     "@id": `${SITE_ORIGIN}/#doctor`,
     "name": "Dr. Nozima Baxtiyarovna",
+    "alternateName": [
+      "Kozimova Nozimabonu Baxtiyarovna",
+      "Kozimova Nozimabonu",
+      "Kozimova Nozima",
+      "Козимова Нозима",
+      "Козимова Нозимабону",
+    ],
     "gender": "https://schema.org/Female",
     "jobTitle": doctorJobTitle,
     "description": doctorDesc,
@@ -499,6 +561,28 @@ export const buildHomepageSchema = (lang = "uz", faqItems = [], services = []) =
       "@type": "EducationalOrganization",
       "name": "Andijon davlat tibbiyot instituti (ADTI)",
     },
+    "hasCredential": [
+      {
+        "@type": "EducationalOccupationalCredential",
+        "name": "Composite Veneers — Frontal Tishlar Estetik Restavratsiyasi",
+        "credentialCategory": "Certificate",
+        "recognizedBy": {
+          "@type": "Organization",
+          "name": "Leksion-amaliy malaka kursi (Lektor: Ilxom Abbosov)",
+        },
+        "dateCreated": "2022-11-27",
+      },
+      {
+        "@type": "EducationalOccupationalCredential",
+        "name": "Tishni To'liq Koronka Uchun Charxlash (Crown Preparation)",
+        "credentialCategory": "Certificate",
+        "recognizedBy": {
+          "@type": "EducationalOrganization",
+          "name": "MARVA UNIVERSAL ACADEMY & Toshkent Davlat Stomatologiya Instituti",
+        },
+        "dateCreated": "2022-12-24",
+      },
+    ],
     "medicalSpecialty": ["Dentistry", "Prosthodontics", "Endodontics", "CosmeticDentistry"],
     "worksFor": {
       "@id": `${SITE_ORIGIN}/#dentist`,

@@ -384,6 +384,54 @@ const About = () => {
         </div>
       </section>
 
+      {/* Workplace & Operatory Room Section */}
+      <section className="bg-white rounded-2xl sm:rounded-3xl p-4 sm:p-8 lg:p-10 border border-[#D1E4F0] shadow-sm overflow-hidden">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-10 items-center">
+          <div className="lg:col-span-7 rounded-2xl overflow-hidden border border-[#D1E4F0] shadow-md group relative">
+            <img
+              src="/dr_nozima_workplace.webp"
+              alt="Dr. Nozima Baxtiyarovna shaxsiy davolash kabineti va ish xonasi — Sevdo Denta Andijon"
+              width={1920}
+              height={1440}
+              loading="lazy"
+              decoding="async"
+              className="w-full h-[280px] sm:h-[380px] object-cover group-hover:scale-102 transition-transform duration-500"
+            />
+            <div className="absolute bottom-3 left-3 bg-[#042433]/85 text-white backdrop-blur-xs px-3.5 py-1.5 rounded-xl text-xs font-semibold flex items-center gap-2 border border-white/20">
+              <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+              <span>«Sevdo Denta» · Shaxsiy Davolash Xonasi</span>
+            </div>
+          </div>
+          <div className="lg:col-span-5 space-y-3 sm:space-y-4">
+            <span className="text-[10px] sm:text-xs font-black uppercase tracking-widest text-[#4D8DBA] px-2.5 py-1 rounded-md bg-[#f4f8fb] border border-[#D1E4F0] inline-block">
+              {lang === "uz" ? "KLINIK ISH MAYDONI" : lang === "ru" ? "РАБОЧЕЕ ПРОСТРАНСТВО" : "CLINICAL OPERATORY"}
+            </span>
+            <h2 className="font-serif-classic text-2xl sm:text-3xl font-bold text-[#086288] leading-tight">
+              {lang === "uz"
+                ? "Bemorlar Uchun Shinam, Toza va To'liq Jihozlangan Shaxsiy Kabinet"
+                : lang === "ru"
+                ? "Уютный, Стерильный и Полностью Оснащённый Кабинет"
+                : "Hygienic, Fully Equipped Private Treatment Operatory"}
+            </h2>
+            <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
+              {lang === "uz"
+                ? "Dr. Nozimaning ish xonasi «Sevdo Denta» klinikasida (A.Fitrat 251B) joylashgan bo'lib, zamonaviy stomatologik kreslo, yuqori yorug'likli jarrohlik soyasiz lampalari, nemis va yapon asboblari hamda tinchlantiruvchi atmosferaga ega. Bu yerda har bir muolaja sokin, shoshilmasdan va 100% og'riqsiz o'tadi."
+                : lang === "ru"
+                ? "Личный рабочий кабинет Д-ра Нозимы в клинике «Sevdo Denta» (ул. А. Фитрата 251Б) оснащён эргономичной стоматологической установкой, бестеневым освещением и инструментарием премиум-класса. Атмосфера чистоты и уюта обеспечивает максимальный комфорт во время приёма."
+                : "Dr. Nozima's dedicated treatment operatory at «Sevdo Denta» Clinic (251B A. Fitrat St) is equipped with modern ergonomic dental units, shadowless precision LED lighting, and sterile instruments ensuring a gentle, stress-free clinical visit."}
+            </p>
+            <div className="pt-2 flex flex-wrap gap-2 text-xs">
+              <span className="px-3 py-1.5 rounded-lg bg-[#f4f8fb] text-[#086288] font-bold border border-[#D1E4F0]">
+                ✓ {lang === "uz" ? "Yapon va Nemis materiallari" : lang === "ru" ? "Материалы Японии и Германии" : "Japanese & German Materials"}
+              </span>
+              <span className="px-3 py-1.5 rounded-lg bg-[#f4f8fb] text-[#086288] font-bold border border-[#D1E4F0]">
+                ✓ {lang === "uz" ? "100% Antiseptik tozalik" : lang === "ru" ? "100% Стерильность" : "100% Antiseptic"}
+              </span>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Official Diplomas & Clinical Certificates */}
       <CertificatesShowcase />
 

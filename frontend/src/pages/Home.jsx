@@ -13,6 +13,7 @@ import Seo from "../components/Seo";
 import InlineBookingSection from "../components/InlineBookingSection";
 import ClinicLocationMap from "../components/ClinicLocationMap";
 import FaqAccordion from "../components/FaqAccordion";
+import CertificatesShowcase from "../components/CertificatesShowcase";
 import DentalSticker from "../components/DentalSticker";
 import { FAQ_ITEMS } from "../constants/faq";
 import { SERVICES_CATALOG } from "../constants/servicesCatalog";
@@ -535,21 +536,21 @@ const DoctorBioSpotlight = () => {
   const credentialsMap = {
     uz: [
       `Vrach-stomatolog, terapevt va ortoped (${getYearsOfExperience()}+ yillik uzluksiz klinik amaliyot, ADTI bitiruvchisi)`,
-      "Germaniya (3M Filtek), Yaponiya (Estelite) va Shveysariya (Ivoclar) original materiallari bilan mikron aniqlikda restavratsiya",
-      "Monolit tsirkoniy karonkalar (CAD/CAM) va E-max press-keramikasi bo'yicha maxsus sertifikatlangan mutaxassis",
-      "Har bir bemor uchun individual avtoklavlangan steril kraft-paketlar va 100% og'riqsiz yondashuv",
+      "«Composite Veneers» frontal tishlar restavratsiyasi bo'yicha maxsus sertifikatlangan mutaxassis (Toshkent, 2022)",
+      "MARVA UNIVERSAL ACADEMY va Toshkent Davlat Stomatologiya Instituti sertifikati: «Tishni to'liq koronka uchun charxlash»",
+      "«Sevdo Denta» klinikasida shaxsiy jihozlangan kabinet, yapon & nemis materiallari va 100% og'riqsiz yondashuv",
     ],
     ru: [
       `Врач-стоматолог, терапевт и ортопед (${getYearsOfExperience()}+ лет клинической практики, выпускница АГМИ)`,
-      "Художественная реставрация оригинальными материалами из Германии (3M Filtek) и Японии (Estelite)",
-      "Сертифицированный специалист по безметалловым циркониевым коронкам CAD/CAM и ультратонким винирам E-max",
-      "Индивидуальные крафт-пакеты, европейский автоклав класса B и 100% безболезненный протокол лечения",
+      "Сертифицированный специалист по фронтальной реставрации «Composite Veneers» (г. Ташкент, 2022)",
+      "Сертификат MARVA UNIVERSAL ACADEMY и ТашГСИ: «Препарирование зубов под полную коронку» (Лицензия № 019772)",
+      "Оснащённый личный кабинет в клинике «Sevdo Denta», материалы 3M и Estelite, 100% протокол без боли",
     ],
     en: [
       `Restorative Dentist & Prosthodontist (${getYearsOfExperience()}+ years continuous clinical practice, ASMI graduate)`,
-      "Micro-invasive composite artistry using authentic German (3M Filtek) & Japanese (Estelite) nano-hybrids",
-      "Certified specialist in digital CAD/CAM monolithic zirconia crowns and E-max porcelain veneers",
-      "Hospital-grade Class-B sterilization pouches and two-stage painless anesthesia for every patient",
+      "Certified specialist in «Composite Veneers» anterior aesthetic tooth restoration (Tashkent, 2022)",
+      "Formally certified by MARVA UNIVERSAL ACADEMY & Tashkent State Dental Institute in precision crown preparation",
+      "Dedicated operatory room at «Sevdo Denta» Clinic, genuine 3M & Estelite nano-hybrids, 100% painless care",
     ],
   };
   const credentials = credentialsMap[lang] || credentialsMap.uz;
@@ -688,6 +689,9 @@ const Home = () => {
       <ClinicalPillars />
       <ServicesOverview />
       <DoctorBioSpotlight />
+      <div className="py-2">
+        <CertificatesShowcase />
+      </div>
       <div className="py-6">
         <InlineBookingSection sectionId="booking" />
       </div>

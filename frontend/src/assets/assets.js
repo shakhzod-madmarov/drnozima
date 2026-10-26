@@ -12,11 +12,17 @@ import service_surgery from "./service_surgery.webp";
 import service_xray from "./service_xray.webp";
 import clinic_treatment_room from "./clinic_treatment_room.webp";
 import clinic_sterilization from "./clinic_sterilization.webp";
+import dr_nozima_workplace from "./dr_nozima_workplace.webp";
+import certificate_composite_veneers from "./certificate_composite_veneers.webp";
+import certificate_crown_preparation from "./certificate_crown_preparation.webp";
 
 export const assets = {
   dr_nozima_portrait,
   dr_nozima_clinic,
   dr_nozima_branded,
+  dr_nozima_workplace,
+  certificate_composite_veneers,
+  certificate_crown_preparation,
   logo,
   logo_symbol,
   header_img: dr_nozima_portrait,
