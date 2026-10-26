@@ -34,7 +34,7 @@
     "src": "_vendor-utils-DHtLVDbd.css"
   },
   "index.html": {
-    "file": "assets/index-Bld1PfOE.js",
+    "file": "assets/index-D0b9fNDa.js",
     "name": "index",
     "src": "index.html",
     "isEntry": true,
@@ -48,7 +48,7 @@
       "node_modules/qrcode/lib/browser.js"
     ],
     "css": [
-      "assets/index-B1kiDiO0.css"
+      "assets/index-C3fFTbiN.css"
     ],
     "assets": [
       "assets/dr_nozima_portrait-DLThra1n.webp",
@@ -64,7 +64,10 @@
       "assets/service_surgery-B0grGwkx.webp",
       "assets/service_xray-C-_gwO4R.webp",
       "assets/clinic_treatment_room-B6WUHj7V.webp",
-      "assets/clinic_sterilization-D2M3bC_Z.webp"
+      "assets/clinic_sterilization-D2M3bC_Z.webp",
+      "assets/dr_nozima_workplace-Bf-XPJrw.webp",
+      "assets/certificate_composite_veneers-Bn6VCtt2.webp",
+      "assets/certificate_crown_preparation-BrW9q8UJ.webp"
     ]
   },
   "node_modules/qrcode/lib/browser.js": {
@@ -75,6 +78,14 @@
     "imports": [
       "_rolldown-runtime-D7zIpOPY.js"
     ]
+  },
+  "src/assets/certificate_composite_veneers.webp": {
+    "file": "assets/certificate_composite_veneers-Bn6VCtt2.webp",
+    "src": "src/assets/certificate_composite_veneers.webp"
+  },
+  "src/assets/certificate_crown_preparation.webp": {
+    "file": "assets/certificate_crown_preparation-BrW9q8UJ.webp",
+    "src": "src/assets/certificate_crown_preparation.webp"
   },
   "src/assets/clinic_sterilization.webp": {
     "file": "assets/clinic_sterilization-D2M3bC_Z.webp",
@@ -95,6 +106,10 @@
   "src/assets/dr_nozima_portrait.webp": {
     "file": "assets/dr_nozima_portrait-DLThra1n.webp",
     "src": "src/assets/dr_nozima_portrait.webp"
+  },
+  "src/assets/dr_nozima_workplace.webp": {
+    "file": "assets/dr_nozima_workplace-Bf-XPJrw.webp",
+    "src": "src/assets/dr_nozima_workplace.webp"
   },
   "src/assets/logo-symbol.png": {
     "file": "assets/logo-symbol-CCxepg2p.png",
