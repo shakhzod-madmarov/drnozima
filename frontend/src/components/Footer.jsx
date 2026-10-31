@@ -231,7 +231,13 @@ const Footer = () => {
               rel="noopener noreferrer"
               className="text-[#97D7FF] hover:underline flex items-center gap-1 font-medium"
             >
-              <span>⭐ Resepshin QR Stendi</span>
+              <span>
+                {lang === "uz"
+                  ? "⭐ Resepshin QR Stendi"
+                  : lang === "ru"
+                  ? "⭐ QR-Стенд для Ресепшена"
+                  : "⭐ Reception Dual QR Stand"}
+              </span>
             </a>
             <span>·</span>
             <span>

@@ -150,29 +150,29 @@ const HeroSection = () => {
             </a>
           </div>
 
-          {/* Key Metrics Row */}
+          {/* Key Metrics Row (Optimized for 320px–480px Mobile & Desktop) */}
           <div className="pt-6 border-t border-[#D1E4F0] grid grid-cols-3 divide-x divide-[#D1E4F0] text-left max-w-lg">
-            <div className="pr-4 sm:pr-6">
-              <p className="font-serif-classic text-xl sm:text-2xl font-bold text-[#086288]">
+            <div className="pr-2.5 sm:pr-6 min-w-0">
+              <p className="font-serif-classic text-lg sm:text-2xl font-bold text-[#086288] truncate">
                 {t.stat1Num}
               </p>
-              <p className="text-xs text-slate-500 font-medium mt-0.5">
+              <p className="text-[10.5px] sm:text-xs text-slate-500 font-medium mt-0.5 leading-tight break-words">
                 {t.stat1Label}
               </p>
             </div>
-            <div className="px-4 sm:px-6">
-              <p className="font-serif-classic text-xl sm:text-2xl font-bold text-[#086288]">
+            <div className="px-2.5 sm:px-6 min-w-0">
+              <p className="font-serif-classic text-lg sm:text-2xl font-bold text-[#086288] truncate">
                 {t.stat2Num}
               </p>
-              <p className="text-xs text-slate-500 font-medium mt-0.5">
+              <p className="text-[10.5px] sm:text-xs text-slate-500 font-medium mt-0.5 leading-tight break-words">
                 {t.stat2Label}
               </p>
             </div>
-            <div className="pl-4 sm:pl-6">
-              <p className="font-serif-classic text-xl sm:text-2xl font-bold text-[#4D8DBA]">
+            <div className="pl-2.5 sm:pl-6 min-w-0">
+              <p className="font-serif-classic text-lg sm:text-2xl font-bold text-[#4D8DBA] truncate">
                 {t.stat3Num}
               </p>
-              <p className="text-xs text-slate-500 font-medium mt-0.5">
+              <p className="text-[10.5px] sm:text-xs text-slate-500 font-medium mt-0.5 leading-tight break-words">
                 {t.stat3Label}
               </p>
             </div>

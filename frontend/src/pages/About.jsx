@@ -390,7 +390,13 @@ const About = () => {
           <div className="lg:col-span-7 rounded-2xl overflow-hidden border border-[#D1E4F0] shadow-md group relative">
             <img
               src="/dr_nozima_workplace.webp"
-              alt="Dr. Nozima Baxtiyarovna shaxsiy davolash kabineti va ish xonasi — Sevdo Denta Andijon"
+              alt={
+                lang === "uz"
+                  ? "Dr. Nozima Baxtiyarovna shaxsiy davolash kabineti va ish xonasi — «Sevdo Denta» Andijon"
+                  : lang === "ru"
+                  ? "Личный лечебный кабинет Д-ра Нозимы Бахтияровны — клиника «Sevdo Denta» Андижан"
+                  : "Private treatment operatory of Dr. Nozima Baxtiyarovna — «Sevdo Denta» Andijan"
+              }
               width={1920}
               height={1440}
               loading="lazy"
@@ -399,7 +405,13 @@ const About = () => {
             />
             <div className="absolute bottom-3 left-3 bg-[#042433]/85 text-white backdrop-blur-xs px-3.5 py-1.5 rounded-xl text-xs font-semibold flex items-center gap-2 border border-white/20">
               <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
-              <span>«Sevdo Denta» · Shaxsiy Davolash Xonasi</span>
+              <span>
+                {lang === "uz"
+                  ? "«Sevdo Denta» · Shaxsiy Davolash Xonasi"
+                  : lang === "ru"
+                  ? "«Sevdo Denta» · Личный Кабинет Врача"
+                  : "«Sevdo Denta» · Private Treatment Operatory"}
+              </span>
             </div>
           </div>
           <div className="lg:col-span-5 space-y-3 sm:space-y-4">

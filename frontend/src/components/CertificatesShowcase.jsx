@@ -116,7 +116,7 @@ const CertificatesShowcase = () => {
                     <IconSparkleStar className="w-3.5 h-3.5 text-[#4D8DBA] shrink-0" />
                     <span className="line-clamp-1">
                       {cert.lecturer
-                        ? `${lang === "uz" ? "Lektor" : "Лектор"}: ${cert.lecturer}`
+                        ? `${lang === "uz" ? "Lektor" : lang === "ru" ? "Лектор" : "Lecturer"}: ${cert.lecturer}`
                         : cert.city[lang]}
                     </span>
                   </div>
@@ -153,7 +153,7 @@ const CertificatesShowcase = () => {
               <button
                 onClick={closeCert}
                 aria-label={a11y.closeModal}
-                className="absolute top-4 right-4 w-9 h-9 rounded-full bg-slate-100 hover:bg-slate-200 text-slate-700 flex items-center justify-center font-bold text-base cursor-pointer z-10 transition-colors"
+                className="absolute top-4 right-4 w-10 h-10 min-w-[44px] min-h-[44px] rounded-full bg-slate-100 hover:bg-slate-200 text-slate-700 flex items-center justify-center font-bold text-base cursor-pointer z-10 transition-colors touch-manipulation"
               >
                 ✕
               </button>
@@ -179,7 +179,7 @@ const CertificatesShowcase = () => {
                   </span>
                   {activeCert.licenseNo && (
                     <span className="text-xs font-mono bg-amber-50 text-amber-800 px-2 py-0.5 rounded border border-amber-200">
-                      Litsenziya № {activeCert.licenseNo}
+                      {lang === "uz" ? "Litsenziya" : lang === "ru" ? "Лицензия" : "License"} № {activeCert.licenseNo}
                     </span>
                   )}
                 </div>
