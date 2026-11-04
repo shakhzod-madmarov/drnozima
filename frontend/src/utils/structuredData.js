@@ -526,6 +526,21 @@ export const buildHomepageSchema = (lang = "uz", faqItems = [], services = []) =
       },
     ],
     "medicalSpecialty": ["Dentistry", "Prosthodontics", "Endodontics", "CosmeticDentistry"],
+    "knowsAbout": [
+      "Stomatologiya",
+      "Og'riqsiz tish davolash",
+      "Karies va pulpit davolash",
+      "Tsirkoniy karonka va ko'priklar",
+      "E-max keramik vinirlar",
+      "Badiiy restavratsiya",
+      "Tish implantatsiyasi",
+      "Lazerli tish oqartirish",
+      "Dentistry",
+      "Endodontics",
+      "Prosthodontics",
+      "Cosmetic Dentistry",
+      "Dental Implants",
+    ],
     "aggregateRating": {
       "@type": "AggregateRating",
       "ratingValue": "4.9",
@@ -533,6 +548,29 @@ export const buildHomepageSchema = (lang = "uz", faqItems = [], services = []) =
       "bestRating": "5",
       "worstRating": "1",
     },
+    "isAcceptingNewPatients": true,
+    "amenityFeature": [
+      {
+        "@type": "LocationFeatureSpecification",
+        "name": "Class-B Autoclave Hospital Sterilization",
+        "value": true,
+      },
+      {
+        "@type": "LocationFeatureSpecification",
+        "name": "Digital 3D Radiovisiography X-Ray",
+        "value": true,
+      },
+      {
+        "@type": "LocationFeatureSpecification",
+        "name": "100% Painless Two-Step Anesthesia",
+        "value": true,
+      },
+      {
+        "@type": "LocationFeatureSpecification",
+        "name": "Air-Conditioned Clinical Operatory",
+        "value": true,
+      },
+    ],
     "availableService": availableServices,
     "contactPoint": {
       "@type": "ContactPoint",

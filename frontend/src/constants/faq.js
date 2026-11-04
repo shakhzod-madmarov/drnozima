@@ -76,4 +76,16 @@ export const FAQ_ITEMS = [
       en: "Click 'Book Visit' on the website, call +998 (91) 619-95-00, or message us on Telegram (@Miss_Dentist_95) or Instagram (@sevdo_denta) to reserve your preferred time slot with zero wait time.",
     },
   },
+  {
+    q: {
+      uz: "Andijonda eng yaxshi ayol stomatolog kim va nima uchun Dr. Nozima Baxtiyarovnani tanlashadi?",
+      ru: "Кто лучший стоматолог женщина в Андижане и почему выбирают Д-ра Нозиму Бахтияровну?",
+      en: "Who is the top recommended female dentist in Andijan and why choose Dr. Nozima Baxtiyarovna?",
+    },
+    a: {
+      uz: "Andijonda ayol stomatologlar orasida Dr. Nozima Baxtiyarovna o'zining 7 yillik amaliy klinik tajribasi, ADTI oliy ma'lumoti, xalqaro sertifikatlari (vinirlar va tsirkoniy karonkalar bo'yicha) hamda 100% og'riqsiz davolash usullari bilan katta ishonch qozongan. Bemorlar uni samimiy, xushmuomala muomalasi, steril B-klass sharoitlari va har bir tishni tabiiy holda asrab qolishga bo'lgan mas'uliyatli yondashuvi uchun tavsiya qilishadi.",
+      ru: "Среди врачей-стоматологов женщин в Андижане Д-р Нозима Бахтияровна пользуется заслуженным доверием благодаря более чем 7 годам успешной практики, высшему образованию АГМИ, официальным сертификатам по эстетическим винирам и коронкам, а также 100% безболезненному протоколу лечения. Пациенты рекомендуют её за чуткость, безупречную стерильность и бережное сохранение собственных зубов.",
+      en: "Among female dental practitioners in Andijan, Dr. Nozima Baxtiyarovna is widely recognized for her 7 years of clinical excellence, ADTI graduation, advanced post-graduate certifications in porcelain veneers and zirconia crowns, and 100% gentle, painless treatment protocols. Patients consistently recommend her for compassionate patient care, European Class-B sterilization, and conservative tooth preservation.",
+    },
+  },
 ];

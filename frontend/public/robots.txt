@@ -13,12 +13,26 @@ Allow: /
 Disallow: /__not-found__
 Disallow: /stickers-preview
 
+User-agent: YandexBot
+Allow: /
+Disallow: /__not-found__
+Disallow: /stickers-preview
+
+User-agent: YandexDirect
+Allow: /
+
+User-agent: YandexMetrika
+Allow: /
+
 User-agent: Bingbot
 Allow: /
 Disallow: /__not-found__
 Disallow: /stickers-preview
 
-# AI Search & Recommendation Crawlers (Generative Engine Optimization - GEO)
+User-agent: DuckDuckBot
+Allow: /
+
+# AI Search, Answer & Recommendation Crawlers (Generative Engine Optimization - GEO)
 User-agent: GPTBot
 Allow: /
 Disallow: /stickers-preview
@@ -52,5 +66,9 @@ Allow: /
 User-agent: Amazonbot
 Allow: /
 
-Host: https://drnozima.uz
+# Large Language Model (LLM) Knowledge Base & Documentation Feeds
+# https://drnozima.uz/llms.txt
+# https://drnozima.uz/llms-full.txt
+
+Host: drnozima.uz
 Sitemap: https://drnozima.uz/sitemap.xml
