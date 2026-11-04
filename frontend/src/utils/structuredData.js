@@ -201,6 +201,14 @@ export const buildAboutPageSchema = (lang = "uz", breadcrumbs = []) => {
     "@id": `${SITE_ORIGIN}/#doctor`,
     "name": "Dr. Nozima Baxtiyarovna",
     "alternateName": [
+      "Stomatolog Nozima",
+      "Stomatolog Nozima Baxtiyarovna",
+      "Nozima stomatolog",
+      "Стоматолог Нозима",
+      "Стоматолог Нозима Бахтияровна",
+      "Нозима стоматолог",
+      "Dentist Nozima",
+      "Dentist Dr. Nozima Baxtiyarovna",
       "Kozimova Nozimabonu Baxtiyarovna",
       "Kozimova Nozimabonu",
       "Kozimova Nozima",
@@ -390,6 +398,9 @@ export const buildHomepageSchema = (lang = "uz", faqItems = [], services = []) =
 
   const clinicAlternateNames = {
     uz: [
+      "Stomatolog Nozima Baxtiyarovna",
+      "Stomatolog Nozima",
+      "Nozima stomatolog",
       "Dr. Nozima Baxtiyarovna",
       "Ayol stomatolog Dr. Nozima",
       "Sevdo Denta Andijon",
@@ -397,6 +408,9 @@ export const buildHomepageSchema = (lang = "uz", faqItems = [], services = []) =
       "Eski Shahar stomatologiya",
     ],
     ru: [
+      "Стоматолог Нозима Бахтияровна",
+      "Стоматолог Нозима",
+      "Нозима стоматолог",
       "Д-р Нозима Бахтияровна",
       "Врач-стоматолог женщина Нозима Бахтияровна",
       "Женский стоматолог Андижан",
@@ -404,6 +418,8 @@ export const buildHomepageSchema = (lang = "uz", faqItems = [], services = []) =
       "Стоматология ул. Фитрата 251Б",
     ],
     en: [
+      "Dentist Dr. Nozima Baxtiyarovna",
+      "Dentist Nozima",
       "Dr. Nozima Baxtiyarovna",
       "Female Dentist Dr. Nozima",
       "Sevdo Denta Dental Clinic Andijan",
@@ -548,6 +564,14 @@ export const buildHomepageSchema = (lang = "uz", faqItems = [], services = []) =
     "@id": `${SITE_ORIGIN}/#doctor`,
     "name": "Dr. Nozima Baxtiyarovna",
     "alternateName": [
+      "Stomatolog Nozima",
+      "Stomatolog Nozima Baxtiyarovna",
+      "Nozima stomatolog",
+      "Стоматолог Нозима",
+      "Стоматолог Нозима Бахтияровна",
+      "Нозима стоматолог",
+      "Dentist Nozima",
+      "Dentist Dr. Nozima Baxtiyarovna",
       "Kozimova Nozimabonu Baxtiyarovna",
       "Kozimova Nozimabonu",
       "Kozimova Nozima",

@@ -142,7 +142,7 @@ const About = () => {
       path: "/",
     },
     {
-      name: lang === "ru" ? "О докторе" : lang === "en" ? "About Doctor" : "Dr. Nozima haqida",
+      name: lang === "ru" ? "О стоматологе" : lang === "en" ? "About Dentist" : "Stomatolog Nozima haqida",
       path: "/about",
     },
   ];
@@ -168,7 +168,7 @@ const About = () => {
         </Link>
         <span>/</span>
         <span className="text-[#086288] font-bold" aria-current="page">
-          {lang === "ru" ? "О докторе" : lang === "en" ? "About Doctor" : "Dr. Nozima haqida"}
+          {lang === "ru" ? "О стоматологе" : lang === "en" ? "About Dentist" : "Stomatolog Nozima haqida"}
         </span>
       </nav>
 
@@ -248,6 +248,9 @@ const About = () => {
           </p>
 
           <h1 className="font-serif-classic text-3xl sm:text-4xl md:text-5xl font-bold text-[#086288] leading-tight">
+            <span className="block text-xl sm:text-2xl md:text-3xl font-sans font-semibold text-[#4D8DBA] mb-1">
+              {lang === "uz" ? "Stomatolog" : lang === "ru" ? "Стоматолог" : "Dentist"}
+            </span>
             Dr. Nozima Baxtiyarovna
           </h1>
 

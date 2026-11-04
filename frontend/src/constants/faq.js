@@ -6,14 +6,14 @@
 export const FAQ_ITEMS = [
   {
     q: {
-      uz: "Andijonda ayol stomatolog qabuli bormi? (Ayollar va qizlar uchun qulaylik)",
-      ru: "Ведёт ли приём врач-стоматолог женщина в Андижане?",
-      en: "Is Dr. Nozima Baxtiyarovna a certified female dentist in Andijan?",
+      uz: "Andijonda stomatolog Nozima Baxtiyarovna qabuli bormi? (Ayollar va oilaviy stomatologiya)",
+      ru: "Где ведёт приём стоматолог Нозима Бахтияровна в Андижане?",
+      en: "Does female dentist Dr. Nozima Baxtiyarovna accept patients in Andijan?",
     },
     a: {
-      uz: "Ha! Dr. Nozima Baxtiyarovna — 7 yillik amaliy klinik tajribaga ega malakali vrach-stomatolog ayol (terapevt va ortoped). Andijon shahrida ayollar, qizlar va butun oila a'zolari uchun qulay, mehrli, xushmuomala va 100% og'riqsiz muhitda professional stomatologik davolash xizmatlarini ko'rsatadi.",
-      ru: "Да! Д-р Нозима Бахтияровна — квалифицированный врач-стоматолог женщина со стажем более 7 лет (терапевт и ортопед, выпускница АГМИ). Для женщин, девушек и всей семьи приём проходит в максимально деликатной, заботливой и на 100% безболезненной обстановке.",
-      en: "Yes! Dr. Nozima Baxtiyarovna is a certified female dentist with 7 years of clinical experience in therapy and prosthodontics (ADTI graduate). She provides gentle, comfortable, and 100% painless care tailored for women, girls, and families in Andijan.",
+      uz: "Ha! Dr. Nozima Baxtiyarovna — 7 yillik amaliy klinik tajribaga ega malakali vrach-stomatolog ayol (terapevt va ortoped). Andijon shahri A.Fitrat 251B («Sevdo Denta» klinikasi, Eski Shahar) manzilida ayollar, qizlar va butun oila a'zolari uchun qulay, mehrli, xushmuomala va 100% og'riqsiz muhitda professional stomatologik davolash xizmatlarini ko'rsatadi.",
+      ru: "Да! Врач-стоматолог Д-р Нозима Бахтияровна ведёт ежедневный приём в клинике «Sevdo Denta» в Андижане (ул. А. Фитрата, 251Б, район Эски Шахар). Имеет 7-летний клинический стаж (терапевт и ортопед, выпускница АГМИ). Приём проходит в максимально деликатной, заботливой и на 100% безболезненной обстановке.",
+      en: "Yes! Dentist Dr. Nozima Baxtiyarovna is a certified female dentist with 7 years of clinical experience in therapy and prosthodontics (ADTI graduate). She welcomes patients at «Sevdo Denta» Clinic, 251B A. Fitrat Street, Andijan, providing gentle, comfortable, and 100% painless care.",
     },
   },
   {
@@ -66,12 +66,12 @@ export const FAQ_ITEMS = [
   },
   {
     q: {
-      uz: "Dr. Nozima qabuliga qanday qilib navbatsiz yozilish mumkin?",
-      ru: "Как записаться на приём к Д-ру Нозиме без ожидания в очереди?",
-      en: "How can I book an appointment with Dr. Nozima without waiting in line?",
+      uz: "Stomatolog Nozima Baxtiyarovna qabuliga qanday qilib navbatsiz yozilish mumkin?",
+      ru: "Как записаться на приём к стоматологу Нозиме Бахтияровне без очередей?",
+      en: "How can I book an appointment with dentist Dr. Nozima Baxtiyarovna?",
     },
     a: {
-      uz: "Saytimizdagi «Qabulga Yozilish» tugmasi orqali qulay vaqtni tanlang, +998 (91) 619-95-00 raqamiga qo'ng'iroq qiling yoki Telegram (@Miss_Dentist_95) hamda Instagram (@sevdo_denta) orqali yozing — navbatsiz, o'zingizga ma'qul vaqtda qabul qilinadi.",
+      uz: "Saytimizdagi «Qabulga Yozilish» tugmasi orqali qulay vaqtni tanlang, +998 (91) 619-95-00 raqamiga qo'ng'iroq qiling yoki Telegram (@Miss_Dentist_95) hamda Instagram (@sevdo_denta) orqali yozing — navbatsiz, o'zingizga ma'qul vaqtda qabul qilinasiz.",
       ru: "Нажмите кнопку «Записаться» на сайте, позвоните по номеру +998 (91) 619-95-00 или напишите в Telegram (@Miss_Dentist_95) / Instagram (@sevdo_denta) — мы забронируем удобное для вас время с нулевым временем ожидания.",
       en: "Click 'Book Visit' on the website, call +998 (91) 619-95-00, or message us on Telegram (@Miss_Dentist_95) or Instagram (@sevdo_denta) to reserve your preferred time slot with zero wait time.",
     },

@@ -12,79 +12,79 @@ const years = getYearsOfExperience();
 export const PAGE_SEO = {
   home: {
     uz: {
-      title: "Dr. Nozima Baxtiyarovna — Ayol Stomatolog va Ortoped Andijon | Sevdo Denta",
-      description: `Andijon shahri A.Fitrat 251B «Sevdo Denta» klinikasida tajribali ayol stomatolog-terapevt va ortoped Dr. Nozima Baxtiyarovna. ${years} yillik tajriba, ADTI bitiruvchisi, 100% og'riqsiz tish davolash, tsirkoniy karonka, E-max vinirlar va estetik restavratsiya. Tel: +998 (91) 619-95-00.`,
+      title: "Stomatolog Nozima Baxtiyarovna — Andijon | Sevdo Denta Tish Klinikasi",
+      description: `Stomatolog Nozima Baxtiyarovna — Andijon shahri A.Fitrat 251B «Sevdo Denta» klinikasida tajribali ayol stomatolog-terapevt va ortoped. ${years} yillik tajriba, ADTI bitiruvchisi, 100% og'riqsiz tish davolash, tsirkoniy karonka, E-max vinirlar va estetik restavratsiya. Tel: +998 (91) 619-95-00.`,
     },
     ru: {
-      title: "Д-р Нозима Бахтияровна — Женщина-Стоматолог и Ортопед в Андижане | Sevdo Denta",
-      description: `Квалифицированный врач-стоматолог женщина в Андижане Д-р Нозима Бахтияровна (клиника «Sevdo Denta», ул. А. Фитрата, 251Б). ${years} лет опыта, выпускница АГМИ, 100% безболезненное лечение кариеса и каналов, циркониевые коронки, виниры E-max. Тел: +998 (91) 619-95-00.`,
+      title: "Стоматолог Нозима Бахтияровна — Андижан | Клиника Sevdo Denta",
+      description: `Стоматолог Нозима Бахтияровна — квалифицированный врач-стоматолог женщина в Андижане (клиника «Sevdo Denta», ул. А. Фитрата, 251Б). ${years} лет опыта, выпускница АГМИ, 100% безболезненное лечение кариеса и каналов, циркониевые коронки, виниры E-max. Тел: +998 (91) 619-95-00.`,
     },
     en: {
-      title: "Dr. Nozima Baxtiyarovna — Female Dentist & Prosthodontist in Andijan | Sevdo Denta",
-      description: `Certified female dentist Dr. Nozima Baxtiyarovna at «Sevdo Denta» Clinic, 251B A. Fitrat Street, Andijan. ${years} years of clinical excellence, ADTI graduate, 100% painless restorative dental care, zirconia crowns, and E-max veneers. Tel: +998 (91) 619-95-00.`,
+      title: "Dentist Dr. Nozima Baxtiyarovna — Andijan | Sevdo Denta Dental Clinic",
+      description: `Dentist Dr. Nozima Baxtiyarovna at «Sevdo Denta» Clinic, 251B A. Fitrat Street, Andijan. ${years} years of clinical excellence, ADTI graduate, 100% painless restorative dental care, zirconia crowns, and E-max veneers. Tel: +998 (91) 619-95-00.`,
     },
   },
   services: {
     uz: {
-      title: "Stomatologik Xizmatlar — Ayol Stomatolog Dr. Nozima | Sevdo Denta Andijon",
+      title: "Stomatologik Xizmatlar — Stomatolog Nozima | Sevdo Denta Andijon",
       description:
         "Andijon A.Fitrat 251B «Sevdo Denta»da 100% og'riqsiz tish davolash, tsirkoniy karonka va ko'priklar, E-max vinirlar, badiiy kompozit restavratsiya, implantatsiya va tish oqartirish.",
     },
     ru: {
-      title: "Стоматологические Услуги — Врач-Стоматолог Женщина Д-р Нозима | Андижан",
+      title: "Стоматологические Услуги — Стоматолог Нозима | Андижан Sevdo Denta",
       description:
         "Полный спектр стоматологических услуг у врача-стоматолога женщины в Андижане (ул. А. Фитрата 251Б): лечение без боли, циркониевые коронки, виниры E-max, профессиональная гигиена и отбеливание.",
     },
     en: {
-      title: "Dental Services in Andijan — Female Dentist Dr. Nozima Baxtiyarovna | Sevdo Denta",
+      title: "Dental Services in Andijan — Dentist Dr. Nozima | Sevdo Denta",
       description:
         "Comprehensive painless dentistry in Andijan: restorative fillings, root canals, zirconia crowns, E-max veneers, implants, and oral prophylaxis at 251B A. Fitrat St.",
     },
   },
   about: {
     uz: {
-      title: `Dr. Nozima Baxtiyarovna Haqida — Andijonda Yetakchi Ayol Stomatolog (${years} Yil Tajriba)`,
-      description: `Dr. Nozima Baxtiyarovna — Andijon shahrida faoliyat yurituvchi yetakchi ayol stomatolog-terapevt va ortoped. ADTI bitiruvchisi, ${years} yillik klinik tajriba, A.Fitrat 251B «Sevdo Denta» klinikasi.`,
+      title: `Stomatolog Nozima Baxtiyarovna Haqida — Andijon (${years} Yil Tajriba)`,
+      description: `Stomatolog Nozima Baxtiyarovna — Andijon shahrida faoliyat yurituvchi yetakchi ayol stomatolog-terapevt va ortoped. ADTI bitiruvchisi, ${years} yillik klinik tajriba, A.Fitrat 251B «Sevdo Denta» klinikasi.`,
     },
     ru: {
-      title: `О Докторе Нозиме Бахтияровне — Женщина-Стоматолог в Андижане (${years} Лет Опыта)`,
-      description: `Д-р Нозима Бахтияровна — ведущий врач-стоматолог женщина в Андижане, терапевт и ортопед клиники Sevdo Denta (ул. А. Фитрата, 251Б). Выпускница АГМИ, ${years} лет успешной практики.`,
+      title: `Стоматолог Нозима Бахтияровна — О Враче в Андижане (${years} Лет Опыта)`,
+      description: `Стоматолог Нозима Бахтияровна — ведущий врач-стоматолог женщина в Андижане, терапевт и ортопед клиники Sevdo Denta (ул. А. Фитрата, 251Б). Выпускница АГМИ, ${years} лет успешной практики.`,
     },
     en: {
-      title: `About Dr. Nozima Baxtiyarovna — Certified Female Dentist in Andijan (${years} Yrs Experience)`,
-      description: `Meet Dr. Nozima Baxtiyarovna, prominent female restorative dentist and prosthodontist at «Sevdo Denta» Clinic in Andijan (251B A. Fitrat St) with ${years} years of clinical excellence.`,
+      title: `About Dentist Dr. Nozima Baxtiyarovna — Andijan (${years} Yrs Experience)`,
+      description: `Meet dentist Dr. Nozima Baxtiyarovna, prominent female restorative dentist and prosthodontist at «Sevdo Denta» Clinic in Andijan (251B A. Fitrat St) with ${years} years of clinical excellence.`,
     },
   },
   contact: {
     uz: {
-      title: "Aloqa va Manzil: A.Fitrat 251B — Sevdo Denta Klinikasi Andijon | Dr. Nozima",
+      title: "Aloqa va Manzil: A.Fitrat 251B — Stomatolog Nozima | Sevdo Denta Andijon",
       description:
         "Andijon shahri, A.Fitrat ko'chasi 251B-uy (Eski Shahar, 1-qavat, «Sevdo Denta» klinikasi). Qabulga yozilish: +998 (91) 619-95-00, Telegram: @Miss_Dentist_95, Google va Yandex Xarita.",
     },
     ru: {
-      title: "Контакты и Адрес: ул. А. Фитрата 251Б — Клиника Sevdo Denta Андижан | Д-р Нозима",
+      title: "Контакты и Адрес: ул. А. Фитрата 251Б — Стоматолог Нозима | Sevdo Denta",
       description:
         "г. Андижан, ул. А. Фитрата, 251Б (район Эски Шахар, 1-й этаж, клиника «Sevdo Denta»). Запись к врачу-стоматологу женщине: +998 (91) 619-95-00, Telegram: @Miss_Dentist_95.",
     },
     en: {
-      title: "Contact & Location: 251B A. Fitrat St — Sevdo Denta Clinic Andijan | Dr. Nozima",
+      title: "Contact & Location: 251B A. Fitrat St — Dentist Dr. Nozima | Sevdo Denta",
       description:
         "Visit Dr. Nozima Baxtiyarovna at «Sevdo Denta» Clinic, 251B A. Fitrat Street, Andijan. Book by phone +998 (91) 619-95-00 or Telegram @Miss_Dentist_95. Google & Yandex Maps.",
     },
   },
   booking: {
     uz: {
-      title: "Qabulga Yozilish — Ayol Stomatolog Dr. Nozima Baxtiyarovna | Sevdo Denta Andijon",
+      title: "Qabulga Yozilish — Stomatolog Nozima Baxtiyarovna | Sevdo Denta Andijon",
       description:
         "Dr. Nozima Baxtiyarovna qabuliga onlayn yozilish: bo'sh kunlar va soatlarni tanlang. Andijon, A.Fitrat 251B, «Sevdo Denta» klinikasi. Tel: +998 (91) 619-95-00.",
     },
     ru: {
-      title: "Онлайн-Запись на Приём — Женщина-Стоматолог Д-р Нозима | Sevdo Denta Андижан",
+      title: "Запись на Приём — Стоматолог Нозима Бахтияровна | Sevdo Denta Андижан",
       description:
         "Онлайн-запись к врачу-стоматологу женщине Д-ру Нозиме Бахтияровне: выберите свободный день и время приёма. Клиника «Sevdo Denta», г. Андижан, ул. А. Фитрата 251Б. +998 (91) 619-95-00.",
     },
     en: {
-      title: "Book an Appointment — Female Dentist Dr. Nozima Baxtiyarovna | Sevdo Denta",
+      title: "Book Appointment — Dentist Dr. Nozima Baxtiyarovna | Sevdo Denta",
       description:
         "Direct online appointment booking with female dentist Dr. Nozima Baxtiyarovna in Andijan at «Sevdo Denta» Clinic, 251B A. Fitrat St. Phone: +998 (91) 619-95-00.",
     },
@@ -227,9 +227,9 @@ export const PAGE_SEO = {
 };
 
 export const PAGE_KEYWORDS = {
-  uz: "ayol stomatolog andijon, tish shifokori ayol andijon, stomatolog ayol andijonda, dr nozima baxtiyarovna, nozima baxtiyarovna, stomatolog nozima, dentist nozima, miss dentist 95, sevdo denta andijon, fitrat 251b stomatolog, a fitrat 251b stomatologiya, eski shahar stomatolog, tish davolash andijon, tish ogriq andijon, karies davolash andijon, tish asabini olish ogriqsiz, pulpit davolash, fotopolimer plomba andijon, 3m filtek plomba, estelite plomba, old tish restavratsiyasi, tsirkoniy karonka andijon, tsirkon karonka narxi, tishga qoplama qoyish, ortoped stomatolog andijon, tish koprigi, chaynash tishini tiklash, vinirlar andijon, E-max vinir andijon narxi, gollivud tabassumi andijon, tish oqartirish andijon, lazerli tish oqartirish, airflow andijon, tish toshini tozalash, tish implantatsiyasi andijon, osstem implant andijon, straumann implant, ogriqsiz tish olish andijon, aql tishini olish, tish rentgeni andijon, 3d viziografiya andijon, adti stomatolog, аёл стоматолог андижон, тиш даволаш андижон, цирконий коронка андижон, винирлар андижон",
-  ru: "женщина стоматолог андижан, стоматолог женщина в андижане, женский стоматолог андижан, доктор нозима бахтияровна, нозима бахтияровна стоматолог, стоматолог нозима андижан, клиника севдо дента андижан, фитрата 251б стоматология, ул а фитрата 251б, эски шахар стоматолог, лечение зубов андижан, лечение кариеса андижан, лечение пульпита без боли, удаление нерва зуба без боли, световая пломба андижан цена, пломбирование зубов андижан, композитные пломбы 3M Filtek, реставрация передних зубов андижан, зубная боль андижан, циркониевые коронки андижан, коронка из диоксида циркония цена андижан, протезирование зубов в андижане, мостовидные протезы андижан, керамические коронки, стоматолог ортопед андижан, виниры андижан, керамические виниры E-max андижан, голливудская улыбка андижан, виниры без обточки цена, отбеливание зубов андижан, лазерное отбеливание зубов, чистка зубов от камня AirFlow, удаление зубов андижан без боли, удаление зуба мудрости андижан, рентген зуба андижан, радиовизиография зубов, имплантация зубов андижан, стоматолог терапевт ортопед андижан, стоматологическая клиника андижан, детский и женский стоматолог андижан",
-  en: "female dentist andijan, woman dentist andijan, lady dentist in andijan, dr nozima baxtiyarovna, dentist nozima baxtiyarovna, sevdo denta clinic andijan, 251b fitrat street andijan, dentist in andijan, painless dentistry andijan, toothache relief andijan, cavity filling andijan, root canal treatment andijan, composite dental fillings andijan, prosthodontist andijan, restorative dentist andijan, zirconia crowns andijan, dental bridges andijan, dental veneers andijan, E-max porcelain veneers andijan, hollywood smile makeover andijan, laser teeth whitening andijan, dental scaling airflow andijan, dental implants andijan, wisdom tooth extraction andijan, digital dental x-ray andijan, english speaking dentist in andijan uzbekistan",
+  uz: "stomatolog nozima, nozima stomatolog, stomatolog nozima andijon, nozima stomatolog andijon, dr nozima baxtiyarovna, ayol stomatolog andijon, tish shifokori ayol andijon, stomatolog ayol andijonda, dentist nozima, kozimova nozima stomatolog, sevdo denta andijon, fitrat 251b stomatolog, a fitrat 251b stomatologiya, eski shahar stomatolog, tish davolash andijon, tish ogriq andijon, karies davolash andijon, tish asabini olish ogriqsiz, pulpit davolash, fotopolimer plomba andijon, 3m filtek plomba, estelite plomba, old tish restavratsiyasi, tsirkoniy karonka andijon, tsirkon karonka narxi, tishga qoplama qoyish, ortoped stomatolog andijon, tish koprigi, chaynash tishini tiklash, vinirlar andijon, E-max vinir andijon narxi, gollivud tabassumi andijon, tish oqartirish andijon, lazerli tish oqartirish, airflow andijon, tish toshini tozalash, tish implantatsiyasi andijon, osstem implant andijon, straumann implant, ogriqsiz tish olish andijon, aql tishini olish, tish rentgeni andijon, 3d viziografiya andijon, adti stomatolog, аёл стоматолог андижон, тиш даволаш андижон, цирконий коронка андижон, винирлар андижон",
+  ru: "стоматолог нозима, стоматолог нозима андижан, нозима стоматолог, нозима стоматолог андижан, доктор нозима бахтияровна, женщина стоматолог андижан, стоматолог женщина в андижане, женский стоматолог андижан, стоматолог козимова нозима, клиника севдо дента андижан, фитрата 251б стоматология, ул а фитрата 251б, эски шахар стоматолог, лечение зубов андижан, лечение кариеса андижан, лечение пульпита без боли, удаление нерва зуба без боли, световая пломба андижан цена, пломбирование зубов андижан, композитные пломбы 3M Filtek, реставрация передних зубов андижан, зубная боль андижан, циркониевые коронки андижан, коронка из диоксида циркония цена андижан, протезирование зубов в андижане, мостовидные протезы андижан, керамические коронки, стоматолог ортопед андижан, виниры андижан, керамические виниры E-max андижан, голливудская улыбка андижан, виниры без обточки цена, отбеливание зубов андижан, лазерное отбеливание зубов, чистка зубов от камня AirFlow, удаление зубов андижан без боли, удаление зуба мудрости андижан, рентген зуба андижан, радиовизиография зубов, имплантация зубов андижан, стоматолог терапевт ортопед андижан, стоматологическая клиника андижан, детский и женский стоматолог андижан",
+  en: "dentist nozima, dentist nozima andijan, female dentist andijan, woman dentist andijan, lady dentist in andijan, dr nozima baxtiyarovna, dentist nozima baxtiyarovna, sevdo denta clinic andijan, 251b fitrat street andijan, dentist in andijan, painless dentistry andijan, toothache relief andijan, cavity filling andijan, root canal treatment andijan, composite dental fillings andijan, prosthodontist andijan, restorative dentist andijan, zirconia crowns andijan, dental bridges andijan, dental veneers andijan, E-max porcelain veneers andijan, hollywood smile makeover andijan, laser teeth whitening andijan, dental scaling airflow andijan, dental implants andijan, wisdom tooth extraction andijan, digital dental x-ray andijan, english speaking dentist in andijan uzbekistan",
 };
 
 export const getPageSeo = (page, lang) => {

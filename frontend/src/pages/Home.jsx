@@ -61,10 +61,11 @@ const HeroSection = () => {
 
   const T = {
     uz: {
-      kicker: "Ayol Stomatolog-Terapevt · Ortoped",
+      kicker: "Andijon · Sevdo Denta Klinikasi",
+      doctorPrefix: "Stomatolog",
       doctorName: "Dr. Nozima Baxtiyarovna",
       tagline:
-        "Andijonda og'riqsiz tish davolash, zamonaviy plombalash va estetik tsirkoniy karonkalar. Bemorlar uchun 100% qulay, xavfsiz va samimiy muhit.",
+        "Stomatolog Nozima Baxtiyarovna — Andijonda «Sevdo Denta» klinikasida 100% og'riqsiz tish davolash, zamonaviy plombalash, tsirkoniy karonka va estetik restavratsiya. Bemorlar uchun xavfsiz va samimiy muhit.",
       ctaBook: "Qabulga Yozilish",
       stat1Num: `${getYearsOfExperience()}+ yil`,
       stat1Label: "Klinik Tajriba",
@@ -75,10 +76,11 @@ const HeroSection = () => {
       clinicBadge: "Sevdo Denta Klinikasi",
     },
     ru: {
-      kicker: "Врач-Стоматолог Женщина · Терапевт и Ортопед",
+      kicker: "Андижан · Клиника Sevdo Denta",
+      doctorPrefix: "Стоматолог",
       doctorName: "Д-р Нозима Бахтияровна",
       tagline:
-        "Бережное лечение кариеса без боли, эстетическая реставрация и циркониевые коронки в Андижане. Комфортный индивидуальный приём.",
+        "Врач-стоматолог Д-р Нозима Бахтияровна в Андижане — безболезненное лечение кариеса, эстетическая реставрация и циркониевые коронки в клинике «Sevdo Denta». Комфортный индивидуальный приём.",
       ctaBook: "Записаться на Приём",
       stat1Num: `${getYearsOfExperience()}+ лет`,
       stat1Label: "Клинического Опыта",
@@ -89,10 +91,11 @@ const HeroSection = () => {
       clinicBadge: "Клиника Sevdo Denta",
     },
     en: {
-      kicker: "Female Dentist · Restorative & Prosthodontics",
+      kicker: "Andijan · Sevdo Denta Clinic",
+      doctorPrefix: "Dentist",
       doctorName: "Dr. Nozima Baxtiyarovna",
       tagline:
-        "Gentle painless dental fillings, advanced therapy, and aesthetic zirconia crowns in Andijan. Reassuring and safe patient care.",
+        "Dentist Dr. Nozima Baxtiyarovna in Andijan — 100% painless tooth treatment, restorative fillings, zirconia crowns, and aesthetic dentistry at «Sevdo Denta» clinic.",
       ctaBook: "Book Appointment",
       stat1Num: `${getYearsOfExperience()}+ Yrs`,
       stat1Label: "Clinical Experience",
@@ -122,6 +125,9 @@ const HeroSection = () => {
           {/* Doctor Title & Clear Tagline */}
           <div className="space-y-3">
             <h1 className="font-serif-classic text-3xl sm:text-4xl md:text-5xl lg:text-[54px] font-bold text-[#086288] leading-[1.12]">
+              <span className="block text-xl sm:text-2xl md:text-3xl font-sans font-semibold text-[#4D8DBA] tracking-normal mb-1">
+                {t.doctorPrefix}
+              </span>
               {t.doctorName}
             </h1>
             <p className="text-sm sm:text-base text-slate-600 leading-relaxed max-w-xl">
