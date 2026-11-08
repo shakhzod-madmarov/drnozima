@@ -64,9 +64,23 @@ def draw_contact_sticker(draw, cx, cy, r, icon_type):
                  
     color = COLOR_PRIMARY
     if icon_type == "phone":
-        draw.arc([cx - r*0.46, cy - r*0.46, cx + r*0.46, cy + r*0.46], start=30, end=150, fill=color, width=int(2.5*SCALE))
-        draw.ellipse([cx - r*0.42, cy - r*0.16, cx - r*0.14, cy + r*0.12], fill=color)
-        draw.ellipse([cx + r*0.14, cy - r*0.16, cx + r*0.42, cy + r*0.12], fill=color)
+        # Professional telephone handset glyph from Segoe MDL2 Assets (\uE717)
+        try:
+            f_phone = ImageFont.truetype("C:/Windows/Fonts/segmdl2.ttf", int(r * 1.05))
+            draw.text((cx, cy), "\uE717", fill=color, font=f_phone, anchor="mm")
+        except:
+            # Clean vector telephone handset fallback
+            canvas = Image.new("RGBA", (r * 2, r * 2), (0, 0, 0, 0))
+            cd = ImageDraw.Draw(canvas)
+            rcx, rcy = r, r
+            cd.rounded_rectangle([rcx - r*0.28, rcy - r*0.62, rcx + r*0.28, rcy - r*0.28], radius=int(r*0.12), fill=color)
+            cd.rounded_rectangle([rcx - r*0.28, rcy + r*0.28, rcx + r*0.28, rcy + r*0.62], radius=int(r*0.12), fill=color)
+            cd.arc([rcx - r*0.7, rcy - r*0.48, rcx + r*0.22, rcy + r*0.48], start=-70, end=70, fill=color, width=int(r*0.22))
+            rotated = canvas.rotate(-40, resample=Image.Resampling.BICUBIC)
+            # Paste into base image
+            r_img = Image.new("RGBA", (draw.im.size[0], draw.im.size[1]), (0, 0, 0, 0))
+            r_img.paste(rotated, (cx - r, cy - r), rotated)
+            draw.bitmap((0, 0), r_img)
     elif icon_type == "location":
         pr = r * 0.38
         p_cy = cy - r * 0.1
