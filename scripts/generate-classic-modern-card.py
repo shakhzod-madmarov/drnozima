@@ -17,30 +17,62 @@ SCALE = 4
 W, H = 1110 * SCALE, 638 * SCALE
 
 # REAL PROJECT UI/UX & LOGO COLORS
-# Primary: #086288 (RGB: 8, 98, 136)
-# Accent: #4D8DBA (RGB: 77, 141, 186)
-# Accent Light: #97D7FF (RGB: 151, 215, 255)
-# Gold / Cream: #FFEFC4 (RGB: 255, 239, 196)
-# Deep Navy / Dark: #042433 (RGB: 4, 36, 51)
-# Surface Light: #F4F8FB (RGB: 244, 248, 251)
-# Border Soft: #D1E4F0 (RGB: 209, 228, 240)
-
-COLOR_PRIMARY = (8, 98, 136)       # #086288
-COLOR_PRIMARY_DARK = (4, 36, 51)   # #042433
-COLOR_ACCENT = (77, 141, 186)      # #4D8DBA
-COLOR_ACCENT_LIGHT = (151, 215, 255) # #97D7FF
-COLOR_GOLD = (255, 239, 196)       # #FFEFC4
-COLOR_SURFACE = (244, 248, 251)    # #F4F8FB
-COLOR_BORDER = (209, 228, 240)     # #D1E4F0
+COLOR_PRIMARY = (8, 98, 136)         # #086288 (Deep Aegean Teal)
+COLOR_PRIMARY_DARK = (4, 36, 51)     # #042433 (Midnight Navy)
+COLOR_PRIMARY_LIGHT = (14, 114, 158) # #0E729E (Luminous Teal)
+COLOR_ACCENT = (77, 141, 186)        # #4D8DBA (Soft Cerulean)
+COLOR_ACCENT_LIGHT = (151, 215, 255) # #97D7FF (Powder Sky Cyan)
+COLOR_GOLD = (255, 239, 196)         # #FFEFC4 (Soft Champagne Gold / Cream)
+COLOR_GOLD_DARK = (212, 175, 105)   # #D4AF69 (Warm Metallic Gold)
+COLOR_SURFACE = (244, 248, 251)      # #F4F8FB (Ice White)
+COLOR_BORDER = (209, 228, 240)       # #D1E4F0 (Soft Slate Border)
 WHITE = (255, 255, 255)
 
-def get_font(size, bold=True):
+# High-Fashion & Feminine Aesthetic Fonts (Adobe Garamond Pro / Georgia)
+def get_serif_font(size, style="regular"):
+    scaled_size = int(size * SCALE)
+    font_map = {
+        "bold": "C:/Windows/Fonts/AGaramondPro-Bold.otf",
+        "italic": "C:/Windows/Fonts/AGaramondPro-Italic.otf",
+        "regular": "C:/Windows/Fonts/AGaramondPro-Regular.otf",
+        "semibold": "C:/Windows/Fonts/ACaslonPro-Semibold.otf",
+    }
+    font_path = font_map.get(style, font_map["regular"])
+    if not os.path.exists(font_path):
+        # Fallbacks to Georgia
+        fallback_map = {
+            "bold": "C:/Windows/Fonts/georgiab.ttf",
+            "italic": "C:/Windows/Fonts/georgiai.ttf",
+            "regular": "C:/Windows/Fonts/georgia.ttf",
+            "semibold": "C:/Windows/Fonts/georgiab.ttf",
+        }
+        font_path = fallback_map.get(style, "C:/Windows/Fonts/georgia.ttf")
+    try:
+        return ImageFont.truetype(font_path, scaled_size)
+    except:
+        return ImageFont.load_default()
+
+def get_sans_font(size, bold=True):
     scaled_size = int(size * SCALE)
     font_name = "segoeuib.ttf" if bold else "segoeui.ttf"
     try:
         return ImageFont.truetype(f"C:/Windows/Fonts/{font_name}", scaled_size)
     except:
         return ImageFont.load_default()
+
+def draw_sparkle(draw, cx, cy, size, color=COLOR_GOLD):
+    """Draw an elegant 4-point jewelry sparkle star."""
+    pts = [
+        (cx, cy - size),
+        (cx + size * 0.22, cy - size * 0.22),
+        (cx + size, cy),
+        (cx + size * 0.22, cy + size * 0.22),
+        (cx, cy + size),
+        (cx - size * 0.22, cy + size * 0.22),
+        (cx - size, cy),
+        (cx - size * 0.22, cy - size * 0.22),
+    ]
+    draw.polygon(pts, fill=color)
 
 def draw_aa_circle(draw, cx, cy, r, outline_color=WHITE, fill_color=None, width=None):
     if width is None:
@@ -87,53 +119,6 @@ def draw_circular_icon(draw, cx, cy, icon_type, r=None, color=WHITE):
         draw.line([(cx - gr, cy), (cx + gr, cy)], fill=color, width=int(2*SCALE))
         draw.line([(cx, cy - gr), (cx, cy + gr)], fill=color, width=int(2*SCALE))
 
-def draw_project_dental_mirror(img, cx, cy, radius=int(140 * SCALE), ring_thick=int(22 * SCALE)):
-    """Draw the dental mirror using REAL PROJECT LOGO and BRAND COLORS."""
-    draw = ImageDraw.Draw(img)
-    
-    # 1. Mirror Handle (angled down-right)
-    h_angle = math.radians(32)
-    hx = cx + int(radius * math.cos(h_angle))
-    hy = cy + int(radius * math.sin(h_angle))
-    
-    # White metallic connector shaft
-    shaft_pts = [
-        (hx - 15*SCALE, hy - 8*SCALE),
-        (hx + 90*SCALE, hy + 45*SCALE),
-        (hx + 170*SCALE, hy + 85*SCALE),
-        (hx + 380*SCALE, hy + 175*SCALE),
-        (hx + 375*SCALE, hy + 230*SCALE),
-        (hx + 150*SCALE, hy + 115*SCALE),
-        (hx + 75*SCALE, hy + 75*SCALE),
-        (hx - 25*SCALE, hy + 20*SCALE),
-    ]
-    draw.polygon(shaft_pts, fill=WHITE)
-    
-    # Handle grip in Project Accent color (#4D8DBA / #97D7FF)
-    grip_pts = [
-        (hx + 170*SCALE, hy + 85*SCALE),
-        (hx + 380*SCALE, hy + 175*SCALE),
-        (hx + 375*SCALE, hy + 230*SCALE),
-        (hx + 150*SCALE, hy + 115*SCALE),
-    ]
-    draw.polygon(grip_pts, fill=COLOR_ACCENT)
-    
-    # Grip detail grooves
-    draw.line([(hx + 220*SCALE, hy + 105*SCALE), (hx + 200*SCALE, hy + 140*SCALE)], fill=WHITE, width=int(3*SCALE))
-    draw.line([(hx + 270*SCALE, hy + 125*SCALE), (hx + 250*SCALE, hy + 160*SCALE)], fill=WHITE, width=int(3*SCALE))
-    draw.line([(hx + 320*SCALE, hy + 145*SCALE), (hx + 300*SCALE, hy + 180*SCALE)], fill=WHITE, width=int(3*SCALE))
-    
-    # 2. Mirror Glass Face: Crisp White with subtle soft bevel
-    draw.ellipse([cx - radius, cy - radius, cx + radius, cy + radius], fill=WHITE, outline=WHITE, width=ring_thick)
-    
-    # 3. REAL PROJECT LOGO (Full-color tooth with gradient and gold star!)
-    logo_path = os.path.join(PUBLIC_DIR, "logo-symbol.png")
-    if os.path.exists(logo_path):
-        logo = Image.open(logo_path).convert("RGBA")
-        target_size = int(radius * 1.5)
-        logo_resized = logo.resize((target_size, target_size), Image.Resampling.LANCZOS)
-        img.paste(logo_resized, (cx - target_size // 2, cy - target_size // 2), logo_resized)
-
 def create_project_qr(url=WEBSITE_URL, qr_size=int(200 * SCALE)):
     """Generate high-error-correction QR code in Project Primary color."""
     qr = qrcode.QRCode(
@@ -149,67 +134,143 @@ def create_project_qr(url=WEBSITE_URL, qr_size=int(200 * SCALE)):
     return img_qr
 
 # ==========================================
-# 1. FRONT CARD (PER USER COMMENTS & REAL COLORS)
+# 1. FRONT CARD (PER USER FEEDBACK: REMOVE STICK + FEMININE CREATIVE TYPOGRAPHY)
 # ==========================================
 def render_front():
-    # Base background: Project Primary Deep Teal (#086288) with subtle top-to-bottom shading
     img = Image.new("RGBA", (W, H), COLOR_PRIMARY)
     draw = ImageDraw.Draw(img)
     
-    # Subtle ambient gradient from #064B69 to #086288
-    for y in range(H):
-        t = y / H
-        r = int(COLOR_PRIMARY_DARK[0] * 0.4 + COLOR_PRIMARY[0] * (1 - 0.4*t))
-        g = int(COLOR_PRIMARY_DARK[1] * 0.4 + COLOR_PRIMARY[1] * (1 - 0.4*t))
-        b = int(COLOR_PRIMARY_DARK[2] * 0.4 + COLOR_PRIMARY[2] * (1 - 0.4*t))
-        draw.line([(0, y), (W, y)], fill=(r, g, b, 255))
+    # 1. Smooth radial glow illumination from center
+    cx_center, cy_center = W // 2, H // 2
+    max_diag = int(math.hypot(W, H) / 2)
+    step = 8 * SCALE
+    for r in range(max_diag, 0, -step):
+        t = r / max_diag
+        # Center is luminous teal (#0E729E), edges fade into rich midnight teal (#042433)
+        cr = int(COLOR_PRIMARY_LIGHT[0] * (1 - t*0.75) + COLOR_PRIMARY_DARK[0] * (t*0.75))
+        cg = int(COLOR_PRIMARY_LIGHT[1] * (1 - t*0.75) + COLOR_PRIMARY_DARK[1] * (t*0.75))
+        cb = int(COLOR_PRIMARY_LIGHT[2] * (1 - t*0.75) + COLOR_PRIMARY_DARK[2] * (t*0.75))
+        draw.ellipse([cx_center - r, cy_center - r, cx_center + r, cy_center + r], fill=(cr, cg, cb, 255))
         
-    # Dental Mirror with real project logo in center
-    draw_project_dental_mirror(img, cx=W // 2 - int(30 * SCALE), cy=int(235 * SCALE), radius=int(135 * SCALE), ring_thick=int(20 * SCALE))
+    # 2. Luxury Medallion Emblem (NO STICK / HANDLE - PURE HARMONIOUS CIRCLE)
+    # Perfectly centered horizontally
+    emblem_cx = W // 2
+    emblem_cy = int(225 * SCALE)
+    emblem_r = int(122 * SCALE)
     
+    # Outer champagne gold soft aura ring
+    draw.ellipse([emblem_cx - emblem_r - int(12*SCALE), emblem_cy - emblem_r - int(12*SCALE),
+                  emblem_cx + emblem_r + int(12*SCALE), emblem_cy + emblem_r + int(12*SCALE)],
+                 outline=(255, 239, 196, 100), width=int(2*SCALE))
+                 
+    # Gold perimeter ring
+    draw.ellipse([emblem_cx - emblem_r - int(5*SCALE), emblem_cy - emblem_r - int(5*SCALE),
+                  emblem_cx + emblem_r + int(5*SCALE), emblem_cy + emblem_r + int(5*SCALE)],
+                 outline=COLOR_GOLD, width=int(3*SCALE))
+                 
+    # Crisp white circular face
+    draw.ellipse([emblem_cx - emblem_r, emblem_cy - emblem_r,
+                  emblem_cx + emblem_r, emblem_cy + emblem_r],
+                 fill=WHITE, outline=WHITE, width=int(2*SCALE))
+                 
+    # Inner soft cyan hairline
+    draw.ellipse([emblem_cx - emblem_r + int(8*SCALE), emblem_cy - emblem_r + int(8*SCALE),
+                  emblem_cx + emblem_r - int(8*SCALE), emblem_cy + emblem_r - int(8*SCALE)],
+                 outline=COLOR_BORDER, width=int(1.5*SCALE))
+                 
+    # Official Project Full-Color Logo (Graceful tooth silhouette with golden sparkle)
+    logo_path = os.path.join(PUBLIC_DIR, "logo-symbol.png")
+    if os.path.exists(logo_path):
+        logo = Image.open(logo_path).convert("RGBA")
+        target_size = int(emblem_r * 1.55)
+        logo_resized = logo.resize((target_size, target_size), Image.Resampling.LANCZOS)
+        img.paste(logo_resized, (emblem_cx - target_size // 2, emblem_cy - target_size // 2), logo_resized)
+        
     draw = ImageDraw.Draw(img)
     
-    # USER COMMENT 0: "remove DR" -> NOZIMA BAXTIYAROVNA
-    draw.text((W // 2, int(450 * SCALE)), "NOZIMA BAXTIYAROVNA", fill=WHITE, font=get_font(44, bold=True), anchor="mt")
+    # Flanking delicate gold sparkle accents
+    draw_sparkle(draw, emblem_cx - emblem_r - int(38*SCALE), emblem_cy, int(12*SCALE), COLOR_GOLD)
+    draw_sparkle(draw, emblem_cx + emblem_r + int(38*SCALE), emblem_cy, int(12*SCALE), COLOR_GOLD)
+    draw_sparkle(draw, emblem_cx - emblem_r - int(58*SCALE), emblem_cy - int(10*SCALE), int(6*SCALE), COLOR_ACCENT_LIGHT)
+    draw_sparkle(draw, emblem_cx + emblem_r + int(58*SCALE), emblem_cy - int(10*SCALE), int(6*SCALE), COLOR_ACCENT_LIGHT)
     
-    # USER COMMENT 1: "Sevdo Denta klinikasi" -> SEVDO DENTA KLINIKASI in Project Accent Light (#97D7FF)
-    draw.text((W // 2, int(512 * SCALE)), "S E V D O   D E N T A   K L I N I K A S I", fill=COLOR_ACCENT_LIGHT, font=get_font(21, bold=True), anchor="mt")
+    # 3. FEMININE & CREATIVE TYPOGRAPHY (Adobe Garamond Pro / Haute Horlogerie aesthetic)
+    font_name = get_serif_font(52, style="bold")
+    font_divider = get_serif_font(22, style="regular")
+    font_clinic = get_serif_font(23, style="regular")
+    font_city = get_serif_font(20, style="italic")
     
-    # USER COMMENT 2: "Eski shahar, Andijon" -> Eski shahar, Andijon in Project Soft Border / Cream
-    draw.text((W // 2, int(552 * SCALE)), "Eski shahar, Andijon", fill=COLOR_BORDER, font=get_font(19, bold=False), anchor="mt")
+    # Name: Nozima Baxtiyarovna (No "DR", beautiful title casing, warm and feminine)
+    name_y = int(416 * SCALE)
+    draw.text((W // 2, name_y), "Nozima Baxtiyarovna", fill=WHITE, font=font_name, anchor="mt")
+    
+    # Elegant gold hairline divider with center 4-point sparkle
+    div_y = int(484 * SCALE)
+    div_len = int(220 * SCALE)
+    draw.line([(W // 2 - div_len, div_y), (W // 2 - int(24 * SCALE), div_y)], fill=COLOR_GOLD, width=int(1.5 * SCALE))
+    draw_sparkle(draw, W // 2, div_y, int(8 * SCALE), COLOR_GOLD)
+    draw.line([(W // 2 + int(24 * SCALE), div_y), (W // 2 + div_len, div_y)], fill=COLOR_GOLD, width=int(1.5 * SCALE))
+    
+    # Clinic Name: SEVDO DENTA KLINIKASI (Tracked letters, soft sky cyan)
+    clinic_y = int(510 * SCALE)
+    draw.text((W // 2, clinic_y), "S E V D O   D E N T A   K L I N I K A S I", fill=COLOR_ACCENT_LIGHT, font=font_clinic, anchor="mt")
+    
+    # City: Eski shahar, Andijon (Soft italic champagne gold)
+    city_y = int(552 * SCALE)
+    draw.text((W // 2, city_y), "Eski shahar, Andijon", fill=COLOR_GOLD, font=font_city, anchor="mt")
     
     return img.resize((1110, 638), Image.Resampling.LANCZOS).convert("RGB")
 
 # ==========================================
-# 2. BACK CARD (PER USER COMMENTS & REAL COLORS)
+# 2. BACK CARD (PER USER FEEDBACK: AYOLLAR STOMATOLOGI, OLD TOWN, CENTERED QR)
 # ==========================================
 def render_back():
-    # Base background: Project Accent (#4D8DBA)
     img = Image.new("RGBA", (W, H), COLOR_ACCENT)
     draw = ImageDraw.Draw(img)
     
-    # 1. Top-Right Wave: Project Primary Deep Teal (#086288)
-    wave_pts = [
-        (int(460 * SCALE), 0),
-        (int(550 * SCALE), int(55 * SCALE)),
-        (int(660 * SCALE), int(125 * SCALE)),
-        (int(810 * SCALE), int(180 * SCALE)),
-        (int(980 * SCALE), int(210 * SCALE)),
-        (W, int(220 * SCALE)),
-        (W, 0),
-    ]
-    draw.polygon(wave_pts, fill=COLOR_PRIMARY)
-    draw.line(wave_pts[:-2], fill=WHITE, width=int(2.5 * SCALE))
+    # 1. Subtle smooth gradient background
+    for y in range(H):
+        t = y / H
+        r = int(COLOR_ACCENT[0] * (1 - 0.15*t) + COLOR_PRIMARY[0] * (0.15*t))
+        g = int(COLOR_ACCENT[1] * (1 - 0.15*t) + COLOR_PRIMARY[1] * (0.15*t))
+        b = int(COLOR_ACCENT[2] * (1 - 0.15*t) + COLOR_PRIMARY[2] * (0.15*t))
+        draw.line([(0, y), (W, y)], fill=(r, g, b, 255))
+        
+    # 2. Flowing organic silk wave in top right (Deep Aegean Teal)
+    wave_pts = []
+    x_start = int(410 * SCALE)
+    for x in range(x_start, W + 1, int(4 * SCALE)):
+        norm_x = (x - x_start) / (W - x_start)
+        # Gentle smooth curve
+        y_wave = int((math.sin(norm_x * math.pi * 0.5) * 235) * SCALE)
+        wave_pts.append((x, y_wave))
+        
+    poly_pts = [(x_start, 0)] + wave_pts + [(W, 0)]
+    draw.polygon(poly_pts, fill=COLOR_PRIMARY)
+    # Double accent lines (Crisp white + Champagne gold)
+    draw.line(wave_pts, fill=WHITE, width=int(2.5 * SCALE))
+    draw.line([(p[0], p[1] + int(4 * SCALE)) for p in wave_pts], fill=COLOR_GOLD, width=int(1.5 * SCALE))
     
-    # 2. USER COMMENT 4 & 5:
-    # "remove DR." -> NOZIMA BAXTIYAROVNA
-    # "change to Ayollar Stomatologi" -> Ayollar Stomatologi
-    draw.text((W - int(65 * SCALE), int(42 * SCALE)), "NOZIMA BAXTIYAROVNA", fill=WHITE, font=get_font(34, bold=True), anchor="rt")
-    draw.text((W - int(65 * SCALE), int(88 * SCALE)), "Ayollar Stomatologi", fill=COLOR_GOLD, font=get_font(22, bold=True), anchor="rt")
-    draw.text((W - int(65 * SCALE), int(124 * SCALE)), "Sevdo Denta klinikasi", fill=COLOR_ACCENT_LIGHT, font=get_font(18, bold=False), anchor="rt")
+    # 3. Header Texts (Top-Right):
+    # - Nozima Baxtiyarovna (No "DR.")
+    # - Ayollar Stomatologi (Warm Gold)
+    # - Sevdo Denta klinikasi (Soft Sky Cyan)
+    font_header_name = get_serif_font(42, style="bold")
+    font_header_title = get_serif_font(26, style="italic")
+    font_header_clinic = get_serif_font(20, style="regular")
     
-    # 3. USER COMMENT 3:
-    # "Andijon sh. , Eski shahar, Old Town binosi"
+    draw.text((W - int(65 * SCALE), int(40 * SCALE)), "Nozima Baxtiyarovna", fill=WHITE, font=font_header_name, anchor="rt")
+    draw.text((W - int(65 * SCALE), int(94 * SCALE)), "Ayollar Stomatologi", fill=COLOR_GOLD, font=font_header_title, anchor="rt")
+    draw.text((W - int(65 * SCALE), int(136 * SCALE)), "«Sevdo Denta» klinikasi", fill=COLOR_ACCENT_LIGHT, font=font_header_clinic, anchor="rt")
+    
+    # 4. Contacts on Left (Aligned with circular icons):
+    # - Phone: +998 (91) 619-95-00
+    # - Location: Andijon sh., Eski shahar, Old Town binosi
+    # - Telegram: @Miss_Dentist_95
+    # - Instagram: @sevdo_denta
+    # - Website: drnozima.uz
+    font_contact = get_sans_font(21, bold=True)
+    
     col_x = int(75 * SCALE)
     text_x = col_x + int(56 * SCALE)
     
@@ -224,44 +285,46 @@ def render_back():
     for icon_type, text_val, y_pos in contacts:
         cy = y_pos + int(13 * SCALE)
         draw_circular_icon(draw, col_x + int(18 * SCALE), cy, icon_type, color=WHITE)
-        draw.text((text_x, y_pos), text_val, fill=WHITE, font=get_font(22, bold=True), anchor="lt")
+        draw.text((text_x, y_pos), text_val, fill=WHITE, font=font_contact, anchor="lt")
         
-    # 4. Services List (Clean and spacious)
+    # 5. Services List ("XIZMATLAR")
     serv_y = int(430 * SCALE)
-    draw.line([(col_x, serv_y - int(10 * SCALE)), (int(640 * SCALE), serv_y - int(10 * SCALE))], fill=WHITE, width=int(2 * SCALE))
-    draw.text((col_x, serv_y), "XIZMATLAR:", fill=COLOR_PRIMARY_DARK, font=get_font(19, bold=True), anchor="lt")
+    font_serv_head = get_serif_font(22, style="bold")
+    font_serv_items = get_serif_font(21, style="regular")
     
-    draw.text((col_x, serv_y + int(32 * SCALE)), "• Tish davolash   • Vinirlar   • Sirkoniy qoplama", fill=WHITE, font=get_font(19, bold=True), anchor="lt")
-    draw.text((col_x, serv_y + int(60 * SCALE)), "• Tish oqartirish   • Bolalar stomatologiyasi   • Rentgen", fill=WHITE, font=get_font(19, bold=True), anchor="lt")
+    draw.line([(col_x, serv_y - int(10 * SCALE)), (int(640 * SCALE), serv_y - int(10 * SCALE))], fill=COLOR_GOLD, width=int(2 * SCALE))
+    draw.text((col_x, serv_y), "X I Z M A T L A R :", fill=COLOR_PRIMARY_DARK, font=font_serv_head, anchor="lt")
     
-    # 5. USER COMMENT 6:
-    # "put to to center to circle bellow"
-    # Place the large white circle / sculpted tooth element in the bottom-right,
-    # and put the Website QR code DIRECTLY IN THE CENTER OF IT!
+    draw.text((col_x, serv_y + int(32 * SCALE)), "• Estetik tish davolash   • Vinirlar   • Sirkoniy qoplama", fill=WHITE, font=font_serv_items, anchor="lt")
+    draw.text((col_x, serv_y + int(60 * SCALE)), "• Tish oqartirish   • Bolalar stomatologiyasi   • 3D Rentgen", fill=WHITE, font=font_serv_items, anchor="lt")
+    
+    # 6. Centered Website QR Code Pedestal (Bottom-Right)
     circle_cx = int(870 * SCALE)
     circle_cy = int(455 * SCALE)
     circle_r = int(175 * SCALE)
     
-    # Draw large circular white pedestal with soft drop shadow
+    # Outer drop shadow
     draw.ellipse([circle_cx - circle_r - 6*SCALE, circle_cy - circle_r - 6*SCALE,
                   circle_cx + circle_r + 6*SCALE, circle_cy + circle_r + 6*SCALE], fill=(50, 110, 155))
+    # Crisp white pedestal
     draw.ellipse([circle_cx - circle_r, circle_cy - circle_r, circle_cx + circle_r, circle_cy + circle_r],
                  fill=WHITE, outline=COLOR_PRIMARY, width=int(4 * SCALE))
-                 
-    # Inner elegant border
+    # Inner gold border
     draw.ellipse([circle_cx - circle_r + int(12*SCALE), circle_cy - circle_r + int(12*SCALE),
                   circle_cx + circle_r - int(12*SCALE), circle_cy + circle_r - int(12*SCALE)],
-                 outline=COLOR_BORDER, width=int(2 * SCALE))
-
-    # Center QR Code right in the center of this circle
+                 outline=COLOR_GOLD, width=int(2 * SCALE))
+                 
+    # Centered QR code
     qr_size = int(210 * SCALE)
     qr_img = create_project_qr(WEBSITE_URL, qr_size=qr_size)
     img.paste(qr_img, (circle_cx - qr_size // 2, circle_cy - qr_size // 2 - int(14 * SCALE)), qr_img)
     
-    # Label inside circle at bottom
-    draw.text((circle_cx, circle_cy + qr_size // 2 + int(6 * SCALE)), "Saytga o'tish (QR)", fill=COLOR_PRIMARY, font=get_font(15, bold=True), anchor="mt")
-    draw.text((circle_cx, circle_cy + qr_size // 2 + int(24 * SCALE)), "drnozima.uz", fill=COLOR_ACCENT, font=get_font(13, bold=False), anchor="mt")
-
+    # Captions inside pedestal
+    font_qr_label = get_serif_font(18, style="bold")
+    font_qr_sub = get_serif_font(16, style="italic")
+    draw.text((circle_cx, circle_cy + qr_size // 2 + int(6 * SCALE)), "Saytga o'tish (QR)", fill=COLOR_PRIMARY, font=font_qr_label, anchor="mt")
+    draw.text((circle_cx, circle_cy + qr_size // 2 + int(24 * SCALE)), "drnozima.uz", fill=COLOR_ACCENT, font=font_qr_sub, anchor="mt")
+    
     return img.resize((1110, 638), Image.Resampling.LANCZOS).convert("RGB")
 
 # ==========================================
@@ -290,13 +353,13 @@ def render_realistic_wood_mockup(front_img, back_img):
         draw.line([(0, y), (pw, y)], fill=(120, 80, 45), width=4)
         draw.line([(0, y + 2), (pw, y + 2)], fill=(225, 185, 135), width=2)
         
-    font_title = ImageFont.truetype("C:/Windows/Fonts/segoeuib.ttf", 46)
-    font_sub = ImageFont.truetype("C:/Windows/Fonts/segoeui.ttf", 26)
+    font_title = ImageFont.truetype("C:/Windows/Fonts/AGaramondPro-Bold.otf", 48)
+    font_sub = ImageFont.truetype("C:/Windows/Fonts/AGaramondPro-Italic.otf", 26)
     
     # Elegant title plate at top
     draw.rounded_rectangle([pw//2 - 650, 25, pw//2 + 650, 145], radius=16, fill=(255, 255, 255, 230), outline=(120, 80, 45), width=2)
     draw.text((pw // 2, 45), "NOZIMA BAXTIYAROVNA — AYOLLAR STOMATOLOGI", fill="#086288", font=font_title, anchor="mt")
-    draw.text((pw // 2, 102), "Sevdo Denta Klinikasi · Rasmiy Vizitka (90×50 mm, 300 DPI Chop etishga tayyor)", fill="#4A657A", font=font_sub, anchor="mt")
+    draw.text((pw // 2, 104), "Sevdo Denta Klinikasi · Rasmiy Vizitka (90×50 mm, 300 DPI Chop etishga tayyor)", fill="#4A657A", font=font_sub, anchor="mt")
     
     card_w, card_h = 1020, 586
     f_card = front_img.resize((card_w, card_h), Image.Resampling.LANCZOS)
@@ -316,19 +379,19 @@ def render_realistic_wood_mockup(front_img, back_img):
     
     # Side badge plates
     draw.rounded_rectangle([cx - 280, y_front + card_h // 2 - 40, cx - 30, y_front + card_h // 2 + 40], radius=12, fill=(255, 255, 255, 240))
-    draw.text((cx - 155, y_front + card_h // 2 - 18), "OLD TOMONI", fill="#086288", font=ImageFont.truetype("C:/Windows/Fonts/segoeuib.ttf", 26), anchor="mt")
-    draw.text((cx - 155, y_front + card_h // 2 + 10), "Yuz qismi", fill="#5A7A90", font=ImageFont.truetype("C:/Windows/Fonts/segoeui.ttf", 20), anchor="mt")
+    draw.text((cx - 155, y_front + card_h // 2 - 18), "OLD TOMONI", fill="#086288", font=ImageFont.truetype("C:/Windows/Fonts/AGaramondPro-Bold.otf", 28), anchor="mt")
+    draw.text((cx - 155, y_front + card_h // 2 + 12), "Yuz qismi", fill="#5A7A90", font=ImageFont.truetype("C:/Windows/Fonts/AGaramondPro-Italic.otf", 22), anchor="mt")
     
     draw.rounded_rectangle([cx - 280, y_back + card_h // 2 - 40, cx - 30, y_back + card_h // 2 + 40], radius=12, fill=(255, 255, 255, 240))
-    draw.text((cx - 155, y_back + card_h // 2 - 18), "ORQA TOMONI", fill="#086288", font=ImageFont.truetype("C:/Windows/Fonts/segoeuib.ttf", 26), anchor="mt")
-    draw.text((cx - 155, y_back + card_h // 2 + 10), "Kontaktlar & QR", fill="#5A7A90", font=ImageFont.truetype("C:/Windows/Fonts/segoeui.ttf", 20), anchor="mt")
+    draw.text((cx - 155, y_back + card_h // 2 - 18), "ORQA TOMONI", fill="#086288", font=ImageFont.truetype("C:/Windows/Fonts/AGaramondPro-Bold.otf", 28), anchor="mt")
+    draw.text((cx - 155, y_back + card_h // 2 + 12), "Kontaktlar & QR", fill="#5A7A90", font=ImageFont.truetype("C:/Windows/Fonts/AGaramondPro-Italic.otf", 22), anchor="mt")
     
     return mockup
 
 def main():
-    print("1. Rendering Master Front Side with real project colors and NOZIMA BAXTIYAROVNA...")
+    print("1. Rendering Refined Front Side (No stick, pure circular medallion, feminine typography)...")
     front = render_front()
-    print("2. Rendering Master Back Side with Ayollar Stomatologi, Old Town binosi, and centered QR...")
+    print("2. Rendering Refined Back Side (Ayollar Stomatologi, Old Town binosi, centered QR)...")
     back = render_back()
     print("3. Rendering Natural Wood Studio Mockup...")
     mockup = render_realistic_wood_mockup(front, back)
