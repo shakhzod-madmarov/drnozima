@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dr. Nozima Baxtiyarovna — Rasmiy Vizitka (Tashrif Qog'ozi)</title>
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #086288;
+      --primary-dark: #042433;
+      --secondary: #4D8DBA;
+      --accent-gold: #FFEFC4;
+      --gold-border: #D4AF37;
+      --bg-slate: #0B1E2B;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      background: radial-gradient(circle at 50% 20%, #086288 0%, #042433 70%, #02121A 100%);
+      color: #FFFFFF;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 30px 20px 60px 20px;
+    }
+
+    .toolbar {
+      width: 100%;
+      max-width: 1100px;
+      background: rgba(4, 36, 51, 0.85);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(151, 215, 255, 0.25);
+      border-radius: 16px;
+      padding: 16px 24px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+      margin-bottom: 40px;
+    }
+
+    .toolbar-title h1 {
+      font-size: 18px;
+      font-weight: 800;
+      color: var(--accent-gold);
+      letter-spacing: 0.5px;
+    }
+
+    .toolbar-title p {
+      font-size: 13px;
+      color: #97D7FF;
+      margin-top: 2px;
+    }
+
+    .toolbar-actions {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 9px 18px;
+      border-radius: 10px;
+      font-size: 13px;
+      font-weight: 700;
+      text-decoration: none;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      border: none;
+    }
+
+    .btn-primary {
+      background: linear-gradient(135deg, #D4AF37, #AA820A);
+      color: #042433;
+      box-shadow: 0 4px 15px rgba(212, 175, 55, 0.35);
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(212, 175, 55, 0.5);
+    }
+
+    .btn-secondary {
+      background: rgba(255, 255, 255, 0.12);
+      color: #FFFFFF;
+      border: 1px solid rgba(255, 255, 255, 0.25);
+    }
+
+    .btn-secondary:hover {
+      background: rgba(255, 255, 255, 0.22);
+      transform: translateY(-2px);
+    }
+
+    /* 3D Flip Card Container */
+    .card-scene {
+      width: 550px;
+      height: 316px;
+      perspective: 1200px;
+      cursor: pointer;
+      margin-bottom: 30px;
+    }
+
+    .card-cube {
+      width: 100%;
+      height: 100%;
+      position: relative;
+      transform-style: preserve-3d;
+      transition: transform 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      border-radius: 16px;
+      box-shadow: 0 25px 60px rgba(0, 0, 0, 0.5);
+    }
+
+    .card-cube.is-flipped {
+      transform: rotateY(180deg);
+    }
+
+    .card-face {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      backface-visibility: hidden;
+      border-radius: 16px;
+      overflow: hidden;
+    }
+
+    .card-face img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .card-face-back {
+      transform: rotateY(180deg);
+    }
+
+    .flip-instruction {
+      font-size: 14px;
+      color: #97D7FF;
+      background: rgba(8, 98, 136, 0.4);
+      padding: 6px 18px;
+      border-radius: 30px;
+      border: 1px solid rgba(151, 215, 255, 0.2);
+      margin-bottom: 40px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    /* Print Specs Grid */
+    .specs-grid {
+      width: 100%;
+      max-width: 1100px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+
+    .spec-card {
+      background: rgba(4, 36, 51, 0.7);
+      border: 1px solid rgba(151, 215, 255, 0.15);
+      border-radius: 14px;
+      padding: 20px;
+    }
+
+    .spec-card h3 {
+      font-size: 15px;
+      font-weight: 700;
+      color: var(--accent-gold);
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .spec-card ul {
+      list-style: none;
+      font-size: 13px;
+      color: #CBD5E1;
+      line-height: 1.8;
+    }
+
+    .spec-card ul li strong {
+      color: #FFFFFF;
+    }
+
+    @media print {
+      body {
+        background: #FFFFFF;
+        padding: 0;
+      }
+      .toolbar, .flip-instruction, .specs-grid {
+        display: none !important;
+      }
+      .card-scene {
+        width: 90mm;
+        height: 50mm;
+        page-break-after: always;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Toolbar -->
+  <header class="toolbar">
+    <div class="toolbar-title">
+      <h1>DR. NOZIMA BAXTIYAROVNA — VIZITKA</h1>
+      <p>Standart 90×50 mm (300 DPI) · Ikki tomonlama premium dizayn</p>
+    </div>
+
+    <div class="toolbar-actions">
+      <a href="/drnozima_business_card_print.pdf" download="DrNozima_Vizitka_Chop_Etish.pdf" class="btn btn-primary">
+        <span>📥 Chop Etish PDF (2 Tomonlama)</span>
+      </a>
+      <a href="/drnozima_business_card_front.png" download="DrNozima_Vizitka_Old.png" class="btn btn-secondary">
+        <span>Old tomoni (PNG)</span>
+      </a>
+      <a href="/drnozima_business_card_back.png" download="DrNozima_Vizitka_Orqa.png" class="btn btn-secondary">
+        <span>Orqa tomoni (PNG)</span>
+      </a>
+      <a href="/" class="btn btn-secondary">
+        <span>← Saytga qaytish</span>
+      </a>
+    </div>
+  </header>
+
+  <!-- 3D Card Scene -->
+  <div class="card-scene" onclick="flipCard()">
+    <div class="card-cube" id="cardCube">
+      <!-- Front -->
+      <div class="card-face card-face-front">
+        <img src="/drnozima_business_card_front.png" alt="Vizitka Old Tomoni">
+      </div>
+      <!-- Back -->
+      <div class="card-face card-face-back">
+        <img src="/drnozima_business_card_back.png" alt="Vizitka Orqa Tomoni">
+      </div>
+    </div>
+  </div>
+
+  <div class="flip-instruction">
+    <span>👆</span>
+    <span>Orqa tomonini ko'rish uchun kartochkani bosing (yoki aylantiring)</span>
+  </div>
+
+  <!-- Printing Guidelines & Specs -->
+  <section class="specs-grid">
+    <div class="spec-card">
+      <h3>📏 O'lcham & Texnik Parametrlar</h3>
+      <ul>
+        <li><strong>Tayyor o'lchami:</strong> 90 × 50 mm (Standart)</li>
+        <li><strong>Chop etish o'lchami:</strong> 94 × 54 mm (2 mm qirqim/bleed bilan)</li>
+        <li><strong>Ruxsat etilgan aniqlik:</strong> 300 DPI (1110 × 638 px)</li>
+        <li><strong>Ranglar sxemasi:</strong> Deep Teal (#086288), Navy, Gold (#D4AF37)</li>
+      </ul>
+    </div>
+
+    <div class="spec-card">
+      <h3>✨ Bosmaxona (Poligrafiya) Tavsiyalari</h3>
+      <ul>
+        <li><strong>Qog'oz turi:</strong> Bo'r (Melovannaya) 350 g/m² yoki Touche Cover</li>
+        <li><strong>Qoplama:</strong> Soft-touch laminatsiya (baxmaldek yoqimli)</li>
+        <li><strong>Bezak:</strong> Dr. Nozima logotipi va ismiga zarhal (Zoloto/Foil) bosish tavsiya etiladi</li>
+        <li><strong>Burchaklar:</strong> To'g'ri burchakli yoki yengil yumaloqlangan (R=3mm)</li>
+      </ul>
+    </div>
+
+    <div class="spec-card">
+      <h3>📲 Integratsiyalangan Imkoniyatlar</h3>
+      <ul>
+        <li><strong>Veb-sayt QR-kodi:</strong> Kamerani qaratganda to'g'ridan-to'g'ri <code>drnozima.uz</code> ga olib o'tadi</li>
+        <li><strong>Ijtimoiy tarmoqlar:</strong> Telegram (<code>@Miss_Dentist_95</code>) & Instagram (<code>@sevdo_denta</code>)</li>
+        <li><strong>Bog'lanish:</strong> +998 (91) 619-95-00, Andijon shahar, Fitrat 251B</li>
+        <li><strong>Xizmatlar ro'yxati:</strong> 6 ta asosiy yo'nalish to'liq keltirilgan</li>
+      </ul>
+    </div>
+  </section>
+
+  <script>
+    function flipCard() {
+      const cube = document.getElementById('cardCube');
+      cube.classList.toggle('is-flipped');
+    }
+  </script>
+</body>
+</html>
