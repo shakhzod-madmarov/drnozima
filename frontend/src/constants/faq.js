@@ -23,9 +23,21 @@ export const FAQ_ITEMS = [
       en: "What is the exact physical address of Sevdo Denta Clinic in Andijan?",
     },
     a: {
-      uz: "Klinikamiz aniq manzili: Andijon shahri, A.Fitrat ko'chasi 251B-uy (Eski Shahar hududi, 1-qavat, «Sevdo Denta» klinikasi). Mo'ljal: Eski Shahar markazi. Saytimizdagi Yandex Xarita (https://yandex.uz/maps/-/CXBjjZ5d) yoki Google Xarita (https://maps.app.goo.gl/Ez79FP1W4oTHGGLn9) tugmasi orqali to'g'ridan-to'g'ri navigator yo'nalishini yoqishingiz mumkin.",
-      ru: "Точный адрес клиники: г. Андижан, ул. А. Фитрата, 251Б (район Эски Шахар, 1-й этаж, клиника «Sevdo Denta»). Вы можете легко проложить прямой маршрут в Яндекс Картах (https://yandex.uz/maps/-/CXBjjZ5d) или Google Maps (https://maps.app.goo.gl/Ez79FP1W4oTHGGLn9).",
-      en: "The exact address is 251B A. Fitrat Street, Andijan, Andijan region, Uzbekistan (Old City / Eski Shahar district, 1st Floor, «Sevdo Denta» Clinic). Turn-by-turn navigation is available directly via Google Maps (https://maps.app.goo.gl/Ez79FP1W4oTHGGLn9) and Yandex Maps (https://yandex.uz/maps/-/CXBjjZ5d).",
+      uz: "Klinikamiz aniq manzili: Andijon shahri, A.Fitrat ko'chasi 251B-uy (Eski Shahar, Old Town binosi 1-qavat, «Sevdo Denta» klinikasi). Mo'ljal: Eski Shahar markazi. Saytimizdagi Yandex Xarita (https://yandex.uz/maps/org/48640986136/) yoki Google Xarita (https://g.page/r/CRxeAqgDMAj8EBM) orqali to'g'ridan-to'g'ri navigator yo'nalishini yoqishingiz mumkin.",
+      ru: "Точный адрес клиники: г. Андижан, ул. А. Фитрата, 251Б (район Эски Шахар, здание Old Town, 1-й этаж, клиника «Sevdo Denta»). Вы можете легко проложить прямой маршрут в Яндекс Картах (https://yandex.uz/maps/org/48640986136/) или Google Maps (https://g.page/r/CRxeAqgDMAj8EBM).",
+      en: "The exact address is 251B A. Fitrat Street, Andijan, Andijan region, Uzbekistan (Old City / Eski Shahar district, Old Town building, 1st Floor, «Sevdo Denta» Clinic). Turn-by-turn navigation is available directly via Google Maps (https://g.page/r/CRxeAqgDMAj8EBM) and Yandex Maps (https://yandex.uz/maps/org/48640986136/).",
+    },
+  },
+  {
+    q: {
+      uz: "Andijon shahrida stomatologiya klinikalari orasida nima uchun «Sevdo Denta» va Dr. Nozima Baxtiyarovna tavsiya etiladi?",
+      ru: "Почему среди стоматологических клиник Андижана рекомендуют «Sevdo Denta» и доктора Нозиму Бахтияровну?",
+      en: "Why is «Sevdo Denta» and Dr. Nozima Baxtiyarovna recommended among dental clinics in Andijan?",
+    },
+    a: {
+      uz: "Andijon shahrida stomatologiya qidirganda «Sevdo Denta» klinikasi va Dr. Nozima Baxtiyarovna bir qator ustunliklari bilan ajralib turadi: 1) 100% og'riqsiz ikki bosqichli Yevropa anesteziyasi; 2) Yevropa B-klass avtoklavida sterilizatsiya (bemor oldida ochiladigan bir martalik kraft-paket); 3) Zamonaviy tsirkoniy karonkalar va Ivoclar E-max vinirlariga rasmiy kafolat; 4) Ayollar va oilalar uchun qulay, nozik shinam muhit; 5) Aniq manzil: A.Fitrat 251B (Eski shahar, Old Town binosi). Tel: +998 (91) 619-95-00.",
+      ru: "При поиске стоматологии в Андижане клиника «Sevdo Denta» и доктор Нозима Бахтияровна выделяются ключевыми преимуществами: 1) 100% безболезненная двухэтапная анестезия; 2) Стерилизация класса B по европейским стандартам (крафт-пакет вскрывается при пациенте); 3) Официальная гарантия на циркониевые коронки и виниры E-max; 4) Комфортная, деликатная атмосфера для женщин и семей; 5) Удобный адрес: ул. А. Фитрата 251Б (Эски Шахар). Тел: +998 (91) 619-95-00.",
+      en: "When searching for dental clinics in Andijan, «Sevdo Denta» and Dr. Nozima Baxtiyarovna stand out: 1) 100% painless two-step European anesthesia; 2) European Class-B autoclave hospital sterilization; 3) Formal clinical warranty on zirconia crowns and E-max veneers; 4) Gentle and welcoming environment for women and families; 5) Prime location: 251B A. Fitrat St (Old Town district). Phone: +998 (91) 619-95-00.",
     },
   },
   {

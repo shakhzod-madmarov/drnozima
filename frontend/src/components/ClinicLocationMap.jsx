@@ -16,10 +16,10 @@ const ClinicLocationMap = ({ compact = false }) => {
 
   const yandexEmbedUrl =
     c?.maps?.yandexEmbed ||
-    "https://yandex.uz/map-widget/v1/?ll=72.352159%2C40.776788&mode=search&oid=157971592658&ol=biz&z=14.92";
+    "https://yandex.uz/map-widget/v1/?ll=72.350664%2C40.783390&mode=search&oid=48640986136&ol=biz&z=15";
   const yandexOrgUrl =
     c?.maps?.yandexOrg ||
-    "https://yandex.uz/maps/org/sevdo_denta/157971592658/?utm_medium=mapframe&utm_source=maps";
+    "https://yandex.uz/maps/org/48640986136/";
   const yandexCategoryUrl =
     c?.maps?.yandexCategory ||
     "https://yandex.uz/maps/10329/andijan/category/dental_clinic/184106132/?utm_medium=mapframe&utm_source=maps";
@@ -165,7 +165,7 @@ const ClinicLocationMap = ({ compact = false }) => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              Sevdo denta
+              Dr. Nozima Baxtiyarovna — Sevdo Denta
             </a>
             <a
               href={yandexCategoryUrl}
@@ -176,7 +176,7 @@ const ClinicLocationMap = ({ compact = false }) => {
               Стоматологическая клиника в Андижане
             </a>
             <iframe
-              title="Sevdo denta — Стоматологическая клиника в Андижане (Yandex Maps)"
+              title="Dr. Nozima Baxtiyarovna — Стоматологическая клиника в Андижане (Yandex Maps)"
               src={yandexEmbedUrl}
               width="100%"
               height="100%"

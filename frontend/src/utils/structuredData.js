@@ -264,9 +264,11 @@ export const buildAboutPageSchema = (lang = "uz", breadcrumbs = []) => {
     "sameAs": [
       "https://t.me/Miss_Dentist_95",
       "https://www.instagram.com/sevdo_denta/",
+      "https://g.page/r/CRxeAqgDMAj8EBM",
+      "https://g.page/r/CRxeAqgDMAj8EBM/review",
       "https://maps.app.goo.gl/Ez79FP1W4oTHGGLn9",
-      "https://yandex.uz/maps/-/CXBjjZ5d",
-      "https://yandex.uz/maps/org/157971592658/reviews/",
+      "https://yandex.uz/maps/org/48640986136/",
+      "https://yandex.uz/maps/org/48640986136/reviews/",
     ],
   };
 
@@ -317,12 +319,13 @@ export const buildContactPageSchema = (lang = "uz", breadcrumbs = []) => {
     },
     "geo": {
       "@type": "GeoCoordinates",
-      "latitude": 40.776788,
-      "longitude": 72.352159,
+      "latitude": 40.783390,
+      "longitude": 72.350664,
     },
     "hasMap": [
+      "https://g.page/r/CRxeAqgDMAj8EBM",
       "https://maps.app.goo.gl/Ez79FP1W4oTHGGLn9",
-      "https://yandex.uz/maps/-/CXBjjZ5d",
+      "https://yandex.uz/maps/org/48640986136/",
     ],
     "openingHoursSpecification": [
       {
@@ -335,9 +338,11 @@ export const buildContactPageSchema = (lang = "uz", breadcrumbs = []) => {
     "sameAs": [
       "https://t.me/Miss_Dentist_95",
       "https://www.instagram.com/sevdo_denta/",
+      "https://g.page/r/CRxeAqgDMAj8EBM",
+      "https://g.page/r/CRxeAqgDMAj8EBM/review",
       "https://maps.app.goo.gl/Ez79FP1W4oTHGGLn9",
-      "https://yandex.uz/maps/-/CXBjjZ5d",
-      "https://yandex.uz/maps/org/157971592658/reviews/",
+      "https://yandex.uz/maps/org/48640986136/",
+      "https://yandex.uz/maps/org/48640986136/reviews/",
     ],
   };
 
@@ -510,12 +515,13 @@ export const buildHomepageSchema = (lang = "uz", faqItems = [], services = []) =
     },
     "geo": {
       "@type": "GeoCoordinates",
-      "latitude": 40.776788,
-      "longitude": 72.352159,
+      "latitude": 40.783390,
+      "longitude": 72.350664,
     },
     "hasMap": [
+      "https://g.page/r/CRxeAqgDMAj8EBM",
       "https://maps.app.goo.gl/Ez79FP1W4oTHGGLn9",
-      "https://yandex.uz/maps/-/CXBjjZ5d",
+      "https://yandex.uz/maps/org/48640986136/",
     ],
     "openingHoursSpecification": [
       {
@@ -525,9 +531,82 @@ export const buildHomepageSchema = (lang = "uz", faqItems = [], services = []) =
         "closes": "18:00",
       },
     ],
-    "medicalSpecialty": ["Dentistry", "Prosthodontics", "Endodontics", "CosmeticDentistry"],
+    "areaServed": [
+      {
+        "@type": "City",
+        "name": "Andijan",
+        "sameAs": [
+          "https://en.wikipedia.org/wiki/Andijan",
+          "https://www.wikidata.org/wiki/Q485292",
+        ],
+      },
+      {
+        "@type": "AdministrativeArea",
+        "name": "Andijan Region",
+        "sameAs": [
+          "https://en.wikipedia.org/wiki/Andijan_Region",
+          "https://www.wikidata.org/wiki/Q487532",
+        ],
+      },
+    ],
+    "medicalSpecialty": [
+      {
+        "@type": "MedicalSpecialty",
+        "name": "Dentistry",
+        "sameAs": "https://en.wikipedia.org/wiki/Dentistry",
+      },
+      {
+        "@type": "MedicalSpecialty",
+        "name": "Prosthodontics",
+        "sameAs": "https://en.wikipedia.org/wiki/Prosthodontics",
+      },
+      {
+        "@type": "MedicalSpecialty",
+        "name": "Endodontics",
+        "sameAs": "https://en.wikipedia.org/wiki/Endodontics",
+      },
+      {
+        "@type": "MedicalSpecialty",
+        "name": "CosmeticDentistry",
+        "sameAs": "https://en.wikipedia.org/wiki/Cosmetic_dentistry",
+      },
+    ],
     "knowsAbout": [
+      {
+        "@type": "Thing",
+        "name": "Dentistry",
+        "sameAs": "https://en.wikipedia.org/wiki/Dentistry",
+      },
+      {
+        "@type": "Thing",
+        "name": "Dental clinic",
+        "sameAs": "https://www.wikidata.org/wiki/Q258380",
+      },
+      {
+        "@type": "Thing",
+        "name": "Dental implant",
+        "sameAs": "https://en.wikipedia.org/wiki/Dental_implant",
+      },
+      {
+        "@type": "Thing",
+        "name": "Veneer",
+        "sameAs": "https://en.wikipedia.org/wiki/Veneer_(dentistry)",
+      },
+      {
+        "@type": "Thing",
+        "name": "Crown (dentistry)",
+        "sameAs": "https://en.wikipedia.org/wiki/Crown_(dentistry)",
+      },
+      {
+        "@type": "Thing",
+        "name": "Tooth whitening",
+        "sameAs": "https://en.wikipedia.org/wiki/Tooth_bleaching",
+      },
       "Stomatologiya",
+      "Andijonda stomatologiya",
+      "Andijon stomatolog",
+      "Stomatolog Andijon",
+      "Ayol stomatolog Andijon",
       "Og'riqsiz tish davolash",
       "Karies va pulpit davolash",
       "Tsirkoniy karonka va ko'priklar",
@@ -535,11 +614,18 @@ export const buildHomepageSchema = (lang = "uz", faqItems = [], services = []) =
       "Badiiy restavratsiya",
       "Tish implantatsiyasi",
       "Lazerli tish oqartirish",
-      "Dentistry",
-      "Endodontics",
-      "Prosthodontics",
-      "Cosmetic Dentistry",
-      "Dental Implants",
+      "Eski shahar stomatologiya",
+      "A.Fitrat 251B",
+      "Old Town binosi stomatologiya",
+      "Sevdo Denta",
+      "Стоматология Андижан",
+      "Стоматология в Андижане",
+      "Стоматолог Андижан",
+      "Женский стоматолог Андижан",
+      "Лечение зубов Андижан",
+      "Dentist in Andijan",
+      "Dental clinic Andijan",
+      "Female dentist Andijan",
     ],
     "aggregateRating": {
       "@type": "AggregateRating",
@@ -591,9 +677,11 @@ export const buildHomepageSchema = (lang = "uz", faqItems = [], services = []) =
     "sameAs": [
       "https://t.me/Miss_Dentist_95",
       "https://www.instagram.com/sevdo_denta/",
+      "https://g.page/r/CRxeAqgDMAj8EBM",
+      "https://g.page/r/CRxeAqgDMAj8EBM/review",
       "https://maps.app.goo.gl/Ez79FP1W4oTHGGLn9",
-      "https://yandex.uz/maps/-/CXBjjZ5d",
-      "https://yandex.uz/maps/org/157971592658/reviews/",
+      "https://yandex.uz/maps/org/48640986136/",
+      "https://yandex.uz/maps/org/48640986136/reviews/",
     ],
   };
 
@@ -655,9 +743,11 @@ export const buildHomepageSchema = (lang = "uz", faqItems = [], services = []) =
     "sameAs": [
       "https://t.me/Miss_Dentist_95",
       "https://www.instagram.com/sevdo_denta/",
+      "https://g.page/r/CRxeAqgDMAj8EBM",
+      "https://g.page/r/CRxeAqgDMAj8EBM/review",
       "https://maps.app.goo.gl/Ez79FP1W4oTHGGLn9",
-      "https://yandex.uz/maps/-/CXBjjZ5d",
-      "https://yandex.uz/maps/org/157971592658/reviews/",
+      "https://yandex.uz/maps/org/48640986136/",
+      "https://yandex.uz/maps/org/48640986136/reviews/",
     ],
   };
 

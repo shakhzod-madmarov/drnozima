@@ -44,17 +44,20 @@ export const CLINICS = [
     instagram: "https://www.instagram.com/sevdo_denta/",
     instagramHandle: "@sevdo_denta",
     coordinates: {
-      lat: 40.776788,
-      lng: 72.352159,
+      lat: 40.783390,
+      lng: 72.350664,
     },
     maps: {
-      google: "https://maps.app.goo.gl/Ez79FP1W4oTHGGLn9",
-      yandex: "https://yandex.uz/maps/-/CXBjjZ5d",
-      yandexOrg: "https://yandex.uz/maps/org/sevdo_denta/157971592658/?utm_medium=mapframe&utm_source=maps",
+      google: "https://g.page/r/CRxeAqgDMAj8EBM",
+      googleReview: "https://g.page/r/CRxeAqgDMAj8EBM/review",
+      googleMapsUrl: "https://maps.app.goo.gl/Ez79FP1W4oTHGGLn9",
+      yandex: "https://yandex.uz/maps/org/48640986136/",
+      yandexOrg: "https://yandex.uz/maps/org/48640986136/",
+      yandexReview: "https://yandex.uz/maps/org/48640986136/reviews/",
       yandexCategory: "https://yandex.uz/maps/10329/andijan/category/dental_clinic/184106132/?utm_medium=mapframe&utm_source=maps",
-      yandexEmbed: "https://yandex.uz/map-widget/v1/?ll=72.352159%2C40.776788&mode=search&oid=157971592658&ol=biz&z=14.92",
+      yandexEmbed: "https://yandex.uz/map-widget/v1/?ll=72.350664%2C40.783390&mode=search&oid=48640986136&ol=biz&z=15",
     },
-    oid: "157971592658",
+    oid: "48640986136",
   },
 ];
 
