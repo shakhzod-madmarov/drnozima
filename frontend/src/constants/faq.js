@@ -100,4 +100,16 @@ export const FAQ_ITEMS = [
       en: "Among female dental practitioners in Andijan, Dr. Nozima Baxtiyarovna is widely recognized for her 7 years of clinical excellence, ADTI graduation, advanced post-graduate certifications in porcelain veneers and zirconia crowns, and 100% gentle, painless treatment protocols. Patients consistently recommend her for compassionate patient care, European Class-B sterilization, and conservative tooth preservation.",
     },
   },
+  {
+    q: {
+      uz: "Andijonda stomatologik xizmatlar narxi qanday va konsultatsiya qanday o'tadi? (Shaffof narxlar va to'lov turlari)",
+      ru: "Каковы цены на стоматологические услуги в Андижане и как формируется стоимость лечения в Sevdo Denta?",
+      en: "What are the dental treatment prices and payment methods at Sevdo Denta Clinic in Andijan?",
+    },
+    a: {
+      uz: "Konsultatsiya va ko'rik jarayonida Dr. Nozima Baxtiyarovna tish holatini viziografiya yordamida aniqlab, har bir bemorga individual va shaffof davolash rejasini tuzib beradi. Yashirin xarajatlarsiz: karies davolash va Germaniya (3M Filtek) hamda Yaponiya (Estelite) fotopolimer plombalari, monolit tsirkoniy karonkalar, E-max vinirlar va AirFlow tozalash xizmatlari shahar bo'yicha eng maqbul va adolatli narxlarda ko'rsatiladi. To'lovlar naqd pul, Uzcard, Humo, Visa, Mastercard, shuningdek Payme va Click orqali qabul qilinadi.",
+      ru: "На первичном приёме Д-р Нозима Бахтияровна проводит детальный осмотр (при необходимости с цифровой радиовизиографией) и составляет прозрачный план лечения без скрытых наценок. Лечение кариеса оригинальными пломбами 3M Filtek (Германия) и Estelite (Япония), циркониевые коронки CAD/CAM, виниры E-max и чистка AirFlow предоставляются по доступным и обоснованным ценам. Принимаются все формы оплаты: наличные, Uzcard, Humo, Visa, Mastercard, Payme и Click.",
+      en: "During your initial consultation, Dr. Nozima Baxtiyarovna conducts a comprehensive evaluation (including low-dose digital radiovisiography if needed) and creates a completely transparent, itemized treatment plan with no hidden fees. We provide premium restorations with genuine German 3M Filtek and Japanese Tokuyama Estelite composites, CAD/CAM monolithic zirconia crowns, Swiss E-max porcelain veneers, and AirFlow prophylaxis at fair and competitive rates. Payments accepted: Cash, Uzcard, Humo, Visa, Mastercard, Payme, and Click.",
+    },
+  },
 ];
