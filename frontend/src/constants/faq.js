@@ -124,4 +124,64 @@ export const FAQ_ITEMS = [
       en: "«Sevdo Denta» Dental Clinic (official corporate entity: SEVDO DENTA LLC, Tax ID / STIR: 311570124) was established and is owned and directed by lead dentist Dr. Nozima Baxtiyarovna (Kozimova Nozimabonu). Located at 251B A. Fitrat St, Andijan (Old Town building). Contacts: +998 91 619 95 00 (doctor direct) and +998 99 197 50 01 (reception). Official website: https://drnozima.uz.",
     },
   },
+  {
+    q: {
+      uz: "Tish qattiq og'rib qolsa nima qilish kerak va «Sevdo Denta»ga zudlik bilan qabulga qanday kelish mumkin? (Birinchi yordam)",
+      ru: "Что делать, если сильно разболелся зуб, и как срочно попасть на приём в клинику «Sevdo Denta»? (Первая помощь)",
+      en: "What should I do if I have a severe toothache, and how can I get emergency treatment at «Sevdo Denta»?",
+    },
+    a: {
+      uz: "Agar tishingiz to'satdan qattiq og'rib qolsa (kechasi, lo'qillab, ovqat chaynaganda yoki issiq-sovuqqa qaqshaganda), og'riq qoldiruvchi dori (masalan, Ibuprofen, Nimesil yoki Ketonal) ichishingiz va og'izni iliq tuzli suvda chayishingiz mumkin. Hech qachon og'rigan tish yoki yonoqqa issiq kompress qilmang va tish milkiga tabletka bosmang — bu yallig'lanishni kuchaytiradi. «Sevdo Denta» klinikamizda o'tkir og'riq bilan kelgan bemorlar navbatsiz qabul qilinadi. Darhol +998 (91) 619-95-00 yoki +998 (99) 197-50-01 raqamiga qo'ng'iroq qiling yoki manzilimizga keling: Andijon shahri, A.Fitrat 251B (Eski Shahar, Old Town binosi 1-qavat). Shifokorimiz birinchi qabuldayoq og'riqni 100% og'riqsiz anesteziya bilan to'xtatadi.",
+      ru: "При острой зубной боли (ночью, пульсирующей, при накусывании или реакции на холодное/горячее) можно принять обезболивающее средство (Ибупрофен, Нимесил, Кетонал) и аккуратно прополоскать рот теплым солевым раствором. Ни в коем случае не грейте щеку и не прикладывайте таблетки к десне — это вызовет ожог слизистой или усилит воспаление. Пациенты с острой зубной болью принимаются в клинике «Sevdo Denta» без очереди и в приоритетном порядке! Звоните напрямую: +998 (91) 619-95-00 или +998 (99) 197-50-01 и приезжайте: г. Андижан, ул. А. Фитрата, 251Б (Эски Шахар, здание Old Town, 1-й этаж). Доктор Нозима снимет боль за один визит.",
+      en: "If you experience sharp or throbbing toothache (at night, when chewing, or sensitive to temperature), you may take an anti-inflammatory painkiller (Ibuprofen, Paracetamol) and rinse gently with warm salt water. Never apply heat to your cheek or place painkiller tablets directly onto the gum, as this causes tissue burns and worsens swelling. At «Sevdo Denta» Clinic, emergency toothache patients are prioritized without waiting! Call immediately at +998 (91) 619-95-00 or +998 (99) 197-50-01 and visit 251B A. Fitrat Street, Andijan (Old Town building, 1st floor). Dr. Nozima will relieve your pain on the spot.",
+    },
+  },
+  {
+    q: {
+      uz: "Tish davolatishdan va ukoldan juda qo'rqaman — chindan ham og'riq sezilmaydimi? (Qo'rquvsiz stomatologiya)",
+      ru: "Очень боюсь лечить зубы и панически боюсь укола в десну — действительно ли не будет боли? (Лечение без страха)",
+      en: "I have severe dental fear and dread needle injections — is treatment truly 100% painless?",
+    },
+    a: {
+      uz: "Qo'rquvingiz mutlaqo tabiiy: ko'pchilik bemorlar avvalgi noxush tajribalar sababli xavotirda bo'lishadi. Dr. Nozima Baxtiyarovna aynan nozik, muloyim va stomatologdan qo'rquvi bor bemorlar bilan mehrli ishlashga ixtisoslashgan. Biz 2 bosqichli og'riqsiz anesteziya tizimini qo'llaymiz: avval milkka xushbo'y mevali muzlatuvchi gel surtiladi, milk to'liq sezgisiz bo'lgach, ingichka nano-igna orqali zamonaviy Yevropa anestetigi asta-sekin yuboriladi. Natijada siz na igna sanchilishini va na tish tozalash jarayonini sezmaysiz. Barcha muolajalar sokin va qulay muhitda o'tadi.",
+      ru: "Ваш страх понятен: многие наши пациенты имели неприятный опыт в прошлом. Доктор Нозима Бахтияровна — чуткий и деликатный врач-женщина, специализирующаяся на бережном лечении пациентов со стоматофобией. Мы используем двухэтапную «невидимую» анестезию: сначала десна обрабатывается аппликационным гелем с приятным фруктовым вкусом, и только после полной заморозки поверхности тончайшей микроиглой вводится щадящий европейский препарат. Вы не почувствуете ни укола, ни боли во время сверления и лечения. Всё проходит в спокойной, поддерживающей обстановке.",
+      en: "Dental anxiety is very common and completely understandable. Dr. Nozima Baxtiyarovna is widely recognized for her gentle, empathetic chairside manner, specifically tailored for nervous patients and women. We employ a painless two-step anesthetic protocol: first, a sweet-flavored topical anesthetic gel numbs the gum tissue completely, followed by gentle administration via ultra-thin micro-needles. You will not feel the injection prick or any sensation during cavity removal or root cleaning. You remain completely comfortable throughout the entire procedure.",
+    },
+  },
+  {
+    q: {
+      uz: "Plomba tushib ketsa yoki old tish sinib qolsa nima qilish kerak va uni qanday tiklash mumkin?",
+      ru: "Что делать, если выпала пломба или откололся передний зуб, и как его восстановить?",
+      en: "What should I do if a filling falls out or a front tooth chips/breaks?",
+    },
+    a: {
+      uz: "Agar plomba tushib ketsa yoki tish sinib qolsa, o'sha tomonda qattiq ovqat chaynamang va hosil bo'lgan teshikka hech qanday paxta yoki dori tiqmang. Tish ochiq qolganda karies infeksiyasi tezda asabga (pulpaga) yetib borishi mumkin, shuning uchun 24-48 soat ichida qabulga kelish muhim. «Sevdo Denta»da Dr. Nozima Baxtiyarovna sinib qolgan old va chaynash tishlarini Yaponiya (Tokuyama Estelite) va Germaniya (3M Filtek) kompozitlari yordamida 1 ta tashrifdayoq tabiiy shakli va rangida badiiy tiklab beradi. Katta sinishlarda esa monolit tsirkoniy karonka yoki E-max vinirlar bilan mustahkamlanadi.",
+      ru: "При выпадении пломбы или сколе зуба не жуйте на поврежденную сторону и не закладывайте в полость вату или лекарства. Открытый зуб уязвим для бактерий, поэтому важно попасть к врачу в течение 1–2 дней, пока воспаление не дошло до нерва. В клинике «Sevdo Denta» доктор Нозима восстанавливает отколотые зубы за один визит с помощью нанокомпозитов премиум-класса (Estelite, Япония и 3M Filtek, Германия). При значительном разрушении коронковой части мы изготавливаем сверхпрочные циркониевые коронки CAD/CAM или керамические виниры E-max, неотличимые от натуральных зубов.",
+      en: "If you lose a filling or chip a tooth, avoid chewing on that side and do not pack the cavity with cotton or temporary items. Seeking treatment within 24–48 hours prevents bacterial infection from reaching the nerve. At «Sevdo Denta», Dr. Nozima Baxtiyarovna expertly restores chipped and broken front teeth in a single session using premium Japanese Tokuyama Estelite and German 3M Filtek nano-composites. For heavily damaged teeth, we offer CAD/CAM monolithic zirconia crowns and E-max porcelain veneers that match your natural smile perfectly.",
+    },
+  },
+  {
+    q: {
+      uz: "Homiladorlik va emizikli davrda tish davolatsa bo'ladimi? Xavfsiz anesteziya bormi?",
+      ru: "Можно ли лечить зубы во время беременности и грудного вскармливания? Безопасен ли наркоз?",
+      en: "Can I get dental treatment while pregnant or breastfeeding? Is the anesthesia safe?",
+    },
+    a: {
+      uz: "Albatta mumkin va zarur! Homiladorlikda og'iz bo'shlig'idagi infeksiya va tish og'rig'i stressi homilaga tish davolatishdan ko'ra ko'proq xavf tug'diradi. Rejali davolash uchun eng xavfsiz vaqt — 2-trimestr (14–26 haftalar), biroq o'tkir og'riq yoki yallig'lanish bo'lsa, har qanday muddatda kechiktirmasdan yordam ko'rsatiladi. Dr. Nozima Baxtiyarovna homilador va emizikli onalar uchun maxsus plasenta to'sig'idan o'tmaydigan, tarkibida adrenalin bo'lmagan xavfsiz Yevropa anestetiklarini qo'llaydi. Rentgen esa maxsus himoya fartugi ostida minimal nurlanishli raqamli viziografda amalga oshiriladi.",
+      ru: "Лечить зубы при беременности не просто можно, а необходимо! Хронический очаг инфекции во рту и зубная боль наносят развивающемуся малышу гораздо больше вреда, чем аккуратное лечение. Идеальным периодом считается 2-й триместр (14–26 недель), однако при острой боли помощь оказывается на любом сроке. Мы применяем специальные гипоаллергенные анестетики без адреналина, которые не проникают через плацентарный барьер и безопасны для плода и при лактации. При необходимости снимков используется цифровой радиовизиограф с минимальной лучевой нагрузкой и защитным свинцовым фартуком.",
+      en: "Yes, absolutely! Untreated oral infections and tooth pain pose far greater risks to the unborn baby than gentle dental treatment. The safest period for routine treatment is the second trimester (weeks 14–26), though acute pain and infections are treated immediately at any stage. We use pregnancy-safe, articaine-based local anesthetics without epinephrine that do not cross the placental barrier. When imaging is required, our ultra-low-dose digital radiovisiography with lead aprons ensures zero risk to mother and baby.",
+    },
+  },
+  {
+    q: {
+      uz: "Aql tishi (vosmerka) chiqayotganda milk shishib og'risa yoki flyus bo'lsa nima qilinadi?",
+      ru: "Что делать, если режется и болит зуб мудрости, опухла десна или появился флюс?",
+      en: "What should I do if a wisdom tooth is causing pain, gum swelling, or an abscess (flux)?",
+    },
+    a: {
+      uz: "Aql tishi chiqayotganda uning ustidagi milk qopqog'i (kapishon) yallig'lanishi (perikoronarit) yoki tish ildizida yiring to'planishi (flyus) ko'p kuzatiladi. Bunda yutish qiyinlashishi, jag' qotib qolishi yoki yuz shishishi mumkin. Bunday holatda «Sevdo Denta»da Dr. Nozima shishgan milk qopqog'ini 100% og'riqsiz kesib tozalaydi va yiringni chiqaradi. Agar aql tishi noto'g'ri o'sayotgan bo'lsa, zamonaviy atravmatik usulda suyak to'qimasini shikastlamasdan olinadi — shunda og'riq va shishlar tezda yo'qoladi.",
+      ru: "При прорезывании зуба мудрости часто воспаляется десневой «капюшон» (перикоронит) либо скапливается гной у корня (флюс/периостит). Это может сопровождаться болью при глотании, отеком щеки и температурой. В клинике «Sevdo Denta» доктор Нозима безболезненно иссекает капюшон десны и промывает очаг антисептиком. Если же зуб мудрости расположен неправильно и разрушает соседний седьмой зуб, мы проводим деликатное атравматичное удаление под надежной двухэтапной анестезией с быстрым заживлением.",
+      en: "Wisdom tooth eruption often causes gum flap inflammation (pericoronitis) or localized infection (abscess/flux), leading to jaw stiffness, swelling, and difficulty chewing. At «Sevdo Denta», Dr. Nozima Baxtiyarovna safely performs gentle operculectomy (trimming the inflamed gum flap) or delicate atraumatic wisdom tooth extraction under deep local anesthesia, immediately eliminating infection and protecting adjacent teeth.",
+    },
+  },
 ];
