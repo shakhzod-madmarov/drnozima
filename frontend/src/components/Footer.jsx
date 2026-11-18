@@ -153,15 +153,29 @@ const Footer = () => {
                 <IconClock className="w-4 h-4 text-[#97D7FF] shrink-0 mt-0.5" />
                 <span>{hoursDisplay}</span>
               </p>
-              <p className="flex items-center gap-2.5">
-                <IconPhone className="w-4 h-4 text-[#97D7FF] shrink-0" />
-                <a
-                  href={DOCTOR_INFO.phoneHref}
-                  className="text-white font-bold hover:text-[#97D7FF] transition-colors"
-                >
-                  {DOCTOR_INFO.phone}
-                </a>
-              </p>
+              <div className="flex items-start gap-2.5">
+                <IconPhone className="w-4 h-4 text-[#97D7FF] shrink-0 mt-0.5" />
+                <div className="flex flex-col space-y-1">
+                  <a
+                    href={DOCTOR_INFO.phoneHref}
+                    className="text-white font-bold hover:text-[#97D7FF] transition-colors"
+                  >
+                    {DOCTOR_INFO.phone}{" "}
+                    <span className="text-[11px] font-normal text-slate-300">
+                      ({lang === "uz" ? "Shifokor qabuli" : lang === "ru" ? "Запись к врачу" : "Doctor direct"})
+                    </span>
+                  </a>
+                  <a
+                    href="tel:+998991975001"
+                    className="text-slate-300 font-semibold hover:text-[#97D7FF] transition-colors text-xs"
+                  >
+                    +998 (99) 197-50-01{" "}
+                    <span className="text-[10px] font-normal text-slate-400">
+                      ({lang === "uz" ? "Klinika resepshin" : lang === "ru" ? "Ресепшен клиники" : "Reception"})
+                    </span>
+                  </a>
+                </div>
+              </div>
               <p className="flex items-center gap-2.5">
                 <IconMail className="w-4 h-4 text-[#97D7FF] shrink-0" />
                 <a
@@ -216,13 +230,13 @@ const Footer = () => {
 
         {/* Bottom Copyright Bar */}
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-3 sm:gap-4 text-xs text-slate-400">
-          <p className="text-center sm:text-left">
-            © {new Date().getFullYear()} Dr. Nozima Baxtiyarovna (drnozima.uz).{" "}
+          <p className="text-center sm:text-left leading-relaxed">
+            © {new Date().getFullYear()} «SEVDO DENTA» MCHJ (STIR: 311570124).{" "}
             {lang === "uz"
-              ? "Barcha huquqlar himoyalangan."
+              ? "Bosh shifokor va asoschi: Dr. Nozima Baxtiyarovna (Kozimova Nozimabonu). Barcha huquqlar himoyalangan."
               : lang === "ru"
-              ? "Все права защищены."
-              : "All rights reserved."}
+              ? "Главный врач и основатель: Д-р Нозима Бахтияровна (Козимова Нозимабону). Все права защищены."
+              : "Founder & Lead Dentist: Dr. Nozima Baxtiyarovna (Kozimova Nozimabonu). All rights reserved."}
           </p>
           <div className="flex flex-wrap items-center justify-center sm:justify-end gap-3 text-slate-400">
             <a

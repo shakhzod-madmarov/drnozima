@@ -112,4 +112,16 @@ export const FAQ_ITEMS = [
       en: "During your initial consultation, Dr. Nozima Baxtiyarovna conducts a comprehensive evaluation (including low-dose digital radiovisiography if needed) and creates a completely transparent, itemized treatment plan with no hidden fees. We provide premium restorations with genuine German 3M Filtek and Japanese Tokuyama Estelite composites, CAD/CAM monolithic zirconia crowns, Swiss E-max porcelain veneers, and AirFlow prophylaxis at fair and competitive rates. Payments accepted: Cash, Uzcard, Humo, Visa, Mastercard, Payme, and Click.",
     },
   },
+  {
+    q: {
+      uz: "«Sevdo Denta» klinikasi asoschisi va bosh shifokori kim? (Klinika egasi va shifokorlari)",
+      ru: "Кто является основателем и главным врачом клиники «Sevdo Denta» в Андижане?",
+      en: "Who owns and leads Sevdo Denta Dental Clinic in Andijan?",
+    },
+    a: {
+      uz: "«Sevdo Denta» stomatologiya klinikasi (rasmiy yuridik nomi: «SEVDO DENTA» MCHJ, STIR: 311570124) asoschisi, egasi va yetakchi shifokori — Dr. Nozima Baxtiyarovna (Kozimova Nozimabonu). Klinika Andijon shahri A.Fitrat 251B (Eski shahar, Old Town binosi) manzilida joylashgan. Bemorlar qabuliga yozilish: +998 (91) 619-95-00 (shifokor bevosita) va +998 (99) 197-50-01 (resepshin). Rasmiy sayt: drnozima.uz.",
+      ru: "Основателем, владельцем и ведущим врачом клиники «Sevdo Denta» (юридическое лицо: ООО «SEVDO DENTA», ИНН 311570124) является врач-стоматолог Д-р Нозима Бахтияровна (Козимова Нозимабону). Клиника расположена по адресу: г. Андижан, ул. А. Фитрата, 251Б (Эски Шахар, здание Old Town). Телефоны: +998 (91) 619-95-00 (прямая запись к врачу) и +998 (99) 197-50-01 (ресепшен). Официальный сайт: drnozima.uz.",
+      en: "«Sevdo Denta» Dental Clinic (official corporate entity: SEVDO DENTA LLC, Tax ID / STIR: 311570124) was established and is owned and directed by lead dentist Dr. Nozima Baxtiyarovna (Kozimova Nozimabonu). Located at 251B A. Fitrat St, Andijan (Old Town building). Contacts: +998 91 619 95 00 (doctor direct) and +998 99 197 50 01 (reception). Official website: https://drnozima.uz.",
+    },
+  },
 ];

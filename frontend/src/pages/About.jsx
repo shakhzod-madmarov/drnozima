@@ -26,6 +26,23 @@ const About = () => {
   const timeline = [
     {
       year: {
+        uz: "2024 – Hozirgacha",
+        ru: "2024 – По настоящее время",
+        en: "2024 – Present",
+      },
+      title: {
+        uz: "«Sevdo Denta» Klinikasi Asoschisi va Bosh Shifokori",
+        ru: "Основатель и Главный Врач Клиники «Sevdo Denta»",
+        en: "Founder & Lead Doctor at «Sevdo Denta» Clinic",
+      },
+      desc: {
+        uz: "«SEVDO DENTA» MCHJ tashkil etilib, Andijon shahrining tarixiy Eski shahar markazida (A.Fitrat 251B, Old Town binosi) zamonaviy B-klass avtoklav, raqamli viziograf va qulay muhit bilan ayollar va butun oila uchun 100% og'riqsiz stomatologiya markazi sifatida faoliyat yuritmoqda.",
+        ru: "Основание клиники «Sevdo Denta» (ООО «SEVDO DENTA») в историческом центре Эски Шахар (ул. А. Фитрата 251Б). Европейский автоклав класса B, цифровой радиовизиограф и бережное лечение без боли.",
+        en: "Established «Sevdo Denta» Clinic (SEVDO DENTA LLC) in Andijan Old City (251B A. Fitrat St, Old Town building) equipped with European Class-B autoclaves, digital visiography, and gentle painless care for women and families.",
+      },
+    },
+    {
+      year: {
         uz: "2019 – Hozirgacha",
         ru: "2019 – По настоящее время",
         en: "2019 – Present",

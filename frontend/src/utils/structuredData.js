@@ -401,46 +401,56 @@ export const buildHomepageSchema = (lang = "uz", faqItems = [], services = []) =
   }[lang] || "Dr. Nozima Baxtiyarovna";
 
   const clinicName = {
-    uz: "Dr. Nozima Baxtiyarovna — «Sevdo Denta» Stomatologiya Klinikasi",
-    ru: "Д-р Нозима Бахтияровна — Стоматологическая Клиника «Sevdo Denta»",
-    en: "Dr. Nozima Baxtiyarovna — «Sevdo Denta» Dental Clinic",
+    uz: "Sevdo Denta — Dr. Nozima Baxtiyarovna Stomatologiya Klinikasi",
+    ru: "Sevdo Denta — Стоматологическая Клиника Д-ра Нозимы Бахтияровны",
+    en: "Sevdo Denta — Dr. Nozima Baxtiyarovna Dental Clinic",
   }[lang];
 
   const clinicAlternateNames = {
     uz: [
+      "Sevdo Denta",
+      "Sevdo denta stomatologiya",
+      "Sevdo Denta Andijon",
+      "SEVDO DENTA MCHJ",
       "Stomatolog Nozima Baxtiyarovna",
       "Stomatolog Nozima",
       "Nozima stomatolog",
       "Dr. Nozima Baxtiyarovna",
       "Ayol stomatolog Dr. Nozima",
-      "Sevdo Denta Andijon",
       "A.Fitrat 251B stomatologiya",
       "Eski Shahar stomatologiya",
     ],
     ru: [
+      "Севдо Дента",
+      "Севдо Дента Андижан",
+      "Севдо Дента стоматология",
+      "ООО SEVDO DENTA",
+      "Sevdo Denta",
       "Стоматолог Нозима Бахтияровна",
       "Стоматолог Нозима",
       "Нозима стоматолог",
       "Д-р Нозима Бахтияровна",
       "Врач-стоматолог женщина Нозима Бахтияровна",
       "Женский стоматолог Андижан",
-      "Клиника Севдо Дента Андижан",
       "Стоматология ул. Фитрата 251Б",
     ],
     en: [
+      "Sevdo Denta",
+      "Sevdo Denta Dental Clinic",
+      "Sevdo Denta Andijan",
+      "SEVDO DENTA LLC",
       "Dentist Dr. Nozima Baxtiyarovna",
       "Dentist Nozima",
       "Dr. Nozima Baxtiyarovna",
       "Female Dentist Dr. Nozima",
-      "Sevdo Denta Dental Clinic Andijan",
       "Dental Clinic 251B A. Fitrat St",
     ],
   }[lang];
 
   const clinicDesc = {
-    uz: "Andijon shahri A.Fitrat 251B «Sevdo Denta» klinikasida tajribali ayol stomatolog-terapevt va ortoped Dr. Nozima Baxtiyarovna. 7 yillik tajriba, ADTI bitiruvchisi, 100% og'riqsiz tish davolash, tsirkoniy karonka, E-max vinirlar va estetik restavratsiya. Tel: +998 (91) 619-95-00.",
-    ru: "Квалифицированный врач-стоматолог женщина в Андижане Д-р Нозима Бахтияровна (клиника «Sevdo Denta», ул. А. Фитрата, 251Б). 7 лет опыта, выпускница АГМИ, 100% безболезненное лечение кариеса и каналов, циркониевые коронки, виниры E-max. Тел: +998 (91) 619-95-00.",
-    en: "Certified female dentist Dr. Nozima Baxtiyarovna at «Sevdo Denta» Clinic, 251B A. Fitrat Street, Andijan. 7 years of clinical excellence, ADTI graduate, 100% painless restorative dental care, zirconia crowns, and E-max veneers. Tel: +998 (91) 619-95-00.",
+    uz: "Andijon shahri A.Fitrat 251B «Sevdo Denta» klinikasida asoschi va yetakchi ayol stomatolog-terapevt va ortoped Dr. Nozima Baxtiyarovna (Kozimova Nozimabonu). 7 yillik tajriba, ADTI bitiruvchisi, 100% og'riqsiz tish davolash, tsirkoniy karonka, E-max vinirlar va estetik restavratsiya. Tel: +998 (91) 619-95-00, +998 (99) 197-50-01.",
+    ru: "Стоматологическая клиника «Sevdo Denta» в Андижане (ул. А. Фитрата, 251Б) — основатель и ведущий врач-стоматолог женщина Д-р Нозима Бахтияровна (Козимова Нозимабону). 7 лет опыта, выпускница АГМИ, 100% безболезненное лечение кариеса и каналов, циркониевые коронки, виниры E-max. Тел: +998 (91) 619-95-00, +998 (99) 197-50-01.",
+    en: "«Sevdo Denta» Dental Clinic in Andijan (251B A. Fitrat St) — founded and led by certified female dentist Dr. Nozima Baxtiyarovna (Kozimova Nozimabonu). 7 years of clinical excellence, ADTI graduate, 100% painless restorative dental care, zirconia crowns, and E-max veneers. Tel: +998 (91) 619-95-00, +998 (99) 197-50-01.",
   }[lang];
 
   const addressLocality = {
@@ -489,6 +499,8 @@ export const buildHomepageSchema = (lang = "uz", faqItems = [], services = []) =
     "@type": ["Dentist", "MedicalClinic", "LocalBusiness", "MedicalBusiness"],
     "@id": `${SITE_ORIGIN}/#dentist`,
     "name": clinicName,
+    "legalName": "\"SEVDO DENTA\" MCHJ",
+    "taxID": "311570124",
     "alternateName": clinicAlternateNames,
     "description": clinicDesc,
     "url": pageUrl,
@@ -506,7 +518,7 @@ export const buildHomepageSchema = (lang = "uz", faqItems = [], services = []) =
       `${SITE_ORIGIN}/certificate_composite_veneers.webp`,
       `${SITE_ORIGIN}/certificate_crown_preparation.webp`,
     ],
-    "telephone": "+998916199500",
+    "telephone": ["+998916199500", "+998991975001"],
     "email": "drnozima.medinson@gmail.com",
     "priceRange": "$$",
     "currenciesAccepted": "UZS",
@@ -737,14 +749,23 @@ export const buildHomepageSchema = (lang = "uz", faqItems = [], services = []) =
       })),
     },
     "availableService": availableServices,
-    "contactPoint": {
-      "@type": "ContactPoint",
-      "telephone": "+998916199500",
-      "email": "drnozima.medinson@gmail.com",
-      "contactType": "reservations",
-      "areaServed": "UZ",
-      "availableLanguage": ["uz", "ru", "en"],
-    },
+    "contactPoint": [
+      {
+        "@type": "ContactPoint",
+        "telephone": "+998916199500",
+        "email": "drnozima.medinson@gmail.com",
+        "contactType": "reservations",
+        "areaServed": "UZ",
+        "availableLanguage": ["uz", "ru", "en"],
+      },
+      {
+        "@type": "ContactPoint",
+        "telephone": "+998991975001",
+        "contactType": "customer service",
+        "areaServed": "UZ",
+        "availableLanguage": ["uz", "ru"],
+      },
+    ],
     "founder": {
       "@id": `${SITE_ORIGIN}/#doctor`,
     },

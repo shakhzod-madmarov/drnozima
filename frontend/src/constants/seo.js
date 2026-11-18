@@ -12,16 +12,16 @@ const years = getYearsOfExperience();
 export const PAGE_SEO = {
   home: {
     uz: {
-      title: "Andijonda Stomatologiya — Dr. Nozima Baxtiyarovna | Sevdo Denta Klinikasi",
-      description: `Andijonda zamonaviy stomatologiya va tajribali ayol stomatolog-terapevt Dr. Nozima Baxtiyarovna (A.Fitrat 251B, «Sevdo Denta» klinikasi). ${years} yillik tajriba, ADTI bitiruvchisi, 100% og'riqsiz tish davolash, tsirkoniy karonka, E-max vinirlar va estetik restavratsiya. Tel: +998 (91) 619-95-00.`,
+      title: "Sevdo Denta — Dr. Nozima Baxtiyarovna | Andijonda Stomatologiya Klinikasi",
+      description: `«Sevdo Denta» stomatologiya klinikasi (Andijon, A.Fitrat 251B) — asoschi va yetakchi ayol stomatolog-terapevt Dr. Nozima Baxtiyarovna (Kozimova Nozimabonu). ${years} yillik tajriba, ADTI bitiruvchisi, 100% og'riqsiz tish davolash, tsirkoniy karonka, E-max vinirlar, implantatsiya. Tel: +998 (91) 619-95-00, +998 (99) 197-50-01.`,
     },
     ru: {
-      title: "Стоматология в Андижане — Доктор Нозима Бахтияровна | Клиника Sevdo Denta",
-      description: `Стоматология в Андижане: квалифицированный врач-стоматолог женщина Д-р Нозима Бахтияровна (клиника «Sevdo Denta», ул. А. Фитрата, 251Б). ${years} лет опыта, выпускница АГМИ, 100% безболезненное лечение кариеса и каналов, циркониевые коронки, виниры E-max. Тел: +998 (91) 619-95-00.`,
+      title: "Sevdo Denta — Доктор Нозима Бахтияровна | Стоматология в Андижане",
+      description: `Стоматологическая клиника «Sevdo Denta» в Андижане (ул. А. Фитрата, 251Б) — основатель и ведущий врач-стоматолог женщина Д-р Нозима Бахтияровна (Козимова Нозимабону). ${years} лет опыта, выпускница АГМИ, 100% безболезненное лечение кариеса и каналов, циркониевые коронки, виниры E-max. Тел: +998 (91) 619-95-00, +998 (99) 197-50-01.`,
     },
     en: {
-      title: "Dentistry in Andijan — Dr. Nozima Baxtiyarovna | Sevdo Denta Clinic",
-      description: `Premier dental care in Andijan: certified female dentist Dr. Nozima Baxtiyarovna at «Sevdo Denta» Clinic, 251B A. Fitrat Street. ${years} years of clinical excellence, ADTI graduate, 100% painless restorative dental care, zirconia crowns, and E-max veneers. Tel: +998 (91) 619-95-00.`,
+      title: "Sevdo Denta — Dr. Nozima Baxtiyarovna | Dental Clinic in Andijan",
+      description: `«Sevdo Denta» Dental Clinic in Andijan (251B A. Fitrat St) — founded and led by certified female dentist Dr. Nozima Baxtiyarovna (Kozimova Nozimabonu). ${years} years of clinical excellence, ADTI graduate, 100% painless restorative dental care, zirconia crowns, and E-max veneers. Tel: +998 (91) 619-95-00, +998 (99) 197-50-01.`,
     },
   },
   services: {
