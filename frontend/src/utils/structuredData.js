@@ -877,6 +877,12 @@ export const buildHomepageSchema = (lang = "uz", faqItems = [], services = []) =
     "worksFor": {
       "@id": `${SITE_ORIGIN}/#dentist`,
     },
+    "founderOf": {
+      "@id": `${SITE_ORIGIN}/#dentist`,
+    },
+    "owns": {
+      "@id": `${SITE_ORIGIN}/#dentist`,
+    },
     "knowsLanguage": ["uz", "ru", "en"],
     "knowsAbout": [
       "Dentistry",
