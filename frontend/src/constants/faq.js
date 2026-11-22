@@ -184,4 +184,64 @@ export const FAQ_ITEMS = [
       en: "Wisdom tooth eruption often causes gum flap inflammation (pericoronitis) or localized infection (abscess/flux), leading to jaw stiffness, swelling, and difficulty chewing. At «Sevdo Denta», Dr. Nozima Baxtiyarovna safely performs gentle operculectomy (trimming the inflamed gum flap) or delicate atraumatic wisdom tooth extraction under deep local anesthesia, immediately eliminating infection and protecting adjacent teeth.",
     },
   },
+  {
+    q: {
+      uz: "Kechki payt tishim qattiq og'riyapti — nima qilish kerak va sababi nima? (Shoshilinch yordam)",
+      ru: "Что делать, если вечером или ночью сильно разболелся зуб, и почему зубная боль усиливается к ночи?",
+      en: "What should I do if a severe toothache strikes in the evening or at night, and what causes it?",
+    },
+    a: {
+      uz: "Kechki payt tish og'rig'i kuchayishining asosiy sababi: inson gorizontal holatda yotganda bosh va jag' tomirlariga qon oqimi kuchayadi. Agar tish asabi (pulpit) shamollagan yoki yiring to'plangan bo'lsa, yopiq tish kamerasida ichki bosim keskin oshib, chidab bo'lmas lo'qillagan og'riq paydo bo'ladi. Birinchi yordam: 1) Shamollashga qarshi og'riqsizlantiruvchi dori (Ibuprofen, Nimesil yoki Ketonal) iching; 2) Og'izni iliq tuzli-sodali suvda chayqang; 3) Yonoqqa hech qachon issiq kompress qilmang (bu yiring tarqalishini keltirib chiqaradi); 4) Boshni baland yostiqqa qo'ying. Ertalab soat 08:00 dan boshlab «Sevdo Denta» klinikamizda Dr. Nozima Baxtiyarovna o'tkir og'riq bilan kelgan bemorlarni navbatsiz, 100% og'riqsiz anesteziya bilan qabul qiladi. Tel: +998 (91) 619-95-00.",
+      ru: "Основная причина ночной зубной боли: в положении лёжа усиливается приток крови к голове и челюстям. Если воспалён нерв (пульпит) или развивается периодонтит, давление внутри зуба растёт, вызывая нестерпимую пульсирующую боль. Первая помощь: 1) Примите обезболивающее (Ибупрофен, Нимесил, Кетонал); 2) Осторожно прополощите рот теплым содово-солевым раствором; 3) Ни в коем случае не грейте щеку и не ложитесь на больной бок; 4) Положите под голову высокую подушку. Утром с 08:00 в клинике «Sevdo Denta» доктор Нозима Бахтияровна принимает пациентов с острой болью в приоритетном порядке и полностью снимает воспаление за 1 визит. Тел: +998 (91) 619-95-00.",
+      en: "Nighttime toothache intensifies primarily because lying down increases cranial blood circulation and vascular pressure in the jaw. When the dental pulp is inflamed (pulpitis), this elevated pressure triggers intense throbbing pain. First aid: 1) Take an anti-inflammatory pain reliever (Ibuprofen, Paracetamol); 2) Gently rinse with warm salt water; 3) Never apply heat pads to your cheek as heat accelerates bacterial infection; 4) Keep your head elevated. Starting at 08:00 AM, Dr. Nozima Baxtiyarovna prioritizes emergency walk-ins at «Sevdo Denta» with immediate 100% painless relief. Phone: +998 (91) 619-95-00.",
+    },
+  },
+  {
+    q: {
+      uz: "Tish karonkalari (qoplama) turlari va narxlari qanday? Qaysi biri yaxshiroq — metallokeramikami yoki tsirkoniy?",
+      ru: "Какие бывают зубные коронки и сколько они стоят в Андижане? Что лучше: металлокерамика или цирконий?",
+      en: "What are the types and prices of dental crowns in Andijan? Which is superior: porcelain-fused-to-metal or zirconia?",
+    },
+    a: {
+      uz: "Tish karonkalari (koronka) tish toj qismi 50% dan ortiq yemirilsa, sinib qolsa yoki ildiz kanallari davolangandan so'ng tishni mustahkam saqlab qolish uchun qo'yiladi. Asosiy turlari: 1) Monolit Tsirkoniy (Zirconia CAD/CAM) — eng zamonaviy, 100% biomoslashuvchan, milkni mutlaqo qoraytirmaydi, tabiiy tishdek nur o'tkazadi va 15 yildan ortiq mustahkam xizmat qiladi; 2) E-max press-keramika — old tishlar uchun mukammal estetik qoplama; 3) Metallokeramika — an'anaviy variant, lekin metall asosi vaqt o'tishi bilan milk chetida qora chiziq hosil qilishi mumkin. «Sevdo Denta»da Dr. Nozima Baxtiyarovna mikron aniqlikdagi CAD/CAM skaneri yordamida har bir koronkani individual tayyorlab beradi. Narxlar shahar bo'yicha eng shaffof va adolatli bo'lib, rasmiy klinik kafolat taqdim etiladi.",
+      ru: "Коронка устанавливается, если зуб разрушен более чем на 50%, сломан или депульпирован, чтобы вернуть ему жевательную прочность и предотвратить раскол корня. Основные виды: 1) Монолитный диоксид циркония CAD/CAM — золотой стандарт современной стоматологии: не вызывает аллергии, не окисляется, не синеет у десны, выдерживает колоссальные нагрузки и служит более 15 лет; 2) Керамика E-max — идеальна для зоны улыбки благодаря естественной полупрозрачности; 3) Металлокерамика — компромиссный бюджетный вариант, со временем дающий тёмный ободок у десны. В клинике «Sevdo Denta» доктор Нозима изготавливает анатомические циркониевые коронки на цифровом оборудовании с официальной гарантией.",
+      en: "A dental crown is essential when a tooth is more than 50% broken, heavily filled, or root-canal treated, shielding the remaining structure from fracture. Types: 1) Monolithic CAD/CAM Zirconia — the premier standard worldwide: 100% biocompatible, zero metal, will never discolor the gumline, withstands extreme biting forces, and lasts 15+ years; 2) E-max Lithium Disilicate — exceptional aesthetic translucency for anterior teeth; 3) Metal-Ceramic (PFM) — traditional option that may eventually reveal a dark metal margin near the gum. At «Sevdo Denta», Dr. Nozima delivers precision-milled CAD/CAM crowns with formal clinical warranty.",
+    },
+  },
+  {
+    q: {
+      uz: "Tish olish narxi qancha va aql tishini (vosmerka) oldirish og'riqlimi?",
+      ru: "Сколько стоит удаление зуба в Андижане и больно ли удалять зуб мудрости (восьмёрку)?",
+      en: "How much does tooth extraction cost in Andijan and is wisdom tooth removal painful?",
+    },
+    a: {
+      uz: "«Sevdo Denta»da tish olish mutlaqo 100% og'riqsiz kechadi. Biz zamonaviy 2 bosqichli og'riqsizlantirishni qo'llaymiz: avval milk xushbo'y mevali gel bilan muzlatiladi, so'ng Yevropaning xavfsiz anestetiklari (Ubistesin / Septanest) yuboriladi, shuning uchun bemor na ukol sanchilishini va na tish sug'urilishini sezadi. Tishlar suyak to'qimasini asrab qoluvchi nozik atravmatik lyuksatorlar bilan olinadi. Qiyshiq o'sgan yoki milk ostida yotgan aql tishlari (vosmerka) ham jarrohlik yo'li bilan shishlarsiz va asoratlarsiz olinib, o'rniga tez bituvchi kollagen gemostatik gubka qo'yiladi. Narxlar tishning murakkabligiga qarab adolatli belgilangan.",
+      ru: "В клинике «Sevdo Denta» процедура удаления зубов проходит совершенно безболезненно благодаря двухэтапной анестезии: сначала на десну наносится аппликационный обезболивающий гель, затем микроиглой вводится щадящий европейский анестетик (Ubistesin, Германия / Septanest, Франция). Мы применяем атравматичную методику (периотомы и люксаторы), которая сохраняет костные стенки лунки для будущей имплантации. Удаление сложных ретинированных восьмерок проводится без отеков с закладкой рассасывающейся коллагеновой губки для мгновенного заживления.",
+      en: "At «Sevdo Denta», tooth extraction is completely painless. We utilize a two-phase anesthesia technique: a sweet topical gel thoroughly desensitizes the gum surface before a micro-needle introduces premium European anesthetic (Ubistesin / Septanest), eliminating all sensation. Using micro-instruments (luxators and periotomes), teeth are luxated atraumatically, preserving surrounding alveolar bone. Impacted wisdom teeth (third molars) are carefully extracted and treated with collagen hemostatic plugs for rapid, swelling-free recovery.",
+    },
+  },
+  {
+    q: {
+      uz: "Tish implanti narxi qancha va qo'shni tishlarni charxlamasdan tish qo'yish mumkinmi?",
+      ru: "Сколько стоит зубной имплант в Андижане и как восстановить зуб без обточки соседних?",
+      en: "How much does a dental implant cost in Andijan and can a missing tooth be replaced without shaving adjacent teeth?",
+    },
+    a: {
+      uz: "Ha! Tish implantatsiyasining eng katta inqilobiy ustunligi — yo'qotilgan tish o'rnini tiklash uchun qo'shni sog'lom tishlarni aslo charxlash, yo'nish yoki ularning asabini o'ldirish (depulpatsiya) talab etilmaydi! Jag' suyagiga toza biotitandan yasalgan sun'iy ildiz (implant) o'rnatiladi va uning ustiga monolit tsirkoniy karonka qo'yiladi. Natijada siz o'z tabiiy tishingizdek mustahkam va chiroyli tishga ega bo'lasiz. «Sevdo Denta»da dunyo bo'yicha 99% dan ortiq suyakka birikish ko'rsatkichiga ega Janubiy Koreyaning original Osstem va Shveysariyaning Straumann implantlari umrbod ishlab chiqaruvchi kafolati bilan o'rnatiladi. Narxlar shaffof va qulay to'lov usullari (naqd, karta, Payme/Click) bilan taqdim etiladi.",
+      ru: "Имплантация зубов — единственный метод, позволяющий вернуть утраченный зуб БЕЗ обточки и депульпирования соседних здоровых зубов. В челюстную кость устанавливается биосовместимый титановый корень, на который фиксируется циркониевая коронка. По прочности и внешнему виду имплант ничем не отличается от собственного здорового зуба и предотвращает убыль челюстной кости. В клинике «Sevdo Denta» применяются проверенные мировые системы Osstem (Южная Корея) и Straumann (Швейцария) с приживаемостью более 99% и пожизненной гарантией от производителя.",
+      en: "Dental implantation is the only missing tooth restoration technique that preserves adjacent healthy teeth without grinding down enamel or removing nerves. A medical-grade biocompatible titanium fixture is integrated into the alveolar bone, upon which a monolithic zirconia crown is placed. At «Sevdo Denta», we exclusively place genuine Osstem (South Korea) and Straumann (Switzerland) systems featuring a >99% osseointegration success rate backed by a manufacturer lifetime warranty.",
+    },
+  },
+  {
+    q: {
+      uz: "Tish breketlari va tekislash: egri tishlar yoki tishlar orasidagi tirqishlarni (diastema) breketsiz tuzatsa bo'ladimi?",
+      ru: "Брекеты или виниры: можно ли выровнять неровные зубы и убрать щели без ношения брекетов?",
+      en: "Braces vs veneers: can crooked teeth or front gaps (diastema) be corrected without orthodontic braces?",
+    },
+    a: {
+      uz: "Albatta mumkin! Ko'p bemorlar 1.5–2 yil davomida noqulay metall breketlar taqib yurishni istashmaydi. Agar tishlaringizda yengil egriliklar, tishlar orasida noxush ochiqliklar (diastema va trema), emal sinishi yoki notekis qirralar bo'lsa, ularni Shveysariya Ivoclar E-max keramik vinirlari yoki Yaponiya Tokuyama Estelite badiiy kompozit restavratsiyasi yordamida atigi 1–2 ta tashrifdayoq (bir necha kunda!) mutlaqo tekis va jozibali «Gollivud tabassumi»ga aylantirish mumkin. Katta jag' anomaliyalari yoki og'ir tishlash nuqsonlarida esa to'liq ortodontik diagnostika o'tkazilib, eng to'g'ri maslahat beriladi.",
+      ru: "Да, во многих случаях это возможно! Если пациент не хочет 1.5–2 года носить металлические брекеты, а проблема заключается в неровном крае, щелях между зубами (диастема/трема), сколах или лёгкой скученности — ультратонкие керамические виниры E-max (Швейцария) или художественная реставрация нанокомпозитами Estelite (Япония) позволяют выровнять улыбку всего за 1–2 визита! При серьезных нарушениях прикуса проводится детальная консультация и подбирается оптимальное ортодонтическое лечение.",
+      en: "Yes, in many clinical scenarios! If a patient prefers to avoid wearing noticeable metal braces for 1.5–2 years, minor anterior crowding, irregular edges, and prominent gaps (diastema and trema) can be straightened in just 1–2 visits using ultra-thin Swiss Ivoclar E-max porcelain veneers or Japanese Tokuyama Estelite composite bonding, yielding an instantly aligned Hollywood smile. Severe malocclusions receive specialized orthodontic evaluation.",
+    },
+  },
 ];

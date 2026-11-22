@@ -34,6 +34,7 @@ export const SERVICES_CATALOG = [
     },
     symptoms: {
       uz: [
+        "Kechki payt tishim qattiq og'riyapti (kechki lo'qillash, pulsatsiya va simillash)",
         "Tishda o'tkir yoki simillagan og'riq",
         "Issiq, sovuq yoki shirin narsalarga qattiq sezuvchanlik",
         "Tish emalining qorayishi yoki karies teshigi paydo bo'lishi",
@@ -41,6 +42,7 @@ export const SERVICES_CATALOG = [
         "Tish asabi yallig'lanishi (pulpit va periodontit)",
       ],
       ru: [
+        "Сильная зубная боль вечером и ночью (пульсирующая, приступообразная боль)",
         "Острая или ноющая зубная боль при жевании и в покое",
         "Резкая реакция на холодное, горячее и сладкое",
         "Потемнение эмали или видимая кариозная полость",
@@ -48,6 +50,7 @@ export const SERVICES_CATALOG = [
         "Воспаление зубного нерва (пульпит, периодонтит)",
       ],
       en: [
+        "Severe acute toothache at night or evening (throbbing pulpitis pain)",
         "Acute or throbbing toothache during chewing or at rest",
         "Sharp sensitivity to hot, cold, or sugary drinks",
         "Visible enamel darkening or cavity holes",
@@ -126,6 +129,7 @@ export const SERVICES_CATALOG = [
     },
     symptoms: {
       uz: [
+        "Tish karonkalari va tish koronkasi qo'yish zarurati (metallokeramika yoki tsirkoniy)",
         "Tish toj qismining 50% dan ko'prog'i sinishi yoki yemirilishi",
         "Chaynash tishlarining yo'qligi yoki qattiq shikastlanishi",
         "Eski qoraygan metall qoplamalarni zamonaviy oq tsirkoniyga almashtirish",
@@ -133,6 +137,7 @@ export const SERVICES_CATALOG = [
         "Tishlarning tabiiy balandligi va chaynash qobiliyatini tiklash",
       ],
       ru: [
+        "Необходимость поставить зубные коронки (коронка на зуб из циркония или металлокерамики)",
         "Разрушение коронковой части зуба более чем на 50%",
         "Отсутствие одного или нескольких жевательных зубов",
         "Замена старых неэстетичных металлокерамических коронок на цирконий",
@@ -140,6 +145,7 @@ export const SERVICES_CATALOG = [
         "Восстановление правильного прикуса и жевательной функции",
       ],
       en: [
+        "Need for dental crowns (zirconia or porcelain tooth caps)",
         "Severe tooth crown destruction exceeding 50%",
         "Missing or fractured chewing molars and premolars",
         "Replacing outdated dark metal-fused crowns with monolithic zirconia",
@@ -218,6 +224,7 @@ export const SERVICES_CATALOG = [
     },
     symptoms: {
       uz: [
+        "Tish breketlarisiz egriliklar va tishlar orasidagi tirqishlarni (diastema) 1-2 kunda tekislash",
         "Old tishlar orasidagi noestetik ochiqliklar (diastema va trema)",
         "Oqartirish vositalariga berilmaydigan tish sarg'ayishi yoki emal dog'lari",
         "Old tish emalining sinishi, darz ketishi yoki notekis qirralar",
@@ -225,6 +232,7 @@ export const SERVICES_CATALOG = [
         "Mutlaqo tabiiy va jozibali «Gollivud tabassumi»ga ega bo'lish",
       ],
       ru: [
+        "Исправление кривизны и щелей между зубами без брекетов за 1-2 визита (виниры)",
         "Щели и промежутки между передними зубами (диастема, тремы)",
         "Стойкое потемнение эмали, устойчивое к отбеливанию",
         "Сколы, трещины и неровный режущий край передних зубов",
@@ -232,6 +240,7 @@ export const SERVICES_CATALOG = [
         "Желание обрести безупречную, естественную «голливудскую улыбку»",
       ],
       en: [
+        "Straightening crooked teeth and gaps without long orthodontic braces (veneers)",
         "Gaps and spaces between front incisors (diastema and trema)",
         "Deep intrinsic enamel staining resistant to chemical whitening",
         "Chipped, worn-down, fractured, or uneven front tooth edges",
@@ -310,18 +319,21 @@ export const SERVICES_CATALOG = [
     },
     symptoms: {
       uz: [
+        "Tish implanti bilan yo'qotilgan tishni qo'shni tishlarni charxlamasdan tiklash (implant narxlari)",
         "Bir yoki bir nechta tishlarning yo'qotilishi",
         "Qo'shni sog'lom tishlarni ko'prik protez uchun charxlashni istamaslik",
         "Olinadigan sun'iy protezlar o'rniga o'z tishingizdek mustahkam tishlar",
         "Jag' suyagi yemirilishining oldini olish va chaynashni tiklash",
       ],
       ru: [
+        "Имплантация зуба без обточки соседних здоровых зубов (стоимость имплантов)",
         "Отсутствие одного или нескольких зубов",
         "Нежелание обтачивать соседние здоровые зубы под мостовидный протез",
         "Замена неудобных съёмных челюстей на несъёмные комфортные зубы",
         "Предотвращение атрофии челюстной кости и восстановление овала лица",
       ],
       en: [
+        "Dental implant placement without shaving down adjacent healthy teeth (implant cost)",
         "Loss of a single tooth or multiple consecutive teeth",
         "Refusal to compromise and grind down adjacent healthy teeth for a bridge",
         "Upgrading from loose, uncomfortable removable dentures to permanent teeth",
@@ -488,18 +500,21 @@ export const SERVICES_CATALOG = [
     },
     symptoms: {
       uz: [
+        "Tish olish narxi va aql tishini (vosmerka) 100% og'riqsiz oldirish",
         "Aql tishi (8-tish) milk ostida qolib yallig'lanishi va og'rishi (perikoronarit)",
         "Qo'shni 7-tishni surib, tishlar qatorini buzayotgan aql tishlari",
         "Terapevtik usulda tiklab bo'lmaydigan darajada chirigan tish ildizlari",
         "Ildiz uchida kista yoki surunkali yiringli yallig'lanish o'choqlari",
       ],
       ru: [
+        "Удаление зуба и безболезненное удаление зуба мудрости (восьмёрки) по честной цене",
         "Боль, отек десны и воспаление вокруг режущегося зуба мудрости",
         "Давление восьмёрки на соседний зуб и скученность зубного ряда",
         "Сильно разрушенные корни зуба, не подлежащие реставрации",
         "Хроническое воспаление, гранулема или киста на верхушке корня",
       ],
       en: [
+        "Painless tooth extraction and wisdom tooth removal without trauma",
         "Painful swelling around partially erupted wisdom teeth (pericoronitis)",
         "Impacted third molar crowding and damaging adjacent second molars",
         "Severely decayed or fractured roots unsuitable for crown restoration",
